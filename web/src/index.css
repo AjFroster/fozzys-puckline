@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Probabilities and prices sit in columns; jittering digits read as broken. */
+.tabular {
+  font-variant-numeric: tabular-nums;
+}

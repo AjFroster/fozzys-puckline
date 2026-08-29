@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Node
+node_modules/
+web/dist/
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Data is deliberately NOT ignored. Raw snapshots and the game table are
+# committed on purpose: they make every published prediction reproducible from
+# the repo alone, and they let a parser fix be replayed offline instead of
+# re-crawling an unofficial API.

@@ -1,0 +1,2 @@
+# Client-side routing: every unmatched path renders the SPA shell.
+/*  /index.html  200

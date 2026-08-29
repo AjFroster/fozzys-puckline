@@ -1,0 +1,55 @@
+{
+ "currentDate": "2026-03-01",
+ "games": [
+  {
+   "id": 2025020947,
+   "season": 20252026,
+   "gameType": 2,
+   "gameDate": "2026-03-01",
+   "startTimeUTC": "2026-03-01T18:00:00Z",
+   "gameState": "OFF",
+   "venue": {
+    "default": "PPG Paints Arena"
+   },
+   "neutralSite": false,
+   "gameOutcome": {
+    "lastPeriodType": "REG"
+   },
+   "homeTeam": {
+    "id": 5,
+    "abbrev": "PIT",
+    "score": 5
+   },
+   "awayTeam": {
+    "id": 54,
+    "abbrev": "VGK",
+    "score": 0
+   }
+  },
+  {
+   "id": 2025020949,
+   "season": 20252026,
+   "gameType": 2,
+   "gameDate": "2026-03-01",
+   "startTimeUTC": "2026-03-01T21:00:00Z",
+   "gameState": "OFF",
+   "venue": {
+    "default": "Delta Center"
+   },
+   "neutralSite": false,
+   "gameOutcome": {
+    "lastPeriodType": "REG"
+   },
+   "homeTeam": {
+    "id": 68,
+    "abbrev": "UTA",
+    "score": 0
+   },
+   "awayTeam": {
+    "id": 16,
+    "abbrev": "CHI",
+    "score": 4
+   }
+  }
+ ]
+}

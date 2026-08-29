@@ -1,0 +1,50 @@
+{
+ "data": [
+  {
+   "id": 2015020001,
+   "easternStartTime": "2015-10-07T19:00:00",
+   "gameDate": "2015-10-07",
+   "gameNumber": 1,
+   "gameScheduleStateId": 1,
+   "gameStateId": 7,
+   "gameType": 2,
+   "homeScore": 1,
+   "homeTeamId": 10,
+   "period": 3,
+   "season": 20152016,
+   "visitingScore": 3,
+   "visitingTeamId": 8
+  },
+  {
+   "id": 2015020007,
+   "easternStartTime": "2015-10-08T19:30:00",
+   "gameDate": "2015-10-08",
+   "gameNumber": 7,
+   "gameScheduleStateId": 1,
+   "gameStateId": 7,
+   "gameType": 2,
+   "homeScore": 3,
+   "homeTeamId": 14,
+   "period": 4,
+   "season": 20152016,
+   "visitingScore": 2,
+   "visitingTeamId": 4
+  },
+  {
+   "id": 2015020019,
+   "easternStartTime": "2015-10-10T19:00:00",
+   "gameDate": "2015-10-10",
+   "gameNumber": 19,
+   "gameScheduleStateId": 1,
+   "gameStateId": 7,
+   "gameType": 2,
+   "homeScore": 4,
+   "homeTeamId": 10,
+   "period": 5,
+   "season": 20152016,
+   "visitingScore": 5,
+   "visitingTeamId": 9
+  }
+ ],
+ "total": 3
+}
