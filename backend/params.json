@@ -1,0 +1,11 @@
+{
+  "k": 8.0,
+  "hfa": 25.0,
+  "ot_credit": 0.65,
+  "carryover": 0.75,
+  "diff_scale": 1.0,
+  "mov_const": 2.05,
+  "b2b_penalty": 25.0,
+  "expansion_init": 1380.0,
+  "no_fans_hfa_factor": 0.45
+}
