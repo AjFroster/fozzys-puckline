@@ -13,10 +13,12 @@ import SlatePage from "./routes/Slate";
 const RatingsPage = lazy(() => import("./routes/Ratings"));
 const TeamPage = lazy(() => import("./routes/Team"));
 const ModelPage = lazy(() => import("./routes/Model"));
+const TrackPage = lazy(() => import("./routes/Track"));
 
 const nav = [
   { to: "/", label: "Slate", end: true },
   { to: "/ratings", label: "Ratings", end: false },
+  { to: "/track", label: "Record", end: false },
   { to: "/model", label: "Model", end: false },
 ];
 
@@ -61,6 +63,7 @@ export default function App() {
             <Route path="/game/:date/:gameId" element={<GameDetail />} />
             <Route path="/ratings" element={<RatingsPage />} />
             <Route path="/team/:abbrev" element={<TeamPage />} />
+            <Route path="/track" element={<TrackPage />} />
             <Route path="/model" element={<ModelPage />} />
             <Route
               path="*"

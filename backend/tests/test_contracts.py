@@ -43,6 +43,9 @@ MODELS = [
     contracts.Metrics,
     contracts.IndexEntry,
     contracts.Index,
+    contracts.TrackPoint,
+    contracts.NotableGame,
+    contracts.SeasonTrack,
 ]
 
 

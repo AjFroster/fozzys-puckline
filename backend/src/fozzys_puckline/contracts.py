@@ -202,6 +202,62 @@ class Metrics(Document):
     by_season: list[SeasonMetrics]
 
 
+class TrackPoint(BaseModel):
+    """One game day in the season-to-date record."""
+
+    date: dt.date
+    games_today: int
+    correct_today: int
+
+    # Cumulative from the start of the season.
+    games: int
+    correct: int
+    accuracy: float
+    log_loss: float
+    baseline_log_loss: float
+    brier: float
+    over_under_hit_rate: float
+
+    # Trailing window, so a cold streak is visible instead of being averaged
+    # away by everything that came before it.
+    rolling_accuracy: float | None = None
+    rolling_log_loss: float | None = None
+
+
+class NotableGame(BaseModel):
+    """A game the model called confidently and got wrong."""
+
+    date: dt.date
+    game_id: int
+    winner: str
+    loser: str
+    probability_given_to_winner: float
+    score: str
+
+
+class SeasonTrack(Document):
+    """How the predictions have actually done, day by day, this season.
+
+    Separate from `metrics.json` on purpose. That file is the historical
+    evaluation — fixed windows, fitted parameters, a holdout. This one is the
+    live scoreboard for the season in progress, and it answers a different
+    question: not "is the model sound" but "how is it doing right now".
+    """
+
+    season: int
+    complete: bool
+    """False while the season is still being played."""
+    through: dt.date | None = None
+    rolling_window: int
+    summary: TrackPoint | None = None
+    points: list[TrackPoint]
+    calibration: list[CalibrationBin]
+    worst_calibration_z: float
+    calibration_threshold: float
+    well_calibrated: bool
+    biggest_misses: list[NotableGame]
+
+
 class IndexEntry(BaseModel):
     date: dt.date
     games: int
