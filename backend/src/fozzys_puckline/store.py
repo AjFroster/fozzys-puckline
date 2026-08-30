@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import datetime as dt
 import gzip
+import io
 import json
 from collections.abc import Iterable
 from pathlib import Path
@@ -47,12 +48,36 @@ def snapshot_path(key: str, root: Path | None = None) -> Path:
     return (root or config.RAW_DIR) / f"{key}.json.gz"
 
 
+def _encode_snapshot(payload: Any) -> bytes:
+    """Serialise a snapshot to deterministic gzip bytes.
+
+    `mtime=0` is the whole point. gzip writes the current time into its header
+    by default, so re-snapshotting identical content produces different bytes
+    every run — same length, different hash. Left alone that quietly defeats the
+    idempotency guarantee at the raw layer: the nightly job would commit three
+    unchanged files every night forever and burn a Cloudflare Pages build each
+    time against a 500-a-month quota.
+    """
+    buffer = io.BytesIO()
+    with gzip.GzipFile(fileobj=buffer, mode="wb", mtime=0) as handle:
+        handle.write(json.dumps(payload, separators=(",", ":")).encode("utf-8"))
+    return buffer.getvalue()
+
+
 def write_snapshot(key: str, payload: Any, root: Path | None = None) -> Path:
-    """Persist a raw API response verbatim, before anything parses it."""
+    """Persist a raw API response verbatim, before anything parses it.
+
+    Skips the write when the bytes would be identical, so an unchanged snapshot
+    does not even touch the file.
+    """
     path = snapshot_path(key, root)
     path.parent.mkdir(parents=True, exist_ok=True)
-    with gzip.open(path, "wt", encoding="utf-8") as handle:
-        json.dump(payload, handle, separators=(",", ":"))
+    encoded = _encode_snapshot(payload)
+
+    if path.exists() and path.read_bytes() == encoded:
+        return path
+
+    path.write_bytes(encoded)
     return path
 
 
