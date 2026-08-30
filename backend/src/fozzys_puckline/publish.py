@@ -421,18 +421,55 @@ def build_metrics(
 # writing
 
 
-def _write(path: Path, document: Any) -> Path:
+VOLATILE_FIELDS = ("generated_at",)
+"""Fields that change on every run without the content changing."""
+
+
+def _unchanged(existing: str, payload: dict[str, Any]) -> bool:
+    """Is the file on disk the same document, ignoring the run timestamp?
+
+    Every document carries a wall-clock stamp, so a naive write dirties all 43
+    files on every run. That would commit nightly whether or not anything
+    happened, burn a Cloudflare Pages build each time against a 500-a-month
+    quota, and make it impossible to tell a real update from a heartbeat.
+    """
+    try:
+        previous = json.loads(existing)
+    except json.JSONDecodeError:
+        return False
+    return {k: v for k, v in previous.items() if k not in VOLATILE_FIELDS} == {
+        k: v for k, v in payload.items() if k not in VOLATILE_FIELDS
+    }
+
+
+def _write(path: Path, document: Any) -> tuple[Path, bool]:
+    """Write a document, skipping the write when only the timestamp would move.
+
+    Returns the path and whether anything actually changed, so the caller can
+    tell a real update from a no-op re-run.
+    """
     path.parent.mkdir(parents=True, exist_ok=True)
     payload = document.model_dump(mode="json", by_alias=True)
+
+    if path.exists() and _unchanged(path.read_text(encoding="utf-8"), payload):
+        return path, False
+
     path.write_text(json.dumps(payload, indent=1, sort_keys=False) + "\n", encoding="utf-8")
-    return path
+    return path, True
 
 
 @dataclass(slots=True)
 class PublishReport:
     files: list[Path] = field(default_factory=list)
+    changed: list[Path] = field(default_factory=list)
     slates: int = 0
     latest: dt.date | None = None
+
+    def record(self, written: tuple[Path, bool]) -> None:
+        path, changed = written
+        self.files.append(path)
+        if changed:
+            self.changed.append(path)
 
 
 def publish(
@@ -472,7 +509,7 @@ def publish(
         )
         slates[date] = slate
         entries.append(contracts.IndexEntry(date=date, games=len(slate.games)))
-        report.files.append(_write(root / "slate" / f"{date.isoformat()}.json", slate))
+        report.record(_write(root / "slate" / f"{date.isoformat()}.json", slate))
     report.slates = len(dates)
 
     pointer = latest_date(games, day)
@@ -489,23 +526,21 @@ def publish(
                     for g in by_date.get(pointer, [])
                 ],
             )
-        report.files.append(_write(root / "latest.json", latest))
+        report.record(_write(root / "latest.json", latest))
 
     active = max((g.season for g in games if g.is_final), default=holdout)
-    report.files.append(
+    report.record(
         _write(root / "ratings" / "current.json", build_ratings(run, active, when, version))
     )
-    report.files.append(
+    report.record(
         _write(
             root / "ratings" / "history.json",
             build_rating_history(run, games, active, when, version),
         )
     )
-    report.files.append(_write(root / "teams.json", build_teams(run, when, version)))
-    report.files.append(
-        _write(root / "metrics.json", build_metrics(run, games, holdout, when, version))
-    )
-    report.files.append(
+    report.record(_write(root / "teams.json", build_teams(run, when, version)))
+    report.record(_write(root / "metrics.json", build_metrics(run, games, holdout, when, version)))
+    report.record(
         _write(
             root / "index.json",
             contracts.Index(

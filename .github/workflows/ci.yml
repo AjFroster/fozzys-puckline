@@ -39,6 +39,20 @@ jobs:
       - name: Tests
         run: uv run pytest -q
 
+      # Publishing must be a no-op when nothing has changed, or the nightly job
+      # commits every night and burns a Cloudflare Pages build each time.
+      - name: Publishing is idempotent
+        working-directory: .
+        run: |
+          set -euo pipefail
+          cd backend && uv run puckline publish && cd ..
+          if ! git diff --quiet -- web/public/data; then
+            echo "Republishing unchanged data produced a diff:" >&2
+            git --no-pager diff --stat -- web/public/data >&2
+            exit 1
+          fi
+          echo "Republishing changed nothing, as it should."
+
   web:
     runs-on: ubuntu-latest
     defaults:

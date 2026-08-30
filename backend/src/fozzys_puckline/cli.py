@@ -311,7 +311,7 @@ def publish_cmd(
     day = dt.date.fromisoformat(today) if today else None
     report = publish(games, load_params(), today=day, holdout=holdout)
 
-    typer.echo(f"{len(report.files)} files, {report.slates} slates")
+    typer.echo(f"{len(report.files)} files, {len(report.changed)} changed, {report.slates} slates")
     typer.echo(f"latest.json points at {report.latest}")
     typer.echo(f"written under {config.PUBLISH_DIR}")
 

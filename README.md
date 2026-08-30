@@ -34,8 +34,8 @@ makes the track record on `/model` auditable rather than a claim.
 | M3 totals model | done |
 | M4 publish layer | next |
 | M5 frontend | done |
-| M6 automation | next |
-| M7 Cloudflare deploy | |
+| M6 automation | done |
+| M7 Cloudflare deploy | next |
 | M8 track record and docs | |
 
 ## Backend
@@ -96,6 +96,36 @@ Routes:
 The slate and matchup pages load eagerly; the three chart pages are split out,
 because Recharts is larger than the rest of the app put together and the common
 case is checking tonight's board on a phone. Initial load is ~84 KB gzipped.
+
+## Automation
+
+| Workflow | Trigger | Does |
+| -------- | ------- | ---- |
+| `ci.yml` | PR, push | ruff, mypy, pytest, contract tests, an idempotency check, and the web build. |
+| `nightly.yml` | 11:00 UTC daily | Ingest results, pull the upcoming schedule, publish, commit. |
+| `recalibrate.yml` | Mondays 12:00 UTC | Re-fit on the validation seasons; open a PR if anything moved. |
+| `backfill.yml` | manual | Rebuild the game table from a chosen season. |
+
+The latest puck drop is 10:30pm Pacific (05:30 UTC) and those games are final by
+about 08:30 UTC, so an 11:00 UTC run clears the slate with margin every night.
+Actions cron has no timezone support, so everything is UTC and stays correct
+across both DST shifts.
+
+Ingest and publish live in **one** workflow rather than two chained by
+`workflow_run`. That is a deliberate departure from the original plan: chaining
+adds a failure mode where the second job silently never fires, two jobs
+committing to one branch can race, and each commit costs a Cloudflare Pages
+build against a 500-a-month quota. One workflow means one commit per night and
+no ordering to get wrong. Cadence is still one line of YAML.
+
+Every step is idempotent. Publishing skips any file whose only change would be
+the run timestamp, so a re-run, a late run, or a double run produces no diff at
+all — CI enforces this, because without it the nightly job would commit every
+night whether or not anything happened.
+
+Recalibration never commits to `main`. It opens a pull request with the new
+parameters and both backtests attached, because the model behind every published
+prediction should change when someone decides it should.
 
 ## Opening-night checklist
 
