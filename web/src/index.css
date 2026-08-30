@@ -1,10 +1,55 @@
 @import "tailwindcss";
 
+/*
+ * Rink palette: cold blue-biased neutrals, one red accent taken from the
+ * centre-ice line. Semantic colours for over/under and win/loss are kept
+ * separate from the accent so nothing reads as branding when it means a result.
+ */
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+
+  --color-ice-50: #f7f9fb;
+  --color-ice-100: #edf1f5;
+  --color-ice-200: #d3dde5;
+  --color-ice-300: #a9bccb;
+  --color-ice-400: #6b7f8e;
+  --color-ice-500: #3d4e5c;
+  --color-ice-600: #23343f;
+  --color-ice-700: #16232e;
+  --color-ice-800: #111c25;
+  --color-ice-900: #0c151c;
+
+  --color-rink-500: #c8102e;
+  --color-rink-400: #f2536b;
+
+  --color-blade-500: #1b6ca8;
+  --color-blade-400: #5fb3e5;
+
+  --color-good-500: #1e7a5a;
+  --color-good-400: #4fbf93;
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Probabilities and prices sit in columns; jittering digits read as broken. */
 .tabular {
   font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }

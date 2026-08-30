@@ -33,8 +33,8 @@ makes the track record on `/model` auditable rather than a claim.
 | M2 Elo engine and backtest | done |
 | M3 totals model | done |
 | M4 publish layer | next |
-| M5 frontend | next |
-| M6 automation | |
+| M5 frontend | done |
+| M6 automation | next |
 | M7 Cloudflare deploy | |
 | M8 track record and docs | |
 
@@ -82,6 +82,20 @@ cd web
 npm install
 npm run dev
 ```
+
+Routes:
+
+| Route | Shows |
+| ----- | ----- |
+| `/` | The slate. Win probability, fair moneyline, model total, P(over). |
+| `/game/:date/:gameId` | One matchup in full, plus the result once graded. |
+| `/ratings` | All 32 clubs, sortable, with the season Elo history. |
+| `/team/:abbrev` | One club's rating curve. |
+| `/model` | Methodology, calibration, and the running track record. |
+
+The slate and matchup pages load eagerly; the three chart pages are split out,
+because Recharts is larger than the rest of the app put together and the common
+case is checking tonight's board on a phone. Initial load is ~84 KB gzipped.
 
 ## Opening-night checklist
 
