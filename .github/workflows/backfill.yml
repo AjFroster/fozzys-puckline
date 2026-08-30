@@ -1,0 +1,77 @@
+name: Backfill
+
+# Manual only. Rebuilds the game table from the bulk season endpoint, which
+# costs about 25 requests for a decade rather than 2,000 date-by-date calls.
+#
+# Run this on opening night after re-enabling the schedules, to pick up the new
+# season before the first nightly job.
+on:
+  workflow_dispatch:
+    inputs:
+      start_season:
+        description: "First season id, e.g. 20152016."
+        required: false
+        default: "20152016"
+        type: string
+      publish:
+        description: "Publish the site JSON afterwards."
+        required: false
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nightly
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          cache-dependency-glob: backend/uv.lock
+
+      - name: Install
+        run: uv sync --frozen
+
+      # Fails the job if a season's parsed count does not match what the API
+      # itself claims, which is how a silent schema change gets caught.
+      - name: Backfill
+        run: uv run puckline backfill --start ${{ inputs.start_season }}
+
+      - name: Ingest upcoming schedule
+        run: uv run puckline ingest-schedule --weeks 2
+
+      - name: Publish
+        if: ${{ inputs.publish }}
+        run: uv run puckline publish
+
+      - name: Commit
+        working-directory: .
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # `git diff` is blind to untracked files, and every run writes new raw
+          # API snapshots. Checking with diff alone would report "nothing to
+          # commit" and exit before staging them, so the audit trail would
+          # never actually land. `git status --porcelain` sees both.
+          if [ -z "$(git status --porcelain -- data web/public/data)" ]; then
+            echo "No change — nothing to commit."
+            exit 0
+          fi
+
+          git add data web/public/data
+          git commit -m "Rebuild game table from ${{ inputs.start_season }}"
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

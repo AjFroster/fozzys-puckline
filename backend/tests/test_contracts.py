@@ -219,3 +219,37 @@ def test_model_version_tracks_the_parameters() -> None:
     moved = ModelParams(elo=base.elo.replace(k=99.0), totals=base.totals)
     assert model_version(base) != model_version(moved)
     assert model_version(base) == model_version(ModelParams())
+
+
+# -- idempotency ------------------------------------------------------------
+
+
+def test_republishing_unchanged_data_writes_nothing(tmp_path: Path) -> None:
+    """The nightly job commits whatever publishing touches.
+
+    Every document carries a wall-clock stamp, so a naive write dirties all 43
+    files every run — committing nightly whether or not anything happened and
+    burning a Cloudflare Pages build each time against a 500-a-month quota.
+    """
+    games = [_game(i, i + 1) for i in range(8)]
+    args = {"today": dt.date(2024, 1, 15), "holdout": 20232024, "out_dir": tmp_path}
+
+    first = publish(games, ModelParams(), **args)  # type: ignore[arg-type]
+    before = {p: p.read_bytes() for p in first.files}
+
+    second = publish(games, ModelParams(), **args)  # type: ignore[arg-type]
+
+    assert first.changed, "the first run should write everything"
+    assert second.changed == [], "the second run should write nothing"
+    assert all(p.read_bytes() == before[p] for p in second.files)
+
+
+def test_real_changes_still_get_written(tmp_path: Path) -> None:
+    """Skipping unchanged files must not skip changed ones."""
+    args = {"today": dt.date(2024, 1, 15), "holdout": 20232024, "out_dir": tmp_path}
+    publish([_game(i, i + 1) for i in range(8)], ModelParams(), **args)  # type: ignore[arg-type]
+
+    with_result = [_game(i, i + 1) for i in range(9)]
+    second = publish(with_result, ModelParams(), **args)  # type: ignore[arg-type]
+
+    assert second.changed, "a new game should produce a write"

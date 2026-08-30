@@ -1,0 +1,94 @@
+name: Recalibrate
+
+# Re-fits the model on the validation seasons and opens a pull request if the
+# parameters moved. It never commits to the default branch on its own: the
+# model that produced every published prediction should change because someone
+# decided it should, not because a Monday job ran.
+on:
+  schedule:
+    - cron: "0 12 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: recalibrate
+  cancel-in-progress: false
+
+jobs:
+  refit:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          cache-dependency-glob: backend/uv.lock
+
+      - name: Install
+        run: uv sync --frozen
+
+      # Both estimators see only the validation seasons. The holdout is never
+      # touched, or it stops measuring anything.
+      - name: Fit Elo parameters
+        run: uv run puckline fit --write | tee fit.log
+
+      - name: Measure goal-model constants
+        run: uv run puckline calibrate-totals --write | tee calibrate.log
+
+      - name: Score the result
+        run: |
+          uv run puckline backtest | tee backtest.log
+          uv run puckline backtest-totals | tee backtest-totals.log
+
+      - name: Open a pull request if anything moved
+        working-directory: .
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- backend/params.json; then
+            echo "Parameters unchanged — nothing to propose."
+            exit 0
+          fi
+
+          BRANCH="recalibrate/$(date -u +%Y-%m-%d)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "${BRANCH}"
+          git add backend/params.json
+          git commit -m "Refit model parameters"
+          git push -u origin "${BRANCH}"
+
+          {
+            echo "Weekly refit moved the parameters. Nothing is published until this merges."
+            echo
+            echo '```diff'
+            git diff origin/"${GITHUB_REF_NAME}" -- backend/params.json | tail -n +5
+            echo '```'
+            echo
+            echo "### Elo"
+            echo '```'
+            cat backend/backtest.log
+            echo '```'
+            echo
+            echo "### Totals"
+            echo '```'
+            cat backend/backtest-totals.log
+            echo '```'
+            echo
+            echo "Merge only if the holdout numbers hold up. A gain that shows up on"
+            echo "validation but not the holdout is the search finding noise."
+          } > pr-body.md
+
+          gh pr create \
+            --base "${GITHUB_REF_NAME}" \
+            --head "${BRANCH}" \
+            --title "Refit model parameters ($(date -u +%Y-%m-%d))" \
+            --body-file pr-body.md

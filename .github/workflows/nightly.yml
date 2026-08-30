@@ -1,0 +1,95 @@
+name: Nightly
+
+# The latest NHL puck drop is 10:30pm Pacific (05:30 UTC) and those games are
+# final by roughly 08:30 UTC, so 11:00 UTC clears the whole slate with margin
+# every night of the year. Actions cron has no timezone support, so everything
+# is UTC and stays correct across both DST shifts.
+#
+# Scheduled runs can fire 5-30 minutes late or skip entirely under platform
+# load. Every step here is idempotent, so a late run, a double run, or a missed
+# run all self-heal on the next execution.
+on:
+  schedule:
+    - cron: "0 11 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "League day to ingest (YYYY-MM-DD). Blank means yesterday."
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+# Never let two nightly runs race on the same branch.
+concurrency:
+  group: nightly
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          cache-dependency-glob: backend/uv.lock
+
+      - name: Install
+        run: uv sync --frozen
+
+      # Results first: ratings must reflect last night before anything is
+      # predicted from them.
+      - name: Ingest results
+        run: uv run puckline ingest-day ${{ inputs.date }}
+
+      # The bulk endpoint that drives backfill carries no start time or venue,
+      # so upcoming games need the schedule endpoint or the slate has no
+      # puck-drop time to show.
+      - name: Ingest upcoming schedule
+        run: uv run puckline ingest-schedule --weeks 2
+
+      # Regenerates past slates too, which is what fills in results for games
+      # played since the last run.
+      - name: Publish
+        run: uv run puckline publish
+
+      - name: Commit
+        working-directory: .
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Publishing skips files whose only change would be the run
+          # timestamp, so an empty diff genuinely means nothing happened.
+          # `git diff` is blind to untracked files, and every run writes new raw
+          # API snapshots. Checking with diff alone would report "nothing to
+          # commit" and exit before staging them, so the audit trail would
+          # never actually land. `git status --porcelain` sees both.
+          if [ -z "$(git status --porcelain -- data web/public/data)" ]; then
+            echo "No change — nothing to commit."
+            exit 0
+          fi
+
+          git add data web/public/data
+          git commit -m "Update ratings and predictions for $(date -u +%Y-%m-%d)"
+
+          # A concurrent push is unlikely with the concurrency group above, but
+          # a manual dispatch can still overlap a scheduled run.
+          for attempt in 1 2 3; do
+            if git pull --rebase --autostash origin "${GITHUB_REF_NAME}" \
+              && git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              echo "Pushed on attempt ${attempt}."
+              exit 0
+            fi
+            echo "Push attempt ${attempt} failed; retrying."
+            sleep 5
+          done
+          echo "Could not push after 3 attempts." >&2
+          exit 1
