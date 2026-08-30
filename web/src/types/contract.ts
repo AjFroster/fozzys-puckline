@@ -168,8 +168,27 @@ export interface SeasonMetrics {
   accuracy: number;
 }
 
+/**
+ * How the model has done over the most recently graded games.
+ *
+ * The season windows are the honest evaluation but they are historical. This is
+ * the number someone opening the page mid-season actually wants.
+ */
+export interface RecentForm {
+  games: number;
+  since: string;
+  through: string;
+  log_loss: number;
+  baseline_log_loss: number;
+  accuracy: number;
+  correct: number;
+  over_under_hit_rate: number;
+  total_mae: number;
+}
+
 export interface Metrics extends Document {
   holdout_season: number;
+  recent: RecentForm | null;
   windows: WindowMetrics[];
   totals: TotalsMetrics[];
   by_season: SeasonMetrics[];

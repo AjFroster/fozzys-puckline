@@ -13,7 +13,7 @@ import {
 } from "recharts";
 import { useMetrics } from "../lib/api";
 import type { WindowMetrics } from "../types/contract";
-import { pct, seasonLabel } from "../lib/format";
+import { longDate, pct, seasonLabel } from "../lib/format";
 import { Card, Loading, PageTitle, Problem, Provenance } from "../components/Chrome";
 
 /** Recharts passes tooltip values through as a loose union. */
@@ -26,7 +26,7 @@ export default function ModelPage() {
   if (metrics.error) return <Problem>{metrics.error}</Problem>;
   if (!metrics.data) return <Problem>No metrics published yet.</Problem>;
 
-  const { windows, totals, by_season, holdout_season } = metrics.data;
+  const { windows, totals, by_season, holdout_season, recent } = metrics.data;
   const holdout = windows.find((w) => w.label.startsWith("holdout"));
 
   return (
@@ -43,6 +43,44 @@ export default function ModelPage() {
         estimator — so the holdout numbers below measure the model on a season it was not
         shaped by.
       </p>
+
+      {recent ? (
+        <>
+          <h2 className="mb-3 font-display text-xl font-semibold tracking-wide uppercase">
+            Lately
+          </h2>
+          <Card className="mb-8 p-5">
+            <p className="mb-4 text-sm text-ice-500 dark:text-ice-300">
+              The last {recent.games} graded games, {longDate(recent.since)} to{" "}
+              {longDate(recent.through)}. Wins and losses both — this is a rolling
+              window, not a chosen one.
+            </p>
+            <dl className="tabular grid grid-cols-2 gap-4 sm:grid-cols-4">
+              <Stat
+                label="Called correctly"
+                value={`${recent.correct} of ${recent.games}`}
+              />
+              <Stat label="Accuracy" value={pct(recent.accuracy)} />
+              <Stat
+                label="Log loss"
+                value={`${recent.log_loss.toFixed(4)} vs ${recent.baseline_log_loss.toFixed(4)}`}
+              />
+              <Stat label="Over/under" value={pct(recent.over_under_hit_rate)} />
+            </dl>
+            <p
+              className={`mt-4 border-t border-ice-100 pt-3 text-sm dark:border-ice-700 ${
+                recent.log_loss < recent.baseline_log_loss
+                  ? "text-good-500 dark:text-good-400"
+                  : "text-rink-500 dark:text-rink-400"
+              }`}
+            >
+              {recent.log_loss < recent.baseline_log_loss
+                ? "Beating the always-home baseline over this window."
+                : "Losing to the always-home baseline over this window."}
+            </p>
+          </Card>
+        </>
+      ) : null}
 
       <h2 className="mb-3 font-display text-xl font-semibold tracking-wide uppercase">
         Win probability
