@@ -113,6 +113,20 @@ def ingest_day(api: NhlApi, date_et: dt.date) -> list[Game]:
     return normalize.from_score(api.score(date_et))
 
 
+def ingest_schedule(api: NhlApi, start: dt.date, weeks: int = 2) -> list[Game]:
+    """Upcoming games, with start times and venues.
+
+    The bulk season endpoint that drives backfill carries neither, so upcoming
+    games land in the table as a skeleton and the slate has no puck-drop time to
+    show. `/schedule` returns a whole game week per request, so a fortnight
+    costs two calls.
+    """
+    games: list[Game] = []
+    for week in range(weeks):
+        games.extend(normalize.from_schedule(api.schedule(start + dt.timedelta(weeks=week))))
+    return games
+
+
 def seasons_between(first: int, last: int) -> list[int]:
     """Inclusive list of season ids, e.g. 20152016 .. 20172018."""
     start = config.season_start_year(first)

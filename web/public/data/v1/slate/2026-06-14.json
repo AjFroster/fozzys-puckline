@@ -1,0 +1,56 @@
+{
+ "schema": "1.0.0",
+ "generated_at": "2026-08-30T01:14:53Z",
+ "model_version": "elo-1.0+cmp-1.0/ec1c67c",
+ "date": "2026-06-14",
+ "games": [
+  {
+   "game_id": 2025030416,
+   "start_utc": null,
+   "state": "FINAL",
+   "venue": null,
+   "home": {
+    "abbrev": "VGK",
+    "elo": 1545.0,
+    "rest_days": 3,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "CAR",
+    "elo": 1594.8,
+    "rest_days": 3,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.4644,
+    "away_win_prob": 0.5356,
+    "home_ml_fair": 115,
+    "away_ml_fair": -115,
+    "home_decimal_fair": 2.153,
+    "away_decimal_fair": 1.867,
+    "exp_goals_home": 3.025,
+    "exp_goals_away": 2.973,
+    "exp_total": 6.218,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.4624,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5621
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4624
+     }
+    ]
+   },
+   "result": {
+    "home_score": 0,
+    "away_score": 3,
+    "last_period": "REG",
+    "total_goals": 3,
+    "home_won": false
+   }
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "schema": "1.0.0",
+ "generated_at": "2026-08-30T01:14:53Z",
+ "model_version": "elo-1.0+cmp-1.0/ec1c67c",
+ "date": "2026-05-15",
+ "games": [
+  {
+   "game_id": 2025030236,
+   "start_utc": null,
+   "state": "FUT",
+   "venue": null,
+   "home": {
+    "abbrev": "MIN",
+    "elo": 1532.5,
+    "rest_days": 2,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "COL",
+    "elo": 1606.9,
+    "rest_days": 2,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.4294,
+    "away_win_prob": 0.5706,
+    "home_ml_fair": 133,
+    "away_ml_fair": -133,
+    "home_decimal_fair": 2.329,
+    "away_decimal_fair": 1.753,
+    "exp_goals_home": 2.924,
+    "exp_goals_away": 3.154,
+    "exp_total": 6.295,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.4758,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5757
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4758
+     }
+    ]
+   },
+   "result": null
+  }
+ ]
+}

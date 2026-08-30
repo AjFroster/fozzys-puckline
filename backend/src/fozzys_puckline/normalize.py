@@ -82,6 +82,62 @@ def _team_block(block: JsonDict) -> tuple[int, str, int | None]:
     return int(block["id"]), str(block["abbrev"]), None if score is None else int(score)
 
 
+def from_schedule(payload: JsonDict) -> list[Game]:
+    """Rows from api-web /schedule, which covers a game week.
+
+    The bulk season endpoint used for backfill carries no start time and no
+    venue, so upcoming games arrive from it as a bare skeleton. This is what
+    fills those in — without it the slate cannot show a puck-drop time, which is
+    most of what a matchup card is for.
+
+    The date lives on the game-week entry rather than on each game, so it is
+    threaded down here.
+    """
+    games: list[Game] = []
+    for day in payload.get("gameWeek", []):
+        date_et = dt.date.fromisoformat(str(day["date"])[:10])
+        for row in day.get("games", []):
+            games.append(_from_web_game(row, date_et))
+    return games
+
+
+def _from_web_game(row: JsonDict, date_et: dt.date) -> Game:
+    """Shared parser for the api-web game shape, used by score and schedule."""
+    home_id, home_abbrev, home_score = _team_block(row["homeTeam"])
+    away_id, away_abbrev, away_score = _team_block(row["awayTeam"])
+
+    state = STATE_MAP.get(str(row.get("gameState", "")), "FUT")
+
+    last_period: LastPeriod | None = None
+    raw_last = (row.get("gameOutcome") or {}).get("lastPeriodType")
+    if raw_last in ("REG", "OT", "SO"):
+        last_period = raw_last
+
+    start_raw = row.get("startTimeUTC")
+    start_utc = (
+        dt.datetime.fromisoformat(str(start_raw).replace("Z", "+00:00")) if start_raw else None
+    )
+
+    game = Game(
+        game_id=int(row["id"]),
+        season=int(row["season"]),
+        game_type=int(row["gameType"]),
+        date_et=date_et,
+        start_utc=start_utc,
+        home_id=home_id,
+        away_id=away_id,
+        home_abbrev=home_abbrev,
+        away_abbrev=away_abbrev,
+        home_score=home_score,
+        away_score=away_score,
+        last_period=last_period,
+        state=state,
+        venue=(row.get("venue") or {}).get("default"),
+        neutral_site=bool(row.get("neutralSite", False)),
+    )
+    return _apply_flags(game)
+
+
 def from_score(payload: JsonDict) -> list[Game]:
     """Rows from one day of api-web /score."""
     games: list[Game] = []

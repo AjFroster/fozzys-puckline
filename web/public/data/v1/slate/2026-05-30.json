@@ -1,0 +1,50 @@
+{
+ "schema": "1.0.0",
+ "generated_at": "2026-08-30T01:14:53Z",
+ "model_version": "elo-1.0+cmp-1.0/ec1c67c",
+ "date": "2026-05-30",
+ "games": [
+  {
+   "game_id": 2025030326,
+   "start_utc": null,
+   "state": "FUT",
+   "venue": null,
+   "home": {
+    "abbrev": "VGK",
+    "elo": 1548.7,
+    "rest_days": 4,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "COL",
+    "elo": 1587.4,
+    "rest_days": 4,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.4804,
+    "away_win_prob": 0.5196,
+    "home_ml_fair": 108,
+    "away_ml_fair": -108,
+    "home_decimal_fair": 2.082,
+    "away_decimal_fair": 1.924,
+    "exp_goals_home": 2.966,
+    "exp_goals_away": 2.839,
+    "exp_total": 6.029,
+    "fair_total_line": 5.5,
+    "fair_line_p_over": 0.5284,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5284
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.429
+     }
+    ]
+   },
+   "result": null
+  }
+ ]
+}

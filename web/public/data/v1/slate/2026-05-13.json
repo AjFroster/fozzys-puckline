@@ -1,0 +1,98 @@
+{
+ "schema": "1.0.0",
+ "generated_at": "2026-08-30T01:14:53Z",
+ "model_version": "elo-1.0+cmp-1.0/ec1c67c",
+ "date": "2026-05-13",
+ "games": [
+  {
+   "game_id": 2025030226,
+   "start_utc": null,
+   "state": "FUT",
+   "venue": null,
+   "home": {
+    "abbrev": "PHI",
+    "elo": 1490.3,
+    "rest_days": 4,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "CAR",
+    "elo": 1586.1,
+    "rest_days": 4,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.3996,
+    "away_win_prob": 0.6004,
+    "home_ml_fair": 150,
+    "away_ml_fair": -150,
+    "home_decimal_fair": 2.503,
+    "away_decimal_fair": 1.665,
+    "exp_goals_home": 2.691,
+    "exp_goals_away": 2.876,
+    "exp_total": 5.796,
+    "fair_total_line": 5.5,
+    "fair_line_p_over": 0.4856,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.4856
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.3875
+     }
+    ]
+   },
+   "result": null
+  },
+  {
+   "game_id": 2025030235,
+   "start_utc": null,
+   "state": "FINAL",
+   "venue": null,
+   "home": {
+    "abbrev": "COL",
+    "elo": 1606.9,
+    "rest_days": 2,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "MIN",
+    "elo": 1532.6,
+    "rest_days": 2,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.6391,
+    "away_win_prob": 0.3609,
+    "home_ml_fair": -177,
+    "away_ml_fair": 177,
+    "home_decimal_fair": 1.565,
+    "away_decimal_fair": 2.771,
+    "exp_goals_home": 3.442,
+    "exp_goals_away": 2.681,
+    "exp_total": 6.332,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.4809,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5833
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4809
+     }
+    ]
+   },
+   "result": {
+    "home_score": 4,
+    "away_score": 3,
+    "last_period": "OT",
+    "total_goals": 7,
+    "home_won": true
+   }
+  }
+ ]
+}
