@@ -158,6 +158,8 @@ def _fit_tie_curve(by_total: dict[int, list[int]], home_share: float) -> tuple[f
 def observed_tie_rate(games: Sequence[Game], seasons: Sequence[int]) -> float:
     """Share of regular-season finals that went past regulation."""
     finals = _regular_finals(games, seasons)
+    if not finals:
+        return 0.0
     return sum(1 for g in finals if g.went_past_regulation) / len(finals)
 
 

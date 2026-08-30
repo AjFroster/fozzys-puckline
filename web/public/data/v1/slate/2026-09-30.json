@@ -1,0 +1,134 @@
+{
+ "schema": "1.0.0",
+ "generated_at": "2026-08-30T01:14:53Z",
+ "model_version": "elo-1.0+cmp-1.0/ec1c67c",
+ "date": "2026-09-30",
+ "games": [
+  {
+   "game_id": 2026020006,
+   "start_utc": "2026-09-30T23:30:00Z",
+   "state": "FUT",
+   "venue": "Xfinity Mobile Arena",
+   "home": {
+    "abbrev": "PHI",
+    "elo": 1490.9,
+    "rest_days": null,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "PIT",
+    "elo": 1502.3,
+    "rest_days": null,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.5195,
+    "away_win_prob": 0.4805,
+    "home_ml_fair": -108,
+    "away_ml_fair": 108,
+    "home_decimal_fair": 1.925,
+    "away_decimal_fair": 2.081,
+    "exp_goals_home": 3.071,
+    "exp_goals_away": 2.882,
+    "exp_total": 6.173,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.4544,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5543
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4544
+     }
+    ]
+   },
+   "result": null
+  },
+  {
+   "game_id": 2026020008,
+   "start_utc": "2026-09-30T23:30:00Z",
+   "state": "FUT",
+   "venue": "Scotiabank Arena",
+   "home": {
+    "abbrev": "TOR",
+    "elo": 1457.7,
+    "rest_days": null,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "NYI",
+    "elo": 1466.3,
+    "rest_days": null,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.5236,
+    "away_win_prob": 0.4764,
+    "home_ml_fair": -110,
+    "away_ml_fair": 110,
+    "home_decimal_fair": 1.91,
+    "away_decimal_fair": 2.099,
+    "exp_goals_home": 3.064,
+    "exp_goals_away": 2.931,
+    "exp_total": 6.216,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.4619,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5617
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4619
+     }
+    ]
+   },
+   "result": null
+  },
+  {
+   "game_id": 2026020007,
+   "start_utc": "2026-10-01T02:00:00Z",
+   "state": "FUT",
+   "venue": "Ball Arena",
+   "home": {
+    "abbrev": "COL",
+    "elo": 1563.7,
+    "rest_days": null,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "LAK",
+    "elo": 1476.7,
+    "rest_days": null,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.6557,
+    "away_win_prob": 0.3443,
+    "home_ml_fair": -190,
+    "away_ml_fair": 190,
+    "home_decimal_fair": 1.525,
+    "away_decimal_fair": 2.905,
+    "exp_goals_home": 3.205,
+    "exp_goals_away": 2.49,
+    "exp_total": 5.914,
+    "fair_total_line": 5.5,
+    "fair_line_p_over": 0.5088,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5088
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4071
+     }
+    ]
+   },
+   "result": null
+  }
+ ]
+}

@@ -23,7 +23,7 @@ def _clip(p: float) -> float:
 def log_loss(probs: Sequence[float], outcomes: Sequence[bool]) -> float:
     """Mean negative log likelihood. Lower is better."""
     if not probs:
-        return float("nan")
+        return 0.0
     total = 0.0
     for p, actual in zip(probs, outcomes, strict=True):
         q = _clip(p)
@@ -34,14 +34,14 @@ def log_loss(probs: Sequence[float], outcomes: Sequence[bool]) -> float:
 def brier_score(probs: Sequence[float], outcomes: Sequence[bool]) -> float:
     """Mean squared error of the probability. Lower is better."""
     if not probs:
-        return float("nan")
+        return 0.0
     return sum((p - float(a)) ** 2 for p, a in zip(probs, outcomes, strict=True)) / len(probs)
 
 
 def accuracy(probs: Sequence[float], outcomes: Sequence[bool]) -> float:
     """Straight-up hit rate at a 0.5 threshold."""
     if not probs:
-        return float("nan")
+        return 0.0
     hits = sum(1 for p, a in zip(probs, outcomes, strict=True) if (p >= 0.5) == a)
     return hits / len(probs)
 
@@ -49,7 +49,7 @@ def accuracy(probs: Sequence[float], outcomes: Sequence[bool]) -> float:
 def skill_score(model: float, baseline: float) -> float:
     """Fractional improvement over a baseline. Positive means better."""
     if baseline == 0:
-        return float("nan")
+        return 0.0
     return 1.0 - (model / baseline)
 
 
@@ -198,7 +198,9 @@ def evaluate(probs: Sequence[float], outcomes: Sequence[bool], bins: int = 10) -
     Beating it is the minimum bar for the engine to be worth anything.
     """
     n = len(probs)
-    rate = (sum(1 for a in outcomes if a) / n) if n else float("nan")
+    # An empty window scores as zero rather than nan: publishing must not fail
+    # because one season has no graded games yet.
+    rate = (sum(1 for a in outcomes if a) / n) if n else 0.0
     flat = [rate] * n
 
     return Evaluation(

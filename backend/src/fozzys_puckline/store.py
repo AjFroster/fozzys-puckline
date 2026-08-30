@@ -14,25 +14,32 @@ import polars as pl
 from fozzys_puckline import config
 from fozzys_puckline.schemas import Game
 
-GAME_COLUMNS = [
-    "game_id",
-    "season",
-    "game_type",
-    "date_et",
-    "start_utc",
-    "home_id",
-    "away_id",
-    "home_abbrev",
-    "away_abbrev",
-    "home_score",
-    "away_score",
-    "last_period",
-    "state",
-    "venue",
-    "neutral_site",
-    "no_fans",
-    "divisional_only",
-]
+# Declared rather than inferred. The two ingest paths carry different columns —
+# the bulk backfill has no start time or venue at all — so letting polars infer
+# dtypes gives an all-null column a Null type that will not stack with real
+# values later. Every write goes through this schema so the table is stable
+# whatever the source.
+GAME_SCHEMA: dict[str, pl.DataType] = {
+    "game_id": pl.Int64(),
+    "season": pl.Int64(),
+    "game_type": pl.Int64(),
+    "date_et": pl.Date(),
+    "start_utc": pl.Datetime(time_unit="us", time_zone="UTC"),
+    "home_id": pl.Int64(),
+    "away_id": pl.Int64(),
+    "home_abbrev": pl.Utf8(),
+    "away_abbrev": pl.Utf8(),
+    "home_score": pl.Int64(),
+    "away_score": pl.Int64(),
+    "last_period": pl.Utf8(),
+    "state": pl.Utf8(),
+    "venue": pl.Utf8(),
+    "neutral_site": pl.Boolean(),
+    "no_fans": pl.Boolean(),
+    "divisional_only": pl.Boolean(),
+}
+
+GAME_COLUMNS = list(GAME_SCHEMA)
 
 
 def snapshot_path(key: str, root: Path | None = None) -> Path:
@@ -58,8 +65,12 @@ def read_snapshot(key: str, root: Path | None = None) -> Any:
 def games_to_frame(games: Iterable[Game]) -> pl.DataFrame:
     rows = [g.model_dump() for g in games]
     if not rows:
-        return pl.DataFrame(schema={c: pl.Null for c in GAME_COLUMNS})
-    return pl.DataFrame(rows).select(GAME_COLUMNS)
+        return empty_frame()
+    return pl.DataFrame(rows, schema=GAME_SCHEMA).select(GAME_COLUMNS)
+
+
+def empty_frame() -> pl.DataFrame:
+    return pl.DataFrame(schema=GAME_SCHEMA)
 
 
 def frame_to_games(frame: pl.DataFrame) -> list[Game]:
@@ -69,8 +80,9 @@ def frame_to_games(frame: pl.DataFrame) -> list[Game]:
 def load_games(path: Path | None = None) -> pl.DataFrame:
     target = path or config.GAMES_PARQUET
     if not target.exists():
-        return pl.DataFrame(schema={c: pl.Null for c in GAME_COLUMNS})
-    return pl.read_parquet(target)
+        return empty_frame()
+    # Cast on read so a table written before a schema change still stacks.
+    return pl.read_parquet(target).cast(GAME_SCHEMA)  # type: ignore[arg-type]
 
 
 def save_games(frame: pl.DataFrame, path: Path | None = None) -> Path:

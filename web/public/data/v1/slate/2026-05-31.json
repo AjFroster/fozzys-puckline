@@ -1,0 +1,50 @@
+{
+ "schema": "1.0.0",
+ "generated_at": "2026-08-30T01:14:53Z",
+ "model_version": "elo-1.0+cmp-1.0/ec1c67c",
+ "date": "2026-05-31",
+ "games": [
+  {
+   "game_id": 2025030316,
+   "start_utc": null,
+   "state": "FUT",
+   "venue": null,
+   "home": {
+    "abbrev": "MTL",
+    "elo": 1535.9,
+    "rest_days": 2,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "CAR",
+    "elo": 1591.1,
+    "rest_days": 2,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.4565,
+    "away_win_prob": 0.5435,
+    "home_ml_fair": 119,
+    "away_ml_fair": -119,
+    "home_decimal_fair": 2.19,
+    "away_decimal_fair": 1.84,
+    "exp_goals_home": 2.839,
+    "exp_goals_away": 2.966,
+    "exp_total": 6.029,
+    "fair_total_line": 5.5,
+    "fair_line_p_over": 0.5284,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5284
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.429
+     }
+    ]
+   },
+   "result": null
+  }
+ ]
+}

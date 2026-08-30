@@ -1,0 +1,258 @@
+{
+ "schema": "1.0.0",
+ "generated_at": "2026-08-30T01:14:53Z",
+ "model_version": "elo-1.0+cmp-1.0/ec1c67c",
+ "holdout_season": 20252026,
+ "windows": [
+  {
+   "label": "validation",
+   "seasons": [
+    20182019,
+    20192020,
+    20202021,
+    20212022,
+    20222023,
+    20232024,
+    20242025
+   ],
+   "games": 7601,
+   "log_loss": 0.66346,
+   "baseline_log_loss": 0.69008,
+   "log_loss_skill": 0.03857,
+   "brier": 0.2356,
+   "brier_skill": 0.0518,
+   "accuracy": 0.5989,
+   "baseline_accuracy": 0.5391,
+   "worst_calibration_z": 0.938,
+   "calibration_threshold": 2.638,
+   "well_calibrated": true,
+   "calibration": [
+    {
+     "lower": 0.1,
+     "upper": 0.2,
+     "count": 1,
+     "mean_predicted": 0.1966,
+     "observed": 0.0,
+     "z": 0.0
+    },
+    {
+     "lower": 0.2,
+     "upper": 0.3,
+     "count": 102,
+     "mean_predicted": 0.2747,
+     "observed": 0.2941,
+     "z": 0.43
+    },
+    {
+     "lower": 0.3,
+     "upper": 0.4,
+     "count": 713,
+     "mean_predicted": 0.362,
+     "observed": 0.3534,
+     "z": 0.481
+    },
+    {
+     "lower": 0.4,
+     "upper": 0.5,
+     "count": 1924,
+     "mean_predicted": 0.454,
+     "observed": 0.4475,
+     "z": 0.574
+    },
+    {
+     "lower": 0.5,
+     "upper": 0.6,
+     "count": 2634,
+     "mean_predicted": 0.5495,
+     "observed": 0.5577,
+     "z": 0.848
+    },
+    {
+     "lower": 0.6,
+     "upper": 0.7,
+     "count": 1737,
+     "mean_predicted": 0.6441,
+     "observed": 0.6413,
+     "z": 0.239
+    },
+    {
+     "lower": 0.7,
+     "upper": 0.8,
+     "count": 474,
+     "mean_predicted": 0.7346,
+     "observed": 0.7532,
+     "z": 0.938
+    },
+    {
+     "lower": 0.8,
+     "upper": 0.9,
+     "count": 16,
+     "mean_predicted": 0.8146,
+     "observed": 0.9375,
+     "z": 2.031
+    }
+   ]
+  },
+  {
+   "label": "holdout 2025-26",
+   "seasons": [
+    20252026
+   ],
+   "games": 1312,
+   "log_loss": 0.68867,
+   "baseline_log_loss": 0.69217,
+   "log_loss_skill": 0.00506,
+   "brier": 0.24774,
+   "brier_skill": 0.00709,
+   "accuracy": 0.5305,
+   "baseline_accuracy": 0.5221,
+   "worst_calibration_z": 2.563,
+   "calibration_threshold": 2.576,
+   "well_calibrated": true,
+   "calibration": [
+    {
+     "lower": 0.2,
+     "upper": 0.3,
+     "count": 5,
+     "mean_predicted": 0.2879,
+     "observed": 0.6,
+     "z": 1.425
+    },
+    {
+     "lower": 0.3,
+     "upper": 0.4,
+     "count": 67,
+     "mean_predicted": 0.3653,
+     "observed": 0.3731,
+     "z": 0.132
+    },
+    {
+     "lower": 0.4,
+     "upper": 0.5,
+     "count": 361,
+     "mean_predicted": 0.4594,
+     "observed": 0.5069,
+     "z": 1.807
+    },
+    {
+     "lower": 0.5,
+     "upper": 0.6,
+     "count": 574,
+     "mean_predicted": 0.55,
+     "observed": 0.4965,
+     "z": 2.563
+    },
+    {
+     "lower": 0.6,
+     "upper": 0.7,
+     "count": 270,
+     "mean_predicted": 0.6375,
+     "observed": 0.6037,
+     "z": 1.137
+    },
+    {
+     "lower": 0.7,
+     "upper": 0.8,
+     "count": 35,
+     "mean_predicted": 0.7332,
+     "observed": 0.7429,
+     "z": 0.131
+    }
+   ]
+  }
+ ],
+ "totals": [
+  {
+   "label": "validation",
+   "games": 8469,
+   "over_under_hit_rate": 0.5076,
+   "model_claimed_rate": 0.4981,
+   "total_mae": 1.8448,
+   "mean_log_likelihood": -2.17303,
+   "modelled_tie_rate": 0.2183,
+   "actual_tie_rate": 0.2183
+  },
+  {
+   "label": "holdout 2025-26",
+   "games": 1312,
+   "over_under_hit_rate": 0.5183,
+   "model_claimed_rate": 0.5004,
+   "total_mae": 1.8454,
+   "mean_log_likelihood": -2.15346,
+   "modelled_tie_rate": 0.2181,
+   "actual_tie_rate": 0.2485
+  }
+ ],
+ "by_season": [
+  {
+   "season": 20152016,
+   "games": 1230,
+   "log_loss": 0.68575,
+   "baseline_log_loss": 0.69143,
+   "accuracy": 0.5504
+  },
+  {
+   "season": 20162017,
+   "games": 1230,
+   "log_loss": 0.67122,
+   "baseline_log_loss": 0.68609,
+   "accuracy": 0.5756
+  },
+  {
+   "season": 20172018,
+   "games": 1271,
+   "log_loss": 0.6737,
+   "baseline_log_loss": 0.6851,
+   "accuracy": 0.5877
+  },
+  {
+   "season": 20182019,
+   "games": 1271,
+   "log_loss": 0.6752,
+   "baseline_log_loss": 0.69047,
+   "accuracy": 0.5799
+  },
+  {
+   "season": 20192020,
+   "games": 1082,
+   "log_loss": 0.67774,
+   "baseline_log_loss": 0.69093,
+   "accuracy": 0.5619
+  },
+  {
+   "season": 20212022,
+   "games": 1312,
+   "log_loss": 0.64693,
+   "baseline_log_loss": 0.69047,
+   "accuracy": 0.6357
+  },
+  {
+   "season": 20222023,
+   "games": 1312,
+   "log_loss": 0.65837,
+   "baseline_log_loss": 0.69203,
+   "accuracy": 0.6181
+  },
+  {
+   "season": 20232024,
+   "games": 1312,
+   "log_loss": 0.65973,
+   "baseline_log_loss": 0.68976,
+   "accuracy": 0.6029
+  },
+  {
+   "season": 20242025,
+   "games": 1312,
+   "log_loss": 0.66568,
+   "baseline_log_loss": 0.68531,
+   "accuracy": 0.5877
+  },
+  {
+   "season": 20252026,
+   "games": 1312,
+   "log_loss": 0.68867,
+   "baseline_log_loss": 0.69217,
+   "accuracy": 0.5305
+  }
+ ]
+}

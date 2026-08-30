@@ -1,23 +1,34 @@
 /**
  * The JSON contract between the Python backend and this app.
  *
- * These types mirror the pydantic models that generate `public/data/v1/*.json`.
- * The path is versioned, so a breaking change ships as `/v2/` and this file
- * gains a sibling rather than being edited in place.
+ * Mirrors the pydantic models in `backend/src/fozzys_puckline/contracts.py`,
+ * which generate everything under `public/data/v1/`. A contract test checks the
+ * two stay in step, so adding a field here without adding it there — or the
+ * reverse — fails CI rather than surfacing as undefined at runtime.
+ *
+ * The path is versioned: a breaking change ships as `/v2/` and gains a sibling
+ * rather than being edited in place.
  */
 
 export type GameState = "FUT" | "PRE" | "LIVE" | "OFF" | "FINAL";
 export type LastPeriod = "REG" | "OT" | "SO";
 
+/** Fields every published document carries. */
+export interface Document {
+  schema: string;
+  generated_at: string;
+  /** Changes whenever the parameters do, so a prediction traces to its model. */
+  model_version: string;
+}
+
 export interface TeamSide {
   abbrev: string;
   elo: number;
-  rest_days: number;
+  rest_days: number | null;
   b2b: boolean;
 }
 
 export interface TotalLine {
-  /** The book line, e.g. 5.5 or 6.5. */
   line: number;
   p_over: number;
 }
@@ -25,18 +36,20 @@ export interface TotalLine {
 export interface Prediction {
   home_win_prob: number;
   away_win_prob: number;
-  /** Fair American odds — no vig applied. Never a sportsbook price. */
+  /** Fair American odds — no vig. Never a sportsbook price. */
   home_ml_fair: number;
   away_ml_fair: number;
+  home_decimal_fair: number;
+  away_decimal_fair: number;
   exp_goals_home: number;
   exp_goals_away: number;
   exp_total: number;
   /**
    * The half-integer line closest to a coin flip.
    *
-   * Not interpolated. Totals are integers, so p_over is a step function and in
-   * general no line sits at exactly 0.500 — publishing an interpolated 5.84
-   * would name a number nobody can bet, which still pays out at 55%.
+   * Not interpolated. Totals are integers, so p_over is a step function and no
+   * line sits at exactly 0.500 — an interpolated 5.84 would name a number
+   * nobody can bet that still pays out at 55%.
    */
   fair_total_line: number;
   /** p_over at fair_total_line, so the residual discreteness stays visible. */
@@ -49,41 +62,126 @@ export interface GameResult {
   away_score: number;
   last_period: LastPeriod;
   total_goals: number;
+  home_won: boolean;
 }
 
 export interface SlateGame {
   game_id: number;
-  start_utc: string;
+  start_utc: string | null;
   state: GameState;
+  venue: string | null;
   home: TeamSide;
   away: TeamSide;
   prediction: Prediction;
-  /** Null until the next morning's grading job fills it in. */
+  /** Null until the grading job fills it in the next morning. */
   result: GameResult | null;
 }
 
-export interface Slate {
-  schema: string;
-  generated_at: string;
-  model_version: string;
+export interface Slate extends Document {
   date: string;
   games: SlateGame[];
 }
 
 export interface TeamRating {
+  team_id: number;
   abbrev: string;
   name: string;
+  /** Includes any between-season regression; the upcoming slate uses this. */
   elo: number;
   rank: number;
   percentile: number;
+  /** Movement over the last seven days the league actually played. */
   elo_7d_change: number;
   /** Win probability against a league-average opponent on neutral ice. */
   win_prob_vs_average: number;
 }
 
-export interface Ratings {
-  schema: string;
-  generated_at: string;
+export interface Ratings extends Document {
   season: number;
   teams: TeamRating[];
+}
+
+export interface RatingPoint {
+  date: string;
+  /** Team abbreviation to rating, for that day. */
+  elo: Record<string, number>;
+}
+
+export interface RatingHistory extends Document {
+  season: number;
+  points: RatingPoint[];
+}
+
+export interface Team {
+  team_id: number;
+  abbrev: string;
+  name: string;
+  logo: string;
+}
+
+export interface Teams extends Document {
+  teams: Team[];
+}
+
+export interface CalibrationBin {
+  lower: number;
+  upper: number;
+  count: number;
+  mean_predicted: number;
+  observed: number;
+  z: number;
+}
+
+export interface WindowMetrics {
+  label: string;
+  seasons: number[];
+  games: number;
+  log_loss: number;
+  baseline_log_loss: number;
+  log_loss_skill: number;
+  brier: number;
+  brier_skill: number;
+  accuracy: number;
+  baseline_accuracy: number;
+  worst_calibration_z: number;
+  calibration_threshold: number;
+  well_calibrated: boolean;
+  calibration: CalibrationBin[];
+}
+
+export interface TotalsMetrics {
+  label: string;
+  games: number;
+  over_under_hit_rate: number;
+  model_claimed_rate: number;
+  total_mae: number;
+  mean_log_likelihood: number;
+  modelled_tie_rate: number;
+  actual_tie_rate: number;
+}
+
+export interface SeasonMetrics {
+  season: number;
+  games: number;
+  log_loss: number;
+  baseline_log_loss: number;
+  accuracy: number;
+}
+
+export interface Metrics extends Document {
+  holdout_season: number;
+  windows: WindowMetrics[];
+  totals: TotalsMetrics[];
+  by_season: SeasonMetrics[];
+}
+
+export interface IndexEntry {
+  date: string;
+  games: number;
+}
+
+export interface Index extends Document {
+  /** Date `latest.json` points at — today if games, else the next game day. */
+  latest_date: string | null;
+  dates: IndexEntry[];
 }

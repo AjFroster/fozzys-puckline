@@ -1,0 +1,104 @@
+{
+ "schema": "1.0.0",
+ "generated_at": "2026-08-30T01:14:53Z",
+ "model_version": "elo-1.0+cmp-1.0/ec1c67c",
+ "date": "2026-05-14",
+ "games": [
+  {
+   "game_id": 2025030215,
+   "start_utc": null,
+   "state": "FINAL",
+   "venue": null,
+   "home": {
+    "abbrev": "BUF",
+    "elo": 1562.0,
+    "rest_days": 2,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "MTL",
+    "elo": 1540.8,
+    "rest_days": 2,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.5661,
+    "away_win_prob": 0.4339,
+    "home_ml_fair": -130,
+    "away_ml_fair": 130,
+    "home_decimal_fair": 1.767,
+    "away_decimal_fair": 2.305,
+    "exp_goals_home": 3.162,
+    "exp_goals_away": 2.782,
+    "exp_total": 6.163,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.4523,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5528
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4523
+     }
+    ]
+   },
+   "result": {
+    "home_score": 3,
+    "away_score": 6,
+    "last_period": "REG",
+    "total_goals": 9,
+    "home_won": false
+   }
+  },
+  {
+   "game_id": 2025030246,
+   "start_utc": null,
+   "state": "FINAL",
+   "venue": null,
+   "home": {
+    "abbrev": "ANA",
+    "elo": 1457.8,
+    "rest_days": 2,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "VGK",
+    "elo": 1523.6,
+    "rest_days": 2,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.4415,
+    "away_win_prob": 0.5585,
+    "home_ml_fair": 126,
+    "away_ml_fair": -126,
+    "home_decimal_fair": 2.265,
+    "away_decimal_fair": 1.791,
+    "exp_goals_home": 3.043,
+    "exp_goals_away": 3.186,
+    "exp_total": 6.444,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.5016,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.6009
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.5016
+     }
+    ]
+   },
+   "result": {
+    "home_score": 1,
+    "away_score": 5,
+    "last_period": "REG",
+    "total_goals": 6,
+    "home_won": false
+   }
+  }
+ ]
+}

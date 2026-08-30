@@ -15,6 +15,7 @@ from fozzys_puckline.goals import over_under_hit_rate, total_mae
 from fozzys_puckline.identity import rating_key
 from fozzys_puckline.metrics import Evaluation
 from fozzys_puckline.params import FITTED_FIELDS, EloParams, ModelParams, load_params
+from fozzys_puckline.publish import publish
 from fozzys_puckline.sources.nhl_api import NhlApi
 from fozzys_puckline.totals import TotalsEngine, mean_log_likelihood
 
@@ -79,6 +80,24 @@ def ingest_day(
     finals = sum(1 for g in games if g.is_final)
     frame = pipeline.persist(games)
     typer.echo(f"{target}: {len(games)} games ({finals} final) — table now {frame.height} rows")
+
+
+@app.command("ingest-schedule")
+def ingest_schedule(
+    start: str = typer.Argument("", help="First date, as YYYY-MM-DD. Defaults to today."),
+    weeks: int = typer.Option(2, help="How many game weeks to pull."),
+) -> None:
+    """Pull upcoming games so the slate has start times and venues."""
+    first = dt.date.fromisoformat(start) if start else dt.date.today()
+
+    with NhlApi() as api:
+        games = pipeline.ingest_schedule(api, first, weeks)
+
+    frame = pipeline.persist(games)
+    with_times = sum(1 for g in games if g.start_utc is not None)
+    typer.echo(
+        f"{len(games)} games ({with_times} with start times) — table now {frame.height} rows"
+    )
 
 
 @app.command()
@@ -276,6 +295,25 @@ def backtest_totals(
 
     if not passed:
         raise typer.Exit(code=1)
+
+
+@app.command("publish")
+def publish_cmd(
+    holdout: int = typer.Option(bt.DEFAULT_HOLDOUT, help="Season held out of fitting."),
+    today: str = typer.Option("", help="Override today's date, as YYYY-MM-DD."),
+) -> None:
+    """Generate every JSON file the site reads."""
+    games = bt.load_ordered_games()
+    if not games:
+        typer.echo("game table is empty — run `puckline backfill`")
+        raise typer.Exit(code=1)
+
+    day = dt.date.fromisoformat(today) if today else None
+    report = publish(games, load_params(), today=day, holdout=holdout)
+
+    typer.echo(f"{len(report.files)} files, {report.slates} slates")
+    typer.echo(f"latest.json points at {report.latest}")
+    typer.echo(f"written under {config.PUBLISH_DIR}")
 
 
 if __name__ == "__main__":
