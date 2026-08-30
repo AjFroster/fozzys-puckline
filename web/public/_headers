@@ -1,7 +1,25 @@
-# Data refreshes once per game day; five minutes of edge cache costs nothing
-# and keeps a traffic spike off the origin.
+# Cloudflare Pages header rules. Applied at the edge, in order.
+
+/*
+  # The site is entirely static and same-origin. The only third parties are
+  # Google Fonts for the two typefaces and the NHL CDN for club logos, so the
+  # policy names exactly those and nothing else.
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://assets.nhle.com; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'none'
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  # Nothing here reads a camera, a location, or a payment method.
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+
+# Data refreshes once per game day. Five minutes of edge cache costs nothing and
+# keeps a traffic spike off the origin, while still picking up a nightly commit
+# well within one refresh.
 /data/*
   Cache-Control: public, max-age=300, s-maxage=300
 
+# Vite fingerprints these, so they can never go stale.
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
+
+# The shell must not be cached hard, or a deploy would not reach anyone.
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate

@@ -373,6 +373,48 @@ def _totals_metrics(
     )
 
 
+RECENT_GAMES = 200
+"""How many recently graded games the running track record covers."""
+
+
+def _recent_form(run: ModelRun) -> contracts.RecentForm | None:
+    """Rolling performance over the most recently graded games.
+
+    Deliberately not filtered to a season or window — this answers "how is it
+    doing lately", which is the question someone opening the page mid-season is
+    actually asking.
+    """
+    graded = sorted(
+        (p for p in run.elo.values() if p.scored and p.game_type == config.REGULAR_SEASON),
+        key=lambda p: (p.date_et, p.game_id),
+    )[-RECENT_GAMES:]
+    if not graded:
+        return None
+
+    probs = [p.home_win_prob for p in graded]
+    outcomes = [bool(p.home_won) for p in graded]
+    evaluation = metrics_mod.evaluate(probs, outcomes)
+
+    totals = [run.totals[p.game_id] for p in graded if p.game_id in run.totals]
+    actuals = [t.actual_total or 0 for t in totals]
+
+    return contracts.RecentForm(
+        games=len(graded),
+        since=graded[0].date_et,
+        through=graded[-1].date_et,
+        log_loss=round(evaluation.log_loss, 5),
+        baseline_log_loss=round(evaluation.baseline_log_loss, 5),
+        accuracy=round(evaluation.accuracy, 4),
+        correct=round(evaluation.accuracy * len(graded)),
+        over_under_hit_rate=round(
+            over_under_hit_rate([t.fair_total_line for t in totals], actuals), 4
+        )
+        if totals
+        else 0.0,
+        total_mae=round(total_mae([t.exp_total for t in totals], actuals), 4) if totals else 0.0,
+    )
+
+
 def build_metrics(
     run: ModelRun,
     games: Sequence[Game],
@@ -405,6 +447,7 @@ def build_metrics(
         generated_at=generated_at,
         model_version=version,
         holdout_season=holdout,
+        recent=_recent_form(run),
         windows=[
             _window_metrics("validation", validation, run, games),
             _window_metrics(f"holdout {config.season_label(holdout)}", hold, run, games),

@@ -35,8 +35,8 @@ makes the track record on `/model` auditable rather than a claim.
 | M4 publish layer | next |
 | M5 frontend | done |
 | M6 automation | done |
-| M7 Cloudflare deploy | next |
-| M8 track record and docs | |
+| M7 Cloudflare deploy | config ready, needs the account connected |
+| M8 track record and docs | done |
 
 ## Backend
 
@@ -140,6 +140,15 @@ Each October, before the first game:
 2. Run `backfill.yml` via **Run workflow** to pick up the new season's schedule
    and carry ratings over.
 3. Confirm the site shows the correct date on opening night.
+
+## Deploying
+
+Cloudflare Pages, connected to `main`. Root `web/`, build `npm run build`,
+output `dist`. Caching, security headers, and the single-page-app fallback ship
+with the build via `web/public/_headers` and `_redirects`.
+
+Full runbook, including the R2 upgrade path for live scores:
+[docs/DEPLOYING.md](docs/DEPLOYING.md).
 
 ## Data sources
 

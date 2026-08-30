@@ -317,6 +317,16 @@ a pass by 0.02σ, which is to say it is at the line rather than clear of it.
 | Over/under hit rate at the fair line | ~50% | M3 |
 | Closing line value | — | Needs market odds; deferred |
 
+## The published track record
+
+`/model` on the site shows all of this from `metrics.json`, including a rolling
+window over the last 200 graded games. That window is not chosen — it moves with
+the schedule, and it shows the losses.
+
+Three things are deliberately shown rather than smoothed over: the holdout is
+much weaker than validation, the per-season chart makes that visible, and the
+page says plainly that a season of 1,312 games is a noisy test.
+
 ## Known gaps
 
 - **Starting goalie is not modelled.** This is the largest single missing

@@ -175,8 +175,28 @@ class SeasonMetrics(BaseModel):
     accuracy: float
 
 
+class RecentForm(BaseModel):
+    """How the model has done over the most recently graded games.
+
+    The season windows are the honest evaluation, but they are historical. This
+    is the number someone actually wants when they open the page mid-season:
+    how is it doing *now*, wins and losses both.
+    """
+
+    games: int
+    since: dt.date
+    through: dt.date
+    log_loss: float
+    baseline_log_loss: float
+    accuracy: float
+    correct: int
+    over_under_hit_rate: float
+    total_mae: float
+
+
 class Metrics(Document):
     holdout_season: int
+    recent: RecentForm | None = None
     windows: list[WindowMetrics]
     totals: list[TotalsMetrics]
     by_season: list[SeasonMetrics]

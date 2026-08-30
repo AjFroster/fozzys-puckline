@@ -1,8 +1,19 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-08-30T01:14:53Z",
+ "generated_at": "2026-08-30T01:47:51Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "holdout_season": 20252026,
+ "recent": {
+  "games": 200,
+  "since": "2026-03-22",
+  "through": "2026-04-16",
+  "log_loss": 0.6718,
+  "baseline_log_loss": 0.6907,
+  "accuracy": 0.555,
+  "correct": 111,
+  "over_under_hit_rate": 0.55,
+  "total_mae": 1.9517
+ },
  "windows": [
   {
    "label": "validation",
