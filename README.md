@@ -30,8 +30,8 @@ makes the track record on `/model` auditable rather than a claim.
 | --------- | ----- |
 | M0 scaffold | done |
 | M1 ingest and backfill | done |
-| M2 Elo engine and backtest | next |
-| M3 totals model | |
+| M2 Elo engine and backtest | done |
+| M3 totals model | next |
 | M4 publish layer | |
 | M5 frontend | |
 | M6 automation | |
@@ -57,6 +57,9 @@ Commands:
 | `puckline backfill` | Rebuild the game table from the bulk season endpoint. ~25 requests for a decade. |
 | `puckline ingest-day [DATE]` | Pull one league day of results. Defaults to yesterday. |
 | `puckline stats` | Row counts per season, for eyeballing table health. |
+| `puckline rate` | Current Elo ratings from the full game history. |
+| `puckline backtest` | Score the current `params.json` walk-forward. |
+| `puckline fit --write` | Re-fit parameters on the validation window and save them. |
 
 Backfill self-checks against known season totals. A clean run looks like this:
 

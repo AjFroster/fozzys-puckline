@@ -6,7 +6,12 @@ import datetime as dt
 
 import typer
 
+from fozzys_puckline import backtest as bt
 from fozzys_puckline import config, pipeline, store
+from fozzys_puckline.fit import fit as run_fit
+from fozzys_puckline.identity import rating_key
+from fozzys_puckline.metrics import Evaluation
+from fozzys_puckline.params import FITTED_FIELDS, EloParams
 from fozzys_puckline.sources.nhl_api import NhlApi
 
 app = typer.Typer(
@@ -84,6 +89,100 @@ def stats() -> None:
         kind = "reg" if row["game_type"] == config.REGULAR_SEASON else "post"
         typer.echo(f"  {config.season_label(row['season'])} {kind:<4} {row['games']:>5}")
     typer.echo(f"{frame.height} rows total")
+
+
+def _report(label: str, evaluation: Evaluation) -> None:
+    e = evaluation
+    verdict = "beats baseline" if e.beats_baseline else "LOSES TO BASELINE"
+    calib = "calibrated" if e.well_calibrated else "MISCALIBRATED"
+    typer.echo(f"\n{label}  n={e.games}")
+    typer.echo(
+        f"  log loss {e.log_loss:.5f}  baseline {e.baseline_log_loss:.5f}"
+        f"  skill {e.log_loss_skill:+.4f}  ({verdict})"
+    )
+    typer.echo(f"  brier    {e.brier:.5f}  skill {e.brier_skill:+.4f}")
+    typer.echo(f"  accuracy {e.accuracy:.4f}  baseline {e.baseline_accuracy:.4f}")
+    typer.echo(
+        f"  calibration: worst bin {e.worst_z:.2f} sigma over {e.tested_bins} bins,"
+        f" threshold {e.calibration_threshold:.2f} ({calib})"
+    )
+
+
+@app.command()
+def backtest(
+    holdout: int = typer.Option(bt.DEFAULT_HOLDOUT, help="Season held out of fitting."),
+    validation: bool = typer.Option(True, help="Also report the validation window."),
+) -> None:
+    """Score the current params.json walk-forward."""
+    games = bt.load_ordered_games()
+    if not games:
+        typer.echo("game table is empty — run `puckline backfill`")
+        raise typer.Exit(code=1)
+
+    params = EloParams.from_json()
+    valid, hold = bt.evaluation_windows(games, holdout)
+
+    if validation:
+        _report("VALIDATION", bt.run(games, params, eval_seasons=valid).evaluation)
+    result = bt.run(games, params, eval_seasons=hold)
+    _report(f"HOLDOUT {config.season_label(holdout)}", result.evaluation)
+
+    if not result.evaluation.beats_baseline:
+        raise typer.Exit(code=1)
+
+
+@app.command()
+def fit(
+    holdout: int = typer.Option(bt.DEFAULT_HOLDOUT, help="Season kept out of the search."),
+    rounds: int = typer.Option(4, help="Coordinate-descent passes."),
+    write: bool = typer.Option(False, help="Write the result to params.json."),
+) -> None:
+    """Fit parameters on the validation window. Never touches the holdout."""
+    games = bt.load_ordered_games()
+    if not games:
+        typer.echo("game table is empty — run `puckline backfill`")
+        raise typer.Exit(code=1)
+
+    valid, hold = bt.evaluation_windows(games, holdout)
+    typer.echo(f"fitting on {config.season_label(valid[0])} .. {config.season_label(valid[-1])}")
+
+    result = run_fit(games, valid, rounds=rounds)
+    typer.echo(f"{result.evaluations} evaluations")
+    for name in FITTED_FIELDS:
+        typer.echo(f"  {name:<12} {getattr(result.params, name)}")
+
+    _report("VALIDATION", bt.run(games, result.params, eval_seasons=valid).evaluation)
+    _report(
+        f"HOLDOUT {config.season_label(holdout)}",
+        bt.run(games, result.params, eval_seasons=hold).evaluation,
+    )
+
+    if write:
+        typer.echo(f"\nwrote {result.params.to_json()}")
+    else:
+        typer.echo("\nnot written — pass --write to save to params.json")
+
+
+@app.command()
+def rate(top: int = typer.Option(10, help="How many teams to show.")) -> None:
+    """Current Elo ratings from the full game history."""
+    games = bt.load_ordered_games()
+    if not games:
+        typer.echo("game table is empty — run `puckline backfill`")
+        raise typer.Exit(code=1)
+
+    result = bt.run(games, EloParams.from_json(), eval_seasons=None, keep_predictions=False)
+
+    # Rating keys are team ids. Label them from the most recent game each club
+    # played, which also gives clubs that changed id their current name.
+    names: dict[int, str] = {}
+    for game in games:
+        names[rating_key(game.home_id)] = game.home_abbrev
+        names[rating_key(game.away_id)] = game.away_abbrev
+
+    ranked = sorted(result.ratings.items(), key=lambda kv: kv[1], reverse=True)
+    for rank, (team, rating) in enumerate(ranked[:top], start=1):
+        typer.echo(f"  {rank:>2}. {names.get(team, str(team)):<4} {rating:>7.1f}")
 
 
 if __name__ == "__main__":

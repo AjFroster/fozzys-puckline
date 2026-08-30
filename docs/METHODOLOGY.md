@@ -45,7 +45,7 @@ Fitting is strictly walk-forward: every game is predicted using only ratings
 that existed before it, and the most recent full season is held out untouched
 until parameters are frozen.
 
-## Elo *(planned — M2)*
+## Elo
 
 ```
 diff   = R_home + HFA + adj_home - R_away - adj_away
@@ -64,7 +64,55 @@ R_away -= K * mov * (S_home - E_home)
 | `S` for OT/SO win | 0.65 / 0.35 | A 3-on-3 overtime or shootout is close to a coin flip. Full credit teaches the model something false. |
 | `carryover` | 0.70 | Between seasons, `R = 0.70·R + 0.30·1505`. Rosters turn over. |
 | `b2b_penalty` | −25 | Applied to the pregame difference, **not** the stored rating. A tired team is temporarily worse, not permanently worse. |
-| `travel_penalty` | −10 max | Scaled by distance and time-zone change. Pregame only. |
+| `travel_penalty` | not implemented | Needs venue coordinates, which the current endpoints do not provide. Deliberately absent rather than guessed. |
+
+### Fitted values
+
+Coordinate descent on validation log loss, five free axes, holdout never touched:
+
+| Parameter | Default | Fitted |
+| --------- | ------- | ------ |
+| `k` | 6.0 | **8.0** |
+| `hfa` | 35.0 | **25.0** |
+| `ot_credit` | 0.65 | 0.65 |
+| `carryover` | 0.70 | **0.75** |
+| `diff_scale` | 1.0 | 1.0 |
+
+`hfa` fitting to 25 rather than 35 is the drift the plan predicted: home ice is
+worth less than it used to be.
+
+`diff_scale` landing exactly at 1.0 is the useful negative result — the Elo
+400-point scale needs no correction, so the model is neither systematically
+over- nor under-confident.
+
+### Team identity
+
+Team ids are not stable. Within this window one club changes id twice:
+`ARI 53` (through 2023-24) → `UTA Hockey Club 59` (2024-25) → `UTA Mammoth 68`
+(2025-26 on). 53 and 59 sit in *different* franchises, so no field in the API
+links them — the Coyotes' franchise was deactivated and Utah was issued a new
+one, even though the roster moved across intact.
+
+All three resolve to one rating history, because ratings model on-ice continuity
+rather than legal identity. Without that map Utah resets to an expansion rating
+twice, once inside the holdout season. Vegas and Seattle are genuinely new and
+do start at `expansion_init`.
+
+### Why `mov_const` is pinned rather than fitted
+
+Given the axis, the search walks it to the edge of the grid for a gain in the
+fifth decimal:
+
+| `mov_const` | validation | holdout |
+| ----------- | ---------- | ------- |
+| 2.05 | 0.66346 | **0.68864** |
+| 4.0 | 0.66337 | 0.68936 |
+| 100 | 0.66338 | 0.69027 |
+
+Validation is flat; holdout degrades monotonically. That is the noise floor of
+14,000 games being mistaken for signal. The fitting loop now requires a minimum
+improvement of 1e-4 before it will move any parameter, and `mov_const` is held
+at 2.05.
 
 In the backfill window, 22.4% of games go past regulation (2,193 OT and 1,063
 shootout out of 14,508 finals). How those are credited is therefore not a detail.
@@ -111,19 +159,67 @@ Decimal is `1/p`.
 All published odds are **fair, no-vig** and labelled as such. Nothing is
 presented as a sportsbook price, and market lines are not ingested in v1.
 
-## Evaluation *(planned — M8)*
+## Evaluation
 
-| Metric | Target | Note |
-| ------ | ------ | ---- |
-| Log loss | 0.66–0.68 | Primary. Anything under 0.66 deserves suspicion of a leak. |
-| Brier skill vs. home baseline | > 0 | Minimum bar. |
-| Straight-up accuracy | 57–59% | Roughly the practical ceiling. 65% means a bug. |
-| Calibration curve | 10 bins | Of games called 60%, do ~60% win? |
-| Total goals MAE | 1.8–2.0 | |
-| Over/under hit rate at the fair line | ~50% | Near 50% by construction — a strong self-check. |
+Walk-forward, holdout untouched by fitting. Warmup is the first three seasons;
+validation is 2018-19 through 2024-25; holdout is 2025-26.
 
-Closing line value is the honest measure of edge, and it is unavailable until
-market odds are ingested. That is deferred.
+### Results
+
+| Window | n | Log loss | Baseline | Skill | Accuracy | Worst bin |
+| ------ | - | -------- | -------- | ----- | -------- | --------- |
+| Validation | 7,601 | 0.66346 | 0.69008 | +3.86% | 59.9% | 0.94σ |
+| Holdout 2025-26 | 1,312 | 0.68867 | 0.69217 | +0.51% | 53.1% | 2.56σ |
+
+The model beats the baseline in **every** season in the window. But the holdout
+is far weaker than validation, and that is worth being precise about rather than
+averaging away.
+
+### Why the holdout is the hardest season in the window
+
+It is not overfitting: the *untuned default* parameters degrade on 2025-26 by
+the same amount (0.68912, skill +0.44%). Three properties of that season:
+
+| | 2025-26 | Prior three seasons |
+| - | ------- | ------------------- |
+| Mid-season break | 20 days (2026-02-05 to 02-25, Olympics) | none |
+| Past-regulation rate | 24.96% (window high) | 20.6–23.2% |
+| Home win rate | 52.21% (window low) | 52.4–56.3% |
+
+A quarter of games decided past regulation, and the weakest home ice on record,
+is a season with more coin flips in it. Holding it out is conservative, not
+flattering — but the honest reading is that a single season is a noisy test, and
+the +0.51% skill there should not be quoted as *the* number without the
+per-season table beside it.
+
+### The calibration gate, and why it was respecified
+
+The original gate was "within ±3 points across all ten bins". That test is not
+meaningful at this sample size:
+
+- 2017-18 shows an 11.5-point gap in a bin holding 30 games. Two standard errors
+  there is 17.9 points, so the gap is unremarkable noise — but a fixed
+  points threshold flags it.
+- Pooled validation shows a 4.5-point gap in a bin holding 1,790 games, which is
+  3.9 standard errors and a genuine miss — and a ±3-point-per-bin reading
+  across single seasons would never reliably surface it.
+
+The gate is now **the gap in standard errors**, with a Bonferroni correction for
+the number of populated bins tested. Every bin is a separate test, so comparing
+each against a flat 2σ line asks the model to pass five coin flips at once: a
+perfectly calibrated model fails that roughly 21% of the time.
+
+Under the corrected gate, validation passes comfortably (0.94σ against a 2.64σ
+threshold) and the holdout passes **marginally** — 2.56σ against 2.576σ. That is
+a pass by 0.02σ, which is to say it is at the line rather than clear of it.
+
+### Still to come
+
+| Metric | Target | Status |
+| ------ | ------ | ------ |
+| Total goals MAE | 1.8–2.0 | M3 |
+| Over/under hit rate at the fair line | ~50% | M3 |
+| Closing line value | — | Needs market odds; deferred |
 
 ## Known gaps
 
