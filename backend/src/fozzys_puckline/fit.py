@@ -15,9 +15,11 @@ from __future__ import annotations
 from collections.abc import Callable, Sequence
 from dataclasses import dataclass, field
 
-from fozzys_puckline import backtest
+from fozzys_puckline import backtest, config
 from fozzys_puckline.params import FITTED_FIELDS, EloParams
 from fozzys_puckline.schemas import Game
+from fozzys_puckline.totals import FITTED_FIELDS as TOTALS_FITTED
+from fozzys_puckline.totals import TotalsEngine, TotalsParams, mean_log_likelihood
 
 # Candidate values per fitted axis. Deliberately coarse — resolution finer than
 # the noise floor of 14,000 games is false precision.
@@ -103,3 +105,67 @@ def fit(
             break
 
     return FitResult(params=best, log_loss=best_loss, evaluations=evaluations, history=history)
+
+
+TOTALS_GRID: dict[str, tuple[float, ...]] = {
+    "half_life": (10.0, 15.0, 20.0, 30.0, 45.0, 70.0),
+    "prior_games": (10.0, 20.0, 30.0, 45.0, 70.0),
+    "carryover": (0.3, 0.4, 0.5, 0.6, 0.7, 0.8),
+}
+
+TOTALS_TOLERANCE = 1e-4
+
+
+@dataclass(slots=True)
+class TotalsFitResult:
+    params: TotalsParams
+    log_likelihood: float
+    evaluations: int
+
+
+def fit_totals(
+    games: Sequence[Game],
+    validation_seasons: Sequence[int],
+    *,
+    start: TotalsParams | None = None,
+    rounds: int = 3,
+    tolerance: float = TOTALS_TOLERANCE,
+) -> TotalsFitResult:
+    """Coordinate descent on validation log likelihood of the observed total.
+
+    Log likelihood rather than over/under hit rate: a model can sit at exactly
+    50% on the hit rate while being uselessly vague about every single game.
+    Hit rate is the calibration check, not the objective.
+    """
+    wanted = set(validation_seasons)
+    best = start or TotalsParams()
+
+    def score(candidate: TotalsParams) -> float:
+        predictions = [
+            p
+            for p in TotalsEngine(params=candidate).run(games)
+            if p.scored and p.game_type == config.REGULAR_SEASON and p.season in wanted
+        ]
+        return mean_log_likelihood(predictions)
+
+    best_score = score(best)
+    evaluations = 1
+
+    for _ in range(rounds):
+        improved = False
+        for field_name in TOTALS_FITTED:
+            for value in TOTALS_GRID[field_name]:
+                if value == getattr(best, field_name):
+                    continue
+                candidate = best.replace(**{field_name: value})
+                result = score(candidate)
+                evaluations += 1
+                # Higher is better here, so the tolerance guard flips sign.
+                if result > best_score + tolerance:
+                    best_score = result
+                    best = candidate
+                    improved = True
+        if not improved:
+            break
+
+    return TotalsFitResult(params=best, log_likelihood=best_score, evaluations=evaluations)

@@ -117,39 +117,135 @@ at 2.05.
 In the backfill window, 22.4% of games go past regulation (2,193 OT and 1,063
 shootout out of 14,508 finals). How those are credited is therefore not a detail.
 
-## Totals and over/under *(planned — M3)*
+## Totals and over/under
 
-Elo is unitless — it cannot produce a goal total. A second, independent
-estimator handles that:
+Elo is unitless and cannot produce a goal total, so this is a second, independent
+estimator. Most of what the original plan specified for it turned out to be wrong
+once measured against the data; what follows is what the data actually supports.
+
+### Regulation scores are exactly recoverable
+
+Book totals settle on the **final** score including overtime and the shootout,
+and a shootout winner is credited exactly one goal. But rates must be estimated
+on *regulation* goals — learning from final scores folds the overtime goal into
+every team's attack rate and inflates every total the model publishes.
+
+Both are available. Reaching overtime requires regulation to have been tied, and
+the winner is credited exactly one goal, so removing that goal reconstructs
+regulation without ambiguity. Verified across all 14,508 finals in the backfill:
+every reconstruction comes out tied, none goes negative.
+
+### The rate model
 
 ```
-A_team = goals_for_per60     / league_mean    # attack multiplier
-D_team = goals_against_per60 / league_mean    # defense multiplier
+attack  = (ewma_goals_for     + prior * league) / ((weight + prior) * league)
+defense = (ewma_goals_against + prior * league) / ((weight + prior) * league)
 
-lam_home = L * A_home * D_away * home_goal_boost
-lam_away = L * A_away * D_home
+lam_home = 2 * league *      home_share  * attack_home * defense_away
+lam_away = 2 * league * (1 - home_share) * attack_away * defense_home
 ```
 
-Rates are exponentially weighted with a ~20-game half-life and shrunk toward the
-league mean, so early-season numbers are not wild. Regulation goals are Poisson;
-the total is the convolution, solved in closed form.
+Exponentially weighted with a 30-game half-life, shrunk toward league average by
+a 30-game prior. **A team ages only on its own games.** Ageing every team on
+every league game applies the half-life about sixteen times too fast — a team
+plays 82 of the season's 1,312 games — which collapsed every multiplier onto the
+prior and left predicted totals with a standard deviation of 0.04 goals across
+all matchups. That bug made the model produce essentially one number for every
+game.
 
-Three things decide whether this is right or subtly wrong:
+### Totals are under-dispersed, so the negative binomial is the wrong family
 
-1. **Book totals settle including overtime and the shootout**, and a shootout
-   winner is credited exactly one goal. Modelling regulation only and comparing
-   to a book line is a silent, permanent bias. When regulation ends tied, add one
-   goal; the probability of that tie comes from the Skellam of the two Poissons.
-2. **Empty-net goals fatten the right tail.** Pure Poisson slightly
-   under-predicts 8+ goal games. A negative binomial is fitted as an alternative
-   and the backtest chooses.
-3. **The Poisson pair implies its own win probability.** When it disagrees with
-   Elo by more than 5 points, flag the game. Persistent disagreement is a bug
-   signal, not noise.
+The plan called for a negative binomial to model a fat right tail from empty-net
+goals. The data says the opposite: final totals have **variance 5.29 against a
+mean 6.00**, a ratio of 0.88. That is under-dispersion, and a negative binomial
+can only ever *add* variance — reaching for it would move the model further from
+the data.
 
-Published per game: `exp_total`, `p_over` at 5.5 and 6.5, and `fair_total_line`
-— the total where `p_over` is 0.500. That last number is book-independent and
-more useful than either fixed line.
+The model uses a **Conway-Maxwell-Poisson** shape instead, which handles both
+directions. The fitted value is 1.162, where 1.0 would be exactly Poisson.
+
+This is not cosmetic. Excess spread in a right-skewed distribution drags the
+median below the mean, and the median is what sets the published line.
+
+### The tie correction
+
+The final total is the regulation total plus one goal when regulation ended
+tied, so `P(tie)` matters directly. Independent Poisson is badly wrong about it,
+and about the margin generally:
+
+| Regulation margin | Observed | Independent Poisson |
+| ----------------- | -------- | ------------------- |
+| 0 (tie) | 22.4% | 16.9% |
+| 1 | 19.6% | 30.8% |
+| 3 | 22.7% | 14.8% |
+
+Empty-net goals push one-goal games out to two and three, and pulled-goalie
+pressure pushes others back to a tie. Both drain the same bucket, and an
+independence assumption cannot express either.
+
+So `P(tie | regulation total)` is modelled directly rather than derived from a
+joint. The excess over the binomial baseline is close to linear in the total once
+expressed in log odds — measured at +18.4 points at a total of 2, decaying to
++1.2 points at 10 — which is what the two tie parameters describe.
+
+The slope is fitted by weighted least squares, and then **the intercept is solved
+so the model's marginal tie rate matches the observed one.** Least squares in log
+odds does not preserve the aggregate; left alone it understated the marginal by
+about two points, and since every tie adds exactly one goal, that landed directly
+on every published total as a level bias.
+
+### The fair line is a real half-integer
+
+The plan's JSON contract specified a continuous `fair_total_line` such as 6.1.
+That is not a well-defined quantity. Totals are integers, so `p_over` is a step
+function: for a Poisson(6) total, `p_over(5.5)` is 0.554 and `p_over(6.5)` is
+0.394, with nothing in between. Interpolating those to 5.84 produces a number
+nobody can bet which does not have the property it claims — as an actual line,
+5.84 still resolves every total of 6 as an over, so it pays at 55.4%, not 50%.
+
+`fair_total_line` is therefore the half-integer line closest to a coin flip, and
+`fair_line_p_over` is published beside it so the residual discreteness is visible
+rather than implied away.
+
+### What is not shipped
+
+The plan called for cross-checking the Elo win probability against the one
+implied by the goal model, flagging disagreements over 5 points. **That check is
+not shipped.** Independent Poisson misprices the regulation margin by up to 11
+points, so the flag would fire constantly on the goal model's own defect rather
+than on any real disagreement — worse than having no check at all.
+
+### Estimation discipline
+
+`league_goals`, `home_share`, `dispersion`, and the two tie parameters are
+**measured** on the validation seasons, not fitted. Only `half_life`,
+`prior_games`, and `carryover` are searched.
+
+That split is not academic. When `tie_intercept` was inside the likelihood sweep
+it moved from a measured 0.64 to 0.50 and made the published over/under
+measurably worse — the likelihood was happy to buy distribution-shape fit with a
+quantity that can be measured precisely on its own.
+
+An earlier pass estimated these constants on the **full** backfill, holdout
+included. That is a leak, and it invalidated the holdout regardless of the
+result. The constants differ materially once corrected — the tie intercept was
+0.93 on the full window against 0.64 on validation only.
+
+### Results
+
+| Window | n | O/U at fair line | Model claims | Deviation | Total MAE |
+| ------ | - | ---------------- | ------------ | --------- | --------- |
+| Validation | 8,469 | 0.5076 | 0.4981 | 1.74σ | 1.845 |
+| Holdout 2025-26 | 1,312 | 0.5183 | 0.5004 | 1.29σ | 1.845 |
+
+Both inside the 48–52% gate, and neither deviation is significant.
+
+A residual level bias remains: the model under-predicts the mean total by 0.04
+goals on validation and 0.10 on the holdout. On the holdout that is almost
+entirely the tie rate — 2025-26 sent **24.85%** of games past regulation against
+the model's 21.8%, the highest rate in the window. The model estimates a single
+league-wide tie rate and cannot anticipate a season being unusually prone to
+overtime, which is a real limitation rather than a tuning error.
 
 ## Odds presentation
 

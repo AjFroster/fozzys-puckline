@@ -9,8 +9,10 @@ and everything else is pinned to a value with a stated reason.
 from __future__ import annotations
 
 import json
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, field
 from pathlib import Path
+
+from fozzys_puckline.totals import TotalsParams
 
 PARAMS_PATH = Path(__file__).resolve().parents[2] / "params.json"
 
@@ -64,18 +66,38 @@ class EloParams:
     def replace(self, **changes: float) -> EloParams:
         return EloParams(**{**asdict(self), **changes})
 
-    def to_json(self, path: Path | None = None) -> Path:
-        target = path or PARAMS_PATH
-        target.write_text(json.dumps(asdict(self), indent=2) + "\n", encoding="utf-8")
-        return target
-
     @classmethod
     def from_json(cls, path: Path | None = None) -> EloParams:
-        target = path or PARAMS_PATH
-        if not target.exists():
-            return cls()
-        return cls(**json.loads(target.read_text(encoding="utf-8")))
+        return load_params(path).elo
 
 
 # The parameters the sweep is allowed to touch.
 FITTED_FIELDS = ("k", "hfa", "ot_credit", "carryover", "diff_scale")
+
+
+@dataclass(frozen=True, slots=True)
+class ModelParams:
+    """Everything params.json holds: the rating model and the goal model."""
+
+    elo: EloParams = field(default_factory=EloParams)
+    totals: TotalsParams = field(default_factory=TotalsParams)
+
+    def to_json(self, path: Path | None = None) -> Path:
+        target = path or PARAMS_PATH
+        payload = {"elo": asdict(self.elo), "totals": asdict(self.totals)}
+        target.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+        return target
+
+
+def load_params(path: Path | None = None) -> ModelParams:
+    """Read params.json, tolerating the flat Elo-only layout M2 wrote."""
+    target = path or PARAMS_PATH
+    if not target.exists():
+        return ModelParams()
+    payload = json.loads(target.read_text(encoding="utf-8"))
+    if "elo" not in payload:  # legacy flat file
+        return ModelParams(elo=EloParams(**payload))
+    return ModelParams(
+        elo=EloParams(**payload["elo"]),
+        totals=TotalsParams(**payload.get("totals", {})),
+    )
