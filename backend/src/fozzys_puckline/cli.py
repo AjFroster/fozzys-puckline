@@ -3,16 +3,20 @@
 from __future__ import annotations
 
 import datetime as dt
+import math
 
 import typer
 
 from fozzys_puckline import backtest as bt
 from fozzys_puckline import config, pipeline, store
+from fozzys_puckline.calibrate import calibrate, match_tie_marginal, observed_tie_rate
 from fozzys_puckline.fit import fit as run_fit
+from fozzys_puckline.goals import over_under_hit_rate, total_mae
 from fozzys_puckline.identity import rating_key
 from fozzys_puckline.metrics import Evaluation
-from fozzys_puckline.params import FITTED_FIELDS, EloParams
+from fozzys_puckline.params import FITTED_FIELDS, EloParams, ModelParams, load_params
 from fozzys_puckline.sources.nhl_api import NhlApi
+from fozzys_puckline.totals import TotalsEngine, mean_log_likelihood
 
 app = typer.Typer(
     add_completion=False,
@@ -158,7 +162,9 @@ def fit(
     )
 
     if write:
-        typer.echo(f"\nwrote {result.params.to_json()}")
+        typer.echo(
+            f"\nwrote {ModelParams(elo=result.params, totals=load_params().totals).to_json()}"
+        )
     else:
         typer.echo("\nnot written — pass --write to save to params.json")
 
@@ -183,6 +189,93 @@ def rate(top: int = typer.Option(10, help="How many teams to show.")) -> None:
     ranked = sorted(result.ratings.items(), key=lambda kv: kv[1], reverse=True)
     for rank, (team, rating) in enumerate(ranked[:top], start=1):
         typer.echo(f"  {rank:>2}. {names.get(team, str(team)):<4} {rating:>7.1f}")
+
+
+@app.command("calibrate-totals")
+def calibrate_totals(
+    holdout: int = typer.Option(bt.DEFAULT_HOLDOUT, help="Season kept out of estimation."),
+    write: bool = typer.Option(False, help="Write the result to params.json."),
+) -> None:
+    """Measure the goal-model constants on the validation seasons only."""
+    games = bt.load_ordered_games()
+    if not games:
+        typer.echo("game table is empty — run `puckline backfill`")
+        raise typer.Exit(code=1)
+
+    valid, _ = bt.evaluation_windows(games, holdout)
+    typer.echo(f"measuring on {config.season_label(valid[0])} .. {config.season_label(valid[-1])}")
+
+    constants = calibrate(games, valid)
+    params = load_params().totals.replace(
+        league_goals=constants.league_goals,
+        home_share=constants.home_share,
+        dispersion=constants.dispersion,
+        tie_intercept=constants.tie_intercept,
+        tie_slope=constants.tie_slope,
+    )
+    typer.echo(f"  from {constants.games} games")
+    for name in ("league_goals", "home_share", "dispersion", "tie_slope"):
+        typer.echo(f"  {name:<14} {getattr(constants, name)}")
+
+    typer.echo("  matching the marginal tie rate...")
+    params = match_tie_marginal(games, valid, params)
+    typer.echo(f"  tie_intercept  {constants.tie_intercept} -> {params.tie_intercept}")
+
+    if write:
+        target = ModelParams(elo=load_params().elo, totals=params).to_json()
+        typer.echo(f"wrote {target}")
+    else:
+        typer.echo("not written — pass --write to save to params.json")
+
+
+@app.command("backtest-totals")
+def backtest_totals(
+    holdout: int = typer.Option(bt.DEFAULT_HOLDOUT, help="Season held out of fitting."),
+) -> None:
+    """Score the goal model walk-forward."""
+    games = bt.load_ordered_games()
+    if not games:
+        typer.echo("game table is empty — run `puckline backfill`")
+        raise typer.Exit(code=1)
+
+    params = load_params().totals
+    valid, hold = bt.evaluation_windows(games, holdout)
+    predictions = list(TotalsEngine(params=params).run(games))
+
+    passed = True
+    for label, seasons in (
+        ("VALIDATION", valid),
+        (f"HOLDOUT {config.season_label(holdout)}", hold),
+    ):
+        chosen = [
+            p
+            for p in predictions
+            if p.scored and p.game_type == config.REGULAR_SEASON and p.season in seasons
+        ]
+        n = len(chosen)
+        lines = [p.fair_total_line for p in chosen]
+        actuals = [p.actual_total or 0 for p in chosen]
+        hit = over_under_hit_rate(lines, actuals)
+        claimed = sum(p.fair_line_p_over for p in chosen) / n
+        sigma = math.sqrt(0.25 / n)
+        in_gate = 0.48 <= hit <= 0.52
+        passed = passed and in_gate
+
+        typer.echo(f"\n{label}  n={n}")
+        typer.echo(
+            f"  over/under at the fair line {hit:.4f}"
+            f"   model claims {claimed:.4f}   {abs(hit - claimed) / sigma:.2f} sigma"
+            f"   {'in gate' if in_gate else 'OUT OF GATE (.48-.52)'}"
+        )
+        typer.echo(f"  total MAE {total_mae([p.exp_total for p in chosen], actuals):.4f}")
+        typer.echo(f"  mean log likelihood {mean_log_likelihood(chosen):.5f}")
+        typer.echo(
+            f"  P(past regulation): model {sum(p.tie_probability for p in chosen) / n:.4f}"
+            f"   actual {observed_tie_rate(games, seasons):.4f}"
+        )
+
+    if not passed:
+        raise typer.Exit(code=1)
 
 
 if __name__ == "__main__":

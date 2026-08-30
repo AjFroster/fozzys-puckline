@@ -31,8 +31,8 @@ makes the track record on `/model` auditable rather than a claim.
 | M0 scaffold | done |
 | M1 ingest and backfill | done |
 | M2 Elo engine and backtest | done |
-| M3 totals model | next |
-| M4 publish layer | |
+| M3 totals model | done |
+| M4 publish layer | next |
 | M5 frontend | |
 | M6 automation | |
 | M7 Cloudflare deploy | |
@@ -59,7 +59,9 @@ Commands:
 | `puckline stats` | Row counts per season, for eyeballing table health. |
 | `puckline rate` | Current Elo ratings from the full game history. |
 | `puckline backtest` | Score the current `params.json` walk-forward. |
-| `puckline fit --write` | Re-fit parameters on the validation window and save them. |
+| `puckline fit --write` | Re-fit Elo parameters on the validation window and save them. |
+| `puckline calibrate-totals --write` | Measure the goal-model constants on the validation seasons. |
+| `puckline backtest-totals` | Score the goal model and check the over/under gate. |
 
 Backfill self-checks against known season totals. A clean run looks like this:
 

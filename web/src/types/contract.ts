@@ -31,8 +31,16 @@ export interface Prediction {
   exp_goals_home: number;
   exp_goals_away: number;
   exp_total: number;
-  /** The total at which p_over is 0.500. Book-independent. */
+  /**
+   * The half-integer line closest to a coin flip.
+   *
+   * Not interpolated. Totals are integers, so p_over is a step function and in
+   * general no line sits at exactly 0.500 — publishing an interpolated 5.84
+   * would name a number nobody can bet, which still pays out at 55%.
+   */
   fair_total_line: number;
+  /** p_over at fair_total_line, so the residual discreteness stays visible. */
+  fair_line_p_over: number;
   totals: TotalLine[];
 }
 
