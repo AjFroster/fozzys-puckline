@@ -91,7 +91,8 @@ Routes:
 | `/game/:date/:gameId` | One matchup in full, plus the result once graded. |
 | `/ratings` | All 32 clubs, sortable, with the season Elo history. |
 | `/team/:abbrev` | One club's rating curve. |
-| `/model` | Methodology, calibration, and the running track record. |
+| `/track` | Season-to-date record: how the predictions have actually done, day by day. |
+| `/model` | Methodology, calibration, and the historical evaluation. |
 
 The slate and matchup pages load eagerly; the three chart pages are split out,
 because Recharts is larger than the rest of the app put together and the common

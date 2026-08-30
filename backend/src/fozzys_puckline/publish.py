@@ -583,6 +583,14 @@ def publish(
     )
     report.record(_write(root / "teams.json", build_teams(run, when, version)))
     report.record(_write(root / "metrics.json", build_metrics(run, games, holdout, when, version)))
+
+    # The live season scoreboard, which rolls over on its own the first night of
+    # a new season rather than needing a config change.
+    tracked = tracked_season(games)
+    if tracked is not None:
+        report.record(
+            _write(root / "track.json", build_season_track(run, games, tracked, when, version))
+        )
     report.record(
         _write(
             root / "index.json",
@@ -595,3 +603,166 @@ def publish(
         )
     )
     return report
+
+
+# --------------------------------------------------------------------------
+# season tracker
+
+ROLLING_WINDOW = 100
+"""Games in the trailing window shown alongside the cumulative record.
+
+Cumulative numbers stop moving once a few hundred games are in, which hides a
+cold streak entirely. The trailing window is what makes recent form visible.
+"""
+
+MISSES_SHOWN = 6
+
+
+def tracked_season(games: Sequence[Game]) -> int | None:
+    """The season a live tracker should follow.
+
+    The most recent season with a finished game, so it rolls over on its own the
+    first night of a new season rather than needing a config change — and it
+    still has something to show through the offseason.
+    """
+    seasons = [g.season for g in games if g.is_final]
+    return max(seasons) if seasons else None
+
+
+def build_season_track(
+    run: ModelRun,
+    games: Sequence[Game],
+    season: int,
+    generated_at: dt.datetime,
+    version: str,
+) -> contracts.SeasonTrack:
+    """Day-by-day record of how the predictions have actually done."""
+    graded = sorted(
+        (
+            p
+            for p in run.elo.values()
+            if p.scored and p.game_type == config.REGULAR_SEASON and p.season == season
+        ),
+        key=lambda p: (p.date_et, p.game_id),
+    )
+
+    scheduled = sum(1 for g in games if g.season == season and g.game_type == config.REGULAR_SEASON)
+
+    probs: list[float] = []
+    outcomes: list[bool] = []
+    over_hits = 0
+    totals_counted = 0
+    points: list[contracts.TrackPoint] = []
+
+    by_day: dict[dt.date, list[GamePrediction]] = {}
+    for prediction in graded:
+        by_day.setdefault(prediction.date_et, []).append(prediction)
+
+    for day in sorted(by_day):
+        today = by_day[day]
+        correct_today = 0
+        for prediction in today:
+            won = bool(prediction.home_won)
+            probs.append(prediction.home_win_prob)
+            outcomes.append(won)
+            if (prediction.home_win_prob >= 0.5) == won:
+                correct_today += 1
+
+            totals = run.totals.get(prediction.game_id)
+            if totals is not None and totals.actual_total is not None:
+                totals_counted += 1
+                if totals.actual_total > totals.fair_total_line:
+                    over_hits += 1
+
+        evaluation = metrics_mod.evaluate(probs, outcomes)
+        window = slice(-ROLLING_WINDOW, None)
+        rolling = (
+            metrics_mod.evaluate(probs[window], outcomes[window])
+            if len(probs) >= ROLLING_WINDOW
+            else None
+        )
+
+        points.append(
+            contracts.TrackPoint(
+                date=day,
+                games_today=len(today),
+                correct_today=correct_today,
+                games=len(probs),
+                correct=round(evaluation.accuracy * len(probs)),
+                accuracy=round(evaluation.accuracy, 4),
+                log_loss=round(evaluation.log_loss, 5),
+                baseline_log_loss=round(evaluation.baseline_log_loss, 5),
+                brier=round(evaluation.brier, 5),
+                over_under_hit_rate=(
+                    round(over_hits / totals_counted, 4) if totals_counted else 0.0
+                ),
+                rolling_accuracy=round(rolling.accuracy, 4) if rolling else None,
+                rolling_log_loss=round(rolling.log_loss, 5) if rolling else None,
+            )
+        )
+
+    final = metrics_mod.evaluate(probs, outcomes) if probs else None
+
+    return contracts.SeasonTrack(
+        generated_at=generated_at,
+        model_version=version,
+        season=season,
+        complete=bool(graded) and len(graded) >= scheduled,
+        through=points[-1].date if points else None,
+        rolling_window=ROLLING_WINDOW,
+        summary=points[-1] if points else None,
+        points=points,
+        calibration=[
+            contracts.CalibrationBin(
+                lower=b.lower,
+                upper=b.upper,
+                count=b.count,
+                mean_predicted=round(b.mean_predicted, 4),
+                observed=round(b.observed, 4),
+                z=round(b.z, 3),
+            )
+            for b in (final.calibration if final else ())
+        ],
+        worst_calibration_z=round(final.worst_z, 3) if final else 0.0,
+        calibration_threshold=round(final.calibration_threshold, 3) if final else 0.0,
+        well_calibrated=final.well_calibrated if final else True,
+        biggest_misses=_biggest_misses(graded, games),
+    )
+
+
+def _biggest_misses(
+    graded: Sequence[GamePrediction], games: Sequence[Game]
+) -> list[contracts.NotableGame]:
+    """The games the model was most confident about and still got wrong.
+
+    Published because a track record that only shows the aggregate is easy to
+    read as better than it is. These are the losses, named.
+    """
+    by_id = {g.game_id: g for g in games}
+    misses = []
+    for prediction in graded:
+        won = bool(prediction.home_won)
+        given = prediction.home_win_prob if won else 1.0 - prediction.home_win_prob
+        if given >= 0.5:
+            continue  # the model had the winner ahead; not a miss
+
+        game = by_id.get(prediction.game_id)
+        score = "—"
+        if game is not None and game.home_score is not None and game.away_score is not None:
+            high, low = sorted((game.home_score, game.away_score), reverse=True)
+            score = f"{high}-{low}"
+            if game.went_past_regulation:
+                score += f" {game.last_period}"
+
+        misses.append(
+            contracts.NotableGame(
+                date=prediction.date_et,
+                game_id=prediction.game_id,
+                winner=prediction.home_abbrev if won else prediction.away_abbrev,
+                loser=prediction.away_abbrev if won else prediction.home_abbrev,
+                probability_given_to_winner=round(given, 4),
+                score=score,
+            )
+        )
+    misses.sort(key=lambda m: m.probability_given_to_winner)
+    return misses[:MISSES_SHOWN]

@@ -194,6 +194,56 @@ export interface Metrics extends Document {
   by_season: SeasonMetrics[];
 }
 
+/** One game day in the season-to-date record. */
+export interface TrackPoint {
+  date: string;
+  games_today: number;
+  correct_today: number;
+
+  games: number;
+  correct: number;
+  accuracy: number;
+  log_loss: number;
+  baseline_log_loss: number;
+  brier: number;
+  over_under_hit_rate: number;
+
+  /** Trailing window, so a cold streak stays visible. Null until it fills. */
+  rolling_accuracy: number | null;
+  rolling_log_loss: number | null;
+}
+
+/** A game the model called confidently and got wrong. */
+export interface NotableGame {
+  date: string;
+  game_id: number;
+  winner: string;
+  loser: string;
+  probability_given_to_winner: number;
+  score: string;
+}
+
+/**
+ * The live scoreboard for the season in progress.
+ *
+ * Separate from Metrics on purpose. That is the historical evaluation — fixed
+ * windows, a holdout. This answers a different question: not "is the model
+ * sound" but "how is it doing right now".
+ */
+export interface SeasonTrack extends Document {
+  season: number;
+  complete: boolean;
+  through: string | null;
+  rolling_window: number;
+  summary: TrackPoint | null;
+  points: TrackPoint[];
+  calibration: CalibrationBin[];
+  worst_calibration_z: number;
+  calibration_threshold: number;
+  well_calibrated: boolean;
+  biggest_misses: NotableGame[];
+}
+
 export interface IndexEntry {
   date: string;
   games: number;

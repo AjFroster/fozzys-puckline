@@ -1,5 +1,13 @@
 import { useEffect, useState } from "react";
-import type { Index, Metrics, RatingHistory, Ratings, Slate, Teams } from "../types/contract";
+import type {
+  Index,
+  Metrics,
+  RatingHistory,
+  Ratings,
+  SeasonTrack,
+  Slate,
+  Teams,
+} from "../types/contract";
 
 /**
  * Everything is a static JSON file on the same origin, written by the nightly
@@ -54,6 +62,7 @@ export function useJson<T>(path: string | null): Loaded<T> {
 export const useIndex = () => useJson<Index>("index.json");
 export const useTeams = () => useJson<Teams>("teams.json");
 export const useMetrics = () => useJson<Metrics>("metrics.json");
+export const useTrack = () => useJson<SeasonTrack>("track.json");
 export const useRatings = () => useJson<Ratings>("ratings/current.json");
 export const useRatingHistory = () => useJson<RatingHistory>("ratings/history.json");
 export const useSlate = (date: string | null) =>

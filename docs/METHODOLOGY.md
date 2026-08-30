@@ -319,9 +319,21 @@ a pass by 0.02σ, which is to say it is at the line rather than clear of it.
 
 ## The published track record
 
-`/model` on the site shows all of this from `metrics.json`, including a rolling
-window over the last 200 graded games. That window is not chosen — it moves with
-the schedule, and it shows the losses.
+Two views, answering two different questions.
+
+`/model` is the historical evaluation, from `metrics.json`: fixed windows, fitted
+parameters, a holdout season. It answers *is the model sound*.
+
+`/track` is the live scoreboard for the season in progress, from `track.json`.
+It answers *how is it doing right now* — a point per game day carrying the
+running record, the trailing 100-game window, and the season's calibration. The
+tracked season is simply the most recent one with a finished game, so it rolls
+over on its own the first night of a new season.
+
+Both show a rolling window rather than a chosen one, and both name losses. The
+`/track` page lists the games the model was most confident about and still got
+wrong, because a record that only shows the aggregate is easy to read as better
+than it is.
 
 Three things are deliberately shown rather than smoothed over: the holdout is
 much weaker than validation, the per-season chart makes that visible, and the
