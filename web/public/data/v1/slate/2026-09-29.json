@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-08-30T01:14:53Z",
+ "generated_at": "2026-09-20T14:37:49Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-09-29",
  "games": [
@@ -53,36 +53,36 @@
    "venue": "Scotiabank Arena",
    "home": {
     "abbrev": "TOR",
-    "elo": 1457.7,
-    "rest_days": null,
+    "elo": 1452.9,
+    "rest_days": 10,
     "b2b": false
    },
    "away": {
     "abbrev": "MTL",
-    "elo": 1525.0,
-    "rest_days": null,
+    "elo": 1529.8,
+    "rest_days": 10,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4394,
-    "away_win_prob": 0.5606,
-    "home_ml_fair": 128,
-    "away_ml_fair": -128,
-    "home_decimal_fair": 2.276,
-    "away_decimal_fair": 1.784,
-    "exp_goals_home": 2.989,
-    "exp_goals_away": 3.136,
-    "exp_total": 6.342,
+    "home_win_prob": 0.4258,
+    "away_win_prob": 0.5742,
+    "home_ml_fair": 135,
+    "away_ml_fair": -135,
+    "home_decimal_fair": 2.348,
+    "away_decimal_fair": 1.742,
+    "exp_goals_home": 2.926,
+    "exp_goals_away": 3.156,
+    "exp_total": 6.299,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.484,
+    "fair_line_p_over": 0.4765,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5837
+      "p_over": 0.5764
      },
      {
       "line": 6.5,
-      "p_over": 0.484
+      "p_over": 0.4765
      }
     ]
    },
@@ -112,7 +112,7 @@
     "away_ml_fair": 129,
     "home_decimal_fair": 1.773,
     "away_decimal_fair": 2.294,
-    "exp_goals_home": 3.086,
+    "exp_goals_home": 3.085,
     "exp_goals_away": 2.821,
     "exp_total": 6.127,
     "fair_total_line": 5.5,
@@ -137,36 +137,36 @@
    "venue": "Rogers Place",
    "home": {
     "abbrev": "EDM",
-    "elo": 1502.0,
-    "rest_days": null,
+    "elo": 1506.7,
+    "rest_days": 10,
     "b2b": false
    },
    "away": {
     "abbrev": "VAN",
-    "elo": 1403.4,
-    "rest_days": null,
+    "elo": 1400.0,
+    "rest_days": 10,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.6708,
-    "away_win_prob": 0.3292,
-    "home_ml_fair": -204,
-    "away_ml_fair": 204,
-    "home_decimal_fair": 1.491,
-    "away_decimal_fair": 3.038,
-    "exp_goals_home": 3.71,
-    "exp_goals_away": 2.73,
-    "exp_total": 6.638,
+    "home_win_prob": 0.681,
+    "away_win_prob": 0.319,
+    "home_ml_fair": -213,
+    "away_ml_fair": 213,
+    "home_decimal_fair": 1.468,
+    "away_decimal_fair": 3.135,
+    "exp_goals_home": 3.754,
+    "exp_goals_away": 2.701,
+    "exp_total": 6.651,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5326,
+    "fair_line_p_over": 0.5345,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6347
+      "p_over": 0.6371
      },
      {
       "line": 6.5,
-      "p_over": 0.5326
+      "p_over": 0.5345
      }
     ]
    },
@@ -179,36 +179,36 @@
    "venue": "T-Mobile Arena",
    "home": {
     "abbrev": "VGK",
-    "elo": 1528.1,
-    "rest_days": null,
+    "elo": 1531.7,
+    "rest_days": 10,
     "b2b": false
    },
    "away": {
     "abbrev": "CHI",
-    "elo": 1420.0,
-    "rest_days": null,
+    "elo": 1420.1,
+    "rest_days": 10,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.6827,
-    "away_win_prob": 0.3173,
-    "home_ml_fair": -215,
-    "away_ml_fair": 215,
-    "home_decimal_fair": 1.465,
-    "away_decimal_fair": 3.152,
-    "exp_goals_home": 3.383,
-    "exp_goals_away": 2.538,
-    "exp_total": 6.132,
+    "home_win_prob": 0.6871,
+    "away_win_prob": 0.3129,
+    "home_ml_fair": -220,
+    "away_ml_fair": 220,
+    "home_decimal_fair": 1.455,
+    "away_decimal_fair": 3.196,
+    "exp_goals_home": 3.375,
+    "exp_goals_away": 2.515,
+    "exp_total": 6.102,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5488,
+    "fair_line_p_over": 0.5434,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5488
+      "p_over": 0.5434
      },
      {
       "line": 6.5,
-      "p_over": 0.4454
+      "p_over": 0.4399
      }
     ]
    },
