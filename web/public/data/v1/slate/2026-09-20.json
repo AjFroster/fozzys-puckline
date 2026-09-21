@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-09-20T14:37:49Z",
+ "generated_at": "2026-09-21T16:55:19Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-09-20",
  "games": [
   {
    "game_id": 2026010008,
    "start_utc": "2026-09-20T17:00:00Z",
-   "state": "FUT",
+   "state": "FINAL",
    "venue": "Prudential Center",
    "home": {
     "abbrev": "NJD",
@@ -44,12 +44,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 3,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026010009,
    "start_utc": "2026-09-20T20:00:00Z",
-   "state": "FUT",
+   "state": "FINAL",
    "venue": "Honda Center",
    "home": {
     "abbrev": "ANA",
@@ -86,12 +92,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 6,
+    "away_score": 2,
+    "last_period": "REG",
+    "total_goals": 8,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026010011,
    "start_utc": "2026-09-20T21:00:00Z",
-   "state": "FUT",
+   "state": "FINAL",
    "venue": "Benchmark International Arena",
    "home": {
     "abbrev": "TBL",
@@ -128,12 +140,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 3,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026010013,
    "start_utc": "2026-09-20T21:00:00Z",
-   "state": "FUT",
+   "state": "FINAL",
    "venue": "TD Garden",
    "home": {
     "abbrev": "BOS",
@@ -156,26 +174,32 @@
     "away_decimal_fair": 2.051,
     "exp_goals_home": 3.059,
     "exp_goals_away": 2.885,
-    "exp_total": 6.164,
+    "exp_total": 6.163,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4529,
+    "fair_line_p_over": 0.4527,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5528
+      "p_over": 0.5526
      },
      {
       "line": 6.5,
-      "p_over": 0.4529
+      "p_over": 0.4527
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 2,
+    "last_period": "SO",
+    "total_goals": 5,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026010010,
    "start_utc": "2026-09-20T23:00:00Z",
-   "state": "FUT",
+   "state": "FINAL",
    "venue": "Amerant Bank Arena",
    "home": {
     "abbrev": "FLA",
@@ -212,12 +236,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 6,
+    "away_score": 3,
+    "last_period": "REG",
+    "total_goals": 9,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026010012,
    "start_utc": "2026-09-20T23:00:00Z",
-   "state": "FUT",
+   "state": "FINAL",
    "venue": "Ball Arena",
    "home": {
     "abbrev": "COL",
@@ -254,12 +284,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 4,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026010014,
    "start_utc": "2026-09-21T00:00:00Z",
-   "state": "FUT",
+   "state": "FINAL",
    "venue": "Scotiabank Saddledome",
    "home": {
     "abbrev": "CGY",
@@ -281,7 +317,7 @@
     "home_decimal_fair": 1.727,
     "away_decimal_fair": 2.376,
     "exp_goals_home": 3.015,
-    "exp_goals_away": 2.776,
+    "exp_goals_away": 2.775,
     "exp_total": 6.013,
     "fair_total_line": 5.5,
     "fair_line_p_over": 0.5257,
@@ -296,7 +332,13 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 4,
+    "last_period": "REG",
+    "total_goals": 6,
+    "home_won": false
+   }
   }
  ]
 }
