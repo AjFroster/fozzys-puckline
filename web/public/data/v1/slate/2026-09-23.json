@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-09-21T16:55:19Z",
+ "generated_at": "2026-09-22T15:27:52Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-09-23",
  "games": [
@@ -17,30 +17,30 @@
    },
    "away": {
     "abbrev": "OTT",
-    "elo": 1524.6,
-    "rest_days": null,
+    "elo": 1523.8,
+    "rest_days": 2,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4333,
-    "away_win_prob": 0.5667,
-    "home_ml_fair": 131,
-    "away_ml_fair": -131,
-    "home_decimal_fair": 2.308,
-    "away_decimal_fair": 1.764,
-    "exp_goals_home": 2.874,
-    "exp_goals_away": 3.199,
-    "exp_total": 6.289,
+    "home_win_prob": 0.4344,
+    "away_win_prob": 0.5656,
+    "home_ml_fair": 130,
+    "away_ml_fair": -130,
+    "home_decimal_fair": 2.302,
+    "away_decimal_fair": 1.768,
+    "exp_goals_home": 2.86,
+    "exp_goals_away": 3.177,
+    "exp_total": 6.254,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4745,
+    "fair_line_p_over": 0.4685,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5747
+      "p_over": 0.5688
      },
      {
       "line": 6.5,
-      "p_over": 0.4745
+      "p_over": 0.4685
      }
     ]
    },
@@ -53,8 +53,8 @@
    "venue": "Canadian Tire Centre",
    "home": {
     "abbrev": "OTT",
-    "elo": 1524.6,
-    "rest_days": null,
+    "elo": 1523.8,
+    "rest_days": 2,
     "b2b": false
    },
    "away": {
@@ -64,25 +64,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.6356,
-    "away_win_prob": 0.3644,
+    "home_win_prob": 0.6346,
+    "away_win_prob": 0.3654,
     "home_ml_fair": -174,
     "away_ml_fair": 174,
-    "home_decimal_fair": 1.573,
-    "away_decimal_fair": 2.744,
-    "exp_goals_home": 3.483,
-    "exp_goals_away": 2.639,
-    "exp_total": 6.329,
+    "home_decimal_fair": 1.576,
+    "away_decimal_fair": 2.737,
+    "exp_goals_home": 3.46,
+    "exp_goals_away": 2.626,
+    "exp_total": 6.294,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4801,
+    "fair_line_p_over": 0.474,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5832
+      "p_over": 0.5771
      },
      {
       "line": 6.5,
-      "p_over": 0.4801
+      "p_over": 0.474
      }
     ]
    },
@@ -95,36 +95,36 @@
    "venue": "American Airlines Center",
    "home": {
     "abbrev": "DAL",
-    "elo": 1530.6,
-    "rest_days": 4,
+    "elo": 1532.9,
+    "rest_days": 2,
     "b2b": false
    },
    "away": {
     "abbrev": "MIN",
-    "elo": 1522.4,
-    "rest_days": 4,
+    "elo": 1520.9,
+    "rest_days": 2,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5477,
-    "away_win_prob": 0.4523,
-    "home_ml_fair": -121,
-    "away_ml_fair": 121,
-    "home_decimal_fair": 1.826,
-    "away_decimal_fair": 2.211,
-    "exp_goals_home": 3.12,
-    "exp_goals_away": 2.842,
-    "exp_total": 6.182,
-    "fair_total_line": 6.5,
-    "fair_line_p_over": 0.456,
+    "home_win_prob": 0.5531,
+    "away_win_prob": 0.4469,
+    "home_ml_fair": -124,
+    "away_ml_fair": 124,
+    "home_decimal_fair": 1.808,
+    "away_decimal_fair": 2.237,
+    "exp_goals_home": 3.102,
+    "exp_goals_away": 2.807,
+    "exp_total": 6.129,
+    "fair_total_line": 5.5,
+    "fair_line_p_over": 0.5467,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5561
+      "p_over": 0.5467
      },
      {
       "line": 6.5,
-      "p_over": 0.456
+      "p_over": 0.4466
      }
     ]
    },
@@ -154,19 +154,19 @@
     "away_ml_fair": 112,
     "home_decimal_fair": 1.893,
     "away_decimal_fair": 2.12,
-    "exp_goals_home": 3.151,
+    "exp_goals_home": 3.15,
     "exp_goals_away": 2.825,
-    "exp_total": 6.195,
+    "exp_total": 6.194,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.458,
+    "fair_line_p_over": 0.4579,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5583
+      "p_over": 0.5581
      },
      {
       "line": 6.5,
-      "p_over": 0.458
+      "p_over": 0.4579
      }
     ]
    },
