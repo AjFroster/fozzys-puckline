@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-09-22T15:27:52Z",
+ "generated_at": "2026-09-23T15:22:42Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-09-22",
  "games": [
   {
    "game_id": 2026010024,
    "start_utc": "2026-09-22T23:00:00Z",
-   "state": "FUT",
+   "state": "FINAL",
    "venue": "KeyBank Center",
    "home": {
     "abbrev": "BUF",
@@ -30,26 +30,32 @@
     "away_decimal_fair": 2.468,
     "exp_goals_home": 3.173,
     "exp_goals_away": 2.713,
-    "exp_total": 6.105,
+    "exp_total": 6.104,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5427,
+    "fair_line_p_over": 0.5425,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5427
+      "p_over": 0.5425
      },
      {
       "line": 6.5,
-      "p_over": 0.442
+      "p_over": 0.4418
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 5,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 6,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026010025,
    "start_utc": "2026-09-22T23:00:00Z",
-   "state": "FUT",
+   "state": "FINAL",
    "venue": "PPG Paints Arena",
    "home": {
     "abbrev": "PIT",
@@ -72,26 +78,32 @@
     "away_decimal_fair": 2.38,
     "exp_goals_home": 3.302,
     "exp_goals_away": 2.766,
-    "exp_total": 6.283,
+    "exp_total": 6.282,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4731,
+    "fair_line_p_over": 0.4729,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5742
+      "p_over": 0.574
      },
      {
       "line": 6.5,
-      "p_over": 0.4731
+      "p_over": 0.4729
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 4,
+    "away_score": 7,
+    "last_period": "REG",
+    "total_goals": 11,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026010026,
    "start_utc": "2026-09-22T23:00:00Z",
-   "state": "FUT",
+   "state": "FINAL",
    "venue": "Lenovo Center",
    "home": {
     "abbrev": "CAR",
@@ -128,12 +140,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 2,
+    "last_period": "SO",
+    "total_goals": 5,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026010027,
    "start_utc": "2026-09-22T23:00:00Z",
-   "state": "FUT",
+   "state": "FINAL",
    "venue": "Madison Square Garden",
    "home": {
     "abbrev": "NYR",
@@ -170,12 +188,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 4,
+    "last_period": "REG",
+    "total_goals": 7,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026010028,
    "start_utc": "2026-09-22T23:00:00Z",
-   "state": "FUT",
+   "state": "FINAL",
    "venue": "TD Garden",
    "home": {
     "abbrev": "BOS",
@@ -212,12 +236,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 5,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 6,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026010023,
    "start_utc": "2026-09-23T00:00:00Z",
-   "state": "FUT",
+   "state": "FINAL",
    "venue": "Canada Life Centre",
    "home": {
     "abbrev": "WPG",
@@ -254,12 +284,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 1,
+    "away_score": 2,
+    "last_period": "OT",
+    "total_goals": 3,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026010029,
    "start_utc": "2026-09-23T00:00:00Z",
-   "state": "FUT",
+   "state": "FINAL",
    "venue": "Bridgestone Arena",
    "home": {
     "abbrev": "NSH",
@@ -296,12 +332,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 2,
+    "last_period": "OT",
+    "total_goals": 5,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026010031,
    "start_utc": "2026-09-23T01:00:00Z",
-   "state": "FUT",
+   "state": "FINAL",
    "venue": "Scotiabank Saddledome",
    "home": {
     "abbrev": "CGY",
@@ -338,12 +380,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 4,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026010030,
    "start_utc": "2026-09-23T02:00:00Z",
-   "state": "FUT",
+   "state": "FINAL",
    "venue": "Crypto.com Arena",
    "home": {
     "abbrev": "LAK",
@@ -380,12 +428,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 6,
+    "last_period": "REG",
+    "total_goals": 9,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026010032,
    "start_utc": "2026-09-23T02:00:00Z",
-   "state": "FUT",
+   "state": "FINAL",
    "venue": "SAP Center at San Jose",
    "home": {
     "abbrev": "SJS",
@@ -422,7 +476,13 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 1,
+    "away_score": 2,
+    "last_period": "SO",
+    "total_goals": 3,
+    "home_won": false
+   }
   }
  ]
 }

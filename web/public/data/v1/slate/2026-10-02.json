@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-08-30T01:14:53Z",
+ "generated_at": "2026-09-23T15:22:42Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-02",
  "games": [
@@ -11,36 +11,36 @@
    "venue": "Little Caesars Arena",
    "home": {
     "abbrev": "DET",
-    "elo": 1477.7,
-    "rest_days": null,
+    "elo": 1483.9,
+    "rest_days": 10,
     "b2b": false
    },
    "away": {
     "abbrev": "NYR",
-    "elo": 1479.6,
-    "rest_days": null,
+    "elo": 1473.9,
+    "rest_days": 10,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5332,
-    "away_win_prob": 0.4668,
-    "home_ml_fair": -114,
-    "away_ml_fair": 114,
-    "home_decimal_fair": 1.875,
-    "away_decimal_fair": 2.142,
-    "exp_goals_home": 3.006,
-    "exp_goals_away": 2.917,
-    "exp_total": 6.144,
+    "home_win_prob": 0.5502,
+    "away_win_prob": 0.4498,
+    "home_ml_fair": -122,
+    "away_ml_fair": 122,
+    "home_decimal_fair": 1.818,
+    "away_decimal_fair": 2.223,
+    "exp_goals_home": 3.051,
+    "exp_goals_away": 2.863,
+    "exp_total": 6.135,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5491,
+    "fair_line_p_over": 0.5476,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5491
+      "p_over": 0.5476
      },
      {
       "line": 6.5,
-      "p_over": 0.4494
+      "p_over": 0.4477
      }
     ]
    },
@@ -53,36 +53,36 @@
    "venue": "Lenovo Center",
    "home": {
     "abbrev": "CAR",
-    "elo": 1573.1,
-    "rest_days": null,
+    "elo": 1566.5,
+    "rest_days": 10,
     "b2b": false
    },
    "away": {
     "abbrev": "WSH",
-    "elo": 1515.8,
-    "rest_days": null,
+    "elo": 1520.5,
+    "rest_days": 11,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.6162,
-    "away_win_prob": 0.3838,
-    "home_ml_fair": -161,
-    "away_ml_fair": 161,
-    "home_decimal_fair": 1.623,
-    "away_decimal_fair": 2.606,
-    "exp_goals_home": 3.274,
-    "exp_goals_away": 2.731,
-    "exp_total": 6.22,
+    "home_win_prob": 0.6008,
+    "away_win_prob": 0.3992,
+    "home_ml_fair": -150,
+    "away_ml_fair": 150,
+    "home_decimal_fair": 1.665,
+    "away_decimal_fair": 2.505,
+    "exp_goals_home": 3.208,
+    "exp_goals_away": 2.79,
+    "exp_total": 6.214,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4621,
+    "fair_line_p_over": 0.4613,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5633
+      "p_over": 0.5619
      },
      {
       "line": 6.5,
-      "p_over": 0.4621
+      "p_over": 0.4613
      }
     ]
    },
@@ -95,36 +95,36 @@
    "venue": "Canada Life Centre",
    "home": {
     "abbrev": "WPG",
-    "elo": 1479.2,
-    "rest_days": null,
+    "elo": 1479.0,
+    "rest_days": 10,
     "b2b": false
    },
    "away": {
     "abbrev": "BOS",
-    "elo": 1499.4,
-    "rest_days": null,
+    "elo": 1505.3,
+    "rest_days": 10,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.507,
-    "away_win_prob": 0.493,
-    "home_ml_fair": -103,
-    "away_ml_fair": 103,
-    "home_decimal_fair": 1.972,
-    "away_decimal_fair": 2.028,
-    "exp_goals_home": 2.907,
-    "exp_goals_away": 2.874,
-    "exp_total": 6.006,
+    "home_win_prob": 0.4982,
+    "away_win_prob": 0.5018,
+    "home_ml_fair": 101,
+    "away_ml_fair": -101,
+    "home_decimal_fair": 2.007,
+    "away_decimal_fair": 1.993,
+    "exp_goals_home": 2.818,
+    "exp_goals_away": 2.856,
+    "exp_total": 5.9,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5243,
+    "fair_line_p_over": 0.5048,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5243
+      "p_over": 0.5048
      },
      {
       "line": 6.5,
-      "p_over": 0.425
+      "p_over": 0.4061
      }
     ]
    },
@@ -137,36 +137,36 @@
    "venue": "American Airlines Center",
    "home": {
     "abbrev": "DAL",
-    "elo": 1527.9,
-    "rest_days": null,
+    "elo": 1532.9,
+    "rest_days": 11,
     "b2b": false
    },
    "away": {
     "abbrev": "STL",
-    "elo": 1501.4,
-    "rest_days": null,
+    "elo": 1496.4,
+    "rest_days": 11,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5735,
-    "away_win_prob": 0.4265,
-    "home_ml_fair": -134,
-    "away_ml_fair": 134,
-    "home_decimal_fair": 1.744,
-    "away_decimal_fair": 2.345,
-    "exp_goals_home": 3.057,
-    "exp_goals_away": 2.789,
-    "exp_total": 6.067,
+    "home_win_prob": 0.5876,
+    "away_win_prob": 0.4124,
+    "home_ml_fair": -142,
+    "away_ml_fair": 142,
+    "home_decimal_fair": 1.702,
+    "away_decimal_fair": 2.425,
+    "exp_goals_home": 2.987,
+    "exp_goals_away": 2.66,
+    "exp_total": 5.873,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5355,
+    "fair_line_p_over": 0.5001,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5355
+      "p_over": 0.5001
      },
      {
       "line": 6.5,
-      "p_over": 0.4356
+      "p_over": 0.401
      }
     ]
    },
@@ -179,36 +179,36 @@
    "venue": "T-Mobile Arena",
    "home": {
     "abbrev": "VGK",
-    "elo": 1528.1,
-    "rest_days": null,
+    "elo": 1532.0,
+    "rest_days": 10,
     "b2b": false
    },
    "away": {
     "abbrev": "ANA",
-    "elo": 1462.3,
-    "rest_days": null,
+    "elo": 1467.7,
+    "rest_days": 12,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.6278,
-    "away_win_prob": 0.3722,
-    "home_ml_fair": -169,
-    "away_ml_fair": 169,
-    "home_decimal_fair": 1.593,
-    "away_decimal_fair": 2.686,
-    "exp_goals_home": 3.414,
-    "exp_goals_away": 2.8,
-    "exp_total": 6.425,
+    "home_win_prob": 0.6257,
+    "away_win_prob": 0.3743,
+    "home_ml_fair": -167,
+    "away_ml_fair": 167,
+    "home_decimal_fair": 1.598,
+    "away_decimal_fair": 2.672,
+    "exp_goals_home": 3.363,
+    "exp_goals_away": 2.803,
+    "exp_total": 6.378,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4975,
+    "fair_line_p_over": 0.4895,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5986
+      "p_over": 0.5905
      },
      {
       "line": 6.5,
-      "p_over": 0.4975
+      "p_over": 0.4895
      }
     ]
    },
