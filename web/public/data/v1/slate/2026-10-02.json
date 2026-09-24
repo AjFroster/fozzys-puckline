@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-09-23T15:22:42Z",
+ "generated_at": "2026-09-24T15:45:58Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-02",
  "games": [
@@ -71,7 +71,7 @@
     "home_decimal_fair": 1.665,
     "away_decimal_fair": 2.505,
     "exp_goals_home": 3.208,
-    "exp_goals_away": 2.79,
+    "exp_goals_away": 2.789,
     "exp_total": 6.214,
     "fair_total_line": 6.5,
     "fair_line_p_over": 0.4613,
@@ -112,8 +112,8 @@
     "away_ml_fair": -101,
     "home_decimal_fair": 2.007,
     "away_decimal_fair": 1.993,
-    "exp_goals_home": 2.818,
-    "exp_goals_away": 2.856,
+    "exp_goals_home": 2.817,
+    "exp_goals_away": 2.855,
     "exp_total": 5.9,
     "fair_total_line": 5.5,
     "fair_line_p_over": 0.5048,
@@ -137,8 +137,8 @@
    "venue": "American Airlines Center",
    "home": {
     "abbrev": "DAL",
-    "elo": 1532.9,
-    "rest_days": 11,
+    "elo": 1536.8,
+    "rest_days": 9,
     "b2b": false
    },
    "away": {
@@ -148,25 +148,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5876,
-    "away_win_prob": 0.4124,
-    "home_ml_fair": -142,
-    "away_ml_fair": 142,
-    "home_decimal_fair": 1.702,
-    "away_decimal_fair": 2.425,
-    "exp_goals_home": 2.987,
-    "exp_goals_away": 2.66,
-    "exp_total": 5.873,
+    "home_win_prob": 0.5929,
+    "away_win_prob": 0.4071,
+    "home_ml_fair": -146,
+    "away_ml_fair": 146,
+    "home_decimal_fair": 1.687,
+    "away_decimal_fair": 2.457,
+    "exp_goals_home": 2.969,
+    "exp_goals_away": 2.614,
+    "exp_total": 5.81,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5001,
+    "fair_line_p_over": 0.4885,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5001
+      "p_over": 0.4885
      },
      {
       "line": 6.5,
-      "p_over": 0.401
+      "p_over": 0.3897
      }
     ]
    },
@@ -185,30 +185,30 @@
    },
    "away": {
     "abbrev": "ANA",
-    "elo": 1467.7,
-    "rest_days": 12,
+    "elo": 1464.5,
+    "rest_days": 9,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.6257,
-    "away_win_prob": 0.3743,
-    "home_ml_fair": -167,
-    "away_ml_fair": 167,
-    "home_decimal_fair": 1.598,
-    "away_decimal_fair": 2.672,
-    "exp_goals_home": 3.363,
-    "exp_goals_away": 2.803,
-    "exp_total": 6.378,
+    "home_win_prob": 0.6301,
+    "away_win_prob": 0.3699,
+    "home_ml_fair": -170,
+    "away_ml_fair": 170,
+    "home_decimal_fair": 1.587,
+    "away_decimal_fair": 2.703,
+    "exp_goals_home": 3.339,
+    "exp_goals_away": 2.768,
+    "exp_total": 6.32,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4895,
+    "fair_line_p_over": 0.4794,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5905
+      "p_over": 0.5806
      },
      {
       "line": 6.5,
-      "p_over": 0.4895
+      "p_over": 0.4794
      }
     ]
    },

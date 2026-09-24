@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-09-23T15:22:42Z",
+ "generated_at": "2026-09-24T15:45:58Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-09-23",
  "games": [
   {
    "game_id": 2026010035,
    "start_utc": "2026-09-23T23:00:00Z",
-   "state": "FUT",
+   "state": "FINAL",
    "venue": "Scotiabank Arena",
    "home": {
     "abbrev": "TOR",
@@ -30,68 +30,80 @@
     "away_decimal_fair": 1.768,
     "exp_goals_home": 2.859,
     "exp_goals_away": 3.177,
-    "exp_total": 6.254,
+    "exp_total": 6.253,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4685,
+    "fair_line_p_over": 0.4684,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5688
+      "p_over": 0.5686
      },
      {
       "line": 6.5,
-      "p_over": 0.4685
+      "p_over": 0.4684
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 6,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 7,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026010036,
    "start_utc": "2026-09-23T23:00:00Z",
-   "state": "FUT",
+   "state": "FINAL",
    "venue": "Canadian Tire Centre",
    "home": {
     "abbrev": "OTT",
-    "elo": 1523.8,
-    "rest_days": 2,
-    "b2b": false
+    "elo": 1515.5,
+    "rest_days": 0,
+    "b2b": true
    },
    "away": {
     "abbrev": "TOR",
-    "elo": 1452.9,
-    "rest_days": 4,
-    "b2b": false
+    "elo": 1461.2,
+    "rest_days": 0,
+    "b2b": true
    },
    "prediction": {
-    "home_win_prob": 0.6346,
-    "away_win_prob": 0.3654,
-    "home_ml_fair": -174,
-    "away_ml_fair": 174,
-    "home_decimal_fair": 1.576,
-    "away_decimal_fair": 2.737,
-    "exp_goals_home": 3.46,
-    "exp_goals_away": 2.626,
-    "exp_total": 6.294,
+    "home_win_prob": 0.6122,
+    "away_win_prob": 0.3878,
+    "home_ml_fair": -158,
+    "away_ml_fair": 158,
+    "home_decimal_fair": 1.634,
+    "away_decimal_fair": 2.578,
+    "exp_goals_home": 3.371,
+    "exp_goals_away": 2.733,
+    "exp_total": 6.317,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.474,
+    "fair_line_p_over": 0.4787,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5771
+      "p_over": 0.5803
      },
      {
       "line": 6.5,
-      "p_over": 0.474
+      "p_over": 0.4787
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 4,
+    "last_period": "REG",
+    "total_goals": 6,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026010034,
    "start_utc": "2026-09-24T00:00:00Z",
-   "state": "FUT",
+   "state": "FINAL",
    "venue": "American Airlines Center",
    "home": {
     "abbrev": "DAL",
@@ -128,12 +140,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 0,
+    "last_period": "REG",
+    "total_goals": 2,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026010033,
    "start_utc": "2026-09-24T02:00:00Z",
-   "state": "FUT",
+   "state": "FINAL",
    "venue": "Honda Center",
    "home": {
     "abbrev": "ANA",
@@ -170,7 +188,13 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 1,
+    "away_score": 2,
+    "last_period": "REG",
+    "total_goals": 3,
+    "home_won": false
+   }
   }
  ]
 }

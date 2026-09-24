@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-09-23T15:22:42Z",
+ "generated_at": "2026-09-24T15:45:58Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-09-25",
  "games": [
@@ -28,7 +28,7 @@
     "away_ml_fair": 126,
     "home_decimal_fair": 1.793,
     "away_decimal_fair": 2.261,
-    "exp_goals_home": 3.102,
+    "exp_goals_home": 3.101,
     "exp_goals_away": 2.795,
     "exp_total": 6.118,
     "fair_total_line": 5.5,
@@ -95,36 +95,36 @@
    "venue": "Grand Casino Arena",
    "home": {
     "abbrev": "MIN",
-    "elo": 1520.9,
-    "rest_days": 4,
+    "elo": 1517.0,
+    "rest_days": 2,
     "b2b": false
    },
    "away": {
     "abbrev": "DAL",
-    "elo": 1532.9,
-    "rest_days": 4,
+    "elo": 1536.8,
+    "rest_days": 2,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5187,
-    "away_win_prob": 0.4813,
-    "home_ml_fair": -108,
-    "away_ml_fair": 108,
-    "home_decimal_fair": 1.928,
-    "away_decimal_fair": 2.078,
-    "exp_goals_home": 3.057,
-    "exp_goals_away": 2.848,
-    "exp_total": 6.126,
+    "home_win_prob": 0.5076,
+    "away_win_prob": 0.4924,
+    "home_ml_fair": -103,
+    "away_ml_fair": 103,
+    "home_decimal_fair": 1.97,
+    "away_decimal_fair": 2.031,
+    "exp_goals_home": 2.95,
+    "exp_goals_away": 2.815,
+    "exp_total": 5.989,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.546,
+    "fair_line_p_over": 0.5211,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.546
+      "p_over": 0.5211
      },
      {
       "line": 6.5,
-      "p_over": 0.4461
+      "p_over": 0.4218
      }
     ]
    },
@@ -156,17 +156,17 @@
     "away_decimal_fair": 2.867,
     "exp_goals_home": 3.246,
     "exp_goals_away": 2.465,
-    "exp_total": 5.929,
+    "exp_total": 5.928,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5118,
+    "fair_line_p_over": 0.5116,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5118
+      "p_over": 0.5116
      },
      {
       "line": 6.5,
-      "p_over": 0.4095
+      "p_over": 0.4094
      }
     ]
    },
