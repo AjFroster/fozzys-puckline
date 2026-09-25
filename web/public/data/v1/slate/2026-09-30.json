@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-09-24T15:45:58Z",
+ "generated_at": "2026-09-25T15:46:10Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-09-30",
  "games": [
@@ -11,36 +11,36 @@
    "venue": "Xfinity Mobile Arena",
    "home": {
     "abbrev": "PHI",
-    "elo": 1480.2,
-    "rest_days": 8,
+    "elo": 1484.6,
+    "rest_days": 6,
     "b2b": false
    },
    "away": {
     "abbrev": "PIT",
-    "elo": 1501.6,
-    "rest_days": 8,
+    "elo": 1495.5,
+    "rest_days": 6,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5052,
-    "away_win_prob": 0.4948,
-    "home_ml_fair": -102,
-    "away_ml_fair": 102,
-    "home_decimal_fair": 1.979,
-    "away_decimal_fair": 2.021,
-    "exp_goals_home": 3.052,
-    "exp_goals_away": 2.986,
-    "exp_total": 6.258,
+    "home_win_prob": 0.5203,
+    "away_win_prob": 0.4797,
+    "home_ml_fair": -108,
+    "away_ml_fair": 108,
+    "home_decimal_fair": 1.922,
+    "away_decimal_fair": 2.085,
+    "exp_goals_home": 3.053,
+    "exp_goals_away": 2.879,
+    "exp_total": 6.153,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4694,
+    "fair_line_p_over": 0.4509,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5691
+      "p_over": 0.5507
      },
      {
       "line": 6.5,
-      "p_over": 0.4694
+      "p_over": 0.4509
      }
     ]
    },
@@ -72,17 +72,17 @@
     "away_decimal_fair": 2.155,
     "exp_goals_home": 3.091,
     "exp_goals_away": 2.865,
-    "exp_total": 6.176,
+    "exp_total": 6.175,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4549,
+    "fair_line_p_over": 0.4547,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5549
+      "p_over": 0.5547
      },
      {
       "line": 6.5,
-      "p_over": 0.4549
+      "p_over": 0.4547
      }
     ]
    },
@@ -112,7 +112,7 @@
     "away_ml_fair": 196,
     "home_decimal_fair": 1.51,
     "away_decimal_fair": 2.959,
-    "exp_goals_home": 3.221,
+    "exp_goals_home": 3.22,
     "exp_goals_away": 2.453,
     "exp_total": 5.892,
     "fair_total_line": 5.5,
