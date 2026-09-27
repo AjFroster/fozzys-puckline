@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-09-26T14:55:47Z",
+ "generated_at": "2026-09-27T15:34:27Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-03",
  "games": [
@@ -11,36 +11,36 @@
    "venue": "KeyBank Center",
    "home": {
     "abbrev": "BUF",
-    "elo": 1542.6,
-    "rest_days": 9,
+    "elo": 1537.1,
+    "rest_days": 7,
     "b2b": false
    },
    "away": {
     "abbrev": "CHI",
-    "elo": 1419.7,
-    "rest_days": 9,
+    "elo": 1423.0,
+    "rest_days": 7,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.7009,
-    "away_win_prob": 0.2991,
-    "home_ml_fair": -234,
-    "away_ml_fair": 234,
-    "home_decimal_fair": 1.427,
-    "away_decimal_fair": 3.343,
-    "exp_goals_home": 3.42,
-    "exp_goals_away": 2.477,
-    "exp_total": 6.106,
+    "home_win_prob": 0.6902,
+    "away_win_prob": 0.3098,
+    "home_ml_fair": -223,
+    "away_ml_fair": 223,
+    "home_decimal_fair": 1.449,
+    "away_decimal_fair": 3.227,
+    "exp_goals_home": 3.354,
+    "exp_goals_away": 2.488,
+    "exp_total": 6.054,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5446,
+    "fair_line_p_over": 0.5349,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5446
+      "p_over": 0.5349
      },
      {
       "line": 6.5,
-      "p_over": 0.4403
+      "p_over": 0.4315
      }
     ]
    },
@@ -59,30 +59,30 @@
    },
    "away": {
     "abbrev": "OTT",
-    "elo": 1509.9,
-    "rest_days": 10,
+    "elo": 1508.8,
+    "rest_days": 7,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.474,
-    "away_win_prob": 0.526,
-    "home_ml_fair": 111,
-    "away_ml_fair": -111,
-    "home_decimal_fair": 2.11,
-    "away_decimal_fair": 1.901,
-    "exp_goals_home": 3.017,
+    "home_win_prob": 0.4755,
+    "away_win_prob": 0.5245,
+    "home_ml_fair": 110,
+    "away_ml_fair": -110,
+    "home_decimal_fair": 2.103,
+    "away_decimal_fair": 1.907,
+    "exp_goals_home": 3.041,
     "exp_goals_away": 3.054,
-    "exp_total": 6.289,
+    "exp_total": 6.313,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4749,
+    "fair_line_p_over": 0.479,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5745
+      "p_over": 0.5786
      },
      {
       "line": 6.5,
-      "p_over": 0.4749
+      "p_over": 0.479
      }
     ]
    },
@@ -95,36 +95,36 @@
    "venue": "Benchmark International Arena",
    "home": {
     "abbrev": "TBL",
-    "elo": 1535.4,
-    "rest_days": 9,
+    "elo": 1536.2,
+    "rest_days": 7,
     "b2b": false
    },
    "away": {
     "abbrev": "WSH",
-    "elo": 1520.8,
-    "rest_days": 8,
+    "elo": 1527.5,
+    "rest_days": 7,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5568,
-    "away_win_prob": 0.4432,
-    "home_ml_fair": -126,
-    "away_ml_fair": 126,
-    "home_decimal_fair": 1.796,
-    "away_decimal_fair": 2.256,
-    "exp_goals_home": 3.065,
-    "exp_goals_away": 2.795,
-    "exp_total": 6.081,
+    "home_win_prob": 0.5484,
+    "away_win_prob": 0.4516,
+    "home_ml_fair": -121,
+    "away_ml_fair": 121,
+    "home_decimal_fair": 1.824,
+    "away_decimal_fair": 2.214,
+    "exp_goals_home": 3.011,
+    "exp_goals_away": 2.812,
+    "exp_total": 6.046,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5379,
+    "fair_line_p_over": 0.5316,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5379
+      "p_over": 0.5316
      },
      {
       "line": 6.5,
-      "p_over": 0.438
+      "p_over": 0.432
      }
     ]
    },
@@ -137,36 +137,36 @@
    "venue": "Xfinity Mobile Arena",
    "home": {
     "abbrev": "PHI",
-    "elo": 1484.6,
-    "rest_days": 9,
+    "elo": 1478.0,
+    "rest_days": 7,
     "b2b": false
    },
    "away": {
     "abbrev": "CAR",
-    "elo": 1568.5,
-    "rest_days": 9,
+    "elo": 1574.4,
+    "rest_days": 7,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4161,
-    "away_win_prob": 0.5839,
-    "home_ml_fair": 140,
-    "away_ml_fair": -140,
-    "home_decimal_fair": 2.403,
-    "away_decimal_fair": 1.713,
-    "exp_goals_home": 2.803,
-    "exp_goals_away": 2.945,
-    "exp_total": 5.973,
+    "home_win_prob": 0.3986,
+    "away_win_prob": 0.6014,
+    "home_ml_fair": 151,
+    "away_ml_fair": -151,
+    "home_decimal_fair": 2.509,
+    "away_decimal_fair": 1.663,
+    "exp_goals_home": 2.726,
+    "exp_goals_away": 3.029,
+    "exp_total": 5.979,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5183,
+    "fair_line_p_over": 0.5195,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5183
+      "p_over": 0.5195
      },
      {
       "line": 6.5,
-      "p_over": 0.419
+      "p_over": 0.4199
      }
     ]
    },
@@ -179,36 +179,36 @@
    "venue": "PPG Paints Arena",
    "home": {
     "abbrev": "PIT",
-    "elo": 1495.5,
-    "rest_days": 9,
+    "elo": 1501.0,
+    "rest_days": 7,
     "b2b": false
    },
    "away": {
     "abbrev": "MTL",
-    "elo": 1530.6,
-    "rest_days": 12,
+    "elo": 1531.7,
+    "rest_days": 7,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4854,
-    "away_win_prob": 0.5146,
-    "home_ml_fair": 106,
-    "away_ml_fair": -106,
-    "home_decimal_fair": 2.06,
-    "away_decimal_fair": 1.943,
-    "exp_goals_home": 3.134,
-    "exp_goals_away": 3.005,
-    "exp_total": 6.356,
+    "home_win_prob": 0.4917,
+    "away_win_prob": 0.5083,
+    "home_ml_fair": 103,
+    "away_ml_fair": -103,
+    "home_decimal_fair": 2.034,
+    "away_decimal_fair": 1.968,
+    "exp_goals_home": 3.138,
+    "exp_goals_away": 2.985,
+    "exp_total": 6.339,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4865,
+    "fair_line_p_over": 0.4835,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5862
+      "p_over": 0.5832
      },
      {
       "line": 6.5,
-      "p_over": 0.4865
+      "p_over": 0.4835
      }
     ]
    },
@@ -221,36 +221,36 @@
    "venue": "Nationwide Arena",
    "home": {
     "abbrev": "CBJ",
-    "elo": 1498.1,
-    "rest_days": 9,
+    "elo": 1502.6,
+    "rest_days": 7,
     "b2b": false
    },
    "away": {
     "abbrev": "UTA",
-    "elo": 1500.2,
-    "rest_days": 9,
+    "elo": 1504.9,
+    "rest_days": 7,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5329,
-    "away_win_prob": 0.4671,
+    "home_win_prob": 0.5327,
+    "away_win_prob": 0.4673,
     "home_ml_fair": -114,
     "away_ml_fair": 114,
-    "home_decimal_fair": 1.876,
-    "away_decimal_fair": 2.141,
-    "exp_goals_home": 3.066,
-    "exp_goals_away": 2.858,
-    "exp_total": 6.144,
+    "home_decimal_fair": 1.877,
+    "away_decimal_fair": 2.14,
+    "exp_goals_home": 3.032,
+    "exp_goals_away": 2.824,
+    "exp_total": 6.079,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5491,
+    "fair_line_p_over": 0.5376,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5491
+      "p_over": 0.5376
      },
      {
       "line": 6.5,
-      "p_over": 0.4492
+      "p_over": 0.4378
      }
     ]
    },
@@ -263,32 +263,32 @@
    "venue": "Rogers Place",
    "home": {
     "abbrev": "EDM",
-    "elo": 1509.3,
-    "rest_days": 9,
+    "elo": 1513.5,
+    "rest_days": 7,
     "b2b": false
    },
    "away": {
     "abbrev": "SEA",
-    "elo": 1458.5,
-    "rest_days": 9,
+    "elo": 1455.3,
+    "rest_days": 7,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.6075,
-    "away_win_prob": 0.3925,
-    "home_ml_fair": -155,
-    "away_ml_fair": 155,
-    "home_decimal_fair": 1.646,
-    "away_decimal_fair": 2.548,
-    "exp_goals_home": 3.339,
-    "exp_goals_away": 2.76,
-    "exp_total": 6.312,
+    "home_win_prob": 0.6174,
+    "away_win_prob": 0.3826,
+    "home_ml_fair": -161,
+    "away_ml_fair": 161,
+    "home_decimal_fair": 1.62,
+    "away_decimal_fair": 2.614,
+    "exp_goals_home": 3.371,
+    "exp_goals_away": 2.73,
+    "exp_total": 6.313,
     "fair_total_line": 6.5,
     "fair_line_p_over": 0.478,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5793
+      "p_over": 0.5796
      },
      {
       "line": 6.5,
@@ -305,36 +305,36 @@
    "venue": "UBS Arena",
    "home": {
     "abbrev": "NYI",
-    "elo": 1458.7,
-    "rest_days": 8,
+    "elo": 1453.4,
+    "rest_days": 7,
     "b2b": false
    },
    "away": {
     "abbrev": "NJD",
-    "elo": 1477.1,
-    "rest_days": 9,
+    "elo": 1482.4,
+    "rest_days": 7,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5094,
-    "away_win_prob": 0.4906,
-    "home_ml_fair": -104,
-    "away_ml_fair": 104,
-    "home_decimal_fair": 1.963,
-    "away_decimal_fair": 2.038,
-    "exp_goals_home": 2.881,
-    "exp_goals_away": 2.777,
-    "exp_total": 5.885,
+    "home_win_prob": 0.4943,
+    "away_win_prob": 0.5057,
+    "home_ml_fair": 102,
+    "away_ml_fair": -102,
+    "home_decimal_fair": 2.023,
+    "away_decimal_fair": 1.977,
+    "exp_goals_home": 2.817,
+    "exp_goals_away": 2.814,
+    "exp_total": 5.859,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5021,
+    "fair_line_p_over": 0.4972,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5021
+      "p_over": 0.4972
      },
      {
       "line": 6.5,
-      "p_over": 0.4035
+      "p_over": 0.3988
      }
     ]
    },
@@ -347,8 +347,8 @@
    "venue": "Bridgestone Arena",
    "home": {
     "abbrev": "NSH",
-    "elo": 1468.9,
-    "rest_days": 9,
+    "elo": 1463.0,
+    "rest_days": 7,
     "b2b": false
    },
    "away": {
@@ -358,25 +358,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4347,
-    "away_win_prob": 0.5653,
-    "home_ml_fair": 130,
-    "away_ml_fair": -130,
-    "home_decimal_fair": 2.301,
-    "away_decimal_fair": 1.769,
-    "exp_goals_home": 2.843,
-    "exp_goals_away": 2.881,
-    "exp_total": 5.95,
+    "home_win_prob": 0.4263,
+    "away_win_prob": 0.5737,
+    "home_ml_fair": 135,
+    "away_ml_fair": -135,
+    "home_decimal_fair": 2.346,
+    "away_decimal_fair": 1.743,
+    "exp_goals_home": 2.793,
+    "exp_goals_away": 2.93,
+    "exp_total": 5.948,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.514,
+    "fair_line_p_over": 0.5136,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.514
+      "p_over": 0.5136
      },
      {
       "line": 6.5,
-      "p_over": 0.415
+      "p_over": 0.4145
      }
     ]
    },
@@ -408,17 +408,17 @@
     "away_decimal_fair": 2.249,
     "exp_goals_home": 2.991,
     "exp_goals_away": 2.751,
-    "exp_total": 5.967,
+    "exp_total": 5.966,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5174,
+    "fair_line_p_over": 0.5172,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5174
+      "p_over": 0.5172
      },
      {
       "line": 6.5,
-      "p_over": 0.418
+      "p_over": 0.4178
      }
     ]
    },
@@ -431,36 +431,36 @@
    "venue": "Ball Arena",
    "home": {
     "abbrev": "COL",
-    "elo": 1566.2,
-    "rest_days": 8,
+    "elo": 1561.5,
+    "rest_days": 7,
     "b2b": false
    },
    "away": {
     "abbrev": "STL",
-    "elo": 1498.3,
-    "rest_days": 9,
+    "elo": 1495.0,
+    "rest_days": 7,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.6306,
-    "away_win_prob": 0.3694,
-    "home_ml_fair": -171,
-    "away_ml_fair": 171,
-    "home_decimal_fair": 1.586,
-    "away_decimal_fair": 2.707,
-    "exp_goals_home": 3.097,
-    "exp_goals_away": 2.542,
-    "exp_total": 5.862,
+    "home_win_prob": 0.6287,
+    "away_win_prob": 0.3713,
+    "home_ml_fair": -169,
+    "away_ml_fair": 169,
+    "home_decimal_fair": 1.591,
+    "away_decimal_fair": 2.693,
+    "exp_goals_home": 3.046,
+    "exp_goals_away": 2.52,
+    "exp_total": 5.79,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.4986,
+    "fair_line_p_over": 0.4852,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.4986
+      "p_over": 0.4852
      },
      {
       "line": 6.5,
-      "p_over": 0.3985
+      "p_over": 0.3857
      }
     ]
    },
@@ -473,36 +473,36 @@
    "venue": "Rogers Arena",
    "home": {
     "abbrev": "VAN",
-    "elo": 1394.6,
-    "rest_days": 9,
+    "elo": 1397.8,
+    "rest_days": 7,
     "b2b": false
    },
    "away": {
     "abbrev": "CGY",
-    "elo": 1455.7,
-    "rest_days": 9,
+    "elo": 1451.6,
+    "rest_days": 7,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4483,
-    "away_win_prob": 0.5517,
-    "home_ml_fair": 123,
-    "away_ml_fair": -123,
-    "home_decimal_fair": 2.231,
-    "away_decimal_fair": 1.813,
-    "exp_goals_home": 2.83,
-    "exp_goals_away": 2.991,
-    "exp_total": 6.044,
+    "home_win_prob": 0.4587,
+    "away_win_prob": 0.5413,
+    "home_ml_fair": 118,
+    "away_ml_fair": -118,
+    "home_decimal_fair": 2.18,
+    "away_decimal_fair": 1.847,
+    "exp_goals_home": 2.875,
+    "exp_goals_away": 2.95,
+    "exp_total": 6.048,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5312,
+    "fair_line_p_over": 0.5319,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5312
+      "p_over": 0.5319
      },
      {
       "line": 6.5,
-      "p_over": 0.4317
+      "p_over": 0.4325
      }
     ]
    },
@@ -515,36 +515,36 @@
    "venue": "SAP Center at San Jose",
    "home": {
     "abbrev": "SJS",
-    "elo": 1441.3,
-    "rest_days": 9,
+    "elo": 1447.4,
+    "rest_days": 7,
     "b2b": false
    },
    "away": {
     "abbrev": "LAK",
-    "elo": 1470.7,
-    "rest_days": 10,
+    "elo": 1476.3,
+    "rest_days": 7,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4936,
-    "away_win_prob": 0.5064,
-    "home_ml_fair": 103,
-    "away_ml_fair": -103,
-    "home_decimal_fair": 2.026,
-    "away_decimal_fair": 1.975,
-    "exp_goals_home": 3.124,
-    "exp_goals_away": 2.824,
-    "exp_total": 6.168,
+    "home_win_prob": 0.4945,
+    "away_win_prob": 0.5055,
+    "home_ml_fair": 102,
+    "away_ml_fair": -102,
+    "home_decimal_fair": 2.022,
+    "away_decimal_fair": 1.978,
+    "exp_goals_home": 3.123,
+    "exp_goals_away": 2.864,
+    "exp_total": 6.206,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4533,
+    "fair_line_p_over": 0.4601,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5535
+      "p_over": 0.5602
      },
      {
       "line": 6.5,
-      "p_over": 0.4533
+      "p_over": 0.4601
      }
     ]
    },
