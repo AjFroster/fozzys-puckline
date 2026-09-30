@@ -1,16 +1,86 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-09-20T14:37:49Z",
+ "generated_at": "2026-09-30T16:44:52Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "season": 20262027,
  "complete": false,
- "through": null,
+ "through": "2026-09-29",
  "rolling_window": 100,
- "summary": null,
- "points": [],
- "calibration": [],
+ "summary": {
+  "date": "2026-09-29",
+  "games_today": 5,
+  "correct_today": 3,
+  "games": 5,
+  "correct": 3,
+  "accuracy": 0.6,
+  "log_loss": 0.74853,
+  "baseline_log_loss": 0.67301,
+  "brier": 0.27542,
+  "over_under_hit_rate": 0.4,
+  "rolling_accuracy": null,
+  "rolling_log_loss": null
+ },
+ "points": [
+  {
+   "date": "2026-09-29",
+   "games_today": 5,
+   "correct_today": 3,
+   "games": 5,
+   "correct": 3,
+   "accuracy": 0.6,
+   "log_loss": 0.74853,
+   "baseline_log_loss": 0.67301,
+   "brier": 0.27542,
+   "over_under_hit_rate": 0.4,
+   "rolling_accuracy": null,
+   "rolling_log_loss": null
+  }
+ ],
+ "calibration": [
+  {
+   "lower": 0.4,
+   "upper": 0.5,
+   "count": 1,
+   "mean_predicted": 0.4428,
+   "observed": 0.0,
+   "z": 0.0
+  },
+  {
+   "lower": 0.5,
+   "upper": 0.6,
+   "count": 1,
+   "mean_predicted": 0.5615,
+   "observed": 1.0,
+   "z": 0.0
+  },
+  {
+   "lower": 0.6,
+   "upper": 0.7,
+   "count": 3,
+   "mean_predicted": 0.6684,
+   "observed": 0.3333,
+   "z": 1.231
+  }
+ ],
  "worst_calibration_z": 0.0,
- "calibration_threshold": 0.0,
+ "calibration_threshold": Infinity,
  "well_calibrated": true,
- "biggest_misses": []
+ "biggest_misses": [
+  {
+   "date": "2026-09-29",
+   "game_id": 2026020004,
+   "winner": "VAN",
+   "loser": "EDM",
+   "probability_given_to_winner": 0.3079,
+   "score": "6-5 OT"
+  },
+  {
+   "date": "2026-09-29",
+   "game_id": 2026020001,
+   "winner": "FLA",
+   "loser": "CAR",
+   "probability_given_to_winner": 0.3635,
+   "score": "1-0 OT"
+  }
+ ]
 }

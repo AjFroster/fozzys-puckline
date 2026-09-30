@@ -1,0 +1,134 @@
+{
+ "schema": "1.0.0",
+ "generated_at": "2026-09-30T16:44:52Z",
+ "model_version": "elo-1.0+cmp-1.0/ec1c67c",
+ "date": "2026-10-07",
+ "games": [
+  {
+   "game_id": 2026020053,
+   "start_utc": "2026-10-07T23:30:00Z",
+   "state": "FUT",
+   "venue": "Capital One Arena",
+   "home": {
+    "abbrev": "WSH",
+    "elo": 1527.5,
+    "rest_days": 11,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "PIT",
+    "elo": 1501.0,
+    "rest_days": 11,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.5736,
+    "away_win_prob": 0.4264,
+    "home_ml_fair": -134,
+    "away_ml_fair": 134,
+    "home_decimal_fair": 1.744,
+    "away_decimal_fair": 2.345,
+    "exp_goals_home": 3.328,
+    "exp_goals_away": 2.872,
+    "exp_total": 6.413,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.4958,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5961
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4958
+     }
+    ]
+   },
+   "result": null
+  },
+  {
+   "game_id": 2026020054,
+   "start_utc": "2026-10-07T23:30:00Z",
+   "state": "FUT",
+   "venue": "Canada Life Centre",
+   "home": {
+    "abbrev": "WPG",
+    "elo": 1475.4,
+    "rest_days": 12,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "COL",
+    "elo": 1561.5,
+    "rest_days": 11,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.4129,
+    "away_win_prob": 0.5871,
+    "home_ml_fair": 142,
+    "away_ml_fair": -142,
+    "home_decimal_fair": 2.422,
+    "away_decimal_fair": 1.703,
+    "exp_goals_home": 2.652,
+    "exp_goals_away": 2.992,
+    "exp_total": 5.87,
+    "fair_total_line": 5.5,
+    "fair_line_p_over": 0.4996,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.4996
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4004
+     }
+    ]
+   },
+   "result": null
+  },
+  {
+   "game_id": 2026020055,
+   "start_utc": "2026-10-08T02:00:00Z",
+   "state": "FUT",
+   "venue": "Honda Center",
+   "home": {
+    "abbrev": "ANA",
+    "elo": 1449.8,
+    "rest_days": 11,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "EDM",
+    "elo": 1511.4,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.4474,
+    "away_win_prob": 0.5526,
+    "home_ml_fair": 124,
+    "away_ml_fair": -124,
+    "home_decimal_fair": 2.235,
+    "away_decimal_fair": 1.81,
+    "exp_goals_home": 3.086,
+    "exp_goals_away": 3.355,
+    "exp_total": 6.651,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.5366,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.6349
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.5366
+     }
+    ]
+   },
+   "result": null
+  }
+ ]
+}

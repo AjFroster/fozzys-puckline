@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-09-27T15:34:27Z",
+ "generated_at": "2026-09-30T16:44:52Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-02",
  "games": [
@@ -17,30 +17,30 @@
    },
    "away": {
     "abbrev": "NYR",
-    "elo": 1482.6,
-    "rest_days": 7,
+    "elo": 1477.9,
+    "rest_days": 3,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5327,
-    "away_win_prob": 0.4673,
-    "home_ml_fair": -114,
-    "away_ml_fair": 114,
-    "home_decimal_fair": 1.877,
-    "away_decimal_fair": 2.14,
+    "home_win_prob": 0.5396,
+    "away_win_prob": 0.4604,
+    "home_ml_fair": -117,
+    "away_ml_fair": 117,
+    "home_decimal_fair": 1.853,
+    "away_decimal_fair": 2.172,
     "exp_goals_home": 2.983,
-    "exp_goals_away": 2.916,
-    "exp_total": 6.12,
+    "exp_goals_away": 2.864,
+    "exp_total": 6.07,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5448,
+    "fair_line_p_over": 0.5358,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5448
+      "p_over": 0.5358
      },
      {
       "line": 6.5,
-      "p_over": 0.4451
+      "p_over": 0.4362
      }
     ]
    },
@@ -53,8 +53,8 @@
    "venue": "Lenovo Center",
    "home": {
     "abbrev": "CAR",
-    "elo": 1574.4,
-    "rest_days": 6,
+    "elo": 1572.7,
+    "rest_days": 3,
     "b2b": false
    },
    "away": {
@@ -64,25 +64,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.6021,
-    "away_win_prob": 0.3979,
-    "home_ml_fair": -151,
-    "away_ml_fair": 151,
-    "home_decimal_fair": 1.661,
-    "away_decimal_fair": 2.513,
-    "exp_goals_home": 3.25,
-    "exp_goals_away": 2.793,
-    "exp_total": 6.259,
+    "home_win_prob": 0.5998,
+    "away_win_prob": 0.4002,
+    "home_ml_fair": -150,
+    "away_ml_fair": 150,
+    "home_decimal_fair": 1.667,
+    "away_decimal_fair": 2.498,
+    "exp_goals_home": 3.19,
+    "exp_goals_away": 2.746,
+    "exp_total": 6.154,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.469,
+    "fair_line_p_over": 0.4507,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5698
+      "p_over": 0.5514
      },
      {
       "line": 6.5,
-      "p_over": 0.469
+      "p_over": 0.4507
      }
     ]
    },
@@ -101,30 +101,30 @@
    },
    "away": {
     "abbrev": "BOS",
-    "elo": 1500.6,
-    "rest_days": 7,
+    "elo": 1505.4,
+    "rest_days": 3,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4996,
-    "away_win_prob": 0.5004,
-    "home_ml_fair": 100,
-    "away_ml_fair": -100,
-    "home_decimal_fair": 2.001,
-    "away_decimal_fair": 1.999,
-    "exp_goals_home": 2.777,
-    "exp_goals_away": 2.823,
-    "exp_total": 5.829,
+    "home_win_prob": 0.4928,
+    "away_win_prob": 0.5072,
+    "home_ml_fair": 103,
+    "away_ml_fair": -103,
+    "home_decimal_fair": 2.029,
+    "away_decimal_fair": 1.972,
+    "exp_goals_home": 2.729,
+    "exp_goals_away": 2.825,
+    "exp_total": 5.783,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.4916,
+    "fair_line_p_over": 0.4832,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.4916
+      "p_over": 0.4832
      },
      {
       "line": 6.5,
-      "p_over": 0.3934
+      "p_over": 0.3854
      }
     ]
    },
@@ -179,8 +179,8 @@
    "venue": "T-Mobile Arena",
    "home": {
     "abbrev": "VGK",
-    "elo": 1526.2,
-    "rest_days": 6,
+    "elo": 1529.6,
+    "rest_days": 3,
     "b2b": false
    },
    "away": {
@@ -190,25 +190,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.642,
-    "away_win_prob": 0.358,
-    "home_ml_fair": -179,
-    "away_ml_fair": 179,
-    "home_decimal_fair": 1.558,
-    "away_decimal_fair": 2.793,
-    "exp_goals_home": 3.511,
-    "exp_goals_away": 2.743,
-    "exp_total": 6.461,
+    "home_win_prob": 0.6464,
+    "away_win_prob": 0.3536,
+    "home_ml_fair": -183,
+    "away_ml_fair": 183,
+    "home_decimal_fair": 1.547,
+    "away_decimal_fair": 2.828,
+    "exp_goals_home": 3.55,
+    "exp_goals_away": 2.73,
+    "exp_total": 6.485,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5032,
+    "fair_line_p_over": 0.5072,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.605
+      "p_over": 0.6092
      },
      {
       "line": 6.5,
-      "p_over": 0.5032
+      "p_over": 0.5072
      }
     ]
    },

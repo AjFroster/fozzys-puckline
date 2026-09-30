@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-09-27T15:34:27Z",
+ "generated_at": "2026-09-30T16:44:52Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-09-30",
  "games": [
@@ -53,9 +53,9 @@
    "venue": "Scotiabank Arena",
    "home": {
     "abbrev": "TOR",
-    "elo": 1466.8,
-    "rest_days": 7,
-    "b2b": false
+    "elo": 1464.4,
+    "rest_days": 1,
+    "b2b": true
    },
    "away": {
     "abbrev": "NYI",
@@ -64,25 +64,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5551,
-    "away_win_prob": 0.4449,
-    "home_ml_fair": -125,
-    "away_ml_fair": 125,
-    "home_decimal_fair": 1.802,
-    "away_decimal_fair": 2.247,
-    "exp_goals_home": 3.165,
-    "exp_goals_away": 2.804,
-    "exp_total": 6.187,
+    "home_win_prob": 0.5158,
+    "away_win_prob": 0.4842,
+    "home_ml_fair": -107,
+    "away_ml_fair": 107,
+    "home_decimal_fair": 1.939,
+    "away_decimal_fair": 2.065,
+    "exp_goals_home": 3.146,
+    "exp_goals_away": 2.799,
+    "exp_total": 6.164,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4567,
+    "fair_line_p_over": 0.4526,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5571
+      "p_over": 0.5529
      },
      {
       "line": 6.5,
-      "p_over": 0.4567
+      "p_over": 0.4526
      }
     ]
    },
@@ -114,17 +114,17 @@
     "away_decimal_fair": 2.886,
     "exp_goals_home": 3.176,
     "exp_goals_away": 2.487,
-    "exp_total": 5.883,
+    "exp_total": 5.882,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.503,
+    "fair_line_p_over": 0.5028,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.503
+      "p_over": 0.5028
      },
      {
       "line": 6.5,
-      "p_over": 0.4017
+      "p_over": 0.4015
      }
     ]
    },

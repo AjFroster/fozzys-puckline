@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-09-27T15:34:27Z",
+ "generated_at": "2026-09-30T16:44:52Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-09-29",
  "games": [
   {
    "game_id": 2026020001,
    "start_utc": "2026-09-29T21:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Lenovo Center",
    "home": {
     "abbrev": "CAR",
@@ -44,12 +44,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 0,
+    "away_score": 1,
+    "last_period": "OT",
+    "total_goals": 1,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020002,
    "start_utc": "2026-09-29T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Scotiabank Arena",
    "home": {
     "abbrev": "TOR",
@@ -86,12 +92,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 3,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020003,
    "start_utc": "2026-09-30T00:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "TD Garden",
    "home": {
     "abbrev": "BOS",
@@ -128,12 +140,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 0,
+    "last_period": "REG",
+    "total_goals": 3,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020004,
    "start_utc": "2026-09-30T02:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Rogers Place",
    "home": {
     "abbrev": "EDM",
@@ -155,27 +173,33 @@
     "home_decimal_fair": 1.445,
     "away_decimal_fair": 3.248,
     "exp_goals_home": 3.64,
-    "exp_goals_away": 2.575,
-    "exp_total": 6.415,
+    "exp_goals_away": 2.574,
+    "exp_total": 6.414,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.494,
+    "fair_line_p_over": 0.4939,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5986
+      "p_over": 0.5984
      },
      {
       "line": 6.5,
-      "p_over": 0.494
+      "p_over": 0.4939
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 5,
+    "away_score": 6,
+    "last_period": "OT",
+    "total_goals": 11,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020005,
    "start_utc": "2026-09-30T02:30:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "T-Mobile Arena",
    "home": {
     "abbrev": "VGK",
@@ -212,7 +236,13 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 5,
+    "away_score": 2,
+    "last_period": "REG",
+    "total_goals": 7,
+    "home_won": true
+   }
   }
  ]
 }
