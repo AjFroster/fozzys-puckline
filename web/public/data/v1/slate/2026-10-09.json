@@ -1,0 +1,176 @@
+{
+ "schema": "1.0.0",
+ "generated_at": "2026-10-02T16:34:04Z",
+ "model_version": "elo-1.0+cmp-1.0/ec1c67c",
+ "date": "2026-10-09",
+ "games": [
+  {
+   "game_id": 2026020066,
+   "start_utc": "2026-10-09T23:00:00Z",
+   "state": "FUT",
+   "venue": "Little Caesars Arena",
+   "home": {
+    "abbrev": "DET",
+    "elo": 1480.4,
+    "rest_days": 13,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "SEA",
+    "elo": 1463.0,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.5607,
+    "away_win_prob": 0.4393,
+    "home_ml_fair": -128,
+    "away_ml_fair": 128,
+    "home_decimal_fair": 1.783,
+    "away_decimal_fair": 2.277,
+    "exp_goals_home": 3.064,
+    "exp_goals_away": 2.832,
+    "exp_total": 6.117,
+    "fair_total_line": 5.5,
+    "fair_line_p_over": 0.5444,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5444
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4445
+     }
+    ]
+   },
+   "result": null
+  },
+  {
+   "game_id": 2026020067,
+   "start_utc": "2026-10-09T23:00:00Z",
+   "state": "FUT",
+   "venue": "Capital One Arena",
+   "home": {
+    "abbrev": "WSH",
+    "elo": 1527.5,
+    "rest_days": 13,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "NYR",
+    "elo": 1485.1,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.5958,
+    "away_win_prob": 0.4042,
+    "home_ml_fair": -147,
+    "away_ml_fair": 147,
+    "home_decimal_fair": 1.678,
+    "away_decimal_fair": 2.474,
+    "exp_goals_home": 3.158,
+    "exp_goals_away": 2.772,
+    "exp_total": 6.15,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.4501,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5505
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4501
+     }
+    ]
+   },
+   "result": null
+  },
+  {
+   "game_id": 2026020068,
+   "start_utc": "2026-10-09T23:00:00Z",
+   "state": "FUT",
+   "venue": "Nationwide Arena",
+   "home": {
+    "abbrev": "CBJ",
+    "elo": 1508.4,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "PIT",
+    "elo": 1509.3,
+    "rest_days": 9,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.5345,
+    "away_win_prob": 0.4655,
+    "home_ml_fair": -115,
+    "away_ml_fair": 115,
+    "home_decimal_fair": 1.871,
+    "away_decimal_fair": 2.148,
+    "exp_goals_home": 3.13,
+    "exp_goals_away": 2.914,
+    "exp_total": 6.261,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.4698,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5698
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4698
+     }
+    ]
+   },
+   "result": null
+  },
+  {
+   "game_id": 2026020069,
+   "start_utc": "2026-10-10T00:00:00Z",
+   "state": "FUT",
+   "venue": "Canada Life Centre",
+   "home": {
+    "abbrev": "WPG",
+    "elo": 1475.4,
+    "rest_days": 14,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "ANA",
+    "elo": 1449.8,
+    "rest_days": 13,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.5723,
+    "away_win_prob": 0.4277,
+    "home_ml_fair": -134,
+    "away_ml_fair": 134,
+    "home_decimal_fair": 1.747,
+    "away_decimal_fair": 2.338,
+    "exp_goals_home": 3.21,
+    "exp_goals_away": 2.864,
+    "exp_total": 6.291,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.475,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5752
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.475
+     }
+    ]
+   },
+   "result": null
+  }
+ ]
+}

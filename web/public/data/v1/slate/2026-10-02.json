@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-01T17:19:04Z",
+ "generated_at": "2026-10-02T16:34:04Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-02",
  "games": [
@@ -17,30 +17,30 @@
    },
    "away": {
     "abbrev": "NYR",
-    "elo": 1477.9,
-    "rest_days": 3,
-    "b2b": false
+    "elo": 1485.1,
+    "rest_days": 1,
+    "b2b": true
    },
    "prediction": {
-    "home_win_prob": 0.5396,
-    "away_win_prob": 0.4604,
-    "home_ml_fair": -117,
-    "away_ml_fair": 117,
-    "home_decimal_fair": 1.853,
-    "away_decimal_fair": 2.172,
-    "exp_goals_home": 2.984,
-    "exp_goals_away": 2.864,
-    "exp_total": 6.07,
+    "home_win_prob": 0.5649,
+    "away_win_prob": 0.4351,
+    "home_ml_fair": -130,
+    "away_ml_fair": 130,
+    "home_decimal_fair": 1.77,
+    "away_decimal_fair": 2.299,
+    "exp_goals_home": 2.949,
+    "exp_goals_away": 2.898,
+    "exp_total": 6.071,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5358,
+    "fair_line_p_over": 0.536,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5358
+      "p_over": 0.536
      },
      {
       "line": 6.5,
-      "p_over": 0.4362
+      "p_over": 0.4365
      }
     ]
    },
@@ -154,19 +154,19 @@
     "away_ml_fair": 149,
     "home_decimal_fair": 1.67,
     "away_decimal_fair": 2.492,
-    "exp_goals_home": 2.906,
+    "exp_goals_home": 2.907,
     "exp_goals_away": 2.543,
-    "exp_total": 5.679,
+    "exp_total": 5.68,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.4639,
+    "fair_line_p_over": 0.4641,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.4639
+      "p_over": 0.4641
      },
      {
       "line": 6.5,
-      "p_over": 0.3664
+      "p_over": 0.3666
      }
     ]
    },
