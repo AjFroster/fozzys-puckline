@@ -1,13 +1,9 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-02T16:34:04Z",
+ "generated_at": "2026-10-03T15:05:42Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
- "latest_date": "2026-10-02",
+ "latest_date": "2026-10-03",
  "dates": [
-  {
-   "date": "2026-05-22",
-   "games": 1
-  },
   {
    "date": "2026-05-23",
    "games": 1
@@ -151,6 +147,10 @@
   {
    "date": "2026-10-09",
    "games": 4
+  },
+  {
+   "date": "2026-10-10",
+   "games": 14
   }
  ]
 }

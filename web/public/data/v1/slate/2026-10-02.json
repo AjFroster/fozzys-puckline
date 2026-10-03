@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-02T16:34:04Z",
+ "generated_at": "2026-10-03T15:05:42Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-02",
  "games": [
   {
    "game_id": 2026020017,
    "start_utc": "2026-10-02T22:30:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Little Caesars Arena",
    "home": {
     "abbrev": "DET",
@@ -44,12 +44,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 0,
+    "away_score": 2,
+    "last_period": "REG",
+    "total_goals": 2,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020018,
    "start_utc": "2026-10-02T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Lenovo Center",
    "home": {
     "abbrev": "CAR",
@@ -86,12 +92,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 5,
+    "last_period": "REG",
+    "total_goals": 7,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020019,
    "start_utc": "2026-10-03T00:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Canada Life Centre",
    "home": {
     "abbrev": "WPG",
@@ -128,12 +140,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 4,
+    "last_period": "OT",
+    "total_goals": 7,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020020,
    "start_utc": "2026-10-03T01:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "American Airlines Center",
    "home": {
     "abbrev": "DAL",
@@ -154,7 +172,7 @@
     "away_ml_fair": 149,
     "home_decimal_fair": 1.67,
     "away_decimal_fair": 2.492,
-    "exp_goals_home": 2.907,
+    "exp_goals_home": 2.906,
     "exp_goals_away": 2.543,
     "exp_total": 5.68,
     "fair_total_line": 5.5,
@@ -170,12 +188,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 0,
+    "away_score": 4,
+    "last_period": "REG",
+    "total_goals": 4,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020021,
    "start_utc": "2026-10-03T02:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "T-Mobile Arena",
    "home": {
     "abbrev": "VGK",
@@ -212,7 +236,13 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 4,
+    "last_period": "REG",
+    "total_goals": 7,
+    "home_won": false
+   }
   }
  ]
 }
