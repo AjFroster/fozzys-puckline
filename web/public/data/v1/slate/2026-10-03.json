@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-03T15:05:42Z",
+ "generated_at": "2026-10-04T15:42:51Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-03",
  "games": [
   {
    "game_id": 2026020022,
    "start_utc": "2026-10-03T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "KeyBank Center",
    "home": {
     "abbrev": "BUF",
@@ -44,12 +44,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 4,
+    "away_score": 3,
+    "last_period": "REG",
+    "total_goals": 7,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020023,
    "start_utc": "2026-10-03T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Scotiabank Arena",
    "home": {
     "abbrev": "TOR",
@@ -86,12 +92,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 3,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020024,
    "start_utc": "2026-10-03T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Benchmark International Arena",
    "home": {
     "abbrev": "TBL",
@@ -128,12 +140,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 4,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020025,
    "start_utc": "2026-10-03T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Xfinity Mobile Arena",
    "home": {
     "abbrev": "PHI",
@@ -154,7 +172,7 @@
     "away_ml_fair": -131,
     "home_decimal_fair": 2.307,
     "away_decimal_fair": 1.765,
-    "exp_goals_home": 2.666,
+    "exp_goals_home": 2.665,
     "exp_goals_away": 3.008,
     "exp_total": 5.899,
     "fair_total_line": 5.5,
@@ -170,12 +188,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 3,
+    "last_period": "OT",
+    "total_goals": 5,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020026,
    "start_utc": "2026-10-03T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "PPG Paints Arena",
    "home": {
     "abbrev": "PIT",
@@ -196,7 +220,7 @@
     "away_ml_fair": 100,
     "home_decimal_fair": 1.999,
     "away_decimal_fair": 2.001,
-    "exp_goals_home": 3.19,
+    "exp_goals_home": 3.189,
     "exp_goals_away": 2.93,
     "exp_total": 6.336,
     "fair_total_line": 6.5,
@@ -212,12 +236,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 6,
+    "away_score": 5,
+    "last_period": "OT",
+    "total_goals": 11,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020027,
    "start_utc": "2026-10-03T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Nationwide Arena",
    "home": {
     "abbrev": "CBJ",
@@ -254,12 +284,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 1,
+    "away_score": 4,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020028,
    "start_utc": "2026-10-03T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Rogers Place",
    "home": {
     "abbrev": "EDM",
@@ -296,12 +332,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 4,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020029,
    "start_utc": "2026-10-03T23:30:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "UBS Arena",
    "home": {
     "abbrev": "NYI",
@@ -338,12 +380,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 6,
+    "away_score": 0,
+    "last_period": "REG",
+    "total_goals": 6,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020030,
    "start_utc": "2026-10-04T00:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Bridgestone Arena",
    "home": {
     "abbrev": "NSH",
@@ -380,12 +428,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 3,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020031,
    "start_utc": "2026-10-04T00:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Grand Casino Arena",
    "home": {
     "abbrev": "MIN",
@@ -422,12 +476,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 4,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020032,
    "start_utc": "2026-10-04T01:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Ball Arena",
    "home": {
     "abbrev": "COL",
@@ -450,26 +510,32 @@
     "away_decimal_fair": 2.913,
     "exp_goals_home": 3.076,
     "exp_goals_away": 2.562,
-    "exp_total": 5.863,
+    "exp_total": 5.862,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.4986,
+    "fair_line_p_over": 0.4985,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.4986
+      "p_over": 0.4985
      },
      {
       "line": 6.5,
-      "p_over": 0.3987
+      "p_over": 0.3985
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 6,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 7,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020033,
    "start_utc": "2026-10-04T02:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Rogers Arena",
    "home": {
     "abbrev": "VAN",
@@ -506,12 +572,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 4,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020034,
    "start_utc": "2026-10-04T02:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "SAP Center at San Jose",
    "home": {
     "abbrev": "SJS",
@@ -532,7 +604,7 @@
     "away_ml_fair": 101,
     "home_decimal_fair": 1.991,
     "away_decimal_fair": 2.009,
-    "exp_goals_home": 3.218,
+    "exp_goals_home": 3.217,
     "exp_goals_away": 2.882,
     "exp_total": 6.316,
     "fair_total_line": 6.5,
@@ -548,7 +620,13 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 5,
+    "away_score": 4,
+    "last_period": "OT",
+    "total_goals": 9,
+    "home_won": true
+   }
   }
  ]
 }

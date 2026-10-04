@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-03T15:05:42Z",
+ "generated_at": "2026-10-04T15:42:51Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-06",
  "games": [
@@ -11,36 +11,36 @@
    "venue": "Scotiabank Arena",
    "home": {
     "abbrev": "TOR",
-    "elo": 1467.0,
-    "rest_days": 6,
+    "elo": 1464.4,
+    "rest_days": 3,
     "b2b": false
    },
    "away": {
     "abbrev": "NSH",
-    "elo": 1459.0,
-    "rest_days": 5,
+    "elo": 1462.0,
+    "rest_days": 3,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5474,
-    "away_win_prob": 0.4526,
-    "home_ml_fair": -121,
-    "away_ml_fair": 121,
-    "home_decimal_fair": 1.827,
-    "away_decimal_fair": 2.21,
-    "exp_goals_home": 3.179,
-    "exp_goals_away": 2.894,
-    "exp_total": 6.29,
+    "home_win_prob": 0.5394,
+    "away_win_prob": 0.4606,
+    "home_ml_fair": -117,
+    "away_ml_fair": 117,
+    "home_decimal_fair": 1.854,
+    "away_decimal_fair": 2.171,
+    "exp_goals_home": 3.123,
+    "exp_goals_away": 2.876,
+    "exp_total": 6.218,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4748,
+    "fair_line_p_over": 0.4622,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5749
+      "p_over": 0.5623
      },
      {
       "line": 6.5,
-      "p_over": 0.4748
+      "p_over": 0.4622
      }
     ]
    },
@@ -53,36 +53,36 @@
    "venue": "Centre Bell",
    "home": {
     "abbrev": "MTL",
-    "elo": 1534.1,
-    "rest_days": 7,
+    "elo": 1533.3,
+    "rest_days": 3,
     "b2b": false
    },
    "away": {
     "abbrev": "CAR",
-    "elo": 1565.8,
-    "rest_days": 4,
+    "elo": 1566.3,
+    "rest_days": 3,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4903,
-    "away_win_prob": 0.5097,
-    "home_ml_fair": 104,
-    "away_ml_fair": -104,
-    "home_decimal_fair": 2.039,
-    "away_decimal_fair": 1.962,
-    "exp_goals_home": 2.964,
-    "exp_goals_away": 2.904,
-    "exp_total": 6.09,
+    "home_win_prob": 0.4885,
+    "away_win_prob": 0.5115,
+    "home_ml_fair": 105,
+    "away_ml_fair": -105,
+    "home_decimal_fair": 2.047,
+    "away_decimal_fair": 1.955,
+    "exp_goals_home": 2.984,
+    "exp_goals_away": 2.922,
+    "exp_total": 6.128,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5393,
+    "fair_line_p_over": 0.5462,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5393
+      "p_over": 0.5462
      },
      {
       "line": 6.5,
-      "p_over": 0.4398
+      "p_over": 0.4465
      }
     ]
    },
@@ -101,30 +101,30 @@
    },
    "away": {
     "abbrev": "OTT",
-    "elo": 1508.8,
-    "rest_days": 10,
+    "elo": 1511.4,
+    "rest_days": 3,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4879,
-    "away_win_prob": 0.5121,
-    "home_ml_fair": 105,
-    "away_ml_fair": -105,
-    "home_decimal_fair": 2.05,
-    "away_decimal_fair": 1.953,
-    "exp_goals_home": 2.897,
-    "exp_goals_away": 2.854,
-    "exp_total": 5.976,
+    "home_win_prob": 0.4841,
+    "away_win_prob": 0.5159,
+    "home_ml_fair": 107,
+    "away_ml_fair": -107,
+    "home_decimal_fair": 2.066,
+    "away_decimal_fair": 1.939,
+    "exp_goals_home": 2.881,
+    "exp_goals_away": 2.855,
+    "exp_total": 5.961,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5188,
+    "fair_line_p_over": 0.5161,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5188
+      "p_over": 0.5161
      },
      {
       "line": 6.5,
-      "p_over": 0.4197
+      "p_over": 0.4171
      }
     ]
    },
@@ -137,36 +137,36 @@
    "venue": "Prudential Center",
    "home": {
     "abbrev": "NJD",
-    "elo": 1482.7,
-    "rest_days": 5,
+    "elo": 1474.7,
+    "rest_days": 3,
     "b2b": false
    },
    "away": {
     "abbrev": "UTA",
-    "elo": 1510.0,
-    "rest_days": 5,
+    "elo": 1516.0,
+    "rest_days": 3,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4967,
-    "away_win_prob": 0.5033,
-    "home_ml_fair": 101,
-    "away_ml_fair": -101,
-    "home_decimal_fair": 2.013,
-    "away_decimal_fair": 1.987,
-    "exp_goals_home": 2.943,
-    "exp_goals_away": 2.953,
-    "exp_total": 6.118,
+    "home_win_prob": 0.4767,
+    "away_win_prob": 0.5233,
+    "home_ml_fair": 110,
+    "away_ml_fair": -110,
+    "home_decimal_fair": 2.098,
+    "away_decimal_fair": 1.911,
+    "exp_goals_home": 2.86,
+    "exp_goals_away": 3.02,
+    "exp_total": 6.102,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5444,
+    "fair_line_p_over": 0.5416,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5444
+      "p_over": 0.5416
      },
      {
       "line": 6.5,
-      "p_over": 0.4448
+      "p_over": 0.4419
      }
     ]
    },
@@ -179,36 +179,36 @@
    "venue": "KeyBank Center",
    "home": {
     "abbrev": "BUF",
-    "elo": 1531.4,
-    "rest_days": 5,
+    "elo": 1533.0,
+    "rest_days": 3,
     "b2b": false
    },
    "away": {
     "abbrev": "MIN",
-    "elo": 1518.2,
-    "rest_days": 5,
+    "elo": 1522.7,
+    "rest_days": 3,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5547,
-    "away_win_prob": 0.4453,
-    "home_ml_fair": -125,
-    "away_ml_fair": 125,
-    "home_decimal_fair": 1.803,
-    "away_decimal_fair": 2.246,
-    "exp_goals_home": 3.175,
-    "exp_goals_away": 2.821,
-    "exp_total": 6.213,
+    "home_win_prob": 0.5506,
+    "away_win_prob": 0.4494,
+    "home_ml_fair": -123,
+    "away_ml_fair": 123,
+    "home_decimal_fair": 1.816,
+    "away_decimal_fair": 2.225,
+    "exp_goals_home": 3.153,
+    "exp_goals_away": 2.839,
+    "exp_total": 6.21,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4612,
+    "fair_line_p_over": 0.4608,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5616
+      "p_over": 0.5611
      },
      {
       "line": 6.5,
-      "p_over": 0.4612
+      "p_over": 0.4608
      }
     ]
    },
@@ -227,20 +227,20 @@
    },
    "away": {
     "abbrev": "NYI",
-    "elo": 1450.8,
-    "rest_days": 6,
+    "elo": 1458.7,
+    "rest_days": 3,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5915,
-    "away_win_prob": 0.4085,
-    "home_ml_fair": -145,
-    "away_ml_fair": 145,
-    "home_decimal_fair": 1.691,
-    "away_decimal_fair": 2.448,
-    "exp_goals_home": 3.164,
-    "exp_goals_away": 2.503,
-    "exp_total": 5.886,
+    "home_win_prob": 0.5804,
+    "away_win_prob": 0.4196,
+    "home_ml_fair": -138,
+    "away_ml_fair": 138,
+    "home_decimal_fair": 1.723,
+    "away_decimal_fair": 2.383,
+    "exp_goals_home": 3.108,
+    "exp_goals_away": 2.559,
+    "exp_total": 5.889,
     "fair_total_line": 5.5,
     "fair_line_p_over": 0.5035,
     "totals": [
@@ -250,7 +250,7 @@
      },
      {
       "line": 6.5,
-      "p_over": 0.4025
+      "p_over": 0.4032
      }
     ]
    },
@@ -263,36 +263,36 @@
    "venue": "United Center",
    "home": {
     "abbrev": "CHI",
-    "elo": 1414.5,
-    "rest_days": 5,
+    "elo": 1412.9,
+    "rest_days": 3,
     "b2b": false
    },
    "away": {
     "abbrev": "STL",
-    "elo": 1503.0,
-    "rest_days": 4,
+    "elo": 1498.3,
+    "rest_days": 3,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4096,
-    "away_win_prob": 0.5904,
-    "home_ml_fair": 144,
-    "away_ml_fair": -144,
-    "home_decimal_fair": 2.441,
-    "away_decimal_fair": 1.694,
-    "exp_goals_home": 2.559,
-    "exp_goals_away": 2.929,
-    "exp_total": 5.717,
+    "home_win_prob": 0.414,
+    "away_win_prob": 0.586,
+    "home_ml_fair": 142,
+    "away_ml_fair": -142,
+    "home_decimal_fair": 2.416,
+    "away_decimal_fair": 1.706,
+    "exp_goals_home": 2.623,
+    "exp_goals_away": 2.908,
+    "exp_total": 5.761,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.4711,
+    "fair_line_p_over": 0.4792,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.4711
+      "p_over": 0.4792
      },
      {
       "line": 6.5,
-      "p_over": 0.3732
+      "p_over": 0.3811
      }
     ]
    },
@@ -305,8 +305,8 @@
    "venue": "Climate Pledge Arena",
    "home": {
     "abbrev": "SEA",
-    "elo": 1463.0,
-    "rest_days": 5,
+    "elo": 1459.7,
+    "rest_days": 3,
     "b2b": false
    },
    "away": {
@@ -316,25 +316,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4458,
-    "away_win_prob": 0.5542,
-    "home_ml_fair": 124,
-    "away_ml_fair": -124,
-    "home_decimal_fair": 2.243,
-    "away_decimal_fair": 1.805,
-    "exp_goals_home": 2.977,
-    "exp_goals_away": 2.998,
-    "exp_total": 6.196,
+    "home_win_prob": 0.4411,
+    "away_win_prob": 0.5589,
+    "home_ml_fair": 127,
+    "away_ml_fair": -127,
+    "home_decimal_fair": 2.267,
+    "away_decimal_fair": 1.789,
+    "exp_goals_home": 2.943,
+    "exp_goals_away": 2.997,
+    "exp_total": 6.161,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4586,
+    "fair_line_p_over": 0.4524,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5583
+      "p_over": 0.5521
      },
      {
       "line": 6.5,
-      "p_over": 0.4586
+      "p_over": 0.4524
      }
     ]
    },
@@ -347,8 +347,8 @@
    "venue": "Crypto.com Arena",
    "home": {
     "abbrev": "LAK",
-    "elo": 1472.0,
-    "rest_days": 6,
+    "elo": 1471.2,
+    "rest_days": 3,
     "b2b": false
    },
    "away": {
@@ -358,25 +358,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4919,
-    "away_win_prob": 0.5081,
-    "home_ml_fair": 103,
-    "away_ml_fair": -103,
-    "home_decimal_fair": 2.033,
-    "away_decimal_fair": 1.968,
-    "exp_goals_home": 3.017,
-    "exp_goals_away": 2.914,
-    "exp_total": 6.152,
+    "home_win_prob": 0.4908,
+    "away_win_prob": 0.5092,
+    "home_ml_fair": 104,
+    "away_ml_fair": -104,
+    "home_decimal_fair": 2.038,
+    "away_decimal_fair": 1.964,
+    "exp_goals_home": 3.04,
+    "exp_goals_away": 2.93,
+    "exp_total": 6.189,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4508,
+    "fair_line_p_over": 0.4573,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5505
+      "p_over": 0.5571
      },
      {
       "line": 6.5,
-      "p_over": 0.4508
+      "p_over": 0.4573
      }
     ]
    },

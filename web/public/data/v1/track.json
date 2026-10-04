@@ -1,22 +1,22 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-03T15:05:42Z",
+ "generated_at": "2026-10-04T15:42:51Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "season": 20262027,
  "complete": false,
- "through": "2026-10-02",
+ "through": "2026-10-03",
  "rolling_window": 100,
  "summary": {
-  "date": "2026-10-02",
-  "games_today": 5,
-  "correct_today": 1,
-  "games": 21,
-  "correct": 10,
-  "accuracy": 0.4762,
-  "log_loss": 0.71503,
-  "baseline_log_loss": 0.68291,
-  "brier": 0.26048,
-  "over_under_hit_rate": 0.619,
+  "date": "2026-10-03",
+  "games_today": 13,
+  "correct_today": 9,
+  "games": 34,
+  "correct": 19,
+  "accuracy": 0.5588,
+  "log_loss": 0.67626,
+  "baseline_log_loss": 0.68621,
+  "brier": 0.2417,
+  "over_under_hit_rate": 0.5294,
   "rolling_accuracy": null,
   "rolling_log_loss": null
  },
@@ -76,6 +76,20 @@
    "over_under_hit_rate": 0.619,
    "rolling_accuracy": null,
    "rolling_log_loss": null
+  },
+  {
+   "date": "2026-10-03",
+   "games_today": 13,
+   "correct_today": 9,
+   "games": 34,
+   "correct": 19,
+   "accuracy": 0.5588,
+   "log_loss": 0.67626,
+   "baseline_log_loss": 0.68621,
+   "brier": 0.2417,
+   "over_under_hit_rate": 0.5294,
+   "rolling_accuracy": null,
+   "rolling_log_loss": null
   }
  ],
  "calibration": [
@@ -90,26 +104,26 @@
   {
    "lower": 0.4,
    "upper": 0.5,
-   "count": 6,
-   "mean_predicted": 0.4653,
-   "observed": 0.5,
-   "z": 0.17
+   "count": 11,
+   "mean_predicted": 0.466,
+   "observed": 0.5455,
+   "z": 0.529
   },
   {
    "lower": 0.5,
    "upper": 0.6,
-   "count": 8,
-   "mean_predicted": 0.5579,
-   "observed": 0.375,
-   "z": 1.069
+   "count": 13,
+   "mean_predicted": 0.5501,
+   "observed": 0.5385,
+   "z": 0.085
   },
   {
    "lower": 0.6,
    "upper": 0.7,
-   "count": 6,
-   "mean_predicted": 0.6598,
-   "observed": 0.5,
-   "z": 0.783
+   "count": 9,
+   "mean_predicted": 0.6575,
+   "observed": 0.6667,
+   "z": 0.058
   }
  ],
  "worst_calibration_z": 0.0,
