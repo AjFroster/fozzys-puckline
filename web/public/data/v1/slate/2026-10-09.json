@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-04T15:42:51Z",
+ "generated_at": "2026-10-06T17:06:14Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-09",
  "games": [
@@ -28,19 +28,19 @@
     "away_ml_fair": 126,
     "home_decimal_fair": 1.791,
     "away_decimal_fair": 2.264,
-    "exp_goals_home": 3.01,
+    "exp_goals_home": 3.009,
     "exp_goals_away": 2.783,
-    "exp_total": 6.016,
+    "exp_total": 6.015,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5263,
+    "fair_line_p_over": 0.5261,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5263
+      "p_over": 0.5261
      },
      {
       "line": 6.5,
-      "p_over": 0.4267
+      "p_over": 0.4265
      }
     ]
    },
@@ -101,30 +101,30 @@
    },
    "away": {
     "abbrev": "PIT",
-    "elo": 1510.2,
-    "rest_days": 6,
+    "elo": 1506.8,
+    "rest_days": 4,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5247,
-    "away_win_prob": 0.4753,
-    "home_ml_fair": -110,
-    "away_ml_fair": 110,
-    "home_decimal_fair": 1.906,
-    "away_decimal_fair": 2.104,
-    "exp_goals_home": 3.128,
-    "exp_goals_away": 2.963,
-    "exp_total": 6.308,
+    "home_win_prob": 0.5295,
+    "away_win_prob": 0.4705,
+    "home_ml_fair": -113,
+    "away_ml_fair": 113,
+    "home_decimal_fair": 1.888,
+    "away_decimal_fair": 2.126,
+    "exp_goals_home": 3.126,
+    "exp_goals_away": 2.941,
+    "exp_total": 6.285,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4782,
+    "fair_line_p_over": 0.474,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5779
+      "p_over": 0.5739
      },
      {
       "line": 6.5,
-      "p_over": 0.4782
+      "p_over": 0.474
      }
     ]
    },
@@ -137,8 +137,8 @@
    "venue": "Canada Life Centre",
    "home": {
     "abbrev": "WPG",
-    "elo": 1474.6,
-    "rest_days": 7,
+    "elo": 1477.9,
+    "rest_days": 4,
     "b2b": false
    },
    "away": {
@@ -148,25 +148,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5659,
-    "away_win_prob": 0.4341,
-    "home_ml_fair": -130,
-    "away_ml_fair": 130,
-    "home_decimal_fair": 1.767,
-    "away_decimal_fair": 2.303,
-    "exp_goals_home": 3.208,
-    "exp_goals_away": 2.882,
-    "exp_total": 6.306,
+    "home_win_prob": 0.5706,
+    "away_win_prob": 0.4294,
+    "home_ml_fair": -133,
+    "away_ml_fair": 133,
+    "home_decimal_fair": 1.753,
+    "away_decimal_fair": 2.329,
+    "exp_goals_home": 3.215,
+    "exp_goals_away": 2.864,
+    "exp_total": 6.296,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4776,
+    "fair_line_p_over": 0.4758,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5778
+      "p_over": 0.5761
      },
      {
       "line": 6.5,
-      "p_over": 0.4776
+      "p_over": 0.4758
      }
     ]
    },

@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-04T15:42:51Z",
+ "generated_at": "2026-10-06T17:06:14Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-07",
  "games": [
@@ -17,30 +17,30 @@
    },
    "away": {
     "abbrev": "PIT",
-    "elo": 1510.2,
-    "rest_days": 4,
+    "elo": 1506.8,
+    "rest_days": 2,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5649,
-    "away_win_prob": 0.4351,
-    "home_ml_fair": -130,
-    "away_ml_fair": 130,
-    "home_decimal_fair": 1.77,
-    "away_decimal_fair": 2.298,
-    "exp_goals_home": 3.298,
-    "exp_goals_away": 2.95,
-    "exp_total": 6.461,
+    "home_win_prob": 0.5697,
+    "away_win_prob": 0.4303,
+    "home_ml_fair": -132,
+    "away_ml_fair": 132,
+    "home_decimal_fair": 1.755,
+    "away_decimal_fair": 2.324,
+    "exp_goals_home": 3.296,
+    "exp_goals_away": 2.929,
+    "exp_total": 6.437,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5043,
+    "fair_line_p_over": 0.5002,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.604
+      "p_over": 0.6001
      },
      {
       "line": 6.5,
-      "p_over": 0.5043
+      "p_over": 0.5002
      }
     ]
    },
@@ -53,8 +53,8 @@
    "venue": "Canada Life Centre",
    "home": {
     "abbrev": "WPG",
-    "elo": 1474.6,
-    "rest_days": 5,
+    "elo": 1477.9,
+    "rest_days": 2,
     "b2b": false
    },
    "away": {
@@ -64,25 +64,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.3994,
-    "away_win_prob": 0.6006,
-    "home_ml_fair": 150,
-    "away_ml_fair": -150,
-    "home_decimal_fair": 2.504,
-    "away_decimal_fair": 1.665,
-    "exp_goals_home": 2.656,
-    "exp_goals_away": 3.119,
-    "exp_total": 5.996,
+    "home_win_prob": 0.404,
+    "away_win_prob": 0.596,
+    "home_ml_fair": 148,
+    "away_ml_fair": -148,
+    "home_decimal_fair": 2.475,
+    "away_decimal_fair": 1.678,
+    "exp_goals_home": 2.662,
+    "exp_goals_away": 3.1,
+    "exp_total": 5.984,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5231,
+    "fair_line_p_over": 0.5208,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5231
+      "p_over": 0.5208
      },
      {
       "line": 6.5,
-      "p_over": 0.4227
+      "p_over": 0.4205
      }
     ]
    },

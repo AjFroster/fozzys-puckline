@@ -1,0 +1,134 @@
+{
+ "schema": "1.0.0",
+ "generated_at": "2026-10-06T17:06:14Z",
+ "model_version": "elo-1.0+cmp-1.0/ec1c67c",
+ "date": "2026-10-12",
+ "games": [
+  {
+   "game_id": 2026020087,
+   "start_utc": "2026-10-12T17:00:00Z",
+   "state": "FUT",
+   "venue": "KeyBank Center",
+   "home": {
+    "abbrev": "BUF",
+    "elo": 1533.0,
+    "rest_days": 9,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "FLA",
+    "elo": 1502.6,
+    "rest_days": 11,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.579,
+    "away_win_prob": 0.421,
+    "home_ml_fair": -138,
+    "away_ml_fair": 138,
+    "home_decimal_fair": 1.727,
+    "away_decimal_fair": 2.375,
+    "exp_goals_home": 3.31,
+    "exp_goals_away": 2.823,
+    "exp_total": 6.347,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.4843,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.585
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4843
+     }
+    ]
+   },
+   "result": null
+  },
+  {
+   "game_id": 2026020088,
+   "start_utc": "2026-10-12T23:00:00Z",
+   "state": "FUT",
+   "venue": "Prudential Center",
+   "home": {
+    "abbrev": "NJD",
+    "elo": 1474.7,
+    "rest_days": 9,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "OTT",
+    "elo": 1517.3,
+    "rest_days": 7,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.4748,
+    "away_win_prob": 0.5252,
+    "home_ml_fair": 111,
+    "away_ml_fair": -111,
+    "home_decimal_fair": 2.106,
+    "away_decimal_fair": 1.904,
+    "exp_goals_home": 2.833,
+    "exp_goals_away": 2.871,
+    "exp_total": 5.93,
+    "fair_total_line": 5.5,
+    "fair_line_p_over": 0.5104,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5104
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4115
+     }
+    ]
+   },
+   "result": null
+  },
+  {
+   "game_id": 2026020089,
+   "start_utc": "2026-10-13T00:00:00Z",
+   "state": "FUT",
+   "venue": "Grand Casino Arena",
+   "home": {
+    "abbrev": "MIN",
+    "elo": 1522.7,
+    "rest_days": 9,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "VGK",
+    "elo": 1525.8,
+    "rest_days": 10,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.5315,
+    "away_win_prob": 0.4685,
+    "home_ml_fair": -113,
+    "away_ml_fair": 113,
+    "home_decimal_fair": 1.882,
+    "away_decimal_fair": 2.134,
+    "exp_goals_home": 3.049,
+    "exp_goals_away": 2.834,
+    "exp_total": 6.105,
+    "fair_total_line": 5.5,
+    "fair_line_p_over": 0.5421,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5421
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4423
+     }
+    ]
+   },
+   "result": null
+  }
+ ]
+}

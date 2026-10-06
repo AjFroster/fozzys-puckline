@@ -1,22 +1,22 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-04T15:42:51Z",
+ "generated_at": "2026-10-06T17:06:14Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "season": 20262027,
  "complete": false,
- "through": "2026-10-03",
+ "through": "2026-10-05",
  "rolling_window": 100,
  "summary": {
-  "date": "2026-10-03",
-  "games_today": 13,
-  "correct_today": 9,
-  "games": 34,
-  "correct": 19,
-  "accuracy": 0.5588,
-  "log_loss": 0.67626,
-  "baseline_log_loss": 0.68621,
-  "brier": 0.2417,
-  "over_under_hit_rate": 0.5294,
+  "date": "2026-10-05",
+  "games_today": 4,
+  "correct_today": 2,
+  "games": 38,
+  "correct": 21,
+  "accuracy": 0.5526,
+  "log_loss": 0.67159,
+  "baseline_log_loss": 0.6876,
+  "brier": 0.23947,
+  "over_under_hit_rate": 0.4737,
   "rolling_accuracy": null,
   "rolling_log_loss": null
  },
@@ -90,6 +90,20 @@
    "over_under_hit_rate": 0.5294,
    "rolling_accuracy": null,
    "rolling_log_loss": null
+  },
+  {
+   "date": "2026-10-05",
+   "games_today": 4,
+   "correct_today": 2,
+   "games": 38,
+   "correct": 21,
+   "accuracy": 0.5526,
+   "log_loss": 0.67159,
+   "baseline_log_loss": 0.6876,
+   "brier": 0.23947,
+   "over_under_hit_rate": 0.4737,
+   "rolling_accuracy": null,
+   "rolling_log_loss": null
   }
  ],
  "calibration": [
@@ -112,18 +126,18 @@
   {
    "lower": 0.5,
    "upper": 0.6,
-   "count": 13,
-   "mean_predicted": 0.5501,
-   "observed": 0.5385,
-   "z": 0.085
+   "count": 15,
+   "mean_predicted": 0.5507,
+   "observed": 0.4667,
+   "z": 0.652
   },
   {
    "lower": 0.6,
    "upper": 0.7,
-   "count": 9,
-   "mean_predicted": 0.6575,
-   "observed": 0.6667,
-   "z": 0.058
+   "count": 11,
+   "mean_predicted": 0.6535,
+   "observed": 0.7273,
+   "z": 0.549
   }
  ],
  "worst_calibration_z": 0.0,
@@ -171,12 +185,12 @@
    "score": "4-0"
   },
   {
-   "date": "2026-10-02",
-   "game_id": 2026020017,
-   "winner": "NYR",
-   "loser": "DET",
-   "probability_given_to_winner": 0.4351,
-   "score": "2-0"
+   "date": "2026-10-05",
+   "game_id": 2026020042,
+   "winner": "WPG",
+   "loser": "PIT",
+   "probability_given_to_winner": 0.4137,
+   "score": "3-2"
   }
  ]
 }
