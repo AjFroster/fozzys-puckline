@@ -1,0 +1,92 @@
+{
+ "schema": "1.0.0",
+ "generated_at": "2026-10-07T17:43:21Z",
+ "model_version": "elo-1.0+cmp-1.0/ec1c67c",
+ "date": "2026-10-14",
+ "games": [
+  {
+   "game_id": 2026020106,
+   "start_utc": "2026-10-14T23:30:00Z",
+   "state": "FUT",
+   "venue": "Capital One Arena",
+   "home": {
+    "abbrev": "WSH",
+    "elo": 1530.5,
+    "rest_days": 11,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "MTL",
+    "elo": 1529.0,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.5381,
+    "away_win_prob": 0.4619,
+    "home_ml_fair": -117,
+    "away_ml_fair": 117,
+    "home_decimal_fair": 1.858,
+    "away_decimal_fair": 2.165,
+    "exp_goals_home": 3.185,
+    "exp_goals_away": 2.812,
+    "exp_total": 6.215,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.4615,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5619
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4615
+     }
+    ]
+   },
+   "result": null
+  },
+  {
+   "game_id": 2026020107,
+   "start_utc": "2026-10-15T00:30:00Z",
+   "state": "FUT",
+   "venue": "Ball Arena",
+   "home": {
+    "abbrev": "COL",
+    "elo": 1570.5,
+    "rest_days": 11,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "DAL",
+    "elo": 1533.4,
+    "rest_days": 9,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.5884,
+    "away_win_prob": 0.4116,
+    "home_ml_fair": -143,
+    "away_ml_fair": 143,
+    "home_decimal_fair": 1.7,
+    "away_decimal_fair": 2.429,
+    "exp_goals_home": 3.066,
+    "exp_goals_away": 2.542,
+    "exp_total": 5.832,
+    "fair_total_line": 5.5,
+    "fair_line_p_over": 0.493,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.493
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.3932
+     }
+    ]
+   },
+   "result": null
+  }
+ ]
+}
