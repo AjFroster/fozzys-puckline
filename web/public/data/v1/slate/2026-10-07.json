@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-07T17:43:21Z",
+ "generated_at": "2026-10-08T17:47:33Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-07",
  "games": [
   {
    "game_id": 2026020053,
    "start_utc": "2026-10-07T23:30:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Capital One Arena",
    "home": {
     "abbrev": "WSH",
@@ -44,12 +44,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 5,
+    "away_score": 3,
+    "last_period": "REG",
+    "total_goals": 8,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020054,
    "start_utc": "2026-10-07T23:30:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Canada Life Centre",
    "home": {
     "abbrev": "WPG",
@@ -86,12 +92,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 2,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020055,
    "start_utc": "2026-10-08T02:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Honda Center",
    "home": {
     "abbrev": "ANA",
@@ -114,21 +126,27 @@
     "away_decimal_fair": 1.797,
     "exp_goals_home": 3.141,
     "exp_goals_away": 3.443,
-    "exp_total": 6.791,
+    "exp_total": 6.79,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5598,
+    "fair_line_p_over": 0.5596,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6569
+      "p_over": 0.6567
      },
      {
       "line": 6.5,
-      "p_over": 0.5598
+      "p_over": 0.5596
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 5,
+    "last_period": "REG",
+    "total_goals": 7,
+    "home_won": false
+   }
   }
  ]
 }
