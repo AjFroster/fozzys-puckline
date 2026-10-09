@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-08T17:47:33Z",
+ "generated_at": "2026-10-09T17:23:20Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-12",
  "games": [
@@ -11,8 +11,8 @@
    "venue": "KeyBank Center",
    "home": {
     "abbrev": "BUF",
-    "elo": 1533.5,
-    "rest_days": 6,
+    "elo": 1526.5,
+    "rest_days": 4,
     "b2b": false
    },
    "away": {
@@ -22,25 +22,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.576,
-    "away_win_prob": 0.424,
-    "home_ml_fair": -136,
-    "away_ml_fair": 136,
-    "home_decimal_fair": 1.736,
-    "away_decimal_fair": 2.358,
-    "exp_goals_home": 3.249,
-    "exp_goals_away": 2.792,
-    "exp_total": 6.257,
+    "home_win_prob": 0.5661,
+    "away_win_prob": 0.4339,
+    "home_ml_fair": -130,
+    "away_ml_fair": 130,
+    "home_decimal_fair": 1.766,
+    "away_decimal_fair": 2.305,
+    "exp_goals_home": 3.191,
+    "exp_goals_away": 2.811,
+    "exp_total": 6.22,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4687,
+    "fair_line_p_over": 0.4623,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5695
+      "p_over": 0.5628
      },
      {
       "line": 6.5,
-      "p_over": 0.4687
+      "p_over": 0.4623
      }
     ]
    },
@@ -59,30 +59,30 @@
    },
    "away": {
     "abbrev": "OTT",
-    "elo": 1512.9,
-    "rest_days": 6,
+    "elo": 1515.1,
+    "rest_days": 4,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.475,
-    "away_win_prob": 0.525,
-    "home_ml_fair": 111,
-    "away_ml_fair": -111,
-    "home_decimal_fair": 2.105,
-    "away_decimal_fair": 1.905,
-    "exp_goals_home": 2.876,
-    "exp_goals_away": 2.905,
-    "exp_total": 6.005,
+    "home_win_prob": 0.472,
+    "away_win_prob": 0.528,
+    "home_ml_fair": 112,
+    "away_ml_fair": -112,
+    "home_decimal_fair": 2.119,
+    "away_decimal_fair": 1.894,
+    "exp_goals_home": 2.844,
+    "exp_goals_away": 2.888,
+    "exp_total": 5.958,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5241,
+    "fair_line_p_over": 0.5154,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5241
+      "p_over": 0.5154
      },
      {
       "line": 6.5,
-      "p_over": 0.4249
+      "p_over": 0.4164
      }
     ]
    },
@@ -95,36 +95,36 @@
    "venue": "Grand Casino Arena",
    "home": {
     "abbrev": "MIN",
-    "elo": 1522.2,
-    "rest_days": 6,
+    "elo": 1519.8,
+    "rest_days": 4,
     "b2b": false
    },
    "away": {
     "abbrev": "VGK",
-    "elo": 1531.4,
-    "rest_days": 6,
+    "elo": 1531.5,
+    "rest_days": 4,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5227,
-    "away_win_prob": 0.4773,
-    "home_ml_fair": -110,
-    "away_ml_fair": 110,
-    "home_decimal_fair": 1.913,
-    "away_decimal_fair": 2.095,
-    "exp_goals_home": 3.016,
-    "exp_goals_away": 2.866,
-    "exp_total": 6.104,
+    "home_win_prob": 0.5191,
+    "away_win_prob": 0.4809,
+    "home_ml_fair": -108,
+    "away_ml_fair": 108,
+    "home_decimal_fair": 1.926,
+    "away_decimal_fair": 2.079,
+    "exp_goals_home": 3.002,
+    "exp_goals_away": 2.867,
+    "exp_total": 6.09,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.542,
+    "fair_line_p_over": 0.5395,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.542
+      "p_over": 0.5395
      },
      {
       "line": 6.5,
-      "p_over": 0.4423
+      "p_over": 0.4399
      }
     ]
    },

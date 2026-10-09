@@ -1,0 +1,92 @@
+{
+ "schema": "1.0.0",
+ "generated_at": "2026-10-09T17:23:20Z",
+ "model_version": "elo-1.0+cmp-1.0/ec1c67c",
+ "date": "2026-10-16",
+ "games": [
+  {
+   "game_id": 2026020119,
+   "start_utc": "2026-10-17T01:00:00Z",
+   "state": "FUT",
+   "venue": "Ball Arena",
+   "home": {
+    "abbrev": "COL",
+    "elo": 1571.8,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "PIT",
+    "elo": 1503.1,
+    "rest_days": 9,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.6316,
+    "away_win_prob": 0.3684,
+    "home_ml_fair": -171,
+    "away_ml_fair": 171,
+    "home_decimal_fair": 1.583,
+    "away_decimal_fair": 2.715,
+    "exp_goals_home": 3.525,
+    "exp_goals_away": 2.804,
+    "exp_total": 6.535,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.5161,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.6171
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.5161
+     }
+    ]
+   },
+   "result": null
+  },
+  {
+   "game_id": 2026020120,
+   "start_utc": "2026-10-17T02:00:00Z",
+   "state": "FUT",
+   "venue": "Honda Center",
+   "home": {
+    "abbrev": "ANA",
+    "elo": 1448.7,
+    "rest_days": 9,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "BOS",
+    "elo": 1503.0,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.458,
+    "away_win_prob": 0.542,
+    "home_ml_fair": 118,
+    "away_ml_fair": -118,
+    "home_decimal_fair": 2.184,
+    "away_decimal_fair": 1.845,
+    "exp_goals_home": 2.926,
+    "exp_goals_away": 3.102,
+    "exp_total": 6.248,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.4675,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5674
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4675
+     }
+    ]
+   },
+   "result": null
+  }
+ ]
+}

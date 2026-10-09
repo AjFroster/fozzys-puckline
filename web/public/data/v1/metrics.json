@@ -1,18 +1,18 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-08T17:47:33Z",
+ "generated_at": "2026-10-09T17:23:20Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "holdout_season": 20252026,
  "recent": {
   "games": 200,
-  "since": "2026-03-28",
-  "through": "2026-10-07",
-  "log_loss": 0.66061,
-  "baseline_log_loss": 0.68708,
-  "accuracy": 0.575,
-  "correct": 115,
-  "over_under_hit_rate": 0.545,
-  "total_mae": 2.0502
+  "since": "2026-03-30",
+  "through": "2026-10-08",
+  "log_loss": 0.658,
+  "baseline_log_loss": 0.68593,
+  "accuracy": 0.59,
+  "correct": 118,
+  "over_under_hit_rate": 0.54,
+  "total_mae": 2.013
  },
  "windows": [
   {
