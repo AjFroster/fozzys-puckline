@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-09T17:23:20Z",
+ "generated_at": "2026-10-10T16:08:54Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-11",
  "games": [
@@ -11,36 +11,36 @@
    "venue": "Capital One Arena",
    "home": {
     "abbrev": "WSH",
-    "elo": 1534.2,
-    "rest_days": 4,
+    "elo": 1537.7,
+    "rest_days": 2,
     "b2b": false
    },
    "away": {
     "abbrev": "SEA",
-    "elo": 1454.1,
-    "rest_days": 5,
+    "elo": 1460.6,
+    "rest_days": 2,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.6468,
-    "away_win_prob": 0.3532,
-    "home_ml_fair": -183,
-    "away_ml_fair": 183,
-    "home_decimal_fair": 1.546,
-    "away_decimal_fair": 2.831,
-    "exp_goals_home": 3.363,
-    "exp_goals_away": 2.659,
-    "exp_total": 6.234,
+    "home_win_prob": 0.6428,
+    "away_win_prob": 0.3572,
+    "home_ml_fair": -180,
+    "away_ml_fair": 180,
+    "home_decimal_fair": 1.556,
+    "away_decimal_fair": 2.8,
+    "exp_goals_home": 3.356,
+    "exp_goals_away": 2.68,
+    "exp_total": 6.249,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.464,
+    "fair_line_p_over": 0.4666,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5662
+      "p_over": 0.5686
      },
      {
       "line": 6.5,
-      "p_over": 0.464
+      "p_over": 0.4666
      }
     ]
    },
@@ -53,8 +53,8 @@
    "venue": "Madison Square Garden",
    "home": {
     "abbrev": "NYR",
-    "elo": 1494.6,
-    "rest_days": 5,
+    "elo": 1491.1,
+    "rest_days": 2,
     "b2b": false
    },
    "away": {
@@ -64,25 +64,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.6664,
-    "away_win_prob": 0.3336,
-    "home_ml_fair": -200,
-    "away_ml_fair": 200,
-    "home_decimal_fair": 1.5,
-    "away_decimal_fair": 2.998,
-    "exp_goals_home": 3.654,
-    "exp_goals_away": 2.619,
-    "exp_total": 6.473,
+    "home_win_prob": 0.662,
+    "away_win_prob": 0.338,
+    "home_ml_fair": -196,
+    "away_ml_fair": 196,
+    "home_decimal_fair": 1.511,
+    "away_decimal_fair": 2.958,
+    "exp_goals_home": 3.611,
+    "exp_goals_away": 2.622,
+    "exp_total": 6.435,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5042,
+    "fair_line_p_over": 0.4978,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6081
+      "p_over": 0.6016
      },
      {
       "line": 6.5,
-      "p_over": 0.5042
+      "p_over": 0.4978
      }
     ]
    },

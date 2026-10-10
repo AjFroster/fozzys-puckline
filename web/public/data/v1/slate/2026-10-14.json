@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-09T17:23:20Z",
+ "generated_at": "2026-10-10T16:08:54Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-14",
  "games": [
@@ -11,8 +11,8 @@
    "venue": "Capital One Arena",
    "home": {
     "abbrev": "WSH",
-    "elo": 1534.2,
-    "rest_days": 7,
+    "elo": 1537.7,
+    "rest_days": 5,
     "b2b": false
    },
    "away": {
@@ -22,25 +22,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5538,
-    "away_win_prob": 0.4462,
-    "home_ml_fair": -124,
-    "away_ml_fair": 124,
-    "home_decimal_fair": 1.806,
-    "away_decimal_fair": 2.241,
-    "exp_goals_home": 3.256,
-    "exp_goals_away": 2.799,
-    "exp_total": 6.271,
+    "home_win_prob": 0.5588,
+    "away_win_prob": 0.4412,
+    "home_ml_fair": -127,
+    "away_ml_fair": 127,
+    "home_decimal_fair": 1.79,
+    "away_decimal_fair": 2.266,
+    "exp_goals_home": 3.253,
+    "exp_goals_away": 2.769,
+    "exp_total": 6.237,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4711,
+    "fair_line_p_over": 0.4651,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5718
+      "p_over": 0.566
      },
      {
       "line": 6.5,
-      "p_over": 0.4711
+      "p_over": 0.4651
      }
     ]
    },
