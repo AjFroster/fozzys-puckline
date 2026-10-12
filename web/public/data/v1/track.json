@@ -1,22 +1,22 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-11T16:35:45Z",
+ "generated_at": "2026-10-12T20:11:47Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "season": 20262027,
  "complete": false,
- "through": "2026-10-10",
+ "through": "2026-10-12",
  "rolling_window": 100,
  "summary": {
-  "date": "2026-10-10",
-  "games_today": 14,
-  "correct_today": 9,
-  "games": 78,
-  "correct": 49,
-  "accuracy": 0.6282,
-  "log_loss": 0.65782,
-  "baseline_log_loss": 0.68788,
-  "brier": 0.23273,
-  "over_under_hit_rate": 0.4872,
+  "date": "2026-10-12",
+  "games_today": 1,
+  "correct_today": 1,
+  "games": 82,
+  "correct": 52,
+  "accuracy": 0.6341,
+  "log_loss": 0.65521,
+  "baseline_log_loss": 0.68838,
+  "brier": 0.23148,
+  "over_under_hit_rate": 0.5,
   "rolling_accuracy": null,
   "rolling_log_loss": null
  },
@@ -174,14 +174,42 @@
    "over_under_hit_rate": 0.4872,
    "rolling_accuracy": null,
    "rolling_log_loss": null
+  },
+  {
+   "date": "2026-10-11",
+   "games_today": 3,
+   "correct_today": 2,
+   "games": 81,
+   "correct": 51,
+   "accuracy": 0.6296,
+   "log_loss": 0.65625,
+   "baseline_log_loss": 0.68941,
+   "brier": 0.23201,
+   "over_under_hit_rate": 0.4938,
+   "rolling_accuracy": null,
+   "rolling_log_loss": null
+  },
+  {
+   "date": "2026-10-12",
+   "games_today": 1,
+   "correct_today": 1,
+   "games": 82,
+   "correct": 52,
+   "accuracy": 0.6341,
+   "log_loss": 0.65521,
+   "baseline_log_loss": 0.68838,
+   "brier": 0.23148,
+   "over_under_hit_rate": 0.5,
+   "rolling_accuracy": null,
+   "rolling_log_loss": null
   }
  ],
  "calibration": [
   {
    "lower": 0.3,
    "upper": 0.4,
-   "count": 3,
-   "mean_predicted": 0.3603,
+   "count": 4,
+   "mean_predicted": 0.362,
    "observed": 0.0,
    "z": 0.0
   },
@@ -196,18 +224,18 @@
   {
    "lower": 0.5,
    "upper": 0.6,
-   "count": 33,
-   "mean_predicted": 0.5525,
-   "observed": 0.5758,
-   "z": 0.271
+   "count": 34,
+   "mean_predicted": 0.5528,
+   "observed": 0.5882,
+   "z": 0.419
   },
   {
    "lower": 0.6,
    "upper": 0.7,
-   "count": 20,
-   "mean_predicted": 0.6417,
-   "observed": 0.7,
-   "z": 0.569
+   "count": 22,
+   "mean_predicted": 0.6443,
+   "observed": 0.6818,
+   "z": 0.377
   },
   {
    "lower": 0.7,
@@ -218,7 +246,7 @@
    "z": 0.0
   }
  ],
- "worst_calibration_z": 0.271,
+ "worst_calibration_z": 0.419,
  "calibration_threshold": 1.96,
  "well_calibrated": true,
  "biggest_misses": [
@@ -247,6 +275,14 @@
    "score": "4-3"
   },
   {
+   "date": "2026-10-11",
+   "game_id": 2026020084,
+   "winner": "SEA",
+   "loser": "WSH",
+   "probability_given_to_winner": 0.3572,
+   "score": "5-3"
+  },
+  {
    "date": "2026-09-29",
    "game_id": 2026020001,
    "winner": "FLA",
@@ -261,14 +297,6 @@
    "loser": "MTL",
    "probability_given_to_winner": 0.3698,
    "score": "5-2"
-  },
-  {
-   "date": "2026-10-08",
-   "game_id": 2026020063,
-   "winner": "SJS",
-   "loser": "STL",
-   "probability_given_to_winner": 0.3958,
-   "score": "3-2 OT"
   }
  ]
 }

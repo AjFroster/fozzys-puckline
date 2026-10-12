@@ -1,130 +1,136 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-11T16:35:45Z",
+ "generated_at": "2026-10-12T20:11:47Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
- "date": "2026-10-11",
+ "date": "2026-10-12",
  "games": [
   {
-   "game_id": 2026020084,
-   "start_utc": "2026-10-11T21:00:00Z",
-   "state": "FUT",
-   "venue": "Capital One Arena",
+   "game_id": 2026020087,
+   "start_utc": "2026-10-12T17:00:00Z",
+   "state": "OFF",
+   "venue": "KeyBank Center",
    "home": {
-    "abbrev": "WSH",
-    "elo": 1537.7,
+    "abbrev": "BUF",
+    "elo": 1520.3,
     "rest_days": 2,
     "b2b": false
    },
    "away": {
-    "abbrev": "SEA",
-    "elo": 1460.6,
+    "abbrev": "FLA",
+    "elo": 1499.6,
     "rest_days": 2,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.6428,
-    "away_win_prob": 0.3572,
-    "home_ml_fair": -180,
-    "away_ml_fair": 180,
-    "home_decimal_fair": 1.556,
-    "away_decimal_fair": 2.8,
-    "exp_goals_home": 3.356,
-    "exp_goals_away": 2.68,
-    "exp_total": 6.249,
+    "home_win_prob": 0.5653,
+    "away_win_prob": 0.4347,
+    "home_ml_fair": -130,
+    "away_ml_fair": 130,
+    "home_decimal_fair": 1.769,
+    "away_decimal_fair": 2.301,
+    "exp_goals_home": 3.172,
+    "exp_goals_away": 2.796,
+    "exp_total": 6.186,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4666,
+    "fair_line_p_over": 0.4565,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5686
+      "p_over": 0.5569
      },
      {
       "line": 6.5,
-      "p_over": 0.4666
+      "p_over": 0.4565
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 5,
+    "away_score": 3,
+    "last_period": "REG",
+    "total_goals": 8,
+    "home_won": true
+   }
   },
   {
-   "game_id": 2026020085,
-   "start_utc": "2026-10-11T22:00:00Z",
+   "game_id": 2026020088,
+   "start_utc": "2026-10-12T23:00:00Z",
    "state": "FUT",
-   "venue": "Madison Square Garden",
+   "venue": "Prudential Center",
    "home": {
-    "abbrev": "NYR",
-    "elo": 1491.1,
+    "abbrev": "NJD",
+    "elo": 1474.4,
     "rest_days": 2,
     "b2b": false
    },
    "away": {
-    "abbrev": "VAN",
-    "elo": 1395.5,
-    "rest_days": 1,
-    "b2b": true
+    "abbrev": "OTT",
+    "elo": 1515.3,
+    "rest_days": 2,
+    "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.6981,
-    "away_win_prob": 0.3019,
-    "home_ml_fair": -231,
-    "away_ml_fair": 231,
-    "home_decimal_fair": 1.432,
-    "away_decimal_fair": 3.312,
-    "exp_goals_home": 3.616,
-    "exp_goals_away": 2.594,
-    "exp_total": 6.411,
-    "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4936,
-    "totals": [
-     {
-      "line": 5.5,
-      "p_over": 0.5978
-     },
-     {
-      "line": 6.5,
-      "p_over": 0.4936
-     }
-    ]
-   },
-   "result": null
-  },
-  {
-   "game_id": 2026020086,
-   "start_utc": "2026-10-11T23:00:00Z",
-   "state": "FUT",
-   "venue": "Xfinity Mobile Arena",
-   "home": {
-    "abbrev": "PHI",
-    "elo": 1457.6,
-    "rest_days": 1,
-    "b2b": true
-   },
-   "away": {
-    "abbrev": "CAR",
-    "elo": 1577.1,
-    "rest_days": 1,
-    "b2b": true
-   },
-   "prediction": {
-    "home_win_prob": 0.3673,
-    "away_win_prob": 0.6327,
-    "home_ml_fair": 172,
-    "away_ml_fair": -172,
-    "home_decimal_fair": 2.722,
-    "away_decimal_fair": 1.581,
-    "exp_goals_home": 2.57,
-    "exp_goals_away": 3.139,
-    "exp_total": 5.93,
+    "home_win_prob": 0.4772,
+    "away_win_prob": 0.5228,
+    "home_ml_fair": 110,
+    "away_ml_fair": -110,
+    "home_decimal_fair": 2.096,
+    "away_decimal_fair": 1.913,
+    "exp_goals_home": 2.852,
+    "exp_goals_away": 2.839,
+    "exp_total": 5.917,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5113,
+    "fair_line_p_over": 0.508,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5113
+      "p_over": 0.508
      },
      {
       "line": 6.5,
-      "p_over": 0.4106
+      "p_over": 0.4092
+     }
+    ]
+   },
+   "result": null
+  },
+  {
+   "game_id": 2026020089,
+   "start_utc": "2026-10-13T00:00:00Z",
+   "state": "FUT",
+   "venue": "Grand Casino Arena",
+   "home": {
+    "abbrev": "MIN",
+    "elo": 1525.5,
+    "rest_days": 2,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "VGK",
+    "elo": 1531.6,
+    "rest_days": 2,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.5271,
+    "away_win_prob": 0.4729,
+    "home_ml_fair": -111,
+    "away_ml_fair": 111,
+    "home_decimal_fair": 1.897,
+    "away_decimal_fair": 2.115,
+    "exp_goals_home": 2.987,
+    "exp_goals_away": 2.802,
+    "exp_total": 6.013,
+    "fair_total_line": 5.5,
+    "fair_line_p_over": 0.5256,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5256
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4261
      }
     ]
    },

@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-11T16:35:45Z",
+ "generated_at": "2026-10-12T20:11:47Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-11",
  "games": [
   {
    "game_id": 2026020084,
    "start_utc": "2026-10-11T21:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Capital One Arena",
    "home": {
     "abbrev": "WSH",
@@ -44,12 +44,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 5,
+    "last_period": "REG",
+    "total_goals": 8,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020085,
    "start_utc": "2026-10-11T22:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Madison Square Garden",
    "home": {
     "abbrev": "NYR",
@@ -86,12 +92,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 6,
+    "away_score": 2,
+    "last_period": "REG",
+    "total_goals": 8,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020086,
    "start_utc": "2026-10-11T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Xfinity Mobile Arena",
    "home": {
     "abbrev": "PHI",
@@ -114,21 +126,27 @@
     "away_decimal_fair": 1.581,
     "exp_goals_home": 2.57,
     "exp_goals_away": 3.139,
-    "exp_total": 5.93,
+    "exp_total": 5.931,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5113,
+    "fair_line_p_over": 0.5115,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5113
+      "p_over": 0.5115
      },
      {
       "line": 6.5,
-      "p_over": 0.4106
+      "p_over": 0.4108
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 1,
+    "away_score": 4,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": false
+   }
   }
  ]
 }

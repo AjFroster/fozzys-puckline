@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-11T16:35:45Z",
+ "generated_at": "2026-10-12T20:11:47Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-12",
  "games": [
   {
    "game_id": 2026020087,
    "start_utc": "2026-10-12T17:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "KeyBank Center",
    "home": {
     "abbrev": "BUF",
@@ -44,7 +44,13 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 5,
+    "away_score": 3,
+    "last_period": "REG",
+    "total_goals": 8,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020088,
@@ -71,7 +77,7 @@
     "home_decimal_fair": 2.096,
     "away_decimal_fair": 1.913,
     "exp_goals_home": 2.852,
-    "exp_goals_away": 2.838,
+    "exp_goals_away": 2.839,
     "exp_total": 5.917,
     "fair_total_line": 5.5,
     "fair_line_p_over": 0.508,
