@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-12T20:11:47Z",
+ "generated_at": "2026-10-13T18:03:57Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-12",
  "games": [
@@ -55,7 +55,7 @@
   {
    "game_id": 2026020088,
    "start_utc": "2026-10-12T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Prudential Center",
    "home": {
     "abbrev": "NJD",
@@ -92,12 +92,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 1,
+    "away_score": 4,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020089,
    "start_utc": "2026-10-13T00:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Grand Casino Arena",
    "home": {
     "abbrev": "MIN",
@@ -134,7 +140,13 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 4,
+    "away_score": 2,
+    "last_period": "REG",
+    "total_goals": 6,
+    "home_won": true
+   }
   }
  ]
 }

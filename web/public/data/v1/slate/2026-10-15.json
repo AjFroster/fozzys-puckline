@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-12T20:11:47Z",
+ "generated_at": "2026-10-13T18:03:57Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-15",
  "games": [
@@ -53,8 +53,8 @@
    "venue": "Canadian Tire Centre",
    "home": {
     "abbrev": "OTT",
-    "elo": 1515.3,
-    "rest_days": 5,
+    "elo": 1520.6,
+    "rest_days": 3,
     "b2b": false
    },
    "away": {
@@ -64,25 +64,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.6203,
-    "away_win_prob": 0.3797,
-    "home_ml_fair": -163,
-    "away_ml_fair": 163,
-    "home_decimal_fair": 1.612,
-    "away_decimal_fair": 2.634,
-    "exp_goals_home": 3.117,
-    "exp_goals_away": 2.57,
-    "exp_total": 5.91,
+    "home_win_prob": 0.6274,
+    "away_win_prob": 0.3726,
+    "home_ml_fair": -168,
+    "away_ml_fair": 168,
+    "home_decimal_fair": 1.594,
+    "away_decimal_fair": 2.684,
+    "exp_goals_home": 3.136,
+    "exp_goals_away": 2.543,
+    "exp_total": 5.9,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5075,
+    "fair_line_p_over": 0.5059,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5075
+      "p_over": 0.5059
      },
      {
       "line": 6.5,
-      "p_over": 0.4071
+      "p_over": 0.4052
      }
     ]
    },
@@ -179,8 +179,8 @@
    "venue": "Prudential Center",
    "home": {
     "abbrev": "NJD",
-    "elo": 1474.4,
-    "rest_days": 5,
+    "elo": 1469.2,
+    "rest_days": 3,
     "b2b": false
    },
    "away": {
@@ -190,25 +190,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5067,
-    "away_win_prob": 0.4933,
-    "home_ml_fair": -103,
-    "away_ml_fair": 103,
-    "home_decimal_fair": 1.974,
-    "away_decimal_fair": 2.027,
-    "exp_goals_home": 2.836,
-    "exp_goals_away": 2.912,
-    "exp_total": 5.973,
+    "home_win_prob": 0.4991,
+    "away_win_prob": 0.5009,
+    "home_ml_fair": 100,
+    "away_ml_fair": -100,
+    "home_decimal_fair": 2.003,
+    "away_decimal_fair": 1.997,
+    "exp_goals_home": 2.806,
+    "exp_goals_away": 2.929,
+    "exp_total": 5.96,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5183,
+    "fair_line_p_over": 0.5159,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5183
+      "p_over": 0.5159
      },
      {
       "line": 6.5,
-      "p_over": 0.4191
+      "p_over": 0.4168
      }
     ]
    },
@@ -347,8 +347,8 @@
    "venue": "Grand Casino Arena",
    "home": {
     "abbrev": "MIN",
-    "elo": 1525.5,
-    "rest_days": 5,
+    "elo": 1529.6,
+    "rest_days": 3,
     "b2b": false
    },
    "away": {
@@ -358,25 +358,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5786,
-    "away_win_prob": 0.4214,
-    "home_ml_fair": -137,
-    "away_ml_fair": 137,
-    "home_decimal_fair": 1.728,
-    "away_decimal_fair": 2.373,
-    "exp_goals_home": 2.977,
-    "exp_goals_away": 2.617,
-    "exp_total": 5.822,
+    "home_win_prob": 0.5844,
+    "away_win_prob": 0.4156,
+    "home_ml_fair": -141,
+    "away_ml_fair": 141,
+    "home_decimal_fair": 1.711,
+    "away_decimal_fair": 2.406,
+    "exp_goals_home": 2.994,
+    "exp_goals_away": 2.606,
+    "exp_total": 5.826,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.4907,
+    "fair_line_p_over": 0.4916,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.4907
+      "p_over": 0.4916
      },
      {
       "line": 6.5,
-      "p_over": 0.3918
+      "p_over": 0.3926
      }
     ]
    },
@@ -431,8 +431,8 @@
    "venue": "T-Mobile Arena",
    "home": {
     "abbrev": "VGK",
-    "elo": 1531.6,
-    "rest_days": 5,
+    "elo": 1527.5,
+    "rest_days": 3,
     "b2b": false
    },
    "away": {
@@ -442,25 +442,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.6766,
-    "away_win_prob": 0.3234,
-    "home_ml_fair": -209,
-    "away_ml_fair": 209,
-    "home_decimal_fair": 1.478,
-    "away_decimal_fair": 3.092,
-    "exp_goals_home": 3.413,
-    "exp_goals_away": 2.48,
-    "exp_total": 6.103,
+    "home_win_prob": 0.6713,
+    "away_win_prob": 0.3287,
+    "home_ml_fair": -204,
+    "away_ml_fair": 204,
+    "home_decimal_fair": 1.49,
+    "away_decimal_fair": 3.043,
+    "exp_goals_home": 3.392,
+    "exp_goals_away": 2.498,
+    "exp_total": 6.101,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5439,
+    "fair_line_p_over": 0.5434,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5439
+      "p_over": 0.5434
      },
      {
       "line": 6.5,
-      "p_over": 0.4397
+      "p_over": 0.4396
      }
     ]
    },

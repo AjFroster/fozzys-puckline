@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-12T20:11:47Z",
+ "generated_at": "2026-10-13T18:03:57Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "season": 20262027,
  "teams": [
@@ -55,34 +55,34 @@
    "win_prob_vs_average": 0.5563
   },
   {
+   "team_id": 30,
+   "abbrev": "MIN",
+   "name": "Minnesota Wild",
+   "elo": 1529.6,
+   "rank": 6,
+   "percentile": 0.8387,
+   "elo_7d_change": 6.9,
+   "win_prob_vs_average": 0.5532
+  },
+  {
    "team_id": 54,
    "abbrev": "VGK",
    "name": "Vegas Golden Knights",
-   "elo": 1531.6,
-   "rank": 6,
-   "percentile": 0.8387,
-   "elo_7d_change": 5.8,
-   "win_prob_vs_average": 0.5561
+   "elo": 1527.5,
+   "rank": 7,
+   "percentile": 0.8065,
+   "elo_7d_change": 1.7,
+   "win_prob_vs_average": 0.5502
   },
   {
    "team_id": 22,
    "abbrev": "EDM",
    "name": "Edmonton Oilers",
    "elo": 1526.4,
-   "rank": 7,
-   "percentile": 0.8065,
-   "elo_7d_change": 8.5,
-   "win_prob_vs_average": 0.5487
-  },
-  {
-   "team_id": 30,
-   "abbrev": "MIN",
-   "name": "Minnesota Wild",
-   "elo": 1525.5,
    "rank": 8,
    "percentile": 0.7742,
-   "elo_7d_change": 2.8,
-   "win_prob_vs_average": 0.5473
+   "elo_7d_change": 8.5,
+   "win_prob_vs_average": 0.5487
   },
   {
    "team_id": 7,
@@ -105,24 +105,24 @@
    "win_prob_vs_average": 0.542
   },
   {
+   "team_id": 9,
+   "abbrev": "OTT",
+   "name": "Ottawa Senators",
+   "elo": 1520.6,
+   "rank": 11,
+   "percentile": 0.6774,
+   "elo_7d_change": 3.3,
+   "win_prob_vs_average": 0.5403
+  },
+  {
    "team_id": 53,
    "abbrev": "UTA",
    "name": "Utah Hockey Club",
    "elo": 1519.2,
-   "rank": 11,
-   "percentile": 0.6774,
-   "elo_7d_change": 3.3,
-   "win_prob_vs_average": 0.5384
-  },
-  {
-   "team_id": 9,
-   "abbrev": "OTT",
-   "name": "Ottawa Senators",
-   "elo": 1515.3,
    "rank": 12,
    "percentile": 0.6452,
-   "elo_7d_change": -1.9,
-   "win_prob_vs_average": 0.5328
+   "elo_7d_change": 3.3,
+   "win_prob_vs_average": 0.5384
   },
   {
    "team_id": 6,
@@ -185,22 +185,12 @@
    "win_prob_vs_average": 0.5033
   },
   {
-   "team_id": 1,
-   "abbrev": "NJD",
-   "name": "New Jersey Devils",
-   "elo": 1474.4,
-   "rank": 19,
-   "percentile": 0.4194,
-   "elo_7d_change": -0.3,
-   "win_prob_vs_average": 0.474
-  },
-  {
    "team_id": 52,
    "abbrev": "WPG",
    "name": "Winnipeg Jets",
    "elo": 1473.6,
-   "rank": 20,
-   "percentile": 0.3871,
+   "rank": 19,
+   "percentile": 0.4194,
    "elo_7d_change": -4.3,
    "win_prob_vs_average": 0.4729
   },
@@ -209,8 +199,8 @@
    "abbrev": "DET",
    "name": "Detroit Red Wings",
    "elo": 1473.2,
-   "rank": 21,
-   "percentile": 0.3548,
+   "rank": 20,
+   "percentile": 0.3871,
    "elo_7d_change": -2.2,
    "win_prob_vs_average": 0.4722
   },
@@ -219,10 +209,20 @@
    "abbrev": "TOR",
    "name": "Toronto Maple Leafs",
    "elo": 1473.0,
-   "rank": 22,
-   "percentile": 0.3226,
+   "rank": 21,
+   "percentile": 0.3548,
    "elo_7d_change": 8.6,
    "win_prob_vs_average": 0.472
+  },
+  {
+   "team_id": 1,
+   "abbrev": "NJD",
+   "name": "New Jersey Devils",
+   "elo": 1469.2,
+   "rank": 22,
+   "percentile": 0.3226,
+   "elo_7d_change": -5.5,
+   "win_prob_vs_average": 0.4665
   },
   {
    "team_id": 18,
