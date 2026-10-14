@@ -1,0 +1,92 @@
+{
+ "schema": "1.0.0",
+ "generated_at": "2026-10-14T15:45:42Z",
+ "model_version": "elo-1.0+cmp-1.0/ec1c67c",
+ "date": "2026-10-21",
+ "games": [
+  {
+   "game_id": 2026020152,
+   "start_utc": "2026-10-21T23:30:00Z",
+   "state": "FUT",
+   "venue": "KeyBank Center",
+   "home": {
+    "abbrev": "BUF",
+    "elo": 1523.6,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "PHI",
+    "elo": 1452.8,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.6344,
+    "away_win_prob": 0.3656,
+    "home_ml_fair": -174,
+    "away_ml_fair": 174,
+    "home_decimal_fair": 1.576,
+    "away_decimal_fair": 2.735,
+    "exp_goals_home": 3.193,
+    "exp_goals_away": 2.469,
+    "exp_total": 5.88,
+    "fair_total_line": 5.5,
+    "fair_line_p_over": 0.5026,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5026
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4011
+     }
+    ]
+   },
+   "result": null
+  },
+  {
+   "game_id": 2026020153,
+   "start_utc": "2026-10-21T23:30:00Z",
+   "state": "FUT",
+   "venue": "Canadian Tire Centre",
+   "home": {
+    "abbrev": "OTT",
+    "elo": 1512.7,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "FLA",
+    "elo": 1503.4,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.5492,
+    "away_win_prob": 0.4508,
+    "home_ml_fair": -122,
+    "away_ml_fair": 122,
+    "home_decimal_fair": 1.821,
+    "away_decimal_fair": 2.218,
+    "exp_goals_home": 3.145,
+    "exp_goals_away": 2.817,
+    "exp_total": 6.182,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.4558,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5561
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4558
+     }
+    ]
+   },
+   "result": null
+  }
+ ]
+}
