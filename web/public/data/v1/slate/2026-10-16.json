@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-14T15:45:42Z",
+ "generated_at": "2026-10-15T15:32:24Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-16",
  "games": [
@@ -11,8 +11,8 @@
    "venue": "Ball Arena",
    "home": {
     "abbrev": "COL",
-    "elo": 1566.5,
-    "rest_days": 3,
+    "elo": 1565.2,
+    "rest_days": 2,
     "b2b": false
    },
    "away": {
@@ -22,25 +22,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.6311,
-    "away_win_prob": 0.3689,
-    "home_ml_fair": -171,
-    "away_ml_fair": 171,
-    "home_decimal_fair": 1.584,
-    "away_decimal_fair": 2.711,
-    "exp_goals_home": 3.482,
-    "exp_goals_away": 2.793,
-    "exp_total": 6.484,
+    "home_win_prob": 0.6294,
+    "away_win_prob": 0.3706,
+    "home_ml_fair": -170,
+    "away_ml_fair": 170,
+    "home_decimal_fair": 1.589,
+    "away_decimal_fair": 2.698,
+    "exp_goals_home": 3.456,
+    "exp_goals_away": 2.782,
+    "exp_total": 6.448,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5074,
+    "fair_line_p_over": 0.5012,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6086
+      "p_over": 0.6026
      },
      {
       "line": 6.5,
-      "p_over": 0.5074
+      "p_over": 0.5012
      }
     ]
    },
