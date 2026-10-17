@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-16T15:18:56Z",
+ "generated_at": "2026-10-17T14:07:02Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-20",
  "games": [
@@ -59,30 +59,30 @@
    },
    "away": {
     "abbrev": "COL",
-    "elo": 1565.2,
-    "rest_days": 6,
+    "elo": 1569.1,
+    "rest_days": 4,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.412,
-    "away_win_prob": 0.588,
-    "home_ml_fair": 143,
-    "away_ml_fair": -143,
-    "home_decimal_fair": 2.427,
-    "away_decimal_fair": 1.701,
-    "exp_goals_home": 2.825,
-    "exp_goals_away": 3.083,
-    "exp_total": 6.13,
+    "home_win_prob": 0.4065,
+    "away_win_prob": 0.5935,
+    "home_ml_fair": 146,
+    "away_ml_fair": -146,
+    "home_decimal_fair": 2.46,
+    "away_decimal_fair": 1.685,
+    "exp_goals_home": 2.814,
+    "exp_goals_away": 3.109,
+    "exp_total": 6.144,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5467,
+    "fair_line_p_over": 0.5493,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5467
+      "p_over": 0.5493
      },
      {
       "line": 6.5,
-      "p_over": 0.4467
+      "p_over": 0.4492
      }
     ]
    },
@@ -101,30 +101,30 @@
    },
    "away": {
     "abbrev": "ANA",
-    "elo": 1455.9,
-    "rest_days": 7,
+    "elo": 1452.0,
+    "rest_days": 4,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5373,
-    "away_win_prob": 0.4627,
-    "home_ml_fair": -116,
-    "away_ml_fair": 116,
-    "home_decimal_fair": 1.861,
-    "away_decimal_fair": 2.161,
-    "exp_goals_home": 3.155,
-    "exp_goals_away": 2.841,
-    "exp_total": 6.214,
+    "home_win_prob": 0.5429,
+    "away_win_prob": 0.4571,
+    "home_ml_fair": -119,
+    "away_ml_fair": 119,
+    "home_decimal_fair": 1.842,
+    "away_decimal_fair": 2.188,
+    "exp_goals_home": 3.164,
+    "exp_goals_away": 2.825,
+    "exp_total": 6.207,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4615,
+    "fair_line_p_over": 0.4602,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5617
+      "p_over": 0.5605
      },
      {
       "line": 6.5,
-      "p_over": 0.4615
+      "p_over": 0.4602
      }
     ]
    },
@@ -269,30 +269,30 @@
    },
    "away": {
     "abbrev": "BOS",
-    "elo": 1512.9,
-    "rest_days": 7,
+    "elo": 1516.8,
+    "rest_days": 4,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5713,
-    "away_win_prob": 0.4287,
-    "home_ml_fair": -133,
-    "away_ml_fair": 133,
-    "home_decimal_fair": 1.75,
-    "away_decimal_fair": 2.333,
-    "exp_goals_home": 2.807,
-    "exp_goals_away": 2.558,
-    "exp_total": 5.598,
+    "home_win_prob": 0.5658,
+    "away_win_prob": 0.4342,
+    "home_ml_fair": -130,
+    "away_ml_fair": 130,
+    "home_decimal_fair": 1.768,
+    "away_decimal_fair": 2.303,
+    "exp_goals_home": 2.796,
+    "exp_goals_away": 2.572,
+    "exp_total": 5.601,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.4483,
+    "fair_line_p_over": 0.4489,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.4483
+      "p_over": 0.4489
      },
      {
       "line": 6.5,
-      "p_over": 0.3523
+      "p_over": 0.3529
      }
     ]
    },

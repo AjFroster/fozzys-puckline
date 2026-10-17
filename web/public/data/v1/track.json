@@ -1,24 +1,24 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-16T15:18:56Z",
+ "generated_at": "2026-10-17T14:07:02Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "season": 20262027,
  "complete": false,
- "through": "2026-10-15",
+ "through": "2026-10-16",
  "rolling_window": 100,
  "summary": {
-  "date": "2026-10-15",
-  "games_today": 11,
-  "correct_today": 7,
-  "games": 113,
-  "correct": 69,
-  "accuracy": 0.6106,
-  "log_loss": 0.65659,
-  "baseline_log_loss": 0.6884,
-  "brier": 0.23221,
-  "over_under_hit_rate": 0.5133,
-  "rolling_accuracy": 0.61,
-  "rolling_log_loss": 0.65577
+  "date": "2026-10-16",
+  "games_today": 2,
+  "correct_today": 2,
+  "games": 115,
+  "correct": 71,
+  "accuracy": 0.6174,
+  "log_loss": 0.65446,
+  "baseline_log_loss": 0.68857,
+  "brier": 0.23116,
+  "over_under_hit_rate": 0.513,
+  "rolling_accuracy": 0.62,
+  "rolling_log_loss": 0.65415
  },
  "points": [
   {
@@ -244,6 +244,20 @@
    "over_under_hit_rate": 0.5133,
    "rolling_accuracy": 0.61,
    "rolling_log_loss": 0.65577
+  },
+  {
+   "date": "2026-10-16",
+   "games_today": 2,
+   "correct_today": 2,
+   "games": 115,
+   "correct": 71,
+   "accuracy": 0.6174,
+   "log_loss": 0.65446,
+   "baseline_log_loss": 0.68857,
+   "brier": 0.23116,
+   "over_under_hit_rate": 0.513,
+   "rolling_accuracy": 0.62,
+   "rolling_log_loss": 0.65415
   }
  ],
  "calibration": [
@@ -258,10 +272,10 @@
   {
    "lower": 0.4,
    "upper": 0.5,
-   "count": 31,
-   "mean_predicted": 0.4579,
-   "observed": 0.4516,
-   "z": 0.07
+   "count": 32,
+   "mean_predicted": 0.4578,
+   "observed": 0.4375,
+   "z": 0.231
   },
   {
    "lower": 0.5,
@@ -274,10 +288,10 @@
   {
    "lower": 0.6,
    "upper": 0.7,
-   "count": 29,
-   "mean_predicted": 0.6418,
-   "observed": 0.7586,
-   "z": 1.47
+   "count": 30,
+   "mean_predicted": 0.6414,
+   "observed": 0.7667,
+   "z": 1.622
   },
   {
    "lower": 0.7,
@@ -288,8 +302,8 @@
    "z": 0.0
   }
  ],
- "worst_calibration_z": 0.45,
- "calibration_threshold": 2.241,
+ "worst_calibration_z": 1.622,
+ "calibration_threshold": 2.394,
  "well_calibrated": true,
  "biggest_misses": [
   {

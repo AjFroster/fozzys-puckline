@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-16T15:18:56Z",
+ "generated_at": "2026-10-17T14:07:02Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-22",
  "games": [
@@ -11,8 +11,8 @@
    "venue": "TD Garden",
    "home": {
     "abbrev": "BOS",
-    "elo": 1512.9,
-    "rest_days": 9,
+    "elo": 1516.8,
+    "rest_days": 6,
     "b2b": false
    },
    "away": {
@@ -22,25 +22,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.6076,
-    "away_win_prob": 0.3924,
-    "home_ml_fair": -155,
-    "away_ml_fair": 155,
-    "home_decimal_fair": 1.646,
-    "away_decimal_fair": 2.549,
-    "exp_goals_home": 3.194,
-    "exp_goals_away": 2.584,
-    "exp_total": 5.997,
+    "home_win_prob": 0.613,
+    "away_win_prob": 0.387,
+    "home_ml_fair": -158,
+    "away_ml_fair": 158,
+    "home_decimal_fair": 1.631,
+    "away_decimal_fair": 2.584,
+    "exp_goals_home": 3.212,
+    "exp_goals_away": 2.574,
+    "exp_total": 6.004,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5236,
+    "fair_line_p_over": 0.525,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5236
+      "p_over": 0.525
      },
      {
       "line": 6.5,
-      "p_over": 0.4223
+      "p_over": 0.4235
      }
     ]
    },
@@ -143,30 +143,30 @@
    },
    "away": {
     "abbrev": "ANA",
-    "elo": 1455.9,
-    "rest_days": 9,
+    "elo": 1452.0,
+    "rest_days": 6,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5679,
-    "away_win_prob": 0.4321,
-    "home_ml_fair": -131,
-    "away_ml_fair": 131,
-    "home_decimal_fair": 1.761,
-    "away_decimal_fair": 2.314,
-    "exp_goals_home": 3.315,
-    "exp_goals_away": 2.866,
-    "exp_total": 6.394,
+    "home_win_prob": 0.5735,
+    "away_win_prob": 0.4265,
+    "home_ml_fair": -134,
+    "away_ml_fair": 134,
+    "home_decimal_fair": 1.744,
+    "away_decimal_fair": 2.344,
+    "exp_goals_home": 3.325,
+    "exp_goals_away": 2.85,
+    "exp_total": 6.388,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4926,
+    "fair_line_p_over": 0.4915,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.593
+      "p_over": 0.592
      },
      {
       "line": 6.5,
-      "p_over": 0.4926
+      "p_over": 0.4915
      }
     ]
    },
@@ -179,8 +179,8 @@
    "venue": "PPG Paints Arena",
    "home": {
     "abbrev": "PIT",
-    "elo": 1498.2,
-    "rest_days": 9,
+    "elo": 1494.3,
+    "rest_days": 6,
     "b2b": false
    },
    "away": {
@@ -190,25 +190,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5288,
-    "away_win_prob": 0.4712,
-    "home_ml_fair": -112,
-    "away_ml_fair": 112,
-    "home_decimal_fair": 1.891,
-    "away_decimal_fair": 2.122,
-    "exp_goals_home": 3.287,
-    "exp_goals_away": 2.953,
-    "exp_total": 6.454,
+    "home_win_prob": 0.5231,
+    "away_win_prob": 0.4769,
+    "home_ml_fair": -110,
+    "away_ml_fair": 110,
+    "home_decimal_fair": 1.912,
+    "away_decimal_fair": 2.097,
+    "exp_goals_home": 3.266,
+    "exp_goals_away": 2.984,
+    "exp_total": 6.462,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5032,
+    "fair_line_p_over": 0.5047,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6029
+      "p_over": 0.6042
      },
      {
       "line": 6.5,
-      "p_over": 0.5032
+      "p_over": 0.5047
      }
     ]
    },

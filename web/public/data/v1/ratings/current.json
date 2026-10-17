@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-16T15:18:56Z",
+ "generated_at": "2026-10-17T14:07:02Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "season": 20262027,
  "teams": [
@@ -18,11 +18,11 @@
    "team_id": 21,
    "abbrev": "COL",
    "name": "Colorado Avalanche",
-   "elo": 1565.2,
+   "elo": 1569.1,
    "rank": 2,
    "percentile": 0.9677,
-   "elo_7d_change": -6.6,
-   "win_prob_vs_average": 0.6031
+   "elo_7d_change": -2.7,
+   "win_prob_vs_average": 0.6085
   },
   {
    "team_id": 25,
@@ -61,7 +61,7 @@
    "elo": 1530.9,
    "rank": 6,
    "percentile": 0.8387,
-   "elo_7d_change": -3.3,
+   "elo_7d_change": -6.8,
    "win_prob_vs_average": 0.5551
   },
   {
@@ -115,23 +115,23 @@
    "win_prob_vs_average": 0.5391
   },
   {
+   "team_id": 6,
+   "abbrev": "BOS",
+   "name": "Boston Bruins",
+   "elo": 1516.8,
+   "rank": 12,
+   "percentile": 0.6452,
+   "elo_7d_change": 13.8,
+   "win_prob_vs_average": 0.5349
+  },
+  {
    "team_id": 9,
    "abbrev": "OTT",
    "name": "Ottawa Senators",
    "elo": 1512.9,
-   "rank": 12,
-   "percentile": 0.6452,
-   "elo_7d_change": -2.2,
-   "win_prob_vs_average": 0.5293
-  },
-  {
-   "team_id": 6,
-   "abbrev": "BOS",
-   "name": "Boston Bruins",
-   "elo": 1512.9,
    "rank": 13,
    "percentile": 0.6129,
-   "elo_7d_change": 9.9,
+   "elo_7d_change": -2.2,
    "win_prob_vs_average": 0.5293
   },
   {
@@ -158,11 +158,11 @@
    "team_id": 5,
    "abbrev": "PIT",
    "name": "Pittsburgh Penguins",
-   "elo": 1498.2,
+   "elo": 1494.3,
    "rank": 16,
    "percentile": 0.5161,
-   "elo_7d_change": -4.9,
-   "win_prob_vs_average": 0.5082
+   "elo_7d_change": -8.2,
+   "win_prob_vs_average": 0.5026
   },
   {
    "team_id": 3,
@@ -171,7 +171,7 @@
    "elo": 1492.8,
    "rank": 17,
    "percentile": 0.4839,
-   "elo_7d_change": -1.7,
+   "elo_7d_change": 1.7,
    "win_prob_vs_average": 0.5005
   },
   {
@@ -181,7 +181,7 @@
    "elo": 1491.6,
    "rank": 18,
    "percentile": 0.4516,
-   "elo_7d_change": -10.8,
+   "elo_7d_change": -11.4,
    "win_prob_vs_average": 0.4987
   },
   {
@@ -201,7 +201,7 @@
    "elo": 1478.2,
    "rank": 20,
    "percentile": 0.3871,
-   "elo_7d_change": -3.1,
+   "elo_7d_change": 4.6,
    "win_prob_vs_average": 0.4794
   },
   {
@@ -211,7 +211,7 @@
    "elo": 1474.3,
    "rank": 21,
    "percentile": 0.3548,
-   "elo_7d_change": -5.5,
+   "elo_7d_change": 1.0,
    "win_prob_vs_average": 0.4738
   },
   {
@@ -231,7 +231,7 @@
    "elo": 1467.4,
    "rank": 23,
    "percentile": 0.2903,
-   "elo_7d_change": 13.3,
+   "elo_7d_change": 6.8,
    "win_prob_vs_average": 0.464
   },
   {
@@ -268,11 +268,11 @@
    "team_id": 24,
    "abbrev": "ANA",
    "name": "Anaheim Ducks",
-   "elo": 1455.9,
+   "elo": 1452.0,
    "rank": 27,
    "percentile": 0.1613,
-   "elo_7d_change": 7.2,
-   "win_prob_vs_average": 0.4475
+   "elo_7d_change": -4.5,
+   "win_prob_vs_average": 0.4419
   },
   {
    "team_id": 4,
