@@ -1,24 +1,24 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-17T14:07:02Z",
+ "generated_at": "2026-10-18T14:24:04Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "season": 20262027,
  "complete": false,
- "through": "2026-10-16",
+ "through": "2026-10-17",
  "rolling_window": 100,
  "summary": {
-  "date": "2026-10-16",
-  "games_today": 2,
-  "correct_today": 2,
-  "games": 115,
-  "correct": 71,
-  "accuracy": 0.6174,
-  "log_loss": 0.65446,
-  "baseline_log_loss": 0.68857,
-  "brier": 0.23116,
-  "over_under_hit_rate": 0.513,
-  "rolling_accuracy": 0.62,
-  "rolling_log_loss": 0.65415
+  "date": "2026-10-17",
+  "games_today": 14,
+  "correct_today": 10,
+  "games": 129,
+  "correct": 81,
+  "accuracy": 0.6279,
+  "log_loss": 0.64814,
+  "baseline_log_loss": 0.68637,
+  "brier": 0.22811,
+  "over_under_hit_rate": 0.5039,
+  "rolling_accuracy": 0.65,
+  "rolling_log_loss": 0.63776
  },
  "points": [
   {
@@ -258,51 +258,65 @@
    "over_under_hit_rate": 0.513,
    "rolling_accuracy": 0.62,
    "rolling_log_loss": 0.65415
+  },
+  {
+   "date": "2026-10-17",
+   "games_today": 14,
+   "correct_today": 10,
+   "games": 129,
+   "correct": 81,
+   "accuracy": 0.6279,
+   "log_loss": 0.64814,
+   "baseline_log_loss": 0.68637,
+   "brier": 0.22811,
+   "over_under_hit_rate": 0.5039,
+   "rolling_accuracy": 0.65,
+   "rolling_log_loss": 0.63776
   }
  ],
  "calibration": [
   {
    "lower": 0.3,
    "upper": 0.4,
-   "count": 4,
-   "mean_predicted": 0.362,
+   "count": 6,
+   "mean_predicted": 0.3665,
    "observed": 0.0,
    "z": 0.0
   },
   {
    "lower": 0.4,
    "upper": 0.5,
-   "count": 32,
-   "mean_predicted": 0.4578,
-   "observed": 0.4375,
-   "z": 0.231
+   "count": 35,
+   "mean_predicted": 0.4591,
+   "observed": 0.4571,
+   "z": 0.024
   },
   {
    "lower": 0.5,
    "upper": 0.6,
-   "count": 48,
-   "mean_predicted": 0.5532,
-   "observed": 0.5208,
-   "z": 0.45
+   "count": 54,
+   "mean_predicted": 0.5534,
+   "observed": 0.537,
+   "z": 0.241
   },
   {
    "lower": 0.6,
    "upper": 0.7,
-   "count": 30,
-   "mean_predicted": 0.6414,
-   "observed": 0.7667,
-   "z": 1.622
+   "count": 32,
+   "mean_predicted": 0.6401,
+   "observed": 0.7812,
+   "z": 1.932
   },
   {
    "lower": 0.7,
    "upper": 0.8,
-   "count": 1,
-   "mean_predicted": 0.7523,
+   "count": 2,
+   "mean_predicted": 0.7406,
    "observed": 1.0,
    "z": 0.0
   }
  ],
- "worst_calibration_z": 1.622,
+ "worst_calibration_z": 1.932,
  "calibration_threshold": 2.394,
  "well_calibrated": true,
  "biggest_misses": [

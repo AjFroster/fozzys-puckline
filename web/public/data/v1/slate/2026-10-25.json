@@ -1,0 +1,218 @@
+{
+ "schema": "1.0.0",
+ "generated_at": "2026-10-18T14:24:04Z",
+ "model_version": "elo-1.0+cmp-1.0/ec1c67c",
+ "date": "2026-10-25",
+ "games": [
+  {
+   "game_id": 2026020180,
+   "start_utc": "2026-10-25T19:00:00Z",
+   "state": "FUT",
+   "venue": "United Center",
+   "home": {
+    "abbrev": "CHI",
+    "elo": 1412.6,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "FLA",
+    "elo": 1508.9,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.3987,
+    "away_win_prob": 0.6013,
+    "home_ml_fair": 151,
+    "away_ml_fair": -151,
+    "home_decimal_fair": 2.508,
+    "away_decimal_fair": 1.663,
+    "exp_goals_home": 2.799,
+    "exp_goals_away": 3.15,
+    "exp_total": 6.168,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.4533,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5536
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4533
+     }
+    ]
+   },
+   "result": null
+  },
+  {
+   "game_id": 2026020181,
+   "start_utc": "2026-10-25T22:00:00Z",
+   "state": "FUT",
+   "venue": "American Airlines Center",
+   "home": {
+    "abbrev": "DAL",
+    "elo": 1542.3,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "NYI",
+    "elo": 1463.1,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.6456,
+    "away_win_prob": 0.3544,
+    "home_ml_fair": -182,
+    "away_ml_fair": 182,
+    "home_decimal_fair": 1.549,
+    "away_decimal_fair": 2.821,
+    "exp_goals_home": 2.946,
+    "exp_goals_away": 2.343,
+    "exp_total": 5.52,
+    "fair_total_line": 5.5,
+    "fair_line_p_over": 0.4344,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.4344
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.3375
+     }
+    ]
+   },
+   "result": null
+  },
+  {
+   "game_id": 2026020182,
+   "start_utc": "2026-10-25T23:00:00Z",
+   "state": "FUT",
+   "venue": "Princess Auto Stadium",
+   "home": {
+    "abbrev": "WPG",
+    "elo": 1476.1,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "MTL",
+    "elo": 1520.4,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.4367,
+    "away_win_prob": 0.5633,
+    "home_ml_fair": 129,
+    "away_ml_fair": -129,
+    "home_decimal_fair": 2.29,
+    "away_decimal_fair": 1.775,
+    "exp_goals_home": 2.919,
+    "exp_goals_away": 2.895,
+    "exp_total": 6.038,
+    "fair_total_line": 5.5,
+    "fair_line_p_over": 0.53,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.53
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4306
+     }
+    ]
+   },
+   "result": null
+  },
+  {
+   "game_id": 2026020183,
+   "start_utc": "2026-10-26T00:00:00Z",
+   "state": "FUT",
+   "venue": "Bridgestone Arena",
+   "home": {
+    "abbrev": "NSH",
+    "elo": 1467.7,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "COL",
+    "elo": 1569.1,
+    "rest_days": 9,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.3917,
+    "away_win_prob": 0.6083,
+    "home_ml_fair": 155,
+    "away_ml_fair": -155,
+    "home_decimal_fair": 2.553,
+    "away_decimal_fair": 1.644,
+    "exp_goals_home": 2.813,
+    "exp_goals_away": 3.157,
+    "exp_total": 6.19,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.4571,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5574
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4571
+     }
+    ]
+   },
+   "result": null
+  },
+  {
+   "game_id": 2026020184,
+   "start_utc": "2026-10-26T02:00:00Z",
+   "state": "FUT",
+   "venue": "Rogers Arena",
+   "home": {
+    "abbrev": "VAN",
+    "elo": 1387.8,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "MIN",
+    "elo": 1526.2,
+    "rest_days": 10,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.3423,
+    "away_win_prob": 0.6577,
+    "home_ml_fair": 192,
+    "away_ml_fair": -192,
+    "home_decimal_fair": 2.921,
+    "away_decimal_fair": 1.521,
+    "exp_goals_home": 2.793,
+    "exp_goals_away": 3.357,
+    "exp_total": 6.362,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.4868,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5878
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4868
+     }
+    ]
+   },
+   "result": null
+  }
+ ]
+}

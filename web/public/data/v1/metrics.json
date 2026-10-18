@@ -1,18 +1,18 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-17T14:07:02Z",
+ "generated_at": "2026-10-18T14:24:04Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "holdout_season": 20252026,
  "recent": {
   "games": 200,
-  "since": "2026-04-05",
-  "through": "2026-10-16",
-  "log_loss": 0.65347,
-  "baseline_log_loss": 0.68909,
+  "since": "2026-04-07",
+  "through": "2026-10-17",
+  "log_loss": 0.6527,
+  "baseline_log_loss": 0.68994,
   "accuracy": 0.61,
   "correct": 122,
-  "over_under_hit_rate": 0.51,
-  "total_mae": 1.8328
+  "over_under_hit_rate": 0.495,
+  "total_mae": 1.833
  },
  "windows": [
   {
@@ -267,10 +267,10 @@
   },
   {
    "season": 20262027,
-   "games": 115,
-   "log_loss": 0.65446,
-   "baseline_log_loss": 0.68857,
-   "accuracy": 0.6174
+   "games": 129,
+   "log_loss": 0.64814,
+   "baseline_log_loss": 0.68637,
+   "accuracy": 0.6279
   }
  ]
 }
