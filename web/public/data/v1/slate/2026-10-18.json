@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-18T14:24:04Z",
+ "generated_at": "2026-10-19T17:23:16Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-18",
  "games": [
   {
    "game_id": 2026020135,
    "start_utc": "2026-10-18T22:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Grand Casino Arena",
    "home": {
     "abbrev": "MIN",
@@ -44,12 +44,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 3,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020136,
    "start_utc": "2026-10-19T00:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Scotiabank Saddledome",
    "home": {
     "abbrev": "CGY",
@@ -86,7 +92,13 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 2,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": true
+   }
   }
  ]
 }

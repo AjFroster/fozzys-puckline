@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-18T14:24:04Z",
+ "generated_at": "2026-10-19T17:23:16Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-22",
  "games": [
@@ -28,7 +28,7 @@
     "away_ml_fair": 158,
     "home_decimal_fair": 1.633,
     "away_decimal_fair": 2.581,
-    "exp_goals_home": 3.209,
+    "exp_goals_home": 3.21,
     "exp_goals_away": 2.581,
     "exp_total": 6.009,
     "fair_total_line": 5.5,
@@ -347,36 +347,36 @@
    "venue": "Scotiabank Saddledome",
    "home": {
     "abbrev": "CGY",
-    "elo": 1429.7,
-    "rest_days": 7,
+    "elo": 1433.5,
+    "rest_days": 4,
     "b2b": false
    },
    "away": {
     "abbrev": "MIN",
-    "elo": 1526.2,
-    "rest_days": 7,
+    "elo": 1528.3,
+    "rest_days": 4,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.3985,
-    "away_win_prob": 0.6015,
-    "home_ml_fair": 151,
-    "away_ml_fair": -151,
-    "home_decimal_fair": 2.51,
-    "away_decimal_fair": 1.662,
-    "exp_goals_home": 2.743,
-    "exp_goals_away": 3.104,
-    "exp_total": 6.068,
+    "home_win_prob": 0.4009,
+    "away_win_prob": 0.5991,
+    "home_ml_fair": 149,
+    "away_ml_fair": -149,
+    "home_decimal_fair": 2.494,
+    "away_decimal_fair": 1.669,
+    "exp_goals_home": 2.722,
+    "exp_goals_away": 3.064,
+    "exp_total": 6.009,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5358,
+    "fair_line_p_over": 0.525,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5358
+      "p_over": 0.525
      },
      {
       "line": 6.5,
-      "p_over": 0.4356
+      "p_over": 0.4251
      }
     ]
    },
@@ -395,30 +395,30 @@
    },
    "away": {
     "abbrev": "CAR",
-    "elo": 1586.4,
-    "rest_days": 5,
+    "elo": 1582.5,
+    "rest_days": 4,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4599,
-    "away_win_prob": 0.5401,
-    "home_ml_fair": 117,
-    "away_ml_fair": -117,
-    "home_decimal_fair": 2.175,
-    "away_decimal_fair": 1.851,
-    "exp_goals_home": 3.174,
-    "exp_goals_away": 3.093,
-    "exp_total": 6.481,
+    "home_win_prob": 0.4654,
+    "away_win_prob": 0.5346,
+    "home_ml_fair": 115,
+    "away_ml_fair": -115,
+    "home_decimal_fair": 2.149,
+    "away_decimal_fair": 1.87,
+    "exp_goals_home": 3.182,
+    "exp_goals_away": 3.07,
+    "exp_total": 6.466,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.508,
+    "fair_line_p_over": 0.5055,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6071
+      "p_over": 0.6047
      },
      {
       "line": 6.5,
-      "p_over": 0.508
+      "p_over": 0.5055
      }
     ]
    },

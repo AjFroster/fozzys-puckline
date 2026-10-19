@@ -1,24 +1,24 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-18T14:24:04Z",
+ "generated_at": "2026-10-19T17:23:16Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "season": 20262027,
  "complete": false,
- "through": "2026-10-17",
+ "through": "2026-10-18",
  "rolling_window": 100,
  "summary": {
-  "date": "2026-10-17",
-  "games_today": 14,
-  "correct_today": 10,
-  "games": 129,
-  "correct": 81,
-  "accuracy": 0.6279,
-  "log_loss": 0.64814,
-  "baseline_log_loss": 0.68637,
-  "brier": 0.22811,
-  "over_under_hit_rate": 0.5039,
+  "date": "2026-10-18",
+  "games_today": 2,
+  "correct_today": 1,
+  "games": 131,
+  "correct": 82,
+  "accuracy": 0.626,
+  "log_loss": 0.6499,
+  "baseline_log_loss": 0.6847,
+  "brier": 0.22895,
+  "over_under_hit_rate": 0.4962,
   "rolling_accuracy": 0.65,
-  "rolling_log_loss": 0.63776
+  "rolling_log_loss": 0.64013
  },
  "points": [
   {
@@ -272,16 +272,30 @@
    "over_under_hit_rate": 0.5039,
    "rolling_accuracy": 0.65,
    "rolling_log_loss": 0.63776
+  },
+  {
+   "date": "2026-10-18",
+   "games_today": 2,
+   "correct_today": 1,
+   "games": 131,
+   "correct": 82,
+   "accuracy": 0.626,
+   "log_loss": 0.6499,
+   "baseline_log_loss": 0.6847,
+   "brier": 0.22895,
+   "over_under_hit_rate": 0.4962,
+   "rolling_accuracy": 0.65,
+   "rolling_log_loss": 0.64013
   }
  ],
  "calibration": [
   {
    "lower": 0.3,
    "upper": 0.4,
-   "count": 6,
-   "mean_predicted": 0.3665,
-   "observed": 0.0,
-   "z": 0.0
+   "count": 7,
+   "mean_predicted": 0.3643,
+   "observed": 0.1429,
+   "z": 1.674
   },
   {
    "lower": 0.4,
@@ -302,10 +316,10 @@
   {
    "lower": 0.6,
    "upper": 0.7,
-   "count": 32,
-   "mean_predicted": 0.6401,
-   "observed": 0.7812,
-   "z": 1.932
+   "count": 33,
+   "mean_predicted": 0.6394,
+   "observed": 0.7879,
+   "z": 2.086
   },
   {
    "lower": 0.7,
@@ -316,7 +330,7 @@
    "z": 0.0
   }
  ],
- "worst_calibration_z": 1.932,
+ "worst_calibration_z": 2.086,
  "calibration_threshold": 2.394,
  "well_calibrated": true,
  "biggest_misses": [
@@ -335,6 +349,14 @@
    "loser": "COL",
    "probability_given_to_winner": 0.3188,
    "score": "6-3"
+  },
+  {
+   "date": "2026-10-18",
+   "game_id": 2026020136,
+   "winner": "CGY",
+   "loser": "CAR",
+   "probability_given_to_winner": 0.3511,
+   "score": "3-2"
   },
   {
    "date": "2026-10-02",
@@ -359,14 +381,6 @@
    "loser": "CAR",
    "probability_given_to_winner": 0.3635,
    "score": "1-0 OT"
-  },
-  {
-   "date": "2026-10-08",
-   "game_id": 2026020058,
-   "winner": "NSH",
-   "loser": "MTL",
-   "probability_given_to_winner": 0.3698,
-   "score": "5-2"
   }
  ]
 }
