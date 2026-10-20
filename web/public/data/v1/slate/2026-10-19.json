@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-19T17:23:16Z",
+ "generated_at": "2026-10-20T15:35:41Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-19",
  "games": [
   {
    "game_id": 2026020137,
    "start_utc": "2026-10-19T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Madison Square Garden",
    "home": {
     "abbrev": "NYR",
@@ -44,12 +44,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 5,
+    "away_score": 2,
+    "last_period": "REG",
+    "total_goals": 7,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020138,
    "start_utc": "2026-10-19T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Xfinity Mobile Arena",
    "home": {
     "abbrev": "PHI",
@@ -86,12 +92,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 2,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020139,
    "start_utc": "2026-10-19T23:30:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Scotiabank Arena",
    "home": {
     "abbrev": "TOR",
@@ -114,26 +126,32 @@
     "away_decimal_fair": 2.338,
     "exp_goals_home": 3.325,
     "exp_goals_away": 3.012,
-    "exp_total": 6.548,
+    "exp_total": 6.547,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5193,
+    "fair_line_p_over": 0.5191,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6184
+      "p_over": 0.6183
      },
      {
       "line": 6.5,
-      "p_over": 0.5193
+      "p_over": 0.5191
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 4,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020140,
    "start_utc": "2026-10-20T01:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Delta Center",
    "home": {
     "abbrev": "UTA",
@@ -170,7 +188,13 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 5,
+    "away_score": 4,
+    "last_period": "REG",
+    "total_goals": 9,
+    "home_won": true
+   }
   }
  ]
 }
