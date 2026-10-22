@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-20T15:35:41Z",
+ "generated_at": "2026-10-22T15:49:57Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-21",
  "games": [
   {
    "game_id": 2026020152,
    "start_utc": "2026-10-21T23:30:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "KeyBank Center",
    "home": {
     "abbrev": "BUF",
@@ -44,12 +44,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 1,
+    "away_score": 3,
+    "last_period": "REG",
+    "total_goals": 4,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020153,
    "start_utc": "2026-10-21T23:30:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Canadian Tire Centre",
    "home": {
     "abbrev": "OTT",
@@ -86,7 +92,13 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 5,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 6,
+    "home_won": true
+   }
   }
  ]
 }

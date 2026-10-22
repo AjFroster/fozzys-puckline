@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-21T15:53:10Z",
+ "generated_at": "2026-10-22T15:49:57Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-25",
  "games": [
@@ -17,30 +17,30 @@
    },
    "away": {
     "abbrev": "FLA",
-    "elo": 1508.9,
-    "rest_days": 8,
+    "elo": 1503.0,
+    "rest_days": 4,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.3987,
-    "away_win_prob": 0.6013,
-    "home_ml_fair": 151,
-    "away_ml_fair": -151,
-    "home_decimal_fair": 2.508,
-    "away_decimal_fair": 1.663,
-    "exp_goals_home": 2.799,
-    "exp_goals_away": 3.15,
-    "exp_total": 6.168,
+    "home_win_prob": 0.4069,
+    "away_win_prob": 0.5931,
+    "home_ml_fair": 146,
+    "away_ml_fair": -146,
+    "home_decimal_fair": 2.457,
+    "away_decimal_fair": 1.686,
+    "exp_goals_home": 2.829,
+    "exp_goals_away": 3.113,
+    "exp_total": 6.162,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4533,
+    "fair_line_p_over": 0.4523,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5536
+      "p_over": 0.5524
      },
      {
       "line": 6.5,
-      "p_over": 0.4533
+      "p_over": 0.4523
      }
     ]
    },
