@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-23T15:40:44Z",
+ "generated_at": "2026-10-24T14:23:11Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-24",
  "games": [
@@ -395,30 +395,30 @@
    },
    "away": {
     "abbrev": "TBL",
-    "elo": 1546.2,
-    "rest_days": 4,
-    "b2b": false
+    "elo": 1541.4,
+    "rest_days": 1,
+    "b2b": true
    },
    "prediction": {
-    "home_win_prob": 0.4936,
-    "away_win_prob": 0.5064,
-    "home_ml_fair": 103,
-    "away_ml_fair": -103,
-    "home_decimal_fair": 2.026,
-    "away_decimal_fair": 1.975,
-    "exp_goals_home": 3.144,
-    "exp_goals_away": 2.974,
-    "exp_total": 6.335,
+    "home_win_prob": 0.5364,
+    "away_win_prob": 0.4636,
+    "home_ml_fair": -116,
+    "away_ml_fair": 116,
+    "home_decimal_fair": 1.864,
+    "away_decimal_fair": 2.157,
+    "exp_goals_home": 3.206,
+    "exp_goals_away": 2.972,
+    "exp_total": 6.393,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4827,
+    "fair_line_p_over": 0.4928,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5825
+      "p_over": 0.5925
      },
      {
       "line": 6.5,
-      "p_over": 0.4827
+      "p_over": 0.4928
      }
     ]
    },

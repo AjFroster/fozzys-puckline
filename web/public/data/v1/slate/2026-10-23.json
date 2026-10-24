@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-21T15:53:10Z",
+ "generated_at": "2026-10-24T14:23:11Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-23",
  "games": [
   {
    "game_id": 2026020166,
    "start_utc": "2026-10-24T00:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "United Center",
    "home": {
     "abbrev": "CHI",
@@ -44,12 +44,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 1,
+    "away_score": 4,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020167,
    "start_utc": "2026-10-24T01:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Ball Arena",
    "home": {
     "abbrev": "COL",
@@ -86,7 +92,13 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 6,
+    "away_score": 3,
+    "last_period": "REG",
+    "total_goals": 9,
+    "home_won": true
+   }
   }
  ]
 }

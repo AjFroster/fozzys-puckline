@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-23T15:40:44Z",
+ "generated_at": "2026-10-24T14:23:11Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "season": 20262027,
  "teams": [
@@ -18,31 +18,31 @@
    "team_id": 21,
    "abbrev": "COL",
    "name": "Colorado Avalanche",
-   "elo": 1562.3,
+   "elo": 1567.1,
    "rank": 2,
    "percentile": 0.9677,
-   "elo_7d_change": -2.9,
-   "win_prob_vs_average": 0.5991
-  },
-  {
-   "team_id": 14,
-   "abbrev": "TBL",
-   "name": "Tampa Bay Lightning",
-   "elo": 1546.2,
-   "rank": 3,
-   "percentile": 0.9355,
-   "elo_7d_change": 9.2,
-   "win_prob_vs_average": 0.5766
+   "elo_7d_change": -2.0,
+   "win_prob_vs_average": 0.6058
   },
   {
    "team_id": 25,
    "abbrev": "DAL",
    "name": "Dallas Stars",
    "elo": 1542.8,
-   "rank": 4,
-   "percentile": 0.9032,
+   "rank": 3,
+   "percentile": 0.9355,
    "elo_7d_change": 5.1,
    "win_prob_vs_average": 0.5719
+  },
+  {
+   "team_id": 14,
+   "abbrev": "TBL",
+   "name": "Tampa Bay Lightning",
+   "elo": 1541.4,
+   "rank": 4,
+   "percentile": 0.9032,
+   "elo_7d_change": 4.4,
+   "win_prob_vs_average": 0.5699
   },
   {
    "team_id": 22,
@@ -71,7 +71,7 @@
    "elo": 1527.6,
    "rank": 7,
    "percentile": 0.8065,
-   "elo_7d_change": 14.7,
+   "elo_7d_change": 10.8,
    "win_prob_vs_average": 0.5503
   },
   {
@@ -98,11 +98,11 @@
    "team_id": 8,
    "abbrev": "MTL",
    "name": "Montr\u00e9al Canadiens",
-   "elo": 1518.4,
+   "elo": 1522.5,
    "rank": 10,
    "percentile": 0.7097,
-   "elo_7d_change": -1.3,
-   "win_prob_vs_average": 0.5372
+   "elo_7d_change": 2.8,
+   "win_prob_vs_average": 0.5431
   },
   {
    "team_id": 7,
@@ -171,7 +171,7 @@
    "elo": 1493.2,
    "rank": 17,
    "percentile": 0.4839,
-   "elo_7d_change": -5.0,
+   "elo_7d_change": -1.1,
    "win_prob_vs_average": 0.501
   },
   {
@@ -291,7 +291,7 @@
    "elo": 1440.9,
    "rank": 29,
    "percentile": 0.0968,
-   "elo_7d_change": -15.0,
+   "elo_7d_change": -11.1,
    "win_prob_vs_average": 0.4263
   },
   {
@@ -308,11 +308,11 @@
    "team_id": 16,
    "abbrev": "CHI",
    "name": "Chicago Blackhawks",
-   "elo": 1412.6,
+   "elo": 1408.5,
    "rank": 31,
    "percentile": 0.0323,
-   "elo_7d_change": -4.5,
-   "win_prob_vs_average": 0.387
+   "elo_7d_change": -8.6,
+   "win_prob_vs_average": 0.3814
   },
   {
    "team_id": 23,
