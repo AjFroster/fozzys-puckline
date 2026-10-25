@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-24T14:23:11Z",
+ "generated_at": "2026-10-25T14:54:41Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-24",
  "games": [
   {
    "game_id": 2026020168,
    "start_utc": "2026-10-24T17:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Xfinity Mobile Arena",
    "home": {
     "abbrev": "PHI",
@@ -44,12 +44,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 4,
+    "away_score": 5,
+    "last_period": "REG",
+    "total_goals": 9,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020169,
    "start_utc": "2026-10-24T19:30:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Prudential Center",
    "home": {
     "abbrev": "NJD",
@@ -86,12 +92,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 4,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020170,
    "start_utc": "2026-10-24T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "TD Garden",
    "home": {
     "abbrev": "BOS",
@@ -128,12 +140,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 6,
+    "away_score": 4,
+    "last_period": "REG",
+    "total_goals": 10,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020171,
    "start_utc": "2026-10-24T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Canadian Tire Centre",
    "home": {
     "abbrev": "OTT",
@@ -170,12 +188,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 7,
+    "away_score": 4,
+    "last_period": "REG",
+    "total_goals": 11,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020172,
    "start_utc": "2026-10-24T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "PPG Paints Arena",
    "home": {
     "abbrev": "PIT",
@@ -212,12 +236,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 2,
+    "last_period": "OT",
+    "total_goals": 5,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020173,
    "start_utc": "2026-10-24T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Capital One Arena",
    "home": {
     "abbrev": "WSH",
@@ -254,12 +284,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 4,
+    "away_score": 3,
+    "last_period": "OT",
+    "total_goals": 7,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020174,
    "start_utc": "2026-10-24T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Nationwide Arena",
    "home": {
     "abbrev": "CBJ",
@@ -296,12 +332,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 1,
+    "last_period": "OT",
+    "total_goals": 3,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020175,
    "start_utc": "2026-10-24T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Enterprise Center",
    "home": {
     "abbrev": "STL",
@@ -338,12 +380,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 0,
+    "away_score": 4,
+    "last_period": "REG",
+    "total_goals": 4,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020176,
    "start_utc": "2026-10-24T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Rogers Place",
    "home": {
     "abbrev": "EDM",
@@ -380,12 +428,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 7,
+    "last_period": "REG",
+    "total_goals": 9,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020177,
    "start_utc": "2026-10-25T01:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Delta Center",
    "home": {
     "abbrev": "UTA",
@@ -422,12 +476,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 5,
+    "away_score": 4,
+    "last_period": "OT",
+    "total_goals": 9,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020178,
    "start_utc": "2026-10-25T02:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Scotiabank Saddledome",
    "home": {
     "abbrev": "CGY",
@@ -450,26 +510,32 @@
     "away_decimal_fair": 1.91,
     "exp_goals_home": 2.808,
     "exp_goals_away": 2.9,
-    "exp_total": 5.933,
+    "exp_total": 5.934,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5109,
+    "fair_line_p_over": 0.5111,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5109
+      "p_over": 0.5111
      },
      {
       "line": 6.5,
-      "p_over": 0.412
+      "p_over": 0.4122
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 4,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020179,
    "start_utc": "2026-10-25T02:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Climate Pledge Arena",
    "home": {
     "abbrev": "SEA",
@@ -490,8 +556,8 @@
     "away_ml_fair": -120,
     "home_decimal_fair": 2.202,
     "away_decimal_fair": 1.832,
-    "exp_goals_home": 2.983,
-    "exp_goals_away": 2.997,
+    "exp_goals_home": 2.984,
+    "exp_goals_away": 2.996,
     "exp_total": 6.2,
     "fair_total_line": 6.5,
     "fair_line_p_over": 0.4593,
@@ -506,7 +572,13 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 1,
+    "away_score": 5,
+    "last_period": "REG",
+    "total_goals": 6,
+    "home_won": false
+   }
   }
  ]
 }

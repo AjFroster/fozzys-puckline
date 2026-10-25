@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-24T14:23:11Z",
+ "generated_at": "2026-10-25T14:54:41Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-25",
  "games": [
@@ -137,9 +137,9 @@
    "venue": "Bridgestone Arena",
    "home": {
     "abbrev": "NSH",
-    "elo": 1461.9,
-    "rest_days": 3,
-    "b2b": false
+    "elo": 1461.5,
+    "rest_days": 1,
+    "b2b": true
    },
    "away": {
     "abbrev": "COL",
@@ -148,25 +148,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.3866,
-    "away_win_prob": 0.6134,
-    "home_ml_fair": 159,
-    "away_ml_fair": -159,
-    "home_decimal_fair": 2.587,
-    "away_decimal_fair": 1.63,
-    "exp_goals_home": 2.802,
-    "exp_goals_away": 3.221,
-    "exp_total": 6.24,
+    "home_win_prob": 0.3525,
+    "away_win_prob": 0.6475,
+    "home_ml_fair": 184,
+    "away_ml_fair": -184,
+    "home_decimal_fair": 2.837,
+    "away_decimal_fair": 1.544,
+    "exp_goals_home": 2.789,
+    "exp_goals_away": 3.201,
+    "exp_total": 6.207,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4658,
+    "fair_line_p_over": 0.4601,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5664
+      "p_over": 0.5607
      },
      {
       "line": 6.5,
-      "p_over": 0.4658
+      "p_over": 0.4601
      }
     ]
    },
@@ -185,30 +185,30 @@
    },
    "away": {
     "abbrev": "MIN",
-    "elo": 1524.3,
-    "rest_days": 3,
-    "b2b": false
+    "elo": 1530.0,
+    "rest_days": 1,
+    "b2b": true
    },
    "prediction": {
-    "home_win_prob": 0.3356,
-    "away_win_prob": 0.6644,
-    "home_ml_fair": 198,
-    "away_ml_fair": -198,
-    "home_decimal_fair": 2.98,
-    "away_decimal_fair": 1.505,
-    "exp_goals_home": 2.751,
-    "exp_goals_away": 3.353,
-    "exp_total": 6.317,
+    "home_win_prob": 0.3607,
+    "away_win_prob": 0.6393,
+    "home_ml_fair": 177,
+    "away_ml_fair": -177,
+    "home_decimal_fair": 2.772,
+    "away_decimal_fair": 1.564,
+    "exp_goals_home": 2.723,
+    "exp_goals_away": 3.391,
+    "exp_total": 6.325,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4789,
+    "fair_line_p_over": 0.48,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5803
+      "p_over": 0.5818
      },
      {
       "line": 6.5,
-      "p_over": 0.4789
+      "p_over": 0.48
      }
     ]
    },
