@@ -1,24 +1,24 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-25T14:54:41Z",
+ "generated_at": "2026-10-26T17:12:58Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "season": 20262027,
  "complete": false,
- "through": "2026-10-24",
+ "through": "2026-10-25",
  "rolling_window": 100,
  "summary": {
-  "date": "2026-10-24",
-  "games_today": 12,
-  "correct_today": 8,
-  "games": 174,
-  "correct": 108,
-  "accuracy": 0.6207,
-  "log_loss": 0.65755,
-  "baseline_log_loss": 0.67614,
-  "brier": 0.23261,
-  "over_under_hit_rate": 0.5172,
-  "rolling_accuracy": 0.61,
-  "rolling_log_loss": 0.66037
+  "date": "2026-10-25",
+  "games_today": 5,
+  "correct_today": 4,
+  "games": 179,
+  "correct": 112,
+  "accuracy": 0.6257,
+  "log_loss": 0.65604,
+  "baseline_log_loss": 0.67807,
+  "brier": 0.23186,
+  "over_under_hit_rate": 0.514,
+  "rolling_accuracy": 0.63,
+  "rolling_log_loss": 0.65092
  },
  "points": [
   {
@@ -370,6 +370,20 @@
    "over_under_hit_rate": 0.5172,
    "rolling_accuracy": 0.61,
    "rolling_log_loss": 0.66037
+  },
+  {
+   "date": "2026-10-25",
+   "games_today": 5,
+   "correct_today": 4,
+   "games": 179,
+   "correct": 112,
+   "accuracy": 0.6257,
+   "log_loss": 0.65604,
+   "baseline_log_loss": 0.67807,
+   "brier": 0.23186,
+   "over_under_hit_rate": 0.514,
+   "rolling_accuracy": 0.63,
+   "rolling_log_loss": 0.65092
   }
  ],
  "calibration": [
@@ -384,18 +398,18 @@
   {
    "lower": 0.3,
    "upper": 0.4,
-   "count": 9,
-   "mean_predicted": 0.3679,
-   "observed": 0.2222,
-   "z": 1.051
+   "count": 11,
+   "mean_predicted": 0.3658,
+   "observed": 0.2727,
+   "z": 0.693
   },
   {
    "lower": 0.4,
    "upper": 0.5,
-   "count": 45,
-   "mean_predicted": 0.4565,
-   "observed": 0.5111,
-   "z": 0.733
+   "count": 47,
+   "mean_predicted": 0.4549,
+   "observed": 0.4894,
+   "z": 0.472
   },
   {
    "lower": 0.5,
@@ -408,10 +422,10 @@
   {
    "lower": 0.6,
    "upper": 0.7,
-   "count": 42,
-   "mean_predicted": 0.6375,
-   "observed": 0.6905,
-   "z": 0.742
+   "count": 43,
+   "mean_predicted": 0.6377,
+   "observed": 0.6977,
+   "z": 0.856
   },
   {
    "lower": 0.7,
@@ -459,20 +473,20 @@
    "score": "3-2"
   },
   {
+   "date": "2026-10-25",
+   "game_id": 2026020183,
+   "winner": "NSH",
+   "loser": "COL",
+   "probability_given_to_winner": 0.3525,
+   "score": "6-2"
+  },
+  {
    "date": "2026-10-02",
    "game_id": 2026020021,
    "winner": "ANA",
    "loser": "VGK",
    "probability_given_to_winner": 0.3536,
    "score": "4-3"
-  },
-  {
-   "date": "2026-10-11",
-   "game_id": 2026020084,
-   "winner": "SEA",
-   "loser": "WSH",
-   "probability_given_to_winner": 0.3572,
-   "score": "5-3"
   }
  ]
 }
