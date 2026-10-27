@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-26T17:12:58Z",
+ "generated_at": "2026-10-27T16:18:45Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "season": 20262027,
  "teams": [
@@ -21,7 +21,7 @@
    "elo": 1558.4,
    "rank": 2,
    "percentile": 0.9677,
-   "elo_7d_change": -10.7,
+   "elo_7d_change": -7.1,
    "win_prob_vs_average": 0.5938
   },
   {
@@ -85,24 +85,24 @@
    "win_prob_vs_average": 0.549
   },
   {
-   "team_id": 22,
-   "abbrev": "EDM",
-   "name": "Edmonton Oilers",
-   "elo": 1525.9,
-   "rank": 9,
-   "percentile": 0.7419,
-   "elo_7d_change": -7.6,
-   "win_prob_vs_average": 0.5479
-  },
-  {
    "team_id": 8,
    "abbrev": "MTL",
    "name": "Montr\u00e9al Canadiens",
    "elo": 1524.9,
-   "rank": 10,
-   "percentile": 0.7097,
+   "rank": 9,
+   "percentile": 0.7419,
    "elo_7d_change": 4.5,
    "win_prob_vs_average": 0.5464
+  },
+  {
+   "team_id": 22,
+   "abbrev": "EDM",
+   "name": "Edmonton Oilers",
+   "elo": 1524.4,
+   "rank": 10,
+   "percentile": 0.7097,
+   "elo_7d_change": -9.1,
+   "win_prob_vs_average": 0.5457
   },
   {
    "team_id": 53,
@@ -111,7 +111,7 @@
    "elo": 1517.3,
    "rank": 11,
    "percentile": 0.6774,
-   "elo_7d_change": -2.0,
+   "elo_7d_change": -4.3,
    "win_prob_vs_average": 0.5357
   },
   {
@@ -161,36 +161,16 @@
    "elo": 1493.5,
    "rank": 16,
    "percentile": 0.5161,
-   "elo_7d_change": 3.9,
+   "elo_7d_change": 6.2,
    "win_prob_vs_average": 0.5015
-  },
-  {
-   "team_id": 3,
-   "abbrev": "NYR",
-   "name": "New York Rangers",
-   "elo": 1489.0,
-   "rank": 17,
-   "percentile": 0.4839,
-   "elo_7d_change": -3.2,
-   "win_prob_vs_average": 0.4949
-  },
-  {
-   "team_id": 10,
-   "abbrev": "TOR",
-   "name": "Toronto Maple Leafs",
-   "elo": 1487.5,
-   "rank": 18,
-   "percentile": 0.4516,
-   "elo_7d_change": 23.5,
-   "win_prob_vs_average": 0.4928
   },
   {
    "team_id": 1,
    "abbrev": "NJD",
    "name": "New Jersey Devils",
    "elo": 1486.6,
-   "rank": 19,
-   "percentile": 0.4194,
+   "rank": 17,
+   "percentile": 0.4839,
    "elo_7d_change": 11.5,
    "win_prob_vs_average": 0.4915
   },
@@ -199,20 +179,40 @@
    "abbrev": "CBJ",
    "name": "Columbus Blue Jackets",
    "elo": 1483.2,
-   "rank": 20,
-   "percentile": 0.3871,
+   "rank": 18,
+   "percentile": 0.4516,
    "elo_7d_change": -6.9,
    "win_prob_vs_average": 0.4867
+  },
+  {
+   "team_id": 3,
+   "abbrev": "NYR",
+   "name": "New York Rangers",
+   "elo": 1482.5,
+   "rank": 19,
+   "percentile": 0.4194,
+   "elo_7d_change": -14.1,
+   "win_prob_vs_average": 0.4856
+  },
+  {
+   "team_id": 10,
+   "abbrev": "TOR",
+   "name": "Toronto Maple Leafs",
+   "elo": 1481.6,
+   "rank": 20,
+   "percentile": 0.3871,
+   "elo_7d_change": 14.0,
+   "win_prob_vs_average": 0.4843
   },
   {
    "team_id": 17,
    "abbrev": "DET",
    "name": "Detroit Red Wings",
-   "elo": 1472.4,
+   "elo": 1473.9,
    "rank": 21,
    "percentile": 0.3548,
-   "elo_7d_change": -2.2,
-   "win_prob_vs_average": 0.4711
+   "elo_7d_change": -0.7,
+   "win_prob_vs_average": 0.4733
   },
   {
    "team_id": 52,
@@ -238,11 +238,11 @@
    "team_id": 26,
    "abbrev": "LAK",
    "name": "Los Angeles Kings",
-   "elo": 1462.7,
+   "elo": 1469.3,
    "rank": 24,
    "percentile": 0.2581,
-   "elo_7d_change": 4.7,
-   "win_prob_vs_average": 0.4573
+   "elo_7d_change": 11.2,
+   "win_prob_vs_average": 0.4666
   },
   {
    "team_id": 55,
@@ -261,7 +261,7 @@
    "elo": 1461.5,
    "rank": 26,
    "percentile": 0.1935,
-   "elo_7d_change": 6.1,
+   "elo_7d_change": 2.5,
    "win_prob_vs_average": 0.4555
   },
   {
@@ -275,24 +275,24 @@
    "win_prob_vs_average": 0.4541
   },
   {
+   "team_id": 20,
+   "abbrev": "CGY",
+   "name": "Calgary Flames",
+   "elo": 1448.7,
+   "rank": 28,
+   "percentile": 0.129,
+   "elo_7d_change": 15.2,
+   "win_prob_vs_average": 0.4374
+  },
+  {
    "team_id": 24,
    "abbrev": "ANA",
    "name": "Anaheim Ducks",
    "elo": 1444.1,
-   "rank": 28,
-   "percentile": 0.129,
-   "elo_7d_change": -7.9,
-   "win_prob_vs_average": 0.4308
-  },
-  {
-   "team_id": 20,
-   "abbrev": "CGY",
-   "name": "Calgary Flames",
-   "elo": 1442.8,
    "rank": 29,
    "percentile": 0.0968,
-   "elo_7d_change": 9.3,
-   "win_prob_vs_average": 0.429
+   "elo_7d_change": -3.5,
+   "win_prob_vs_average": 0.4308
   },
   {
    "team_id": 28,
@@ -301,7 +301,7 @@
    "elo": 1442.1,
    "rank": 30,
    "percentile": 0.0645,
-   "elo_7d_change": 3.6,
+   "elo_7d_change": 7.3,
    "win_prob_vs_average": 0.4279
   },
   {

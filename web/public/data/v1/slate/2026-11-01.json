@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-26T17:12:58Z",
+ "generated_at": "2026-10-27T16:18:45Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-01",
  "games": [
@@ -137,36 +137,36 @@
    "venue": "Madison Square Garden",
    "home": {
     "abbrev": "NYR",
-    "elo": 1489.0,
-    "rest_days": 8,
+    "elo": 1482.5,
+    "rest_days": 6,
     "b2b": false
    },
    "away": {
     "abbrev": "EDM",
-    "elo": 1525.9,
-    "rest_days": 8,
+    "elo": 1524.4,
+    "rest_days": 6,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4829,
-    "away_win_prob": 0.5171,
-    "home_ml_fair": 107,
-    "away_ml_fair": -107,
-    "home_decimal_fair": 2.071,
-    "away_decimal_fair": 1.934,
-    "exp_goals_home": 3.227,
-    "exp_goals_away": 3.109,
-    "exp_total": 6.548,
+    "home_win_prob": 0.4757,
+    "away_win_prob": 0.5243,
+    "home_ml_fair": 110,
+    "away_ml_fair": -110,
+    "home_decimal_fair": 2.102,
+    "away_decimal_fair": 1.907,
+    "exp_goals_home": 3.224,
+    "exp_goals_away": 3.155,
+    "exp_total": 6.591,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5195,
+    "fair_line_p_over": 0.5267,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6183
+      "p_over": 0.6251
      },
      {
       "line": 6.5,
-      "p_over": 0.5195
+      "p_over": 0.5267
      }
     ]
    },
@@ -197,7 +197,7 @@
     "home_decimal_fair": 2.269,
     "away_decimal_fair": 1.788,
     "exp_goals_home": 3.015,
-    "exp_goals_away": 3.172,
+    "exp_goals_away": 3.171,
     "exp_total": 6.402,
     "fair_total_line": 6.5,
     "fair_line_p_over": 0.4945,
