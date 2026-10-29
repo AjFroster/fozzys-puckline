@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-28T17:03:24Z",
+ "generated_at": "2026-10-29T17:21:36Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-04",
  "games": [
@@ -137,36 +137,36 @@
    "venue": "Climate Pledge Arena",
    "home": {
     "abbrev": "SEA",
-    "elo": 1461.6,
-    "rest_days": 11,
+    "elo": 1464.3,
+    "rest_days": 7,
     "b2b": false
    },
    "away": {
     "abbrev": "CGY",
-    "elo": 1448.7,
-    "rest_days": 9,
+    "elo": 1444.3,
+    "rest_days": 7,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5542,
-    "away_win_prob": 0.4458,
-    "home_ml_fair": -124,
-    "away_ml_fair": 124,
-    "home_decimal_fair": 1.804,
-    "away_decimal_fair": 2.243,
-    "exp_goals_home": 3.193,
-    "exp_goals_away": 2.833,
-    "exp_total": 6.242,
+    "home_win_prob": 0.5643,
+    "away_win_prob": 0.4357,
+    "home_ml_fair": -130,
+    "away_ml_fair": 130,
+    "home_decimal_fair": 1.772,
+    "away_decimal_fair": 2.295,
+    "exp_goals_home": 3.244,
+    "exp_goals_away": 2.798,
+    "exp_total": 6.258,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4663,
+    "fair_line_p_over": 0.4689,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5667
+      "p_over": 0.5696
      },
      {
       "line": 6.5,
-      "p_over": 0.4663
+      "p_over": 0.4689
      }
     ]
    },

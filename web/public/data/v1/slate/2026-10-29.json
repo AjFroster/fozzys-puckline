@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-28T17:03:24Z",
+ "generated_at": "2026-10-29T17:21:36Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-29",
  "games": [
@@ -196,7 +196,7 @@
     "away_ml_fair": -105,
     "home_decimal_fair": 2.053,
     "away_decimal_fair": 1.95,
-    "exp_goals_home": 2.754,
+    "exp_goals_home": 2.755,
     "exp_goals_away": 2.834,
     "exp_total": 5.817,
     "fair_total_line": 5.5,
@@ -227,30 +227,30 @@
    },
    "away": {
     "abbrev": "WSH",
-    "elo": 1527.3,
-    "rest_days": 5,
-    "b2b": false
+    "elo": 1530.9,
+    "rest_days": 1,
+    "b2b": true
    },
    "prediction": {
-    "home_win_prob": 0.4523,
-    "away_win_prob": 0.5477,
-    "home_ml_fair": 121,
-    "away_ml_fair": -121,
-    "home_decimal_fair": 2.211,
-    "away_decimal_fair": 1.826,
-    "exp_goals_home": 2.98,
-    "exp_goals_away": 3.03,
-    "exp_total": 6.228,
+    "home_win_prob": 0.483,
+    "away_win_prob": 0.517,
+    "home_ml_fair": 107,
+    "away_ml_fair": -107,
+    "home_decimal_fair": 2.07,
+    "away_decimal_fair": 1.934,
+    "exp_goals_home": 2.964,
+    "exp_goals_away": 3.059,
+    "exp_total": 6.242,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4642,
+    "fair_line_p_over": 0.4666,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.564
+      "p_over": 0.5664
      },
      {
       "line": 6.5,
-      "p_over": 0.4642
+      "p_over": 0.4666
      }
     ]
    },
