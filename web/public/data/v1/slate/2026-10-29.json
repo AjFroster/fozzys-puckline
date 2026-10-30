@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-29T17:21:36Z",
+ "generated_at": "2026-10-30T16:58:19Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-29",
  "games": [
   {
    "game_id": 2026020204,
    "start_utc": "2026-10-29T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Benchmark International Arena",
    "home": {
     "abbrev": "TBL",
@@ -44,12 +44,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 6,
+    "away_score": 4,
+    "last_period": "REG",
+    "total_goals": 10,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020205,
    "start_utc": "2026-10-29T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "PPG Paints Arena",
    "home": {
     "abbrev": "PIT",
@@ -86,12 +92,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 4,
+    "last_period": "OT",
+    "total_goals": 7,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020206,
    "start_utc": "2026-10-29T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Lenovo Center",
    "home": {
     "abbrev": "CAR",
@@ -128,12 +140,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 2,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020203,
    "start_utc": "2026-10-29T23:30:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Little Caesars Arena",
    "home": {
     "abbrev": "DET",
@@ -170,12 +188,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 4,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020207,
    "start_utc": "2026-10-30T00:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Enterprise Center",
    "home": {
     "abbrev": "STL",
@@ -212,12 +236,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 4,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020208,
    "start_utc": "2026-10-30T00:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Bridgestone Arena",
    "home": {
     "abbrev": "NSH",
@@ -254,12 +284,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 4,
+    "last_period": "REG",
+    "total_goals": 7,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020209,
    "start_utc": "2026-10-30T00:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "American Airlines Center",
    "home": {
     "abbrev": "DAL",
@@ -296,12 +332,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 5,
+    "last_period": "REG",
+    "total_goals": 7,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020210,
    "start_utc": "2026-10-30T00:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Grand Casino Arena",
    "home": {
     "abbrev": "MIN",
@@ -338,12 +380,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 4,
+    "last_period": "OT",
+    "total_goals": 7,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020211,
    "start_utc": "2026-10-30T02:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Honda Center",
    "home": {
     "abbrev": "ANA",
@@ -380,12 +428,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 6,
+    "away_score": 7,
+    "last_period": "REG",
+    "total_goals": 13,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020212,
    "start_utc": "2026-10-30T02:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Crypto.com Arena",
    "home": {
     "abbrev": "LAK",
@@ -422,12 +476,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 6,
+    "away_score": 5,
+    "last_period": "OT",
+    "total_goals": 11,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020213,
    "start_utc": "2026-10-30T02:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "SAP Center at San Jose",
    "home": {
     "abbrev": "SJS",
@@ -450,21 +510,27 @@
     "away_decimal_fair": 2.623,
     "exp_goals_home": 3.613,
     "exp_goals_away": 2.844,
-    "exp_total": 6.66,
+    "exp_total": 6.659,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.537,
+    "fair_line_p_over": 0.5368,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6374
+      "p_over": 0.6372
      },
      {
       "line": 6.5,
-      "p_over": 0.537
+      "p_over": 0.5368
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 2,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": true
+   }
   }
  ]
 }

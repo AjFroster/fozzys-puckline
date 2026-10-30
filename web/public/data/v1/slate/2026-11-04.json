@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-29T17:21:36Z",
+ "generated_at": "2026-10-30T16:58:19Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-04",
  "games": [
@@ -11,36 +11,36 @@
    "venue": "KeyBank Center",
    "home": {
     "abbrev": "BUF",
-    "elo": 1520.9,
-    "rest_days": 8,
+    "elo": 1523.2,
+    "rest_days": 6,
     "b2b": false
    },
    "away": {
     "abbrev": "OTT",
-    "elo": 1505.7,
-    "rest_days": 8,
+    "elo": 1504.7,
+    "rest_days": 6,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5576,
-    "away_win_prob": 0.4424,
-    "home_ml_fair": -126,
-    "away_ml_fair": 126,
-    "home_decimal_fair": 1.793,
-    "away_decimal_fair": 2.26,
-    "exp_goals_home": 3.102,
-    "exp_goals_away": 2.783,
-    "exp_total": 6.106,
-    "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5425,
+    "home_win_prob": 0.5622,
+    "away_win_prob": 0.4378,
+    "home_ml_fair": -128,
+    "away_ml_fair": 128,
+    "home_decimal_fair": 1.779,
+    "away_decimal_fair": 2.284,
+    "exp_goals_home": 3.205,
+    "exp_goals_away": 2.863,
+    "exp_total": 6.286,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.4739,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5425
+      "p_over": 0.5742
      },
      {
       "line": 6.5,
-      "p_over": 0.4424
+      "p_over": 0.4739
      }
     ]
    },
@@ -59,30 +59,30 @@
    },
    "away": {
     "abbrev": "CHI",
-    "elo": 1409.2,
-    "rest_days": 8,
+    "elo": 1405.2,
+    "rest_days": 6,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.6682,
-    "away_win_prob": 0.3318,
-    "home_ml_fair": -201,
-    "away_ml_fair": 201,
-    "home_decimal_fair": 1.497,
-    "away_decimal_fair": 3.014,
-    "exp_goals_home": 3.335,
-    "exp_goals_away": 2.53,
-    "exp_total": 6.078,
+    "home_win_prob": 0.6732,
+    "away_win_prob": 0.3268,
+    "home_ml_fair": -206,
+    "away_ml_fair": 206,
+    "home_decimal_fair": 1.485,
+    "away_decimal_fair": 3.06,
+    "exp_goals_home": 3.347,
+    "exp_goals_away": 2.509,
+    "exp_total": 6.069,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.539,
+    "fair_line_p_over": 0.5374,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.539
+      "p_over": 0.5374
      },
      {
       "line": 6.5,
-      "p_over": 0.436
+      "p_over": 0.4342
      }
     ]
    },
@@ -95,36 +95,36 @@
    "venue": "Crypto.com Arena",
    "home": {
     "abbrev": "LAK",
-    "elo": 1466.3,
-    "rest_days": 8,
+    "elo": 1467.3,
+    "rest_days": 6,
     "b2b": false
    },
    "away": {
     "abbrev": "SJS",
-    "elo": 1438.4,
-    "rest_days": 8,
+    "elo": 1440.4,
+    "rest_days": 6,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5756,
-    "away_win_prob": 0.4244,
-    "home_ml_fair": -136,
-    "away_ml_fair": 136,
-    "home_decimal_fair": 1.737,
-    "away_decimal_fair": 2.356,
-    "exp_goals_home": 3.09,
-    "exp_goals_away": 2.795,
-    "exp_total": 6.105,
-    "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5423,
+    "home_win_prob": 0.5741,
+    "away_win_prob": 0.4259,
+    "home_ml_fair": -135,
+    "away_ml_fair": 135,
+    "home_decimal_fair": 1.742,
+    "away_decimal_fair": 2.348,
+    "exp_goals_home": 3.111,
+    "exp_goals_away": 2.828,
+    "exp_total": 6.159,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.4518,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5423
+      "p_over": 0.5519
      },
      {
       "line": 6.5,
-      "p_over": 0.4423
+      "p_over": 0.4518
      }
     ]
    },

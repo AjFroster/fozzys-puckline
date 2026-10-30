@@ -1,0 +1,134 @@
+{
+ "schema": "1.0.0",
+ "generated_at": "2026-10-30T16:58:19Z",
+ "model_version": "elo-1.0+cmp-1.0/ec1c67c",
+ "date": "2026-11-06",
+ "games": [
+  {
+   "game_id": 2026020262,
+   "start_utc": "2026-11-07T00:00:00Z",
+   "state": "FUT",
+   "venue": "KeyBank Center",
+   "home": {
+    "abbrev": "BUF",
+    "elo": 1523.2,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "CBJ",
+    "elo": 1482.4,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.5935,
+    "away_win_prob": 0.4065,
+    "home_ml_fair": -146,
+    "away_ml_fair": 146,
+    "home_decimal_fair": 1.685,
+    "away_decimal_fair": 2.46,
+    "exp_goals_home": 3.152,
+    "exp_goals_away": 2.667,
+    "exp_total": 6.038,
+    "fair_total_line": 5.5,
+    "fair_line_p_over": 0.5307,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5307
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.43
+     }
+    ]
+   },
+   "result": null
+  },
+  {
+   "game_id": 2026020263,
+   "start_utc": "2026-11-07T01:00:00Z",
+   "state": "FUT",
+   "venue": "Grand Casino Arena",
+   "home": {
+    "abbrev": "MIN",
+    "elo": 1535.9,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "SJS",
+    "elo": 1440.4,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.6667,
+    "away_win_prob": 0.3333,
+    "home_ml_fair": -200,
+    "away_ml_fair": 200,
+    "home_decimal_fair": 1.5,
+    "away_decimal_fair": 3.0,
+    "exp_goals_home": 3.323,
+    "exp_goals_away": 2.614,
+    "exp_total": 6.151,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.4493,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5516
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4493
+     }
+    ]
+   },
+   "result": null
+  },
+  {
+   "game_id": 2026020264,
+   "start_utc": "2026-11-07T01:00:00Z",
+   "state": "FUT",
+   "venue": "Scotiabank Saddledome",
+   "home": {
+    "abbrev": "CGY",
+    "elo": 1444.3,
+    "rest_days": 9,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "ANA",
+    "elo": 1440.2,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.5418,
+    "away_win_prob": 0.4582,
+    "home_ml_fair": -118,
+    "away_ml_fair": 118,
+    "home_decimal_fair": 1.846,
+    "away_decimal_fair": 2.183,
+    "exp_goals_home": 3.245,
+    "exp_goals_away": 3.008,
+    "exp_total": 6.467,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.5054,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.6048
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.5054
+     }
+    ]
+   },
+   "result": null
+  }
+ ]
+}
