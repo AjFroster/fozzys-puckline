@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-30T16:58:19Z",
+ "generated_at": "2026-10-31T15:59:20Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "season": 20262027,
  "teams": [
@@ -21,7 +21,7 @@
    "elo": 1562.1,
    "rank": 2,
    "percentile": 0.9677,
-   "elo_7d_change": -0.2,
+   "elo_7d_change": -5.0,
    "win_prob_vs_average": 0.5988
   },
   {
@@ -31,7 +31,7 @@
    "elo": 1543.7,
    "rank": 3,
    "percentile": 0.9355,
-   "elo_7d_change": -2.4,
+   "elo_7d_change": 2.4,
    "win_prob_vs_average": 0.5732
   },
   {
@@ -51,7 +51,7 @@
    "elo": 1535.4,
    "rank": 5,
    "percentile": 0.871,
-   "elo_7d_change": 17.0,
+   "elo_7d_change": 12.9,
    "win_prob_vs_average": 0.5615
   },
   {
@@ -75,24 +75,24 @@
    "win_prob_vs_average": 0.5567
   },
   {
-   "team_id": 54,
-   "abbrev": "VGK",
-   "name": "Vegas Golden Knights",
-   "elo": 1531.5,
-   "rank": 8,
-   "percentile": 0.7742,
-   "elo_7d_change": 3.8,
-   "win_prob_vs_average": 0.5559
-  },
-  {
    "team_id": 22,
    "abbrev": "EDM",
    "name": "Edmonton Oilers",
    "elo": 1528.8,
-   "rank": 9,
-   "percentile": 0.7419,
+   "rank": 8,
+   "percentile": 0.7742,
    "elo_7d_change": -6.3,
    "win_prob_vs_average": 0.552
+  },
+  {
+   "team_id": 54,
+   "abbrev": "VGK",
+   "name": "Vegas Golden Knights",
+   "elo": 1524.7,
+   "rank": 9,
+   "percentile": 0.7419,
+   "elo_7d_change": -3.0,
+   "win_prob_vs_average": 0.5462
   },
   {
    "team_id": 7,
@@ -128,11 +128,11 @@
    "team_id": 13,
    "abbrev": "FLA",
    "name": "Florida Panthers",
-   "elo": 1505.8,
+   "elo": 1509.8,
    "rank": 13,
    "percentile": 0.6129,
-   "elo_7d_change": 8.6,
-   "win_prob_vs_average": 0.5191
+   "elo_7d_change": 12.5,
+   "win_prob_vs_average": 0.5248
   },
   {
    "team_id": 9,
@@ -155,24 +155,24 @@
    "win_prob_vs_average": 0.5111
   },
   {
+   "team_id": 1,
+   "abbrev": "NJD",
+   "name": "New Jersey Devils",
+   "elo": 1498.1,
+   "rank": 16,
+   "percentile": 0.5161,
+   "elo_7d_change": 15.3,
+   "win_prob_vs_average": 0.508
+  },
+  {
    "team_id": 5,
    "abbrev": "PIT",
    "name": "Pittsburgh Penguins",
    "elo": 1492.7,
-   "rank": 16,
-   "percentile": 0.5161,
-   "elo_7d_change": -0.5,
-   "win_prob_vs_average": 0.5002
-  },
-  {
-   "team_id": 1,
-   "abbrev": "NJD",
-   "name": "New Jersey Devils",
-   "elo": 1491.3,
    "rank": 17,
    "percentile": 0.4839,
-   "elo_7d_change": 8.5,
-   "win_prob_vs_average": 0.4982
+   "elo_7d_change": -0.5,
+   "win_prob_vs_average": 0.5002
   },
   {
    "team_id": 3,
@@ -235,22 +235,12 @@
    "win_prob_vs_average": 0.4626
   },
   {
-   "team_id": 55,
-   "abbrev": "SEA",
-   "name": "Seattle Kraken",
-   "elo": 1464.3,
-   "rank": 24,
-   "percentile": 0.2581,
-   "elo_7d_change": -3.0,
-   "win_prob_vs_average": 0.4595
-  },
-  {
    "team_id": 2,
    "abbrev": "NYI",
    "name": "New York Islanders",
    "elo": 1463.4,
-   "rank": 25,
-   "percentile": 0.2258,
+   "rank": 24,
+   "percentile": 0.2581,
    "elo_7d_change": -0.9,
    "win_prob_vs_average": 0.4582
   },
@@ -258,11 +248,21 @@
    "team_id": 52,
    "abbrev": "WPG",
    "name": "Winnipeg Jets",
-   "elo": 1462.0,
+   "elo": 1458.0,
+   "rank": 25,
+   "percentile": 0.2258,
+   "elo_7d_change": -15.7,
+   "win_prob_vs_average": 0.4505
+  },
+  {
+   "team_id": 55,
+   "abbrev": "SEA",
+   "name": "Seattle Kraken",
+   "elo": 1457.9,
    "rank": 26,
    "percentile": 0.1935,
-   "elo_7d_change": -11.7,
-   "win_prob_vs_average": 0.4562
+   "elo_7d_change": -9.4,
+   "win_prob_vs_average": 0.4504
   },
   {
    "team_id": 4,
@@ -278,11 +278,11 @@
    "team_id": 20,
    "abbrev": "CGY",
    "name": "Calgary Flames",
-   "elo": 1444.3,
+   "elo": 1450.7,
    "rank": 28,
    "percentile": 0.129,
-   "elo_7d_change": 7.4,
-   "win_prob_vs_average": 0.4311
+   "elo_7d_change": 13.7,
+   "win_prob_vs_average": 0.4401
   },
   {
    "team_id": 28,
@@ -311,7 +311,7 @@
    "elo": 1405.2,
    "rank": 31,
    "percentile": 0.0323,
-   "elo_7d_change": -7.4,
+   "elo_7d_change": -3.2,
    "win_prob_vs_average": 0.377
   },
   {

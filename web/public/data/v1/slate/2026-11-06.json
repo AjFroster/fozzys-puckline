@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-30T16:58:19Z",
+ "generated_at": "2026-10-31T15:59:20Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-06",
  "games": [
@@ -95,8 +95,8 @@
    "venue": "Scotiabank Saddledome",
    "home": {
     "abbrev": "CGY",
-    "elo": 1444.3,
-    "rest_days": 9,
+    "elo": 1450.7,
+    "rest_days": 7,
     "b2b": false
    },
    "away": {
@@ -106,25 +106,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5418,
-    "away_win_prob": 0.4582,
-    "home_ml_fair": -118,
-    "away_ml_fair": 118,
-    "home_decimal_fair": 1.846,
-    "away_decimal_fair": 2.183,
-    "exp_goals_home": 3.245,
-    "exp_goals_away": 3.008,
-    "exp_total": 6.467,
+    "home_win_prob": 0.5508,
+    "away_win_prob": 0.4492,
+    "home_ml_fair": -123,
+    "away_ml_fair": 123,
+    "home_decimal_fair": 1.815,
+    "away_decimal_fair": 2.226,
+    "exp_goals_home": 3.312,
+    "exp_goals_away": 2.989,
+    "exp_total": 6.513,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5054,
+    "fair_line_p_over": 0.5133,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6048
+      "p_over": 0.6126
      },
      {
       "line": 6.5,
-      "p_over": 0.5054
+      "p_over": 0.5133
      }
     ]
    },

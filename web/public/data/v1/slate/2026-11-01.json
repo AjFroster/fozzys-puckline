@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-30T16:58:19Z",
+ "generated_at": "2026-10-31T15:59:20Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-01",
  "games": [
@@ -17,30 +17,30 @@
    },
    "away": {
     "abbrev": "WPG",
-    "elo": 1462.0,
-    "rest_days": 3,
+    "elo": 1458.0,
+    "rest_days": 2,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.7109,
-    "away_win_prob": 0.2891,
-    "home_ml_fair": -246,
-    "away_ml_fair": 246,
-    "home_decimal_fair": 1.407,
-    "away_decimal_fair": 3.459,
-    "exp_goals_home": 3.494,
-    "exp_goals_away": 2.393,
-    "exp_total": 6.092,
+    "home_win_prob": 0.7155,
+    "away_win_prob": 0.2845,
+    "home_ml_fair": -252,
+    "away_ml_fair": 252,
+    "home_decimal_fair": 1.398,
+    "away_decimal_fair": 3.515,
+    "exp_goals_home": 3.531,
+    "exp_goals_away": 2.385,
+    "exp_total": 6.119,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5428,
+    "fair_line_p_over": 0.5479,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5428
+      "p_over": 0.5479
      },
      {
       "line": 6.5,
-      "p_over": 0.4369
+      "p_over": 0.4415
      }
     ]
    },

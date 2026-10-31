@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-30T16:58:19Z",
+ "generated_at": "2026-10-31T15:59:20Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-30",
  "games": [
   {
    "game_id": 2026020214,
    "start_utc": "2026-10-30T22:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "T-Mobile Arena",
    "home": {
     "abbrev": "VGK",
@@ -44,12 +44,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 5,
+    "last_period": "REG",
+    "total_goals": 7,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020215,
    "start_utc": "2026-10-30T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Amerant Bank Arena",
    "home": {
     "abbrev": "FLA",
@@ -86,12 +92,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 5,
+    "away_score": 2,
+    "last_period": "REG",
+    "total_goals": 7,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020216,
    "start_utc": "2026-10-31T00:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Scotiabank Saddledome",
    "home": {
     "abbrev": "CGY",
@@ -128,7 +140,13 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 6,
+    "away_score": 2,
+    "last_period": "REG",
+    "total_goals": 8,
+    "home_won": true
+   }
   }
  ]
 }
