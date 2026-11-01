@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-10-31T15:59:20Z",
+ "generated_at": "2026-11-01T17:03:26Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-10-31",
  "games": [
   {
    "game_id": 2026020217,
    "start_utc": "2026-10-31T17:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "TD Garden",
    "home": {
     "abbrev": "BOS",
@@ -44,12 +44,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 5,
+    "away_score": 4,
+    "last_period": "OT",
+    "total_goals": 9,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020218,
    "start_utc": "2026-10-31T17:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Little Caesars Arena",
    "home": {
     "abbrev": "DET",
@@ -86,12 +92,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 4,
+    "away_score": 5,
+    "last_period": "REG",
+    "total_goals": 9,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020219,
    "start_utc": "2026-10-31T18:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Bridgestone Arena",
    "home": {
     "abbrev": "NSH",
@@ -128,12 +140,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 5,
+    "away_score": 4,
+    "last_period": "SO",
+    "total_goals": 9,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020220,
    "start_utc": "2026-10-31T18:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "UBS Arena",
    "home": {
     "abbrev": "NYI",
@@ -170,12 +188,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 0,
+    "away_score": 4,
+    "last_period": "REG",
+    "total_goals": 4,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020221,
    "start_utc": "2026-10-31T20:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Crypto.com Arena",
    "home": {
     "abbrev": "LAK",
@@ -212,12 +236,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 3,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020222,
    "start_utc": "2026-10-31T20:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "SAP Center at San Jose",
    "home": {
     "abbrev": "SJS",
@@ -254,12 +284,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 1,
+    "away_score": 5,
+    "last_period": "REG",
+    "total_goals": 6,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020223,
    "start_utc": "2026-10-31T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Centre Bell",
    "home": {
     "abbrev": "MTL",
@@ -296,12 +332,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 5,
+    "away_score": 4,
+    "last_period": "REG",
+    "total_goals": 9,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020224,
    "start_utc": "2026-10-31T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Rogers Arena",
    "home": {
     "abbrev": "VAN",
@@ -323,27 +365,33 @@
     "home_decimal_fair": 2.555,
     "away_decimal_fair": 1.643,
     "exp_goals_home": 3.103,
-    "exp_goals_away": 3.537,
-    "exp_total": 6.844,
+    "exp_goals_away": 3.536,
+    "exp_total": 6.843,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5683,
+    "fair_line_p_over": 0.5682,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6652
+      "p_over": 0.6651
      },
      {
       "line": 6.5,
-      "p_over": 0.5683
+      "p_over": 0.5682
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 4,
+    "last_period": "REG",
+    "total_goals": 6,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020225,
    "start_utc": "2026-11-01T00:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "American Airlines Center",
    "home": {
     "abbrev": "DAL",
@@ -366,26 +414,32 @@
     "away_decimal_fair": 2.537,
     "exp_goals_home": 2.933,
     "exp_goals_away": 2.415,
-    "exp_total": 5.578,
+    "exp_total": 5.579,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.4452,
+    "fair_line_p_over": 0.4454,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.4452
+      "p_over": 0.4454
      },
      {
       "line": 6.5,
-      "p_over": 0.3481
+      "p_over": 0.3483
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 4,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020226,
    "start_utc": "2026-11-01T02:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Ball Arena",
    "home": {
     "abbrev": "COL",
@@ -422,7 +476,13 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 5,
+    "away_score": 2,
+    "last_period": "REG",
+    "total_goals": 7,
+    "home_won": true
+   }
   }
  ]
 }
