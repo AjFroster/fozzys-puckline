@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-01T17:03:26Z",
+ "generated_at": "2026-11-02T20:41:10Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-06",
  "games": [
@@ -53,8 +53,8 @@
    "venue": "Grand Casino Arena",
    "home": {
     "abbrev": "MIN",
-    "elo": 1535.9,
-    "rest_days": 8,
+    "elo": 1542.8,
+    "rest_days": 5,
     "b2b": false
    },
    "away": {
@@ -64,25 +64,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.6738,
-    "away_win_prob": 0.3262,
-    "home_ml_fair": -207,
-    "away_ml_fair": 207,
-    "home_decimal_fair": 1.484,
-    "away_decimal_fair": 3.066,
-    "exp_goals_home": 3.353,
-    "exp_goals_away": 2.587,
-    "exp_total": 6.153,
+    "home_win_prob": 0.6825,
+    "away_win_prob": 0.3175,
+    "home_ml_fair": -215,
+    "away_ml_fair": 215,
+    "home_decimal_fair": 1.465,
+    "away_decimal_fair": 3.15,
+    "exp_goals_home": 3.388,
+    "exp_goals_away": 2.562,
+    "exp_total": 6.161,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4494,
+    "fair_line_p_over": 0.4506,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5521
+      "p_over": 0.5538
      },
      {
       "line": 6.5,
-      "p_over": 0.4494
+      "p_over": 0.4506
      }
     ]
    },
@@ -101,30 +101,30 @@
    },
    "away": {
     "abbrev": "ANA",
-    "elo": 1440.2,
-    "rest_days": 8,
+    "elo": 1446.2,
+    "rest_days": 5,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5466,
-    "away_win_prob": 0.4534,
-    "home_ml_fair": -121,
-    "away_ml_fair": 121,
-    "home_decimal_fair": 1.829,
-    "away_decimal_fair": 2.206,
-    "exp_goals_home": 3.299,
-    "exp_goals_away": 3.019,
-    "exp_total": 6.53,
+    "home_win_prob": 0.5381,
+    "away_win_prob": 0.4619,
+    "home_ml_fair": -116,
+    "away_ml_fair": 116,
+    "home_decimal_fair": 1.858,
+    "away_decimal_fair": 2.165,
+    "exp_goals_home": 3.288,
+    "exp_goals_away": 3.067,
+    "exp_total": 6.567,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5162,
+    "fair_line_p_over": 0.5225,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6154
+      "p_over": 0.6213
      },
      {
       "line": 6.5,
-      "p_over": 0.5162
+      "p_over": 0.5225
      }
     ]
    },
