@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-02T20:41:10Z",
+ "generated_at": "2026-11-03T18:18:41Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-06",
  "games": [
@@ -59,30 +59,30 @@
    },
    "away": {
     "abbrev": "SJS",
-    "elo": 1434.8,
-    "rest_days": 6,
+    "elo": 1431.9,
+    "rest_days": 4,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.6825,
-    "away_win_prob": 0.3175,
-    "home_ml_fair": -215,
-    "away_ml_fair": 215,
-    "home_decimal_fair": 1.465,
-    "away_decimal_fair": 3.15,
-    "exp_goals_home": 3.388,
-    "exp_goals_away": 2.562,
-    "exp_total": 6.161,
-    "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4506,
+    "home_win_prob": 0.6861,
+    "away_win_prob": 0.3139,
+    "home_ml_fair": -219,
+    "away_ml_fair": 219,
+    "home_decimal_fair": 1.457,
+    "away_decimal_fair": 3.186,
+    "exp_goals_home": 3.365,
+    "exp_goals_away": 2.536,
+    "exp_total": 6.113,
+    "fair_total_line": 5.5,
+    "fair_line_p_over": 0.5453,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5538
+      "p_over": 0.5453
      },
      {
       "line": 6.5,
-      "p_over": 0.4506
+      "p_over": 0.4421
      }
     ]
    },
@@ -95,8 +95,8 @@
    "venue": "Scotiabank Saddledome",
    "home": {
     "abbrev": "CGY",
-    "elo": 1447.7,
-    "rest_days": 6,
+    "elo": 1450.6,
+    "rest_days": 4,
     "b2b": false
    },
    "away": {
@@ -106,25 +106,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5381,
-    "away_win_prob": 0.4619,
-    "home_ml_fair": -116,
-    "away_ml_fair": 116,
-    "home_decimal_fair": 1.858,
-    "away_decimal_fair": 2.165,
-    "exp_goals_home": 3.288,
-    "exp_goals_away": 3.067,
-    "exp_total": 6.567,
+    "home_win_prob": 0.5422,
+    "away_win_prob": 0.4578,
+    "home_ml_fair": -118,
+    "away_ml_fair": 118,
+    "home_decimal_fair": 1.844,
+    "away_decimal_fair": 2.184,
+    "exp_goals_home": 3.275,
+    "exp_goals_away": 3.032,
+    "exp_total": 6.519,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5225,
+    "fair_line_p_over": 0.5145,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6213
+      "p_over": 0.6136
      },
      {
       "line": 6.5,
-      "p_over": 0.5225
+      "p_over": 0.5145
      }
     ]
    },

@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-01T17:03:26Z",
+ "generated_at": "2026-11-03T18:18:41Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-02",
  "games": [
   {
    "game_id": 2026020232,
    "start_utc": "2026-11-03T00:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "TD Garden",
    "home": {
     "abbrev": "BOS",
@@ -44,12 +44,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 2,
+    "last_period": "SO",
+    "total_goals": 5,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020233,
    "start_utc": "2026-11-03T00:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Amerant Bank Arena",
    "home": {
     "abbrev": "FLA",
@@ -86,12 +92,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 5,
+    "last_period": "REG",
+    "total_goals": 8,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020234,
    "start_utc": "2026-11-03T01:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "United Center",
    "home": {
     "abbrev": "CHI",
@@ -128,12 +140,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 5,
+    "last_period": "REG",
+    "total_goals": 7,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020235,
    "start_utc": "2026-11-03T02:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "SAP Center at San Jose",
    "home": {
     "abbrev": "SJS",
@@ -170,7 +188,13 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 1,
+    "away_score": 2,
+    "last_period": "REG",
+    "total_goals": 3,
+    "home_won": false
+   }
   }
  ]
 }
