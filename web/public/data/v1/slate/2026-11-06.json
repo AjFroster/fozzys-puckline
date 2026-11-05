@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-04T18:31:54Z",
+ "generated_at": "2026-11-05T18:37:13Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-06",
  "games": [
@@ -11,8 +11,8 @@
    "venue": "KeyBank Center",
    "home": {
     "abbrev": "BUF",
-    "elo": 1525.6,
-    "rest_days": 6,
+    "elo": 1522.4,
+    "rest_days": 2,
     "b2b": false
    },
    "away": {
@@ -22,25 +22,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5901,
-    "away_win_prob": 0.4099,
-    "home_ml_fair": -144,
-    "away_ml_fair": 144,
-    "home_decimal_fair": 1.695,
-    "away_decimal_fair": 2.44,
-    "exp_goals_home": 3.135,
-    "exp_goals_away": 2.695,
-    "exp_total": 6.052,
+    "home_win_prob": 0.5857,
+    "away_win_prob": 0.4143,
+    "home_ml_fair": -141,
+    "away_ml_fair": 141,
+    "home_decimal_fair": 1.707,
+    "away_decimal_fair": 2.413,
+    "exp_goals_home": 3.1,
+    "exp_goals_away": 2.681,
+    "exp_total": 6.003,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.533,
+    "fair_line_p_over": 0.5241,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.533
+      "p_over": 0.5241
      },
      {
       "line": 6.5,
-      "p_over": 0.4325
+      "p_over": 0.4239
      }
     ]
    },
@@ -59,30 +59,30 @@
    },
    "away": {
     "abbrev": "SJS",
-    "elo": 1431.9,
-    "rest_days": 4,
+    "elo": 1426.1,
+    "rest_days": 2,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.6906,
-    "away_win_prob": 0.3094,
-    "home_ml_fair": -223,
-    "away_ml_fair": 223,
-    "home_decimal_fair": 1.448,
-    "away_decimal_fair": 3.232,
-    "exp_goals_home": 3.381,
-    "exp_goals_away": 2.527,
-    "exp_total": 6.119,
-    "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5465,
+    "home_win_prob": 0.6977,
+    "away_win_prob": 0.3023,
+    "home_ml_fair": -231,
+    "away_ml_fair": 231,
+    "home_decimal_fair": 1.433,
+    "away_decimal_fair": 3.308,
+    "exp_goals_home": 3.445,
+    "exp_goals_away": 2.516,
+    "exp_total": 6.169,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.4516,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5465
+      "p_over": 0.5557
      },
      {
       "line": 6.5,
-      "p_over": 0.4431
+      "p_over": 0.4516
      }
     ]
    },
@@ -95,8 +95,8 @@
    "venue": "Scotiabank Saddledome",
    "home": {
     "abbrev": "CGY",
-    "elo": 1450.6,
-    "rest_days": 4,
+    "elo": 1450.0,
+    "rest_days": 2,
     "b2b": false
    },
    "away": {
@@ -106,25 +106,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5389,
-    "away_win_prob": 0.4611,
-    "home_ml_fair": -117,
-    "away_ml_fair": 117,
-    "home_decimal_fair": 1.856,
-    "away_decimal_fair": 2.169,
-    "exp_goals_home": 3.281,
-    "exp_goals_away": 3.061,
-    "exp_total": 6.554,
+    "home_win_prob": 0.538,
+    "away_win_prob": 0.462,
+    "home_ml_fair": -116,
+    "away_ml_fair": 116,
+    "home_decimal_fair": 1.859,
+    "away_decimal_fair": 2.165,
+    "exp_goals_home": 3.25,
+    "exp_goals_away": 3.027,
+    "exp_total": 6.489,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5204,
+    "fair_line_p_over": 0.5093,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6192
+      "p_over": 0.6086
      },
      {
       "line": 6.5,
-      "p_over": 0.5204
+      "p_over": 0.5093
      }
     ]
    },

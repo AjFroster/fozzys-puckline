@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-04T18:31:54Z",
+ "generated_at": "2026-11-05T18:37:13Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-04",
  "games": [
   {
    "game_id": 2026020247,
    "start_utc": "2026-11-05T00:30:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "KeyBank Center",
    "home": {
     "abbrev": "BUF",
@@ -44,12 +44,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 1,
+    "away_score": 2,
+    "last_period": "REG",
+    "total_goals": 3,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020248,
    "start_utc": "2026-11-05T00:30:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Amerant Bank Arena",
    "home": {
     "abbrev": "FLA",
@@ -86,12 +92,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 5,
+    "away_score": 3,
+    "last_period": "REG",
+    "total_goals": 8,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020249,
    "start_utc": "2026-11-05T03:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Crypto.com Arena",
    "home": {
     "abbrev": "LAK",
@@ -128,12 +140,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 7,
+    "away_score": 2,
+    "last_period": "REG",
+    "total_goals": 9,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020250,
    "start_utc": "2026-11-05T03:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Climate Pledge Arena",
    "home": {
     "abbrev": "SEA",
@@ -170,7 +188,13 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 1,
+    "last_period": "OT",
+    "total_goals": 3,
+    "home_won": true
+   }
   }
  ]
 }

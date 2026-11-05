@@ -1,24 +1,24 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-04T18:31:54Z",
+ "generated_at": "2026-11-05T18:37:13Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "season": 20262027,
  "complete": false,
- "through": "2026-11-03",
+ "through": "2026-11-04",
  "rolling_window": 100,
  "summary": {
-  "date": "2026-11-03",
-  "games_today": 11,
-  "correct_today": 4,
-  "games": 241,
-  "correct": 145,
-  "accuracy": 0.6017,
-  "log_loss": 0.65723,
-  "baseline_log_loss": 0.68589,
-  "brier": 0.23254,
-  "over_under_hit_rate": 0.5394,
-  "rolling_accuracy": 0.58,
-  "rolling_log_loss": 0.65624
+  "date": "2026-11-04",
+  "games_today": 4,
+  "correct_today": 3,
+  "games": 245,
+  "correct": 148,
+  "accuracy": 0.6041,
+  "log_loss": 0.65618,
+  "baseline_log_loss": 0.68512,
+  "brier": 0.23203,
+  "over_under_hit_rate": 0.5388,
+  "rolling_accuracy": 0.57,
+  "rolling_log_loss": 0.65836
  },
  "points": [
   {
@@ -510,6 +510,20 @@
    "over_under_hit_rate": 0.5394,
    "rolling_accuracy": 0.58,
    "rolling_log_loss": 0.65624
+  },
+  {
+   "date": "2026-11-04",
+   "games_today": 4,
+   "correct_today": 3,
+   "games": 245,
+   "correct": 148,
+   "accuracy": 0.6041,
+   "log_loss": 0.65618,
+   "baseline_log_loss": 0.68512,
+   "brier": 0.23203,
+   "over_under_hit_rate": 0.5388,
+   "rolling_accuracy": 0.57,
+   "rolling_log_loss": 0.65836
   }
  ],
  "calibration": [
@@ -540,18 +554,18 @@
   {
    "lower": 0.5,
    "upper": 0.6,
-   "count": 93,
-   "mean_predicted": 0.551,
-   "observed": 0.5591,
-   "z": 0.159
+   "count": 96,
+   "mean_predicted": 0.5514,
+   "observed": 0.5625,
+   "z": 0.219
   },
   {
    "lower": 0.6,
    "upper": 0.7,
-   "count": 60,
-   "mean_predicted": 0.6385,
-   "observed": 0.7,
-   "z": 1.04
+   "count": 61,
+   "mean_predicted": 0.6391,
+   "observed": 0.7049,
+   "z": 1.127
   },
   {
    "lower": 0.7,
@@ -562,7 +576,7 @@
    "z": 0.0
   }
  ],
- "worst_calibration_z": 1.04,
+ "worst_calibration_z": 1.127,
  "calibration_threshold": 2.394,
  "well_calibrated": true,
  "biggest_misses": [
