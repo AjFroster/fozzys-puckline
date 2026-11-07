@@ -1,24 +1,24 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-06T17:51:51Z",
+ "generated_at": "2026-11-07T16:46:57Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "season": 20262027,
  "complete": false,
- "through": "2026-11-05",
+ "through": "2026-11-06",
  "rolling_window": 100,
  "summary": {
-  "date": "2026-11-05",
-  "games_today": 11,
-  "correct_today": 8,
-  "games": 256,
-  "correct": 156,
-  "accuracy": 0.6094,
-  "log_loss": 0.65566,
-  "baseline_log_loss": 0.68531,
-  "brier": 0.23179,
-  "over_under_hit_rate": 0.5391,
-  "rolling_accuracy": 0.59,
-  "rolling_log_loss": 0.6533
+  "date": "2026-11-06",
+  "games_today": 3,
+  "correct_today": 2,
+  "games": 259,
+  "correct": 158,
+  "accuracy": 0.61,
+  "log_loss": 0.65455,
+  "baseline_log_loss": 0.68501,
+  "brier": 0.23127,
+  "over_under_hit_rate": 0.5405,
+  "rolling_accuracy": 0.61,
+  "rolling_log_loss": 0.6453
  },
  "points": [
   {
@@ -538,6 +538,20 @@
    "over_under_hit_rate": 0.5391,
    "rolling_accuracy": 0.59,
    "rolling_log_loss": 0.6533
+  },
+  {
+   "date": "2026-11-06",
+   "games_today": 3,
+   "correct_today": 2,
+   "games": 259,
+   "correct": 158,
+   "accuracy": 0.61,
+   "log_loss": 0.65455,
+   "baseline_log_loss": 0.68501,
+   "brier": 0.23127,
+   "over_under_hit_rate": 0.5405,
+   "rolling_accuracy": 0.61,
+   "rolling_log_loss": 0.6453
   }
  ],
  "calibration": [
@@ -568,18 +582,18 @@
   {
    "lower": 0.5,
    "upper": 0.6,
-   "count": 99,
-   "mean_predicted": 0.5516,
-   "observed": 0.5758,
-   "z": 0.486
+   "count": 100,
+   "mean_predicted": 0.5518,
+   "observed": 0.57,
+   "z": 0.368
   },
   {
    "lower": 0.6,
    "upper": 0.7,
-   "count": 64,
-   "mean_predicted": 0.6398,
-   "observed": 0.6875,
-   "z": 0.823
+   "count": 66,
+   "mean_predicted": 0.6404,
+   "observed": 0.697,
+   "z": 1.0
   },
   {
    "lower": 0.7,
@@ -590,7 +604,7 @@
    "z": 0.0
   }
  ],
- "worst_calibration_z": 0.823,
+ "worst_calibration_z": 1.0,
  "calibration_threshold": 2.394,
  "well_calibrated": true,
  "biggest_misses": [

@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-06T17:51:51Z",
+ "generated_at": "2026-11-07T16:46:57Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-09",
  "games": [
@@ -95,8 +95,8 @@
    "venue": "SAP Center at San Jose",
    "home": {
     "abbrev": "SJS",
-    "elo": 1426.1,
-    "rest_days": 5,
+    "elo": 1423.0,
+    "rest_days": 3,
     "b2b": false
    },
    "away": {
@@ -106,25 +106,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4946,
-    "away_win_prob": 0.5054,
-    "home_ml_fair": 102,
-    "away_ml_fair": -102,
-    "home_decimal_fair": 2.022,
-    "away_decimal_fair": 1.979,
-    "exp_goals_home": 2.994,
-    "exp_goals_away": 2.851,
-    "exp_total": 6.069,
+    "home_win_prob": 0.4901,
+    "away_win_prob": 0.5099,
+    "home_ml_fair": 104,
+    "away_ml_fair": -104,
+    "home_decimal_fair": 2.04,
+    "away_decimal_fair": 1.961,
+    "exp_goals_home": 2.964,
+    "exp_goals_away": 2.86,
+    "exp_total": 6.048,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5356,
+    "fair_line_p_over": 0.5319,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5356
+      "p_over": 0.5319
      },
      {
       "line": 6.5,
-      "p_over": 0.436
+      "p_over": 0.4325
      }
     ]
    },
