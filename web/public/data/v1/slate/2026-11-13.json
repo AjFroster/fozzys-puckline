@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-07T16:46:57Z",
+ "generated_at": "2026-11-08T16:57:46Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-13",
  "games": [
@@ -11,36 +11,36 @@
    "venue": "Rogers Arena",
    "home": {
     "abbrev": "VAN",
-    "elo": 1367.3,
-    "rest_days": 8,
+    "elo": 1365.3,
+    "rest_days": 6,
     "b2b": false
    },
    "away": {
     "abbrev": "NYR",
-    "elo": 1483.8,
-    "rest_days": 8,
+    "elo": 1486.5,
+    "rest_days": 6,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.3713,
-    "away_win_prob": 0.6287,
-    "home_ml_fair": 169,
-    "away_ml_fair": -169,
-    "home_decimal_fair": 2.693,
-    "away_decimal_fair": 1.591,
-    "exp_goals_home": 2.886,
-    "exp_goals_away": 3.438,
-    "exp_total": 6.533,
+    "home_win_prob": 0.3649,
+    "away_win_prob": 0.6351,
+    "home_ml_fair": 174,
+    "away_ml_fair": -174,
+    "home_decimal_fair": 2.74,
+    "away_decimal_fair": 1.575,
+    "exp_goals_home": 2.876,
+    "exp_goals_away": 3.457,
+    "exp_total": 6.54,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5162,
+    "fair_line_p_over": 0.5174,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6163
+      "p_over": 0.6176
      },
      {
       "line": 6.5,
-      "p_over": 0.5162
+      "p_over": 0.5174
      }
     ]
    },
@@ -59,30 +59,30 @@
    },
    "away": {
     "abbrev": "NSH",
-    "elo": 1477.0,
-    "rest_days": 8,
+    "elo": 1481.4,
+    "rest_days": 6,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.6096,
-    "away_win_prob": 0.3904,
-    "home_ml_fair": -156,
-    "away_ml_fair": 156,
-    "home_decimal_fair": 1.64,
-    "away_decimal_fair": 2.562,
-    "exp_goals_home": 3.225,
-    "exp_goals_away": 2.687,
-    "exp_total": 6.129,
+    "home_win_prob": 0.6037,
+    "away_win_prob": 0.3963,
+    "home_ml_fair": -152,
+    "away_ml_fair": 152,
+    "home_decimal_fair": 1.657,
+    "away_decimal_fair": 2.523,
+    "exp_goals_home": 3.19,
+    "exp_goals_away": 2.689,
+    "exp_total": 6.098,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5472,
+    "fair_line_p_over": 0.5414,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5472
+      "p_over": 0.5414
      },
      {
       "line": 6.5,
-      "p_over": 0.446
+      "p_over": 0.4405
      }
     ]
    },
