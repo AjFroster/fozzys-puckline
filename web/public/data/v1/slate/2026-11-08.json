@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-08T16:57:46Z",
+ "generated_at": "2026-11-09T21:21:31Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-08",
  "games": [
   {
    "game_id": 2026020277,
    "start_utc": "2026-11-08T18:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "TD Garden",
    "home": {
     "abbrev": "BOS",
@@ -44,12 +44,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 4,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020278,
    "start_utc": "2026-11-08T20:30:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "KeyBank Center",
    "home": {
     "abbrev": "BUF",
@@ -86,12 +92,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 1,
+    "away_score": 4,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020280,
    "start_utc": "2026-11-08T23:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Canada Life Centre",
    "home": {
     "abbrev": "WPG",
@@ -128,12 +140,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 4,
+    "away_score": 3,
+    "last_period": "REG",
+    "total_goals": 7,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020279,
    "start_utc": "2026-11-09T00:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Scotiabank Arena",
    "home": {
     "abbrev": "TOR",
@@ -170,12 +188,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 0,
+    "away_score": 4,
+    "last_period": "REG",
+    "total_goals": 4,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020281,
    "start_utc": "2026-11-09T00:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Scotiabank Saddledome",
    "home": {
     "abbrev": "CGY",
@@ -212,12 +236,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 4,
+    "away_score": 3,
+    "last_period": "OT",
+    "total_goals": 7,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020282,
    "start_utc": "2026-11-09T01:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Honda Center",
    "home": {
     "abbrev": "ANA",
@@ -254,7 +284,13 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 5,
+    "away_score": 2,
+    "last_period": "REG",
+    "total_goals": 7,
+    "home_won": true
+   }
   }
  ]
 }

@@ -1,0 +1,92 @@
+{
+ "schema": "1.0.0",
+ "generated_at": "2026-11-09T21:21:31Z",
+ "model_version": "elo-1.0+cmp-1.0/ec1c67c",
+ "date": "2026-11-16",
+ "games": [
+  {
+   "game_id": 2026020331,
+   "start_utc": "2026-11-17T00:30:00Z",
+   "state": "FUT",
+   "venue": "Madison Square Garden",
+   "home": {
+    "abbrev": "NYR",
+    "elo": 1486.5,
+    "rest_days": 9,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "MTL",
+    "elo": 1540.2,
+    "rest_days": 9,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.4589,
+    "away_win_prob": 0.5411,
+    "home_ml_fair": 118,
+    "away_ml_fair": -118,
+    "home_decimal_fair": 2.179,
+    "away_decimal_fair": 1.848,
+    "exp_goals_home": 3.058,
+    "exp_goals_away": 2.943,
+    "exp_total": 6.22,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.4628,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5626
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4628
+     }
+    ]
+   },
+   "result": null
+  },
+  {
+   "game_id": 2026020332,
+   "start_utc": "2026-11-17T02:30:00Z",
+   "state": "FUT",
+   "venue": "Delta Center",
+   "home": {
+    "abbrev": "UTA",
+    "elo": 1505.8,
+    "rest_days": 9,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "VAN",
+    "elo": 1365.3,
+    "rest_days": 9,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.7217,
+    "away_win_prob": 0.2783,
+    "home_ml_fair": -259,
+    "away_ml_fair": 259,
+    "home_decimal_fair": 1.386,
+    "away_decimal_fair": 3.593,
+    "exp_goals_home": 3.926,
+    "exp_goals_away": 2.766,
+    "exp_total": 6.882,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.5721,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.6729
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.5721
+     }
+    ]
+   },
+   "result": null
+  }
+ ]
+}
