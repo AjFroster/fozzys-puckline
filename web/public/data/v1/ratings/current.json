@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-09T21:21:31Z",
+ "generated_at": "2026-11-10T18:32:45Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "season": 20262027,
  "teams": [
@@ -21,7 +21,7 @@
    "elo": 1562.6,
    "rank": 2,
    "percentile": 0.9677,
-   "elo_7d_change": -2.5,
+   "elo_7d_change": -5.7,
    "win_prob_vs_average": 0.5995
   },
   {
@@ -45,12 +45,22 @@
    "win_prob_vs_average": 0.5757
   },
   {
+   "team_id": 22,
+   "abbrev": "EDM",
+   "name": "Edmonton Oilers",
+   "elo": 1540.3,
+   "rank": 5,
+   "percentile": 0.871,
+   "elo_7d_change": 0.5,
+   "win_prob_vs_average": 0.5683
+  },
+  {
    "team_id": 8,
    "abbrev": "MTL",
    "name": "Montr\u00e9al Canadiens",
    "elo": 1540.2,
-   "rank": 5,
-   "percentile": 0.871,
+   "rank": 6,
+   "percentile": 0.8387,
    "elo_7d_change": 2.6,
    "win_prob_vs_average": 0.5682
   },
@@ -59,20 +69,10 @@
    "abbrev": "DAL",
    "name": "Dallas Stars",
    "elo": 1538.7,
-   "rank": 6,
-   "percentile": 0.8387,
-   "elo_7d_change": 3.3,
-   "win_prob_vs_average": 0.5662
-  },
-  {
-   "team_id": 22,
-   "abbrev": "EDM",
-   "name": "Edmonton Oilers",
-   "elo": 1536.9,
    "rank": 7,
    "percentile": 0.8065,
-   "elo_7d_change": -2.9,
-   "win_prob_vs_average": 0.5636
+   "elo_7d_change": 3.3,
+   "win_prob_vs_average": 0.5662
   },
   {
    "team_id": 54,
@@ -81,7 +81,7 @@
    "elo": 1535.4,
    "rank": 8,
    "percentile": 0.7742,
-   "elo_7d_change": 10.8,
+   "elo_7d_change": 11.4,
    "win_prob_vs_average": 0.5615
   },
   {
@@ -91,7 +91,7 @@
    "elo": 1533.7,
    "rank": 9,
    "percentile": 0.7419,
-   "elo_7d_change": 11.1,
+   "elo_7d_change": 10.5,
    "win_prob_vs_average": 0.559
   },
   {
@@ -151,7 +151,7 @@
    "elo": 1500.5,
    "rank": 15,
    "percentile": 0.5484,
-   "elo_7d_change": -9.3,
+   "elo_7d_change": -4.0,
    "win_prob_vs_average": 0.5115
   },
   {
@@ -165,24 +165,24 @@
    "win_prob_vs_average": 0.5017
   },
   {
-   "team_id": 3,
-   "abbrev": "NYR",
-   "name": "New York Rangers",
-   "elo": 1486.5,
-   "rank": 17,
-   "percentile": 0.4839,
-   "elo_7d_change": 9.5,
-   "win_prob_vs_average": 0.4914
-  },
-  {
    "team_id": 29,
    "abbrev": "CBJ",
    "name": "Columbus Blue Jackets",
    "elo": 1484.3,
-   "rank": 18,
-   "percentile": 0.4516,
+   "rank": 17,
+   "percentile": 0.4839,
    "elo_7d_change": 5.2,
    "win_prob_vs_average": 0.4882
+  },
+  {
+   "team_id": 3,
+   "abbrev": "NYR",
+   "name": "New York Rangers",
+   "elo": 1483.2,
+   "rank": 18,
+   "percentile": 0.4516,
+   "elo_7d_change": 6.2,
+   "win_prob_vs_average": 0.4866
   },
   {
    "team_id": 5,
@@ -211,7 +211,7 @@
    "elo": 1470.7,
    "rank": 21,
    "percentile": 0.3548,
-   "elo_7d_change": -4.4,
+   "elo_7d_change": -9.7,
    "win_prob_vs_average": 0.4686
   },
   {
@@ -258,11 +258,11 @@
    "team_id": 4,
    "abbrev": "PHI",
    "name": "Philadelphia Flyers",
-   "elo": 1456.5,
+   "elo": 1460.3,
    "rank": 26,
    "percentile": 0.1935,
-   "elo_7d_change": -6.7,
-   "win_prob_vs_average": 0.4484
+   "elo_7d_change": -2.9,
+   "win_prob_vs_average": 0.4538
   },
   {
    "team_id": 55,
@@ -278,11 +278,11 @@
    "team_id": 2,
    "abbrev": "NYI",
    "name": "New York Islanders",
-   "elo": 1454.2,
+   "elo": 1453.3,
    "rank": 28,
    "percentile": 0.129,
-   "elo_7d_change": -3.6,
-   "win_prob_vs_average": 0.4451
+   "elo_7d_change": -4.5,
+   "win_prob_vs_average": 0.4438
   },
   {
    "team_id": 20,
@@ -291,18 +291,18 @@
    "elo": 1445.7,
    "rank": 29,
    "percentile": 0.0968,
-   "elo_7d_change": -2.0,
+   "elo_7d_change": -4.9,
    "win_prob_vs_average": 0.4331
   },
   {
    "team_id": 28,
    "abbrev": "SJS",
    "name": "San Jose Sharks",
-   "elo": 1421.5,
+   "elo": 1422.4,
    "rank": 30,
    "percentile": 0.0645,
-   "elo_7d_change": -13.3,
-   "win_prob_vs_average": 0.3993
+   "elo_7d_change": -9.5,
+   "win_prob_vs_average": 0.4005
   },
   {
    "team_id": 16,
@@ -311,18 +311,18 @@
    "elo": 1393.7,
    "rank": 31,
    "percentile": 0.0323,
-   "elo_7d_change": -11.8,
+   "elo_7d_change": -8.5,
    "win_prob_vs_average": 0.3615
   },
   {
    "team_id": 23,
    "abbrev": "VAN",
    "name": "Vancouver Canucks",
-   "elo": 1365.3,
+   "elo": 1361.6,
    "rank": 32,
    "percentile": 0.0,
-   "elo_7d_change": -8.6,
-   "win_prob_vs_average": 0.3247
+   "elo_7d_change": -12.3,
+   "win_prob_vs_average": 0.32
   }
  ]
 }

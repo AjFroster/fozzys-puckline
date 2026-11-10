@@ -1,24 +1,24 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-09T21:21:31Z",
+ "generated_at": "2026-11-10T18:32:45Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "season": 20262027,
  "complete": false,
- "through": "2026-11-08",
+ "through": "2026-11-09",
  "rolling_window": 100,
  "summary": {
-  "date": "2026-11-08",
-  "games_today": 6,
-  "correct_today": 3,
-  "games": 277,
-  "correct": 171,
-  "accuracy": 0.6173,
-  "log_loss": 0.65032,
-  "baseline_log_loss": 0.6842,
-  "brier": 0.2293,
-  "over_under_hit_rate": 0.5415,
-  "rolling_accuracy": 0.6,
-  "rolling_log_loss": 0.64197
+  "date": "2026-11-09",
+  "games_today": 3,
+  "correct_today": 2,
+  "games": 280,
+  "correct": 173,
+  "accuracy": 0.6179,
+  "log_loss": 0.64977,
+  "baseline_log_loss": 0.68391,
+  "brier": 0.22903,
+  "over_under_hit_rate": 0.5357,
+  "rolling_accuracy": 0.61,
+  "rolling_log_loss": 0.63652
  },
  "points": [
   {
@@ -580,6 +580,20 @@
    "over_under_hit_rate": 0.5415,
    "rolling_accuracy": 0.6,
    "rolling_log_loss": 0.64197
+  },
+  {
+   "date": "2026-11-09",
+   "games_today": 3,
+   "correct_today": 2,
+   "games": 280,
+   "correct": 173,
+   "accuracy": 0.6179,
+   "log_loss": 0.64977,
+   "baseline_log_loss": 0.68391,
+   "brier": 0.22903,
+   "over_under_hit_rate": 0.5357,
+   "rolling_accuracy": 0.61,
+   "rolling_log_loss": 0.63652
   }
  ],
  "calibration": [
@@ -602,10 +616,10 @@
   {
    "lower": 0.4,
    "upper": 0.5,
-   "count": 76,
-   "mean_predicted": 0.4589,
-   "observed": 0.4605,
-   "z": 0.029
+   "count": 78,
+   "mean_predicted": 0.459,
+   "observed": 0.4615,
+   "z": 0.045
   },
   {
    "lower": 0.5,
@@ -618,10 +632,10 @@
   {
    "lower": 0.6,
    "upper": 0.7,
-   "count": 68,
-   "mean_predicted": 0.64,
-   "observed": 0.7059,
-   "z": 1.192
+   "count": 69,
+   "mean_predicted": 0.6396,
+   "observed": 0.7101,
+   "z": 1.292
   },
   {
    "lower": 0.7,
@@ -632,7 +646,7 @@
    "z": 0.0
   }
  ],
- "worst_calibration_z": 1.192,
+ "worst_calibration_z": 1.292,
  "calibration_threshold": 2.394,
  "well_calibrated": true,
  "biggest_misses": [

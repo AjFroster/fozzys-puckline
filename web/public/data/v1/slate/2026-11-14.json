@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-09T21:21:31Z",
+ "generated_at": "2026-11-10T18:32:45Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-14",
  "games": [
@@ -30,17 +30,17 @@
     "away_decimal_fair": 3.246,
     "exp_goals_home": 3.818,
     "exp_goals_away": 2.568,
-    "exp_total": 6.577,
+    "exp_total": 6.578,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5209,
+    "fair_line_p_over": 0.5211,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6261
+      "p_over": 0.6262
      },
      {
       "line": 6.5,
-      "p_over": 0.5209
+      "p_over": 0.5211
      }
     ]
    },
@@ -114,17 +114,17 @@
     "away_decimal_fair": 2.059,
     "exp_goals_home": 2.953,
     "exp_goals_away": 2.698,
-    "exp_total": 5.876,
+    "exp_total": 5.877,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5006,
+    "fair_line_p_over": 0.5008,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5006
+      "p_over": 0.5008
      },
      {
       "line": 6.5,
-      "p_over": 0.4018
+      "p_over": 0.4019
      }
     ]
    },
@@ -143,30 +143,30 @@
    },
    "away": {
     "abbrev": "EDM",
-    "elo": 1536.9,
-    "rest_days": 7,
+    "elo": 1540.3,
+    "rest_days": 5,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4386,
-    "away_win_prob": 0.5614,
-    "home_ml_fair": 128,
-    "away_ml_fair": -128,
-    "home_decimal_fair": 2.28,
-    "away_decimal_fair": 1.781,
-    "exp_goals_home": 3.128,
-    "exp_goals_away": 3.383,
-    "exp_total": 6.72,
+    "home_win_prob": 0.4339,
+    "away_win_prob": 0.5661,
+    "home_ml_fair": 130,
+    "away_ml_fair": -130,
+    "home_decimal_fair": 2.305,
+    "away_decimal_fair": 1.766,
+    "exp_goals_home": 3.096,
+    "exp_goals_away": 3.375,
+    "exp_total": 6.68,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5482,
+    "fair_line_p_over": 0.5415,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6459
+      "p_over": 0.6396
      },
      {
       "line": 6.5,
-      "p_over": 0.5482
+      "p_over": 0.5415
      }
     ]
    },
@@ -280,7 +280,7 @@
     "away_ml_fair": -103,
     "home_decimal_fair": 2.027,
     "away_decimal_fair": 1.974,
-    "exp_goals_home": 3.165,
+    "exp_goals_home": 3.166,
     "exp_goals_away": 3.081,
     "exp_total": 6.461,
     "fair_total_line": 6.5,
@@ -323,7 +323,7 @@
     "home_decimal_fair": 1.775,
     "away_decimal_fair": 2.29,
     "exp_goals_home": 3.21,
-    "exp_goals_away": 2.929,
+    "exp_goals_away": 2.93,
     "exp_total": 6.355,
     "fair_total_line": 6.5,
     "fair_line_p_over": 0.4861,
@@ -353,30 +353,30 @@
    },
    "away": {
     "abbrev": "PHI",
-    "elo": 1456.5,
-    "rest_days": 6,
+    "elo": 1460.3,
+    "rest_days": 5,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5753,
-    "away_win_prob": 0.4247,
-    "home_ml_fair": -135,
-    "away_ml_fair": 135,
-    "home_decimal_fair": 1.738,
-    "away_decimal_fair": 2.355,
-    "exp_goals_home": 2.911,
-    "exp_goals_away": 2.522,
-    "exp_total": 5.663,
+    "home_win_prob": 0.57,
+    "away_win_prob": 0.43,
+    "home_ml_fair": -133,
+    "away_ml_fair": 133,
+    "home_decimal_fair": 1.754,
+    "away_decimal_fair": 2.326,
+    "exp_goals_home": 2.88,
+    "exp_goals_away": 2.529,
+    "exp_total": 5.64,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.4609,
+    "fair_line_p_over": 0.4565,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.4609
+      "p_over": 0.4565
      },
      {
       "line": 6.5,
-      "p_over": 0.3635
+      "p_over": 0.3595
      }
     ]
    },
@@ -406,7 +406,7 @@
     "away_ml_fair": 111,
     "home_decimal_fair": 1.901,
     "away_decimal_fair": 2.11,
-    "exp_goals_home": 3.096,
+    "exp_goals_home": 3.097,
     "exp_goals_away": 2.828,
     "exp_total": 6.144,
     "fair_total_line": 5.5,
@@ -479,30 +479,30 @@
    },
    "away": {
     "abbrev": "SJS",
-    "elo": 1421.5,
-    "rest_days": 7,
+    "elo": 1422.4,
+    "rest_days": 5,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.6523,
-    "away_win_prob": 0.3477,
-    "home_ml_fair": -188,
-    "away_ml_fair": 188,
-    "home_decimal_fair": 1.533,
-    "away_decimal_fair": 2.876,
-    "exp_goals_home": 3.554,
-    "exp_goals_away": 2.82,
-    "exp_total": 6.579,
+    "home_win_prob": 0.6511,
+    "away_win_prob": 0.3489,
+    "home_ml_fair": -187,
+    "away_ml_fair": 187,
+    "home_decimal_fair": 1.536,
+    "away_decimal_fair": 2.866,
+    "exp_goals_home": 3.53,
+    "exp_goals_away": 2.808,
+    "exp_total": 6.544,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5235,
+    "fair_line_p_over": 0.5176,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6243
+      "p_over": 0.6186
      },
      {
       "line": 6.5,
-      "p_over": 0.5235
+      "p_over": 0.5176
      }
     ]
    },
@@ -521,30 +521,30 @@
    },
    "away": {
     "abbrev": "NYI",
-    "elo": 1454.2,
-    "rest_days": 7,
+    "elo": 1453.3,
+    "rest_days": 5,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.5481,
-    "away_win_prob": 0.4519,
-    "home_ml_fair": -121,
-    "away_ml_fair": 121,
-    "home_decimal_fair": 1.825,
-    "away_decimal_fair": 2.213,
-    "exp_goals_home": 3.369,
-    "exp_goals_away": 2.996,
-    "exp_total": 6.574,
+    "home_win_prob": 0.5494,
+    "away_win_prob": 0.4506,
+    "home_ml_fair": -122,
+    "away_ml_fair": 122,
+    "home_decimal_fair": 1.82,
+    "away_decimal_fair": 2.219,
+    "exp_goals_home": 3.35,
+    "exp_goals_away": 2.984,
+    "exp_total": 6.546,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5236,
+    "fair_line_p_over": 0.5188,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6227
+      "p_over": 0.6181
      },
      {
       "line": 6.5,
-      "p_over": 0.5236
+      "p_over": 0.5188
      }
     ]
    },

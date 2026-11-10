@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-09T21:21:31Z",
+ "generated_at": "2026-11-10T18:32:45Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-13",
  "games": [
@@ -11,36 +11,36 @@
    "venue": "Rogers Arena",
    "home": {
     "abbrev": "VAN",
-    "elo": 1365.3,
-    "rest_days": 6,
+    "elo": 1361.6,
+    "rest_days": 4,
     "b2b": false
    },
    "away": {
     "abbrev": "NYR",
-    "elo": 1486.5,
-    "rest_days": 6,
+    "elo": 1483.2,
+    "rest_days": 4,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.3649,
-    "away_win_prob": 0.6351,
+    "home_win_prob": 0.3644,
+    "away_win_prob": 0.6356,
     "home_ml_fair": 174,
     "away_ml_fair": -174,
-    "home_decimal_fair": 2.74,
-    "away_decimal_fair": 1.575,
-    "exp_goals_home": 2.876,
-    "exp_goals_away": 3.457,
-    "exp_total": 6.54,
+    "home_decimal_fair": 2.744,
+    "away_decimal_fair": 1.573,
+    "exp_goals_home": 2.849,
+    "exp_goals_away": 3.405,
+    "exp_total": 6.464,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5174,
+    "fair_line_p_over": 0.5044,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6176
+      "p_over": 0.605
      },
      {
       "line": 6.5,
-      "p_over": 0.5174
+      "p_over": 0.5044
      }
     ]
    },

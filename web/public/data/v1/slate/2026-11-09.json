@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-09T21:21:31Z",
+ "generated_at": "2026-11-10T18:32:45Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-09",
  "games": [
   {
    "game_id": 2026020283,
    "start_utc": "2026-11-10T01:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Rogers Place",
    "home": {
     "abbrev": "EDM",
@@ -44,12 +44,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 4,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020284,
    "start_utc": "2026-11-10T02:30:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Rogers Arena",
    "home": {
     "abbrev": "VAN",
@@ -71,7 +77,7 @@
     "home_decimal_fair": 2.268,
     "away_decimal_fair": 1.789,
     "exp_goals_home": 2.896,
-    "exp_goals_away": 3.082,
+    "exp_goals_away": 3.083,
     "exp_total": 6.198,
     "fair_total_line": 6.5,
     "fair_line_p_over": 0.4588,
@@ -86,12 +92,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 1,
+    "away_score": 3,
+    "last_period": "REG",
+    "total_goals": 4,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020285,
    "start_utc": "2026-11-10T03:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "SAP Center at San Jose",
    "home": {
     "abbrev": "SJS",
@@ -128,7 +140,13 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 2,
+    "last_period": "SO",
+    "total_goals": 5,
+    "home_won": true
+   }
   }
  ]
 }
