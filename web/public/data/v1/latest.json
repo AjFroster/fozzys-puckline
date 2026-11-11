@@ -1,298 +1,256 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-10T18:32:45Z",
+ "generated_at": "2026-11-11T18:29:49Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
- "date": "2026-11-10",
+ "date": "2026-11-11",
  "games": [
   {
-   "game_id": 2026020286,
-   "start_utc": "2026-11-11T00:00:00Z",
+   "game_id": 2026020293,
+   "start_utc": "2026-11-12T00:00:00Z",
    "state": "FUT",
-   "venue": "Scotiabank Arena",
+   "venue": "KeyBank Center",
    "home": {
-    "abbrev": "TOR",
-    "elo": 1469.0,
-    "rest_days": 2,
+    "abbrev": "BUF",
+    "elo": 1520.6,
+    "rest_days": 3,
     "b2b": false
    },
    "away": {
-    "abbrev": "COL",
-    "elo": 1562.6,
+    "abbrev": "TBL",
+    "elo": 1545.5,
     "rest_days": 3,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4027,
-    "away_win_prob": 0.5973,
-    "home_ml_fair": 148,
-    "away_ml_fair": -148,
-    "home_decimal_fair": 2.484,
-    "away_decimal_fair": 1.674,
-    "exp_goals_home": 3.024,
-    "exp_goals_away": 3.341,
-    "exp_total": 6.576,
+    "home_win_prob": 0.5001,
+    "away_win_prob": 0.4999,
+    "home_ml_fair": -100,
+    "away_ml_fair": 100,
+    "home_decimal_fair": 2.0,
+    "away_decimal_fair": 2.0,
+    "exp_goals_home": 3.084,
+    "exp_goals_away": 2.979,
+    "exp_total": 6.281,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5239,
+    "fair_line_p_over": 0.4734,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6229
+      "p_over": 0.5732
      },
      {
       "line": 6.5,
-      "p_over": 0.5239
+      "p_over": 0.4734
      }
     ]
    },
    "result": null
   },
   {
-   "game_id": 2026020287,
-   "start_utc": "2026-11-11T00:00:00Z",
+   "game_id": 2026020294,
+   "start_utc": "2026-11-12T00:30:00Z",
    "state": "FUT",
-   "venue": "Centre Bell",
+   "venue": "Scotiabank Saddledome",
    "home": {
-    "abbrev": "MTL",
-    "elo": 1540.2,
+    "abbrev": "CGY",
+    "elo": 1445.7,
     "rest_days": 3,
     "b2b": false
    },
    "away": {
-    "abbrev": "MIN",
-    "elo": 1548.7,
-    "rest_days": 3,
-    "b2b": false
-   },
-   "prediction": {
-    "home_win_prob": 0.5237,
-    "away_win_prob": 0.4763,
-    "home_ml_fair": -110,
-    "away_ml_fair": 110,
-    "home_decimal_fair": 1.909,
-    "away_decimal_fair": 2.1,
-    "exp_goals_home": 2.951,
-    "exp_goals_away": 2.867,
-    "exp_total": 6.042,
-    "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5307,
-    "totals": [
-     {
-      "line": 5.5,
-      "p_over": 0.5307
-     },
-     {
-      "line": 6.5,
-      "p_over": 0.4313
-     }
-    ]
-   },
-   "result": null
-  },
-  {
-   "game_id": 2026020288,
-   "start_utc": "2026-11-11T00:00:00Z",
-   "state": "FUT",
-   "venue": "Canadian Tire Centre",
-   "home": {
-    "abbrev": "OTT",
-    "elo": 1511.6,
-    "rest_days": 3,
-    "b2b": false
-   },
-   "away": {
-    "abbrev": "WSH",
-    "elo": 1526.0,
-    "rest_days": 3,
-    "b2b": false
-   },
-   "prediction": {
-    "home_win_prob": 0.5152,
-    "away_win_prob": 0.4848,
-    "home_ml_fair": -106,
-    "away_ml_fair": 106,
-    "home_decimal_fair": 1.941,
-    "away_decimal_fair": 2.063,
-    "exp_goals_home": 3.177,
-    "exp_goals_away": 2.983,
-    "exp_total": 6.376,
-    "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4898,
-    "totals": [
-     {
-      "line": 5.5,
-      "p_over": 0.5895
-     },
-     {
-      "line": 6.5,
-      "p_over": 0.4898
-     }
-    ]
-   },
-   "result": null
-  },
-  {
-   "game_id": 2026020291,
-   "start_utc": "2026-11-11T00:00:00Z",
-   "state": "FUT",
-   "venue": "Canada Life Centre",
-   "home": {
-    "abbrev": "WPG",
-    "elo": 1462.8,
-    "rest_days": 2,
-    "b2b": false
-   },
-   "away": {
-    "abbrev": "NJD",
-    "elo": 1506.8,
+    "abbrev": "NYR",
+    "elo": 1483.2,
     "rest_days": 2,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4728,
-    "away_win_prob": 0.5272,
-    "home_ml_fair": 112,
-    "away_ml_fair": -112,
-    "home_decimal_fair": 2.115,
-    "away_decimal_fair": 1.897,
-    "exp_goals_home": 2.839,
-    "exp_goals_away": 3.036,
-    "exp_total": 6.097,
+    "home_win_prob": 0.482,
+    "away_win_prob": 0.518,
+    "home_ml_fair": 107,
+    "away_ml_fair": -107,
+    "home_decimal_fair": 2.075,
+    "away_decimal_fair": 1.931,
+    "exp_goals_home": 2.863,
+    "exp_goals_away": 2.932,
+    "exp_total": 6.019,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5407,
+    "fair_line_p_over": 0.5266,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5407
+      "p_over": 0.5266
      },
      {
       "line": 6.5,
-      "p_over": 0.441
+      "p_over": 0.4273
      }
     ]
    },
    "result": null
   },
   {
-   "game_id": 2026020289,
-   "start_utc": "2026-11-11T00:30:00Z",
+   "game_id": 2026020295,
+   "start_utc": "2026-11-12T02:00:00Z",
    "state": "FUT",
-   "venue": "Nationwide Arena",
+   "venue": "Rogers Place",
    "home": {
-    "abbrev": "CBJ",
-    "elo": 1484.3,
+    "abbrev": "EDM",
+    "elo": 1540.3,
+    "rest_days": 2,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "PHI",
+    "elo": 1460.3,
+    "rest_days": 2,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.6467,
+    "away_win_prob": 0.3533,
+    "home_ml_fair": -183,
+    "away_ml_fair": 183,
+    "home_decimal_fair": 1.546,
+    "away_decimal_fair": 2.83,
+    "exp_goals_home": 3.41,
+    "exp_goals_away": 2.512,
+    "exp_total": 6.131,
+    "fair_total_line": 5.5,
+    "fair_line_p_over": 0.5488,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5488
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4449
+     }
+    ]
+   },
+   "result": null
+  },
+  {
+   "game_id": 2026020296,
+   "start_utc": "2026-11-12T02:30:00Z",
+   "state": "FUT",
+   "venue": "T-Mobile Arena",
+   "home": {
+    "abbrev": "VGK",
+    "elo": 1535.4,
+    "rest_days": 3,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "UTA",
+    "elo": 1505.8,
     "rest_days": 4,
     "b2b": false
    },
-   "away": {
-    "abbrev": "FLA",
-    "elo": 1500.5,
-    "rest_days": 2,
-    "b2b": false
-   },
    "prediction": {
-    "home_win_prob": 0.5126,
-    "away_win_prob": 0.4874,
-    "home_ml_fair": -105,
-    "away_ml_fair": 105,
-    "home_decimal_fair": 1.951,
-    "away_decimal_fair": 2.052,
-    "exp_goals_home": 2.981,
+    "home_win_prob": 0.578,
+    "away_win_prob": 0.422,
+    "home_ml_fair": -137,
+    "away_ml_fair": 137,
+    "home_decimal_fair": 1.73,
+    "away_decimal_fair": 2.37,
+    "exp_goals_home": 3.333,
     "exp_goals_away": 2.859,
-    "exp_total": 6.063,
-    "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5346,
+    "exp_total": 6.405,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.4944,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5346
+      "p_over": 0.5948
      },
      {
       "line": 6.5,
-      "p_over": 0.435
+      "p_over": 0.4944
      }
     ]
    },
    "result": null
   },
   {
-   "game_id": 2026020290,
-   "start_utc": "2026-11-11T01:00:00Z",
+   "game_id": 2026020297,
+   "start_utc": "2026-11-12T03:00:00Z",
    "state": "FUT",
-   "venue": "Enterprise Center",
+   "venue": "Honda Center",
    "home": {
-    "abbrev": "STL",
-    "elo": 1493.7,
-    "rest_days": 3,
-    "b2b": false
-   },
-   "away": {
-    "abbrev": "DET",
-    "elo": 1470.7,
-    "rest_days": 3,
-    "b2b": false
-   },
-   "prediction": {
-    "home_win_prob": 0.5686,
-    "away_win_prob": 0.4314,
-    "home_ml_fair": -132,
-    "away_ml_fair": 132,
-    "home_decimal_fair": 1.759,
-    "away_decimal_fair": 2.318,
-    "exp_goals_home": 3.031,
-    "exp_goals_away": 2.634,
-    "exp_total": 5.89,
-    "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5033,
-    "totals": [
-     {
-      "line": 5.5,
-      "p_over": 0.5033
-     },
-     {
-      "line": 6.5,
-      "p_over": 0.4038
-     }
-    ]
-   },
-   "result": null
-  },
-  {
-   "game_id": 2026020292,
-   "start_utc": "2026-11-11T03:00:00Z",
-   "state": "FUT",
-   "venue": "Crypto.com Arena",
-   "home": {
-    "abbrev": "LAK",
-    "elo": 1464.8,
+    "abbrev": "ANA",
+    "elo": 1462.7,
     "rest_days": 3,
     "b2b": false
    },
    "away": {
     "abbrev": "NSH",
-    "elo": 1481.4,
-    "rest_days": 3,
-    "b2b": false
+    "elo": 1487.1,
+    "rest_days": 1,
+    "b2b": true
    },
    "prediction": {
-    "home_win_prob": 0.5121,
-    "away_win_prob": 0.4879,
-    "home_ml_fair": -105,
-    "away_ml_fair": 105,
-    "home_decimal_fair": 1.953,
-    "away_decimal_fair": 2.05,
-    "exp_goals_home": 2.998,
-    "exp_goals_away": 2.843,
-    "exp_total": 6.065,
-    "fair_total_line": 5.5,
+    "home_win_prob": 0.5368,
+    "away_win_prob": 0.4632,
+    "home_ml_fair": -116,
+    "away_ml_fair": 116,
+    "home_decimal_fair": 1.863,
+    "away_decimal_fair": 2.159,
+    "exp_goals_home": 3.279,
+    "exp_goals_away": 3.15,
+    "exp_total": 6.64,
+    "fair_total_line": 6.5,
     "fair_line_p_over": 0.5349,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5349
+      "p_over": 0.633
      },
      {
       "line": 6.5,
-      "p_over": 0.4353
+      "p_over": 0.5349
+     }
+    ]
+   },
+   "result": null
+  },
+  {
+   "game_id": 2026020298,
+   "start_utc": "2026-11-12T03:00:00Z",
+   "state": "FUT",
+   "venue": "SAP Center at San Jose",
+   "home": {
+    "abbrev": "SJS",
+    "elo": 1422.4,
+    "rest_days": 2,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "PIT",
+    "elo": 1482.0,
+    "rest_days": 3,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.4505,
+    "away_win_prob": 0.5495,
+    "home_ml_fair": 122,
+    "away_ml_fair": -122,
+    "home_decimal_fair": 2.22,
+    "away_decimal_fair": 1.82,
+    "exp_goals_home": 3.131,
+    "exp_goals_away": 3.165,
+    "exp_total": 6.509,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.5129,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.6118
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.5129
      }
     ]
    },

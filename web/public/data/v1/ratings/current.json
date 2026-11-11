@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-10T18:32:45Z",
+ "generated_at": "2026-11-11T18:29:49Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "season": 20262027,
  "teams": [
@@ -11,28 +11,28 @@
    "elo": 1596.3,
    "rank": 1,
    "percentile": 1.0,
-   "elo_7d_change": -1.3,
+   "elo_7d_change": 6.2,
    "win_prob_vs_average": 0.6451
   },
   {
    "team_id": 21,
    "abbrev": "COL",
    "name": "Colorado Avalanche",
-   "elo": 1562.6,
+   "elo": 1566.9,
    "rank": 2,
    "percentile": 0.9677,
-   "elo_7d_change": -5.7,
-   "win_prob_vs_average": 0.5995
+   "elo_7d_change": 6.8,
+   "win_prob_vs_average": 0.6054
   },
   {
    "team_id": 30,
    "abbrev": "MIN",
    "name": "Minnesota Wild",
-   "elo": 1548.7,
+   "elo": 1549.7,
    "rank": 3,
    "percentile": 0.9355,
-   "elo_7d_change": 5.9,
-   "win_prob_vs_average": 0.5802
+   "elo_7d_change": 3.2,
+   "win_prob_vs_average": 0.5815
   },
   {
    "team_id": 14,
@@ -41,7 +41,7 @@
    "elo": 1545.5,
    "rank": 4,
    "percentile": 0.9032,
-   "elo_7d_change": 3.1,
+   "elo_7d_change": 0.2,
    "win_prob_vs_average": 0.5757
   },
   {
@@ -51,18 +51,18 @@
    "elo": 1540.3,
    "rank": 5,
    "percentile": 0.871,
-   "elo_7d_change": 0.5,
+   "elo_7d_change": 1.4,
    "win_prob_vs_average": 0.5683
   },
   {
    "team_id": 8,
    "abbrev": "MTL",
    "name": "Montr\u00e9al Canadiens",
-   "elo": 1540.2,
+   "elo": 1539.2,
    "rank": 6,
    "percentile": 0.8387,
-   "elo_7d_change": 2.6,
-   "win_prob_vs_average": 0.5682
+   "elo_7d_change": 3.4,
+   "win_prob_vs_average": 0.5668
   },
   {
    "team_id": 25,
@@ -71,7 +71,7 @@
    "elo": 1538.7,
    "rank": 7,
    "percentile": 0.8065,
-   "elo_7d_change": 3.3,
+   "elo_7d_change": 0.4,
    "win_prob_vs_average": 0.5662
   },
   {
@@ -81,7 +81,7 @@
    "elo": 1535.4,
    "rank": 8,
    "percentile": 0.7742,
-   "elo_7d_change": 11.4,
+   "elo_7d_change": 8.5,
    "win_prob_vs_average": 0.5615
   },
   {
@@ -98,11 +98,11 @@
    "team_id": 15,
    "abbrev": "WSH",
    "name": "Washington Capitals",
-   "elo": 1526.0,
+   "elo": 1527.0,
    "rank": 10,
    "percentile": 0.7097,
-   "elo_7d_change": -0.5,
-   "win_prob_vs_average": 0.5481
+   "elo_7d_change": 3.3,
+   "win_prob_vs_average": 0.5494
   },
   {
    "team_id": 7,
@@ -118,21 +118,21 @@
    "team_id": 9,
    "abbrev": "OTT",
    "name": "Ottawa Senators",
-   "elo": 1511.6,
+   "elo": 1510.7,
    "rank": 12,
    "percentile": 0.6452,
-   "elo_7d_change": 7.3,
-   "win_prob_vs_average": 0.5275
+   "elo_7d_change": 6.4,
+   "win_prob_vs_average": 0.5262
   },
   {
-   "team_id": 1,
-   "abbrev": "NJD",
-   "name": "New Jersey Devils",
-   "elo": 1506.8,
+   "team_id": 13,
+   "abbrev": "FLA",
+   "name": "Florida Panthers",
+   "elo": 1506.2,
    "rank": 13,
    "percentile": 0.6129,
-   "elo_7d_change": 8.7,
-   "win_prob_vs_average": 0.5205
+   "elo_7d_change": 1.7,
+   "win_prob_vs_average": 0.5197
   },
   {
    "team_id": 53,
@@ -141,38 +141,38 @@
    "elo": 1505.8,
    "rank": 14,
    "percentile": 0.5806,
-   "elo_7d_change": -1.7,
+   "elo_7d_change": -4.5,
    "win_prob_vs_average": 0.5191
   },
   {
-   "team_id": 13,
-   "abbrev": "FLA",
-   "name": "Florida Panthers",
-   "elo": 1500.5,
+   "team_id": 1,
+   "abbrev": "NJD",
+   "name": "New Jersey Devils",
+   "elo": 1502.1,
    "rank": 15,
    "percentile": 0.5484,
-   "elo_7d_change": -4.0,
-   "win_prob_vs_average": 0.5115
+   "elo_7d_change": 3.1,
+   "win_prob_vs_average": 0.5138
   },
   {
    "team_id": 19,
    "abbrev": "STL",
    "name": "St. Louis Blues",
-   "elo": 1493.7,
+   "elo": 1496.0,
    "rank": 16,
    "percentile": 0.5161,
-   "elo_7d_change": -9.4,
-   "win_prob_vs_average": 0.5017
+   "elo_7d_change": -2.6,
+   "win_prob_vs_average": 0.5051
   },
   {
-   "team_id": 29,
-   "abbrev": "CBJ",
-   "name": "Columbus Blue Jackets",
-   "elo": 1484.3,
+   "team_id": 18,
+   "abbrev": "NSH",
+   "name": "Nashville Predators",
+   "elo": 1487.1,
    "rank": 17,
    "percentile": 0.4839,
-   "elo_7d_change": 5.2,
-   "win_prob_vs_average": 0.4882
+   "elo_7d_change": 11.8,
+   "win_prob_vs_average": 0.4922
   },
   {
    "team_id": 3,
@@ -181,7 +181,7 @@
    "elo": 1483.2,
    "rank": 18,
    "percentile": 0.4516,
-   "elo_7d_change": 6.2,
+   "elo_7d_change": 1.8,
    "win_prob_vs_average": 0.4866
   },
   {
@@ -191,67 +191,57 @@
    "elo": 1482.0,
    "rank": 19,
    "percentile": 0.4194,
-   "elo_7d_change": -8.5,
+   "elo_7d_change": -5.6,
    "win_prob_vs_average": 0.4849
   },
   {
-   "team_id": 18,
-   "abbrev": "NSH",
-   "name": "Nashville Predators",
-   "elo": 1481.4,
+   "team_id": 29,
+   "abbrev": "CBJ",
+   "name": "Columbus Blue Jackets",
+   "elo": 1478.6,
    "rank": 20,
    "percentile": 0.3871,
-   "elo_7d_change": 13.7,
-   "win_prob_vs_average": 0.484
+   "elo_7d_change": -8.8,
+   "win_prob_vs_average": 0.4799
   },
   {
    "team_id": 17,
    "abbrev": "DET",
    "name": "Detroit Red Wings",
-   "elo": 1470.7,
+   "elo": 1468.3,
    "rank": 21,
    "percentile": 0.3548,
-   "elo_7d_change": -9.7,
-   "win_prob_vs_average": 0.4686
-  },
-  {
-   "team_id": 10,
-   "abbrev": "TOR",
-   "name": "Toronto Maple Leafs",
-   "elo": 1469.0,
-   "rank": 22,
-   "percentile": 0.3226,
-   "elo_7d_change": -13.1,
-   "win_prob_vs_average": 0.4663
-  },
-  {
-   "team_id": 26,
-   "abbrev": "LAK",
-   "name": "Los Angeles Kings",
-   "elo": 1464.8,
-   "rank": 23,
-   "percentile": 0.2903,
-   "elo_7d_change": 0.0,
-   "win_prob_vs_average": 0.4602
+   "elo_7d_change": -9.2,
+   "win_prob_vs_average": 0.4653
   },
   {
    "team_id": 52,
    "abbrev": "WPG",
    "name": "Winnipeg Jets",
-   "elo": 1462.8,
-   "rank": 24,
-   "percentile": 0.2581,
-   "elo_7d_change": 9.2,
-   "win_prob_vs_average": 0.4574
+   "elo": 1467.5,
+   "rank": 22,
+   "percentile": 0.3226,
+   "elo_7d_change": 12.1,
+   "win_prob_vs_average": 0.4641
+  },
+  {
+   "team_id": 10,
+   "abbrev": "TOR",
+   "name": "Toronto Maple Leafs",
+   "elo": 1464.7,
+   "rank": 23,
+   "percentile": 0.2903,
+   "elo_7d_change": -14.7,
+   "win_prob_vs_average": 0.4601
   },
   {
    "team_id": 24,
    "abbrev": "ANA",
    "name": "Anaheim Ducks",
    "elo": 1462.7,
-   "rank": 25,
-   "percentile": 0.2258,
-   "elo_7d_change": 16.5,
+   "rank": 24,
+   "percentile": 0.2581,
+   "elo_7d_change": 14.2,
    "win_prob_vs_average": 0.4572
   },
   {
@@ -259,10 +249,20 @@
    "abbrev": "PHI",
    "name": "Philadelphia Flyers",
    "elo": 1460.3,
+   "rank": 25,
+   "percentile": 0.2258,
+   "elo_7d_change": 0.7,
+   "win_prob_vs_average": 0.4538
+  },
+  {
+   "team_id": 26,
+   "abbrev": "LAK",
+   "name": "Los Angeles Kings",
+   "elo": 1459.1,
    "rank": 26,
    "percentile": 0.1935,
-   "elo_7d_change": -2.9,
-   "win_prob_vs_average": 0.4538
+   "elo_7d_change": -5.7,
+   "win_prob_vs_average": 0.4521
   },
   {
    "team_id": 55,
@@ -321,7 +321,7 @@
    "elo": 1361.6,
    "rank": 32,
    "percentile": 0.0,
-   "elo_7d_change": -12.3,
+   "elo_7d_change": -10.0,
    "win_prob_vs_average": 0.32
   }
  ]

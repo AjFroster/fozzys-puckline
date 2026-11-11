@@ -1,0 +1,134 @@
+{
+ "schema": "1.0.0",
+ "generated_at": "2026-11-11T18:29:49Z",
+ "model_version": "elo-1.0+cmp-1.0/ec1c67c",
+ "date": "2026-11-18",
+ "games": [
+  {
+   "game_id": 2026020344,
+   "start_utc": "2026-11-19T00:30:00Z",
+   "state": "FUT",
+   "venue": "Little Caesars Arena",
+   "home": {
+    "abbrev": "DET",
+    "elo": 1468.3,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "BOS",
+    "elo": 1533.7,
+    "rest_days": 10,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.4423,
+    "away_win_prob": 0.5577,
+    "home_ml_fair": 126,
+    "away_ml_fair": -126,
+    "home_decimal_fair": 2.261,
+    "away_decimal_fair": 1.793,
+    "exp_goals_home": 2.699,
+    "exp_goals_away": 2.973,
+    "exp_total": 5.898,
+    "fair_total_line": 5.5,
+    "fair_line_p_over": 0.5046,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5046
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4055
+     }
+    ]
+   },
+   "result": null
+  },
+  {
+   "game_id": 2026020345,
+   "start_utc": "2026-11-19T00:30:00Z",
+   "state": "FUT",
+   "venue": "Prudential Center",
+   "home": {
+    "abbrev": "NJD",
+    "elo": 1502.1,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "MTL",
+    "elo": 1539.2,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.4826,
+    "away_win_prob": 0.5174,
+    "home_ml_fair": 107,
+    "away_ml_fair": -107,
+    "home_decimal_fair": 2.072,
+    "away_decimal_fair": 1.933,
+    "exp_goals_home": 3.028,
+    "exp_goals_away": 2.88,
+    "exp_total": 6.128,
+    "fair_total_line": 5.5,
+    "fair_line_p_over": 0.5463,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.5463
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.4466
+     }
+    ]
+   },
+   "result": null
+  },
+  {
+   "game_id": 2026020346,
+   "start_utc": "2026-11-19T03:00:00Z",
+   "state": "FUT",
+   "venue": "Delta Center",
+   "home": {
+    "abbrev": "UTA",
+    "elo": 1505.8,
+    "rest_days": 11,
+    "b2b": false
+   },
+   "away": {
+    "abbrev": "COL",
+    "elo": 1566.9,
+    "rest_days": 8,
+    "b2b": false
+   },
+   "prediction": {
+    "home_win_prob": 0.4483,
+    "away_win_prob": 0.5517,
+    "home_ml_fair": 123,
+    "away_ml_fair": -123,
+    "home_decimal_fair": 2.231,
+    "away_decimal_fair": 1.812,
+    "exp_goals_home": 3.12,
+    "exp_goals_away": 3.299,
+    "exp_total": 6.63,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.5332,
+    "totals": [
+     {
+      "line": 5.5,
+      "p_over": 0.6314
+     },
+     {
+      "line": 6.5,
+      "p_over": 0.5332
+     }
+    ]
+   },
+   "result": null
+  }
+ ]
+}

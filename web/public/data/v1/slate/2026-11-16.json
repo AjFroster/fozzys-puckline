@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-10T18:32:45Z",
+ "generated_at": "2026-11-11T18:29:49Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-16",
  "games": [
@@ -17,30 +17,30 @@
    },
    "away": {
     "abbrev": "MTL",
-    "elo": 1540.2,
-    "rest_days": 9,
+    "elo": 1539.2,
+    "rest_days": 6,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4541,
-    "away_win_prob": 0.5459,
+    "home_win_prob": 0.4555,
+    "away_win_prob": 0.5445,
     "home_ml_fair": 120,
     "away_ml_fair": -120,
-    "home_decimal_fair": 2.202,
-    "away_decimal_fair": 1.832,
-    "exp_goals_home": 3.025,
-    "exp_goals_away": 2.944,
-    "exp_total": 6.189,
-    "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4573,
+    "home_decimal_fair": 2.195,
+    "away_decimal_fair": 1.837,
+    "exp_goals_home": 2.994,
+    "exp_goals_away": 2.912,
+    "exp_total": 6.128,
+    "fair_total_line": 5.5,
+    "fair_line_p_over": 0.5462,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5571
+      "p_over": 0.5462
      },
      {
       "line": 6.5,
-      "p_over": 0.4573
+      "p_over": 0.4465
      }
     ]
    },
