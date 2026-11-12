@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-11T18:29:49Z",
+ "generated_at": "2026-11-12T18:45:23Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-18",
  "games": [
@@ -70,7 +70,7 @@
     "away_ml_fair": -107,
     "home_decimal_fair": 2.072,
     "away_decimal_fair": 1.933,
-    "exp_goals_home": 3.028,
+    "exp_goals_home": 3.027,
     "exp_goals_away": 2.88,
     "exp_total": 6.128,
     "fair_total_line": 5.5,
@@ -95,8 +95,8 @@
    "venue": "Delta Center",
    "home": {
     "abbrev": "UTA",
-    "elo": 1505.8,
-    "rest_days": 11,
+    "elo": 1502.2,
+    "rest_days": 7,
     "b2b": false
    },
    "away": {
@@ -106,25 +106,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4483,
-    "away_win_prob": 0.5517,
-    "home_ml_fair": 123,
-    "away_ml_fair": -123,
-    "home_decimal_fair": 2.231,
-    "away_decimal_fair": 1.812,
-    "exp_goals_home": 3.12,
-    "exp_goals_away": 3.299,
-    "exp_total": 6.63,
+    "home_win_prob": 0.4431,
+    "away_win_prob": 0.5569,
+    "home_ml_fair": 126,
+    "away_ml_fair": -126,
+    "home_decimal_fair": 2.257,
+    "away_decimal_fair": 1.796,
+    "exp_goals_home": 3.116,
+    "exp_goals_away": 3.33,
+    "exp_total": 6.655,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5332,
+    "fair_line_p_over": 0.5374,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6314
+      "p_over": 0.6355
      },
      {
       "line": 6.5,
-      "p_over": 0.5332
+      "p_over": 0.5374
      }
     ]
    },

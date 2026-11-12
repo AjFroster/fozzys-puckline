@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-11T18:29:49Z",
+ "generated_at": "2026-11-12T18:45:23Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-11",
  "games": [
   {
    "game_id": 2026020293,
    "start_utc": "2026-11-12T00:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "KeyBank Center",
    "home": {
     "abbrev": "BUF",
@@ -44,12 +44,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 8,
+    "last_period": "REG",
+    "total_goals": 11,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020294,
    "start_utc": "2026-11-12T00:30:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Scotiabank Saddledome",
    "home": {
     "abbrev": "CGY",
@@ -86,12 +92,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 1,
+    "away_score": 3,
+    "last_period": "REG",
+    "total_goals": 4,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020295,
    "start_utc": "2026-11-12T02:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Rogers Place",
    "home": {
     "abbrev": "EDM",
@@ -112,7 +124,7 @@
     "away_ml_fair": 183,
     "home_decimal_fair": 1.546,
     "away_decimal_fair": 2.83,
-    "exp_goals_home": 3.41,
+    "exp_goals_home": 3.409,
     "exp_goals_away": 2.512,
     "exp_total": 6.131,
     "fair_total_line": 5.5,
@@ -128,12 +140,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 2,
+    "last_period": "OT",
+    "total_goals": 5,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020296,
    "start_utc": "2026-11-12T02:30:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "T-Mobile Arena",
    "home": {
     "abbrev": "VGK",
@@ -170,12 +188,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 5,
+    "away_score": 3,
+    "last_period": "REG",
+    "total_goals": 8,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020297,
    "start_utc": "2026-11-12T03:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Honda Center",
    "home": {
     "abbrev": "ANA",
@@ -212,12 +236,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 4,
+    "last_period": "REG",
+    "total_goals": 6,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020298,
    "start_utc": "2026-11-12T03:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "SAP Center at San Jose",
    "home": {
     "abbrev": "SJS",
@@ -254,7 +284,13 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 3,
+    "last_period": "SO",
+    "total_goals": 5,
+    "home_won": false
+   }
   }
  ]
 }
