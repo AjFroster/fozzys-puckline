@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-12T18:45:23Z",
+ "generated_at": "2026-11-13T18:26:42Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-18",
  "games": [
@@ -11,36 +11,36 @@
    "venue": "Little Caesars Arena",
    "home": {
     "abbrev": "DET",
-    "elo": 1468.3,
-    "rest_days": 8,
+    "elo": 1466.1,
+    "rest_days": 6,
     "b2b": false
    },
    "away": {
     "abbrev": "BOS",
-    "elo": 1533.7,
-    "rest_days": 10,
+    "elo": 1527.7,
+    "rest_days": 6,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4423,
-    "away_win_prob": 0.5577,
-    "home_ml_fair": 126,
-    "away_ml_fair": -126,
-    "home_decimal_fair": 2.261,
-    "away_decimal_fair": 1.793,
-    "exp_goals_home": 2.699,
-    "exp_goals_away": 2.973,
-    "exp_total": 5.898,
+    "home_win_prob": 0.4475,
+    "away_win_prob": 0.5525,
+    "home_ml_fair": 123,
+    "away_ml_fair": -123,
+    "home_decimal_fair": 2.235,
+    "away_decimal_fair": 1.81,
+    "exp_goals_home": 2.757,
+    "exp_goals_away": 2.986,
+    "exp_total": 5.969,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5046,
+    "fair_line_p_over": 0.5175,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5046
+      "p_over": 0.5175
      },
      {
       "line": 6.5,
-      "p_over": 0.4055
+      "p_over": 0.4182
      }
     ]
    },
@@ -53,36 +53,36 @@
    "venue": "Prudential Center",
    "home": {
     "abbrev": "NJD",
-    "elo": 1502.1,
-    "rest_days": 8,
+    "elo": 1507.6,
+    "rest_days": 6,
     "b2b": false
    },
    "away": {
     "abbrev": "MTL",
-    "elo": 1539.2,
-    "rest_days": 8,
+    "elo": 1545.1,
+    "rest_days": 6,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4826,
-    "away_win_prob": 0.5174,
+    "home_win_prob": 0.482,
+    "away_win_prob": 0.518,
     "home_ml_fair": 107,
     "away_ml_fair": -107,
-    "home_decimal_fair": 2.072,
-    "away_decimal_fair": 1.933,
-    "exp_goals_home": 3.027,
-    "exp_goals_away": 2.88,
-    "exp_total": 6.128,
-    "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5463,
+    "home_decimal_fair": 2.074,
+    "away_decimal_fair": 1.931,
+    "exp_goals_home": 3.045,
+    "exp_goals_away": 2.894,
+    "exp_total": 6.16,
+    "fair_total_line": 6.5,
+    "fair_line_p_over": 0.4521,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5463
+      "p_over": 0.5519
      },
      {
       "line": 6.5,
-      "p_over": 0.4466
+      "p_over": 0.4521
      }
     ]
    },
@@ -95,36 +95,36 @@
    "venue": "Delta Center",
    "home": {
     "abbrev": "UTA",
-    "elo": 1502.2,
-    "rest_days": 7,
+    "elo": 1501.3,
+    "rest_days": 6,
     "b2b": false
    },
    "away": {
     "abbrev": "COL",
-    "elo": 1566.9,
-    "rest_days": 8,
+    "elo": 1565.8,
+    "rest_days": 6,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4431,
-    "away_win_prob": 0.5569,
+    "home_win_prob": 0.4434,
+    "away_win_prob": 0.5566,
     "home_ml_fair": 126,
     "away_ml_fair": -126,
-    "home_decimal_fair": 2.257,
-    "away_decimal_fair": 1.796,
-    "exp_goals_home": 3.116,
-    "exp_goals_away": 3.33,
-    "exp_total": 6.655,
+    "home_decimal_fair": 2.255,
+    "away_decimal_fair": 1.797,
+    "exp_goals_home": 3.069,
+    "exp_goals_away": 3.266,
+    "exp_total": 6.547,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5374,
+    "fair_line_p_over": 0.5192,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6355
+      "p_over": 0.6181
      },
      {
       "line": 6.5,
-      "p_over": 0.5374
+      "p_over": 0.5192
      }
     ]
    },
