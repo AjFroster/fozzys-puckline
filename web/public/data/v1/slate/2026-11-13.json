@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-12T18:45:23Z",
+ "generated_at": "2026-11-14T16:54:46Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-13",
  "games": [
   {
    "game_id": 2026020310,
    "start_utc": "2026-11-14T02:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Rogers Arena",
    "home": {
     "abbrev": "VAN",
@@ -44,12 +44,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 1,
+    "away_score": 5,
+    "last_period": "REG",
+    "total_goals": 6,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020311,
    "start_utc": "2026-11-14T03:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "T-Mobile Arena",
    "home": {
     "abbrev": "VGK",
@@ -86,7 +92,13 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 3,
+    "last_period": "SO",
+    "total_goals": 5,
+    "home_won": false
+   }
   }
  ]
 }

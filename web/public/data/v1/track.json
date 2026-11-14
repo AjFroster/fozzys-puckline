@@ -1,24 +1,24 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-13T18:26:42Z",
+ "generated_at": "2026-11-14T16:54:46Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "season": 20262027,
  "complete": false,
- "through": "2026-11-12",
+ "through": "2026-11-13",
  "rolling_window": 100,
  "summary": {
-  "date": "2026-11-12",
-  "games_today": 11,
-  "correct_today": 5,
-  "games": 304,
-  "correct": 184,
-  "accuracy": 0.6053,
-  "log_loss": 0.65157,
-  "baseline_log_loss": 0.68827,
-  "brier": 0.2299,
-  "over_under_hit_rate": 0.5296,
+  "date": "2026-11-13",
+  "games_today": 2,
+  "correct_today": 1,
+  "games": 306,
+  "correct": 185,
+  "accuracy": 0.6046,
+  "log_loss": 0.65178,
+  "baseline_log_loss": 0.68895,
+  "brier": 0.23,
+  "over_under_hit_rate": 0.5261,
   "rolling_accuracy": 0.59,
-  "rolling_log_loss": 0.64057
+  "rolling_log_loss": 0.63848
  },
  "points": [
   {
@@ -636,6 +636,20 @@
    "over_under_hit_rate": 0.5296,
    "rolling_accuracy": 0.59,
    "rolling_log_loss": 0.64057
+  },
+  {
+   "date": "2026-11-13",
+   "games_today": 2,
+   "correct_today": 1,
+   "games": 306,
+   "correct": 185,
+   "accuracy": 0.6046,
+   "log_loss": 0.65178,
+   "baseline_log_loss": 0.68895,
+   "brier": 0.23,
+   "over_under_hit_rate": 0.5261,
+   "rolling_accuracy": 0.59,
+   "rolling_log_loss": 0.63848
   }
  ],
  "calibration": [
@@ -650,10 +664,10 @@
   {
    "lower": 0.3,
    "upper": 0.4,
-   "count": 16,
+   "count": 17,
    "mean_predicted": 0.3589,
-   "observed": 0.25,
-   "z": 1.006
+   "observed": 0.2353,
+   "z": 1.202
   },
   {
    "lower": 0.4,
@@ -674,10 +688,10 @@
   {
    "lower": 0.6,
    "upper": 0.7,
-   "count": 71,
-   "mean_predicted": 0.6396,
-   "observed": 0.7042,
-   "z": 1.193
+   "count": 72,
+   "mean_predicted": 0.6391,
+   "observed": 0.6944,
+   "z": 1.02
   },
   {
    "lower": 0.7,
@@ -688,7 +702,7 @@
    "z": 0.0
   }
  ],
- "worst_calibration_z": 1.193,
+ "worst_calibration_z": 1.02,
  "calibration_threshold": 2.394,
  "well_calibrated": true,
  "biggest_misses": [

@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-13T18:26:42Z",
+ "generated_at": "2026-11-14T16:54:46Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-14",
  "games": [
@@ -324,17 +324,17 @@
     "away_decimal_fair": 2.25,
     "exp_goals_home": 3.173,
     "exp_goals_away": 2.959,
-    "exp_total": 6.347,
+    "exp_total": 6.348,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4849,
+    "fair_line_p_over": 0.485,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5847
+      "p_over": 0.5848
      },
      {
       "line": 6.5,
-      "p_over": 0.4849
+      "p_over": 0.485
      }
     ]
    },
