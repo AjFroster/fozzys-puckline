@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-15T17:37:39Z",
+ "generated_at": "2026-11-16T20:52:31Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-22",
  "games": [
@@ -101,30 +101,30 @@
    },
    "away": {
     "abbrev": "EDM",
-    "elo": 1542.6,
-    "rest_days": 8,
+    "elo": 1547.1,
+    "rest_days": 7,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.462,
-    "away_win_prob": 0.538,
-    "home_ml_fair": 116,
-    "away_ml_fair": -116,
-    "home_decimal_fair": 2.165,
-    "away_decimal_fair": 1.859,
-    "exp_goals_home": 2.81,
-    "exp_goals_away": 2.965,
-    "exp_total": 5.999,
+    "home_win_prob": 0.4555,
+    "away_win_prob": 0.5445,
+    "home_ml_fair": 120,
+    "away_ml_fair": -120,
+    "home_decimal_fair": 2.196,
+    "away_decimal_fair": 1.836,
+    "exp_goals_home": 2.798,
+    "exp_goals_away": 2.988,
+    "exp_total": 6.011,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5231,
+    "fair_line_p_over": 0.5252,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5231
+      "p_over": 0.5252
      },
      {
       "line": 6.5,
-      "p_over": 0.4237
+      "p_over": 0.4257
      }
     ]
    },
@@ -137,8 +137,8 @@
    "venue": "American Airlines Center",
    "home": {
     "abbrev": "DAL",
-    "elo": 1533.0,
-    "rest_days": 8,
+    "elo": 1533.5,
+    "rest_days": 7,
     "b2b": false
    },
    "away": {
@@ -148,25 +148,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.6144,
-    "away_win_prob": 0.3856,
-    "home_ml_fair": -159,
-    "away_ml_fair": 159,
-    "home_decimal_fair": 1.628,
-    "away_decimal_fair": 2.593,
-    "exp_goals_home": 3.21,
-    "exp_goals_away": 2.663,
-    "exp_total": 6.09,
+    "home_win_prob": 0.615,
+    "away_win_prob": 0.385,
+    "home_ml_fair": -160,
+    "away_ml_fair": 160,
+    "home_decimal_fair": 1.626,
+    "away_decimal_fair": 2.598,
+    "exp_goals_home": 3.177,
+    "exp_goals_away": 2.638,
+    "exp_total": 6.034,
     "fair_total_line": 5.5,
-    "fair_line_p_over": 0.5402,
+    "fair_line_p_over": 0.5302,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5402
+      "p_over": 0.5302
      },
      {
       "line": 6.5,
-      "p_over": 0.4391
+      "p_over": 0.4292
      }
     ]
    },
@@ -179,8 +179,8 @@
    "venue": "Rogers Arena",
    "home": {
     "abbrev": "VAN",
-    "elo": 1357.2,
-    "rest_days": 9,
+    "elo": 1366.6,
+    "rest_days": 7,
     "b2b": false
    },
    "away": {
@@ -190,25 +190,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4819,
-    "away_win_prob": 0.5181,
-    "home_ml_fair": 108,
-    "away_ml_fair": -108,
-    "home_decimal_fair": 2.075,
-    "away_decimal_fair": 1.93,
-    "exp_goals_home": 3.155,
-    "exp_goals_away": 3.005,
-    "exp_total": 6.376,
+    "home_win_prob": 0.4954,
+    "away_win_prob": 0.5046,
+    "home_ml_fair": 102,
+    "away_ml_fair": -102,
+    "home_decimal_fair": 2.018,
+    "away_decimal_fair": 1.982,
+    "exp_goals_home": 3.218,
+    "exp_goals_away": 2.992,
+    "exp_total": 6.425,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4899,
+    "fair_line_p_over": 0.4982,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5895
+      "p_over": 0.5978
      },
      {
       "line": 6.5,
-      "p_over": 0.4899
+      "p_over": 0.4982
      }
     ]
    },
