@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-15T17:37:39Z",
+ "generated_at": "2026-11-17T19:41:55Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-18",
  "games": [
@@ -59,30 +59,30 @@
    },
    "away": {
     "abbrev": "MTL",
-    "elo": 1539.5,
-    "rest_days": 4,
+    "elo": 1534.8,
+    "rest_days": 2,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.4992,
-    "away_win_prob": 0.5008,
-    "home_ml_fair": 100,
-    "away_ml_fair": -100,
-    "home_decimal_fair": 2.003,
-    "away_decimal_fair": 1.997,
-    "exp_goals_home": 3.128,
-    "exp_goals_away": 2.879,
-    "exp_total": 6.227,
+    "home_win_prob": 0.506,
+    "away_win_prob": 0.494,
+    "home_ml_fair": -102,
+    "away_ml_fair": 102,
+    "home_decimal_fair": 1.976,
+    "away_decimal_fair": 2.024,
+    "exp_goals_home": 3.132,
+    "exp_goals_away": 2.848,
+    "exp_total": 6.199,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4638,
+    "fair_line_p_over": 0.4589,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5638
+      "p_over": 0.559
      },
      {
       "line": 6.5,
-      "p_over": 0.4638
+      "p_over": 0.4589
      }
     ]
    },
@@ -95,8 +95,8 @@
    "venue": "Delta Center",
    "home": {
     "abbrev": "UTA",
-    "elo": 1499.6,
-    "rest_days": 4,
+    "elo": 1495.1,
+    "rest_days": 2,
     "b2b": false
    },
    "away": {
@@ -106,25 +106,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.433,
-    "away_win_prob": 0.567,
-    "home_ml_fair": 131,
-    "away_ml_fair": -131,
-    "home_decimal_fair": 2.31,
-    "away_decimal_fair": 1.764,
-    "exp_goals_home": 3.068,
-    "exp_goals_away": 3.305,
-    "exp_total": 6.584,
+    "home_win_prob": 0.4267,
+    "away_win_prob": 0.5733,
+    "home_ml_fair": 134,
+    "away_ml_fair": -134,
+    "home_decimal_fair": 2.344,
+    "away_decimal_fair": 1.744,
+    "exp_goals_home": 3.049,
+    "exp_goals_away": 3.302,
+    "exp_total": 6.562,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5255,
+    "fair_line_p_over": 0.5218,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6242
+      "p_over": 0.6207
      },
      {
       "line": 6.5,
-      "p_over": 0.5255
+      "p_over": 0.5218
      }
     ]
    },

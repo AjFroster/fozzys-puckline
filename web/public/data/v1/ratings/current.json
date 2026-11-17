@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-16T20:52:31Z",
+ "generated_at": "2026-11-17T19:41:55Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "season": 20262027,
  "teams": [
@@ -51,18 +51,18 @@
    "elo": 1547.1,
    "rank": 5,
    "percentile": 0.871,
-   "elo_7d_change": 10.2,
+   "elo_7d_change": 6.9,
    "win_prob_vs_average": 0.578
   },
   {
    "team_id": 8,
    "abbrev": "MTL",
    "name": "Montr\u00e9al Canadiens",
-   "elo": 1539.5,
+   "elo": 1534.8,
    "rank": 6,
    "percentile": 0.8387,
-   "elo_7d_change": -0.7,
-   "win_prob_vs_average": 0.5672
+   "elo_7d_change": -5.4,
+   "win_prob_vs_average": 0.5605
   },
   {
    "team_id": 25,
@@ -145,24 +145,24 @@
    "win_prob_vs_average": 0.5226
   },
   {
-   "team_id": 53,
-   "abbrev": "UTA",
-   "name": "Utah Hockey Club",
-   "elo": 1499.6,
-   "rank": 15,
-   "percentile": 0.5484,
-   "elo_7d_change": -6.2,
-   "win_prob_vs_average": 0.5102
-  },
-  {
    "team_id": 3,
    "abbrev": "NYR",
    "name": "New York Rangers",
-   "elo": 1491.8,
+   "elo": 1496.6,
+   "rank": 15,
+   "percentile": 0.5484,
+   "elo_7d_change": 13.3,
+   "win_prob_vs_average": 0.5058
+  },
+  {
+   "team_id": 53,
+   "abbrev": "UTA",
+   "name": "Utah Hockey Club",
+   "elo": 1495.1,
    "rank": 16,
    "percentile": 0.5161,
-   "elo_7d_change": 5.3,
-   "win_prob_vs_average": 0.499
+   "elo_7d_change": -10.7,
+   "win_prob_vs_average": 0.5038
   },
   {
    "team_id": 19,
@@ -231,7 +231,7 @@
    "elo": 1466.4,
    "rank": 23,
    "percentile": 0.2903,
-   "elo_7d_change": 12.2,
+   "elo_7d_change": 13.1,
    "win_prob_vs_average": 0.4625
   },
   {
@@ -241,7 +241,7 @@
    "elo": 1458.8,
    "rank": 24,
    "percentile": 0.2581,
-   "elo_7d_change": 2.3,
+   "elo_7d_change": -1.4,
    "win_prob_vs_average": 0.4517
   },
   {
@@ -301,7 +301,7 @@
    "elo": 1429.0,
    "rank": 30,
    "percentile": 0.0645,
-   "elo_7d_change": 7.5,
+   "elo_7d_change": 6.6,
    "win_prob_vs_average": 0.4096
   },
   {
@@ -318,11 +318,11 @@
    "team_id": 23,
    "abbrev": "VAN",
    "name": "Vancouver Canucks",
-   "elo": 1366.6,
+   "elo": 1371.0,
    "rank": 32,
    "percentile": 0.0,
-   "elo_7d_change": 1.3,
-   "win_prob_vs_average": 0.3263
+   "elo_7d_change": 9.5,
+   "win_prob_vs_average": 0.332
   }
  ]
 }

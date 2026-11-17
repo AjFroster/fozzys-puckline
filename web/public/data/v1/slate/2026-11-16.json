@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-16T20:52:31Z",
+ "generated_at": "2026-11-17T19:41:55Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-16",
  "games": [
   {
    "game_id": 2026020331,
    "start_utc": "2026-11-17T00:30:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Madison Square Garden",
    "home": {
     "abbrev": "NYR",
@@ -44,12 +44,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 4,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020332,
    "start_utc": "2026-11-17T02:30:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Delta Center",
    "home": {
     "abbrev": "UTA",
@@ -86,7 +92,13 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 3,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": false
+   }
   }
  ]
 }
