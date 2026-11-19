@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-18T19:18:03Z",
+ "generated_at": "2026-11-19T19:25:41Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-18",
  "games": [
   {
    "game_id": 2026020344,
    "start_utc": "2026-11-19T00:30:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Little Caesars Arena",
    "home": {
     "abbrev": "DET",
@@ -44,12 +44,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 1,
+    "away_score": 4,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020345,
    "start_utc": "2026-11-19T00:30:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Prudential Center",
    "home": {
     "abbrev": "NJD",
@@ -72,26 +78,32 @@
     "away_decimal_fair": 2.024,
     "exp_goals_home": 3.131,
     "exp_goals_away": 2.848,
-    "exp_total": 6.198,
+    "exp_total": 6.199,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4587,
+    "fair_line_p_over": 0.4589,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5588
+      "p_over": 0.559
      },
      {
       "line": 6.5,
-      "p_over": 0.4587
+      "p_over": 0.4589
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 3,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020346,
    "start_utc": "2026-11-19T03:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Delta Center",
    "home": {
     "abbrev": "UTA",
@@ -128,7 +140,13 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 4,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": true
+   }
   }
  ]
 }
