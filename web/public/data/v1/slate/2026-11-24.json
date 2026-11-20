@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-18T19:18:03Z",
+ "generated_at": "2026-11-20T19:00:25Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-24",
  "games": [
@@ -11,36 +11,36 @@
    "venue": "Rogers Place",
    "home": {
     "abbrev": "EDM",
-    "elo": 1552.5,
-    "rest_days": 7,
+    "elo": 1548.5,
+    "rest_days": 5,
     "b2b": false
    },
    "away": {
     "abbrev": "VGK",
-    "elo": 1527.2,
-    "rest_days": 7,
+    "elo": 1526.2,
+    "rest_days": 5,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.572,
-    "away_win_prob": 0.428,
-    "home_ml_fair": -134,
-    "away_ml_fair": 134,
-    "home_decimal_fair": 1.748,
-    "away_decimal_fair": 2.336,
-    "exp_goals_home": 3.311,
-    "exp_goals_away": 2.786,
-    "exp_total": 6.31,
+    "home_win_prob": 0.5677,
+    "away_win_prob": 0.4323,
+    "home_ml_fair": -131,
+    "away_ml_fair": 131,
+    "home_decimal_fair": 1.761,
+    "away_decimal_fair": 2.313,
+    "exp_goals_home": 3.275,
+    "exp_goals_away": 2.788,
+    "exp_total": 6.278,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4778,
+    "fair_line_p_over": 0.4723,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5788
+      "p_over": 0.5732
      },
      {
       "line": 6.5,
-      "p_over": 0.4778
+      "p_over": 0.4723
      }
     ]
    },

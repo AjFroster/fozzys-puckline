@@ -1,24 +1,24 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-19T19:25:41Z",
+ "generated_at": "2026-11-20T19:00:25Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "season": 20262027,
  "complete": false,
- "through": "2026-11-18",
+ "through": "2026-11-19",
  "rolling_window": 100,
  "summary": {
-  "date": "2026-11-18",
-  "games_today": 3,
-  "correct_today": 0,
-  "games": 341,
-  "correct": 200,
-  "accuracy": 0.5865,
-  "log_loss": 0.66166,
-  "baseline_log_loss": 0.69159,
-  "brier": 0.23465,
-  "over_under_hit_rate": 0.5279,
-  "rolling_accuracy": 0.55,
-  "rolling_log_loss": 0.67235
+  "date": "2026-11-19",
+  "games_today": 12,
+  "correct_today": 6,
+  "games": 353,
+  "correct": 206,
+  "accuracy": 0.5836,
+  "log_loss": 0.66233,
+  "baseline_log_loss": 0.69224,
+  "brier": 0.23497,
+  "over_under_hit_rate": 0.5297,
+  "rolling_accuracy": 0.51,
+  "rolling_log_loss": 0.68518
  },
  "points": [
   {
@@ -720,6 +720,20 @@
    "over_under_hit_rate": 0.5279,
    "rolling_accuracy": 0.55,
    "rolling_log_loss": 0.67235
+  },
+  {
+   "date": "2026-11-19",
+   "games_today": 12,
+   "correct_today": 6,
+   "games": 353,
+   "correct": 206,
+   "accuracy": 0.5836,
+   "log_loss": 0.66233,
+   "baseline_log_loss": 0.69224,
+   "brier": 0.23497,
+   "over_under_hit_rate": 0.5297,
+   "rolling_accuracy": 0.51,
+   "rolling_log_loss": 0.68518
   }
  ],
  "calibration": [
@@ -734,34 +748,34 @@
   {
    "lower": 0.3,
    "upper": 0.4,
-   "count": 17,
-   "mean_predicted": 0.3589,
-   "observed": 0.2353,
-   "z": 1.202
+   "count": 18,
+   "mean_predicted": 0.3593,
+   "observed": 0.2222,
+   "z": 1.399
   },
   {
    "lower": 0.4,
    "upper": 0.5,
-   "count": 98,
-   "mean_predicted": 0.4569,
-   "observed": 0.449,
-   "z": 0.157
+   "count": 99,
+   "mean_predicted": 0.4568,
+   "observed": 0.4444,
+   "z": 0.246
   },
   {
    "lower": 0.5,
    "upper": 0.6,
-   "count": 138,
-   "mean_predicted": 0.5468,
-   "observed": 0.5217,
-   "z": 0.589
+   "count": 144,
+   "mean_predicted": 0.5461,
+   "observed": 0.5139,
+   "z": 0.774
   },
   {
    "lower": 0.6,
    "upper": 0.7,
-   "count": 77,
-   "mean_predicted": 0.6402,
-   "observed": 0.6753,
-   "z": 0.659
+   "count": 81,
+   "mean_predicted": 0.6403,
+   "observed": 0.6667,
+   "z": 0.503
   },
   {
    "lower": 0.7,
@@ -772,7 +786,7 @@
    "z": 0.451
   }
  ],
- "worst_calibration_z": 0.659,
+ "worst_calibration_z": 0.774,
  "calibration_threshold": 2.394,
  "well_calibrated": true,
  "biggest_misses": [
