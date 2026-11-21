@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-20T19:00:25Z",
+ "generated_at": "2026-11-21T17:55:06Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-21",
  "games": [
   {
    "game_id": 2026020359,
    "start_utc": "2026-11-21T18:00:00Z",
-   "state": "FUT",
+   "state": "PRE",
    "venue": "Lenovo Center",
    "home": {
     "abbrev": "CAR",
