@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-23T22:29:56Z",
+ "generated_at": "2026-11-24T21:02:18Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-23",
  "games": [
   {
    "game_id": 2026020378,
    "start_utc": "2026-11-24T00:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Prudential Center",
    "home": {
     "abbrev": "NJD",
@@ -44,12 +44,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 2,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020379,
    "start_utc": "2026-11-24T00:30:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Centre Bell",
    "home": {
     "abbrev": "MTL",
@@ -86,12 +92,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 1,
+    "away_score": 2,
+    "last_period": "REG",
+    "total_goals": 3,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020380,
    "start_utc": "2026-11-24T00:30:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Canadian Tire Centre",
    "home": {
     "abbrev": "OTT",
@@ -128,12 +140,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 1,
+    "last_period": "REG",
+    "total_goals": 3,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020381,
    "start_utc": "2026-11-24T00:30:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "UBS Arena",
    "home": {
     "abbrev": "NYI",
@@ -154,28 +172,34 @@
     "away_ml_fair": 135,
     "home_decimal_fair": 1.742,
     "away_decimal_fair": 2.348,
-    "exp_goals_home": 3.307,
+    "exp_goals_home": 3.308,
     "exp_goals_away": 2.803,
-    "exp_total": 6.324,
+    "exp_total": 6.325,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4803,
+    "fair_line_p_over": 0.4804,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5811
+      "p_over": 0.5813
      },
      {
       "line": 6.5,
-      "p_over": 0.4803
+      "p_over": 0.4804
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 4,
+    "last_period": "REG",
+    "total_goals": 6,
+    "home_won": false
+   }
   },
   {
    "game_id": 2026020382,
    "start_utc": "2026-11-24T00:30:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Canada Life Centre",
    "home": {
     "abbrev": "WPG",
@@ -212,12 +236,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 4,
+    "away_score": 2,
+    "last_period": "REG",
+    "total_goals": 6,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020383,
    "start_utc": "2026-11-24T02:40:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Climate Pledge Arena",
    "home": {
     "abbrev": "SEA",
@@ -254,12 +284,18 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 2,
+    "last_period": "REG",
+    "total_goals": 5,
+    "home_won": true
+   }
   },
   {
    "game_id": 2026020384,
    "start_utc": "2026-11-24T03:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "SAP Center at San Jose",
    "home": {
     "abbrev": "SJS",
@@ -296,7 +332,13 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 2,
+    "away_score": 5,
+    "last_period": "REG",
+    "total_goals": 7,
+    "home_won": false
+   }
   }
  ]
 }
