@@ -1,13 +1,13 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-24T21:02:18Z",
+ "generated_at": "2026-11-25T20:24:46Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-24",
  "games": [
   {
    "game_id": 2026020385,
    "start_utc": "2026-11-25T01:00:00Z",
-   "state": "FUT",
+   "state": "OFF",
    "venue": "Rogers Place",
    "home": {
     "abbrev": "EDM",
@@ -44,7 +44,13 @@
      }
     ]
    },
-   "result": null
+   "result": {
+    "home_score": 3,
+    "away_score": 5,
+    "last_period": "REG",
+    "total_goals": 8,
+    "home_won": false
+   }
   }
  ]
 }

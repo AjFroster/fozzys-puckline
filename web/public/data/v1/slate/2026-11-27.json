@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-24T21:02:18Z",
+ "generated_at": "2026-11-25T20:24:46Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-27",
  "games": [
@@ -28,7 +28,7 @@
     "away_ml_fair": 173,
     "home_decimal_fair": 1.578,
     "away_decimal_fair": 2.731,
-    "exp_goals_home": 3.489,
+    "exp_goals_home": 3.488,
     "exp_goals_away": 2.733,
     "exp_total": 6.428,
     "fair_total_line": 6.5,
@@ -406,7 +406,7 @@
     "away_ml_fair": 107,
     "home_decimal_fair": 1.937,
     "away_decimal_fair": 2.067,
-    "exp_goals_home": 3.281,
+    "exp_goals_home": 3.28,
     "exp_goals_away": 3.05,
     "exp_total": 6.543,
     "fair_total_line": 6.5,
@@ -437,30 +437,30 @@
    },
    "away": {
     "abbrev": "VGK",
-    "elo": 1526.8,
-    "rest_days": 6,
+    "elo": 1531.8,
+    "rest_days": 3,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.3877,
-    "away_win_prob": 0.6123,
-    "home_ml_fair": 158,
-    "away_ml_fair": -158,
-    "home_decimal_fair": 2.579,
-    "away_decimal_fair": 1.633,
-    "exp_goals_home": 2.898,
-    "exp_goals_away": 3.211,
-    "exp_total": 6.325,
+    "home_win_prob": 0.3808,
+    "away_win_prob": 0.6192,
+    "home_ml_fair": 163,
+    "away_ml_fair": -163,
+    "home_decimal_fair": 2.626,
+    "away_decimal_fair": 1.615,
+    "exp_goals_home": 2.901,
+    "exp_goals_away": 3.24,
+    "exp_total": 6.356,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4809,
+    "fair_line_p_over": 0.4862,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.581
+      "p_over": 0.5863
      },
      {
       "line": 6.5,
-      "p_over": 0.4809
+      "p_over": 0.4862
      }
     ]
    },
@@ -575,7 +575,7 @@
     "home_decimal_fair": 1.649,
     "away_decimal_fair": 2.541,
     "exp_goals_home": 3.394,
-    "exp_goals_away": 2.86,
+    "exp_goals_away": 2.859,
     "exp_total": 6.464,
     "fair_total_line": 6.5,
     "fair_line_p_over": 0.5044,
@@ -599,8 +599,8 @@
    "venue": "Rogers Place",
    "home": {
     "abbrev": "EDM",
-    "elo": 1543.4,
-    "rest_days": 5,
+    "elo": 1538.4,
+    "rest_days": 3,
     "b2b": false
    },
    "away": {
@@ -610,25 +610,25 @@
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.6602,
-    "away_win_prob": 0.3398,
-    "home_ml_fair": -194,
-    "away_ml_fair": 194,
-    "home_decimal_fair": 1.515,
-    "away_decimal_fair": 2.943,
-    "exp_goals_home": 3.634,
-    "exp_goals_away": 2.736,
-    "exp_total": 6.572,
+    "home_win_prob": 0.6537,
+    "away_win_prob": 0.3463,
+    "home_ml_fair": -189,
+    "away_ml_fair": 189,
+    "home_decimal_fair": 1.53,
+    "away_decimal_fair": 2.888,
+    "exp_goals_home": 3.626,
+    "exp_goals_away": 2.767,
+    "exp_total": 6.595,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5217,
+    "fair_line_p_over": 0.5258,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6237
+      "p_over": 0.6273
      },
      {
       "line": 6.5,
-      "p_over": 0.5217
+      "p_over": 0.5258
      }
     ]
    },
