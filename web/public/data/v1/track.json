@@ -1,24 +1,24 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-25T20:24:46Z",
+ "generated_at": "2026-11-26T20:02:09Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "season": 20262027,
  "complete": false,
- "through": "2026-11-24",
+ "through": "2026-11-25",
  "rolling_window": 100,
  "summary": {
-  "date": "2026-11-24",
-  "games_today": 1,
-  "correct_today": 0,
-  "games": 380,
-  "correct": 221,
-  "accuracy": 0.5816,
-  "log_loss": 0.66472,
-  "baseline_log_loss": 0.69202,
-  "brier": 0.23607,
-  "over_under_hit_rate": 0.5395,
-  "rolling_accuracy": 0.48,
-  "rolling_log_loss": 0.70659
+  "date": "2026-11-25",
+  "games_today": 14,
+  "correct_today": 8,
+  "games": 394,
+  "correct": 229,
+  "accuracy": 0.5812,
+  "log_loss": 0.66617,
+  "baseline_log_loss": 0.6921,
+  "brier": 0.23678,
+  "over_under_hit_rate": 0.5355,
+  "rolling_accuracy": 0.5,
+  "rolling_log_loss": 0.71352
  },
  "points": [
   {
@@ -790,6 +790,20 @@
    "over_under_hit_rate": 0.5395,
    "rolling_accuracy": 0.48,
    "rolling_log_loss": 0.70659
+  },
+  {
+   "date": "2026-11-25",
+   "games_today": 14,
+   "correct_today": 8,
+   "games": 394,
+   "correct": 229,
+   "accuracy": 0.5812,
+   "log_loss": 0.66617,
+   "baseline_log_loss": 0.6921,
+   "brier": 0.23678,
+   "over_under_hit_rate": 0.5355,
+   "rolling_accuracy": 0.5,
+   "rolling_log_loss": 0.71352
   }
  ],
  "calibration": [
@@ -812,26 +826,26 @@
   {
    "lower": 0.4,
    "upper": 0.5,
-   "count": 105,
-   "mean_predicted": 0.4577,
-   "observed": 0.4476,
-   "z": 0.208
+   "count": 108,
+   "mean_predicted": 0.4581,
+   "observed": 0.4444,
+   "z": 0.285
   },
   {
    "lower": 0.5,
    "upper": 0.6,
-   "count": 155,
-   "mean_predicted": 0.5464,
-   "observed": 0.5161,
-   "z": 0.755
+   "count": 162,
+   "mean_predicted": 0.5476,
+   "observed": 0.5247,
+   "z": 0.583
   },
   {
    "lower": 0.6,
    "upper": 0.7,
-   "count": 89,
-   "mean_predicted": 0.6399,
-   "observed": 0.6629,
-   "z": 0.46
+   "count": 93,
+   "mean_predicted": 0.6394,
+   "observed": 0.6452,
+   "z": 0.115
   },
   {
    "lower": 0.7,
@@ -842,7 +856,7 @@
    "z": 0.451
   }
  ],
- "worst_calibration_z": 0.755,
+ "worst_calibration_z": 0.583,
  "calibration_threshold": 2.394,
  "well_calibrated": true,
  "biggest_misses": [

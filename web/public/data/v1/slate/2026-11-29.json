@@ -1,6 +1,6 @@
 {
  "schema": "1.0.0",
- "generated_at": "2026-11-24T21:02:18Z",
+ "generated_at": "2026-11-26T20:02:09Z",
  "model_version": "elo-1.0+cmp-1.0/ec1c67c",
  "date": "2026-11-29",
  "games": [
@@ -11,36 +11,36 @@
    "venue": "United Center",
    "home": {
     "abbrev": "CHI",
-    "elo": 1404.1,
-    "rest_days": 7,
+    "elo": 1409.6,
+    "rest_days": 4,
     "b2b": false
    },
    "away": {
     "abbrev": "MIN",
-    "elo": 1570.1,
-    "rest_days": 6,
+    "elo": 1566.4,
+    "rest_days": 4,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.3075,
-    "away_win_prob": 0.6925,
-    "home_ml_fair": 225,
-    "away_ml_fair": -225,
-    "home_decimal_fair": 3.252,
-    "away_decimal_fair": 1.444,
-    "exp_goals_home": 2.556,
-    "exp_goals_away": 3.394,
-    "exp_total": 6.161,
-    "fair_total_line": 6.5,
-    "fair_line_p_over": 0.4505,
+    "home_win_prob": 0.3189,
+    "away_win_prob": 0.6811,
+    "home_ml_fair": 214,
+    "away_ml_fair": -214,
+    "home_decimal_fair": 3.135,
+    "away_decimal_fair": 1.468,
+    "exp_goals_home": 2.585,
+    "exp_goals_away": 3.348,
+    "exp_total": 6.145,
+    "fair_total_line": 5.5,
+    "fair_line_p_over": 0.5507,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.5538
+      "p_over": 0.5507
      },
      {
       "line": 6.5,
-      "p_over": 0.4505
+      "p_over": 0.448
      }
     ]
    },
@@ -53,36 +53,36 @@
    "venue": "TD Garden",
    "home": {
     "abbrev": "BOS",
-    "elo": 1523.4,
-    "rest_days": 8,
+    "elo": 1517.9,
+    "rest_days": 4,
     "b2b": false
    },
    "away": {
     "abbrev": "VAN",
-    "elo": 1363.6,
-    "rest_days": 7,
+    "elo": 1359.6,
+    "rest_days": 4,
     "b2b": false
    },
    "prediction": {
-    "home_win_prob": 0.7435,
-    "away_win_prob": 0.2565,
-    "home_ml_fair": -290,
-    "away_ml_fair": 290,
-    "home_decimal_fair": 1.345,
-    "away_decimal_fair": 3.898,
-    "exp_goals_home": 3.842,
-    "exp_goals_away": 2.523,
-    "exp_total": 6.555,
+    "home_win_prob": 0.7418,
+    "away_win_prob": 0.2582,
+    "home_ml_fair": -287,
+    "away_ml_fair": 287,
+    "home_decimal_fair": 1.348,
+    "away_decimal_fair": 3.873,
+    "exp_goals_home": 3.837,
+    "exp_goals_away": 2.517,
+    "exp_total": 6.544,
     "fair_total_line": 6.5,
-    "fair_line_p_over": 0.5168,
+    "fair_line_p_over": 0.5149,
     "totals": [
      {
       "line": 5.5,
-      "p_over": 0.6229
+      "p_over": 0.6212
      },
      {
       "line": 6.5,
-      "p_over": 0.5168
+      "p_over": 0.5149
      }
     ]
    },
